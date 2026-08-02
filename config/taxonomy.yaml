@@ -1,0 +1,45 @@
+# Taxonomy Library
+niches:
+  professions:
+    - Teacher
+    - Developer
+    - Engineer
+    - Nurse
+    - Doctor
+  hobbies:
+    - Gaming
+    - Fishing
+    - Reading
+    - Cooking
+  animals:
+    - Dog
+    - Cat
+    - Dinosaur
+    - Bird
+  science:
+    - Math
+    - Physics
+    - Astronomy
+
+holidays:
+  - Christmas
+  - Halloween
+  - Thanksgiving
+  - Valentine's Day
+  - Everyday
+
+recipients:
+  - Dad
+  - Mom
+  - Grandpa
+  - Grandma
+  - Husband
+  - Wife
+  - Boyfriend
+  - Girlfriend
+
+styles:
+  - Retro Vintage
+  - Funny Text
+  - Minimalist
+  - Typography

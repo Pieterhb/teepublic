@@ -1,0 +1,9 @@
+requests
+beautifulsoup4
+pandas
+urllib3
+pyyaml
+pytest
+google-genai
+seleniumbase
+python-dotenv

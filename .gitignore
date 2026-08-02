@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Data & database files (large / sensitive)
+data/
+db/*.db
+db/*.sqlite
+db/*.sqlite3
+downloaded_files/
+logs/
+
+# Environment / secrets
+.env
+*.env
+config/secrets.py
+config/local_settings.py
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Export output (large CSVs etc.)
+export/*.csv
+export/*.xlsx
+export/*.json

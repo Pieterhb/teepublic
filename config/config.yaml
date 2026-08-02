@@ -1,0 +1,26 @@
+# TeePublic Scraper Configuration
+
+crawler:
+  store_url: "https://www.teepublic.com/user/theblackpanther"
+  user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  timeout_seconds: 30
+  rate_limit_seconds: 4
+  max_retries: 3
+  concurrency: 1
+
+database:
+  db_path: "data/processed/master_database.sqlite"
+
+output:
+  csv_path: "data/processed/master_database.csv"
+  json_path: "data/processed/master_database.json"
+  validation_report_path: "logs/validation_report.json"
+
+enrichment:
+  enabled: true
+  provider: "gemini"
+  model: "gemini-2.0-flash-lite"
+  # Set your FREE-tier Gemini API key via the GEMINI_FREE_API_KEY environment variable
+  # or create a .env file (see .env.example). NEVER commit real keys here.
+  free_api_key: "${GEMINI_FREE_API_KEY}"
+  taxonomy_path: "config/taxonomy.yaml"
