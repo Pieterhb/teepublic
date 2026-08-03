@@ -5,12 +5,12 @@ Enriches all un-enriched designs using Gemini Flash-Lite on the FREE tier.
 
 Safety features:
   - Pinned to gemini-3.5-flash-lite ONLY — zero fallback models
-  - HARD STOP on 429 / RESOURCE_EXHAUSTED — saves progress, tells you to come back tomorrow
-  - 2-second delay between calls (well under 15 RPM free-tier limit)
+  - In paid mode: Hard stop at $3.00 cost limit to prevent overspending
+  - In free mode: HARD STOP on 429 / RESOURCE_EXHAUSTED
   - Daily call counter — tracks how many calls today in logs/enrich_daily_count.json
   - Resume-safe — skips already-enriched designs, safe to Ctrl+C and restart
   - Commits to DB every 25 designs so progress is never lost
-  - $0.00 cost — uses free-tier API key with no billing attached
+  - $0.00 cost in free mode / tracked cost in paid mode
 """
 
 import sqlite3
@@ -49,6 +49,10 @@ MODEL             = "gemini-3.5-flash-lite"
 DELAY_SECONDS     = 2.0          # pause between API calls (15 RPM limit = 4s min, we use 2s for safety)
 BATCH_SIZE        = 25           # commit to DB every N designs
 MAX_CONSECUTIVE_ERRORS = 5       # stop after this many consecutive errors (not just 429)
+
+COST_PER_M_INPUT  = 0.30         # USD per million input tokens
+COST_PER_M_OUTPUT = 2.50         # USD per million output tokens
+MAX_COST_USD      = 3.00         # Hard stop if cost exceeds this
 # ─────────────────────────────────────────────────────────────────────────────
 
 
@@ -57,8 +61,18 @@ class QuotaExhaustedError(Exception):
     pass
 
 
-def load_api_key() -> str:
-    """Read the FREE Gemini API key from config.yaml."""
+def load_api_key(is_paid: bool = False) -> str:
+    """Read the Gemini API key. If is_paid is True, requires GEMINI_PAID_API_KEY from .env."""
+    if is_paid:
+        key = os.environ.get("GEMINI_PAID_API_KEY", "")
+        if not key:
+            logger.error(
+                "Paid mode requested, but GEMINI_PAID_API_KEY is not set.\n"
+                "Please add your paid API key to the .env file."
+            )
+            sys.exit(1)
+        return key
+
     import yaml
     with open(CONFIG_PATH, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
@@ -155,10 +169,10 @@ def save_daily_count(data: dict):
 
 # ── API call with safety ─────────────────────────────────────────────────────
 
-def enrich_one(api_key: str, design: dict, taxonomy: dict) -> dict | None:
+def enrich_one(api_key: str, design: dict, taxonomy: dict) -> tuple[dict | None, dict | None]:
     """
     Call Gemini flash-lite for one design via raw HTTP.
-    Returns enriched fields dict, or None on non-quota error.
+    Returns (enriched_fields_dict, usage_metadata_dict), or (None, None) on non-quota error.
     Raises QuotaExhaustedError on 429.
     """
     import requests
@@ -188,21 +202,21 @@ def enrich_one(api_key: str, design: dict, taxonomy: dict) -> dict | None:
         if resp.status_code != 200:
             error_msg = resp.json().get("error", {}).get("message", resp.text[:200])
             logger.error(f"  API error ({resp.status_code}) for {design.get('design_id')}: {error_msg}")
-            return None
+            return None, None
 
         # Parse the response
         data = resp.json()
         text = data["candidates"][0]["content"]["parts"][0]["text"]
-        return json.loads(text)
+        return json.loads(text), data.get("usageMetadata", {})
 
     except QuotaExhaustedError:
         raise  # Re-raise — this must stop the script
     except json.JSONDecodeError as e:
         logger.error(f"  JSON parse error for {design.get('design_id')}: {e}")
-        return None
+        return None, None
     except requests.exceptions.Timeout:
         logger.error(f"  Timeout for {design.get('design_id')}")
-        return None
+        return None, None
     except Exception as e:
         err_str = str(e)
         # Also catch quota errors that might come through exceptions
@@ -212,27 +226,40 @@ def enrich_one(api_key: str, design: dict, taxonomy: dict) -> dict | None:
                 "All progress has been saved. Run this script again tomorrow."
             )
         logger.error(f"  Unexpected error for {design.get('design_id')}: {e}")
-        return None
+        return None, None
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="TeePublic Batch Enrichment")
+    parser.add_argument("--paid", action="store_true", help="Use paid API key with cost cap and faster rate limit")
+    args = parser.parse_args()
+
+    is_paid = args.paid
+    delay = 0.1 if is_paid else DELAY_SECONDS
+
     os.makedirs("logs", exist_ok=True)
 
     print()
     print("=" * 60)
-    print("  TEEPUBLIC BATCH ENRICHMENT — FREE TIER ONLY")
+    print("  TEEPUBLIC BATCH ENRICHMENT")
     print("=" * 60)
     print(f"  Model  : {MODEL} (pinned, NO fallbacks)")
-    print(f"  Delay  : {DELAY_SECONDS}s between calls")
-    print(f"  Cost   : $0.00 (free-tier API key)")
+    if is_paid:
+        print(f"  Mode   : PAID (cost cap: ${MAX_COST_USD:.2f})")
+        print(f"  Delay  : {delay}s between calls")
+    else:
+        print("  Mode   : FREE TIER ONLY")
+        print(f"  Delay  : {delay}s between calls")
+        print("  Cost   : $0.00 (free-tier API key)")
     print("=" * 60)
     print()
 
     # Load dependencies
     try:
-        api_key  = load_api_key()
+        api_key  = load_api_key(is_paid)
         taxonomy = load_taxonomy()
     except Exception as e:
         logger.error(f"Startup error: {e}")
@@ -297,6 +324,7 @@ def main():
     consecutive_errors = 0
     start_time     = time.time()
     stopped_reason = None
+    total_cost     = 0.0
 
     try:
         for i, row in enumerate(pending, start=1):
@@ -306,9 +334,15 @@ def main():
 
             print(f"  [{i}/{total_pending}] {title}")
 
-            fields = enrich_one(api_key, design, taxonomy)
+            fields, usage = enrich_one(api_key, design, taxonomy)
 
             daily["calls"] += 1
+
+            if is_paid and usage:
+                in_tokens = usage.get("promptTokenCount", 0)
+                out_tokens = usage.get("candidatesTokenCount", 0)
+                cost = (in_tokens / 1_000_000 * COST_PER_M_INPUT) + (out_tokens / 1_000_000 * COST_PER_M_OUTPUT)
+                total_cost += cost
 
             if fields:
                 consecutive_errors = 0
@@ -360,11 +394,23 @@ def main():
                     elapsed  = time.time() - start_time
                     rate     = enriched_count / elapsed if elapsed > 0 else 0
                     remaining = (total_pending - i) / rate if rate > 0 else 0
-                    print(
-                        f"    >> Saved {enriched_count} designs "
-                        f"(~{remaining/60:.0f} min remaining, "
-                        f"{daily['calls']} calls today)"
-                    )
+                    if is_paid:
+                        print(
+                            f"    >> Saved {enriched_count} designs "
+                            f"(~{remaining/60:.0f} min remaining, "
+                            f"Cost so far: ${total_cost:.4f})"
+                        )
+                    else:
+                        print(
+                            f"    >> Saved {enriched_count} designs "
+                            f"(~{remaining/60:.0f} min remaining, "
+                            f"{daily['calls']} calls today)"
+                        )
+
+                if is_paid and total_cost >= MAX_COST_USD:
+                    stopped_reason = f"Stopped: Hard cost cap of ${MAX_COST_USD:.2f} reached (Spent: ${total_cost:.4f})"
+                    logger.warning(stopped_reason)
+                    break
             else:
                 error_count += 1
                 daily["errors"] += 1
@@ -380,7 +426,7 @@ def main():
 
             # Rate limit: wait before next call
             if i < total_pending:
-                time.sleep(DELAY_SECONDS)
+                time.sleep(delay)
 
     except QuotaExhaustedError as e:
         stopped_reason = str(e)
@@ -413,7 +459,10 @@ def main():
     print(f"  Errors this session    : {error_count} designs (skipped)")
     print(f"  Time                   : {elapsed_min:.1f} minutes")
     print(f"  API calls today (total): {daily['calls']}")
-    print(f"  Cost                   : $0.00 (free tier)")
+    if is_paid:
+        print(f"  Est. Cost (session)    : ${total_cost:.4f}")
+    else:
+        print(f"  Cost                   : $0.00 (free tier)")
     remaining = total_pending - enriched_count - error_count
     if remaining > 0:
         print(f"  Still pending          : {remaining} designs")
