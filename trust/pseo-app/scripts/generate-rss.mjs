@@ -29,19 +29,27 @@ if (!fs.existsSync(RSS_DIR)) {
 
 const SITE_URL = 'https://blackpantherstore.co.za';
 
-function generateRssXml(title, description, feedUrl, items) {
-  const rssItems = items.map(product => `
+// 1. Calculate current Day of the Year (1 - 365)
+const now = new Date();
+const startOfYear = new Date(now.getFullYear(), 0, 0);
+const diff = now - startOfYear;
+const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
+const todayDateStr = now.toISOString().split('T')[0]; // e.g. "2026-08-04"
+
+function generateRssXml(title, description, feedUrl, item, categorySlug) {
+  const rssItem = `
     <item>
-      <title><![CDATA[${product.title}]]></title>
-      <link>${SITE_URL}/design/${product.slug}</link>
+      <title><![CDATA[${item.title}]]></title>
+      <link>${SITE_URL}/design/${item.slug}</link>
       <description><![CDATA[
-        <img src="${product.image_url}" alt="${product.image_alt}" />
-        <p>${product.description}</p>
+        <img src="${item.image_url}" alt="${item.image_alt}" />
+        <p>${item.description}</p>
       ]]></description>
-      <pubDate>${new Date().toUTCString()}</pubDate>
-      <guid isPermaLink="false">${product.design_id}-${new Date().getTime()}</guid>
+      <pubDate>${now.toUTCString()}</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">${categorySlug}-${item.design_id}-${todayDateStr}</guid>
     </item>
-  `).join('');
+  `;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -50,18 +58,14 @@ function generateRssXml(title, description, feedUrl, items) {
     <link>${SITE_URL}</link>
     <description>${description}</description>
     <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
-    <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
-    ${rssItems}
+    <lastBuildDate>${now.toUTCString()}</lastBuildDate>
+    ${rssItem}
   </channel>
 </rss>`;
 }
 
-function getRandomItems(arr, count) {
-  const shuffled = [...arr].sort(() => 0.5 - Math.random());
-  return shuffled.slice(0, count);
-}
-
-console.log('Generating RSS feeds for Pinterest...');
+console.log('Generating RSS feeds for Pinterest (1 item per day)...');
+console.log(`Today is day ${dayOfYear} of the year.`);
 
 // Generate category feeds
 for (const slug of targetCategories) {
@@ -76,29 +80,31 @@ for (const slug of targetCategories) {
     .map(id => products.find(p => p.design_id == id))
     .filter(Boolean);
 
-  // Pick 10 random products
-  const randomProducts = getRandomItems(categoryProducts, 10);
+  // 2. Pick exactly 1 product based on the day of the year
+  const todayProduct = categoryProducts[dayOfYear % categoryProducts.length];
   
   const xml = generateRssXml(
     `Black Panther Store - ${category.title}`,
-    `Top 10 daily random designs for ${category.title}`,
+    `Daily featured design for ${category.title}`,
     `${SITE_URL}/rss/${slug}.xml`,
-    randomProducts
+    todayProduct,
+    slug
   );
 
   fs.writeFileSync(path.join(RSS_DIR, `${slug}.xml`), xml);
-  console.log(`✅ Created RSS feed for ${slug}`);
+  console.log(`✅ Created RSS feed for ${slug} (1 item)`);
 }
 
-// Generate the "Social" feed (10 fully random items across all designs)
-const socialProducts = getRandomItems(products, 10);
+// Generate the "Social" feed (1 fully random item from across all designs based on day)
+const socialProduct = products[dayOfYear % products.length];
 const socialXml = generateRssXml(
   'Black Panther Store - Social',
-  'Top 10 daily random designs from all collections',
+  'Daily featured design from all collections',
   `${SITE_URL}/rss/social.xml`,
-  socialProducts
+  socialProduct,
+  'social'
 );
 fs.writeFileSync(path.join(RSS_DIR, `social.xml`), socialXml);
-console.log(`✅ Created RSS feed for social`);
+console.log(`✅ Created RSS feed for social (1 item)`);
 
 console.log('Done!');
