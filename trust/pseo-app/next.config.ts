@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Required for Cloudflare Pages (@cloudflare/next-on-pages)
-  // Generates a standalone build compatible with the edge runtime
-  output: "standalone",
+  // Static export — generates pure HTML/CSS/JS in the `out/` directory
+  // Compatible with Cloudflare Pages without any adapter
+  output: "export",
   images: {
+    // Required for static export (no image optimization server)
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
