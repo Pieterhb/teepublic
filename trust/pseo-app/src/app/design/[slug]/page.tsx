@@ -36,7 +36,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: product.seo_title || product.title,
       description: product.meta_description || product.description,
       images: [product.image_url],
-    }
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: product.seo_title || product.title,
+      description: product.meta_description || product.description,
+      images: [product.image_url],
+    },
   };
 }
 
@@ -51,23 +58,35 @@ export default async function ProductPage({ params }: Props) {
   const relatedProducts = getRelatedProducts(product.design_id);
   const relatedCategories = getRelatedCategoriesForProduct(product.design_id);
 
-  // JSON-LD Schema
+  // JSON-LD: Product + BreadcrumbList
   const jsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: product.title,
-    image: product.image_url,
-    description: product.description,
-    brand: {
-      '@type': 'Brand',
-      name: 'TeePublic - The Black Panther'
-    },
-    offers: {
-      '@type': 'Offer',
-      url: product.teepublic_url,
-      priceCurrency: 'USD',
-      availability: 'https://schema.org/InStock',
-    }
+    '@graph': [
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://blackpantherstore.co.za' },
+          { '@type': 'ListItem', position: 2, name: 'All Designs', item: 'https://blackpantherstore.co.za/designs' },
+          { '@type': 'ListItem', position: 3, name: product.title, item: `https://blackpantherstore.co.za/design/${product.slug}` },
+        ],
+      },
+      {
+        '@type': 'Product',
+        name: product.title,
+        image: product.image_url,
+        description: product.description,
+        brand: {
+          '@type': 'Brand',
+          name: 'TeePublic - The Black Panther'
+        },
+        offers: {
+          '@type': 'Offer',
+          url: product.teepublic_url,
+          priceCurrency: 'USD',
+          availability: 'https://schema.org/InStock',
+        }
+      }
+    ]
   };
 
   return (
@@ -79,15 +98,13 @@ export default async function ProductPage({ params }: Props) {
       />
       
       {/* Breadcrumbs */}
-      <div className="bg-white border-b border-slate-200 py-4">
-        <div className="container mx-auto px-4">
-          <div className="text-sm text-slate-500 flex items-center space-x-2">
-            <Link href="/" className="hover:text-blue-600 transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/designs" className="hover:text-blue-600 transition-colors">Designs</Link>
-            <span>/</span>
-            <span className="text-slate-900 font-medium truncate max-w-xs">{product.title}</span>
-          </div>
+      <div className="bg-white border-b border-slate-200 py-3 px-4">
+        <div className="container mx-auto text-sm text-slate-500 flex items-center gap-2 flex-wrap">
+          <Link href="/" className="hover:text-indigo-600 transition-colors">Home</Link>
+          <span>/</span>
+          <Link href="/designs" className="hover:text-indigo-600 transition-colors">All Designs</Link>
+          <span>/</span>
+          <span className="text-slate-900 font-medium truncate max-w-xs">{product.title}</span>
         </div>
       </div>
 
@@ -113,7 +130,7 @@ export default async function ProductPage({ params }: Props) {
             
             {/* Details Column */}
             <div className="p-8 lg:p-16 flex flex-col justify-center">
-              <div className="inline-block px-3 py-1 bg-blue-50 text-blue-700 font-semibold text-xs rounded-full uppercase tracking-widest mb-6 w-fit">
+              <div className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 font-semibold text-xs rounded-full uppercase tracking-widest mb-6 w-fit">
                 {product.primary_keyword || 'Apparel'}
               </div>
               <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
@@ -126,16 +143,18 @@ export default async function ProductPage({ params }: Props) {
               </div>
 
               {/* Tags */}
-              <div className="mb-10">
-                <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Tags</h3>
-                <div className="flex flex-wrap gap-2">
-                  {product.tags?.split(',').map((tag, i) => (
-                    <span key={i} className="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-sm border border-slate-200">
-                      {tag.trim()}
-                    </span>
-                  ))}
+              {product.tags && (
+                <div className="mb-10">
+                  <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Tags</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {product.tags.split(',').map((tag, i) => (
+                      <span key={i} className="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-sm border border-slate-200">
+                        {tag.trim()}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
               {/* CTA */}
               <div className="mt-auto">
@@ -143,10 +162,12 @@ export default async function ProductPage({ params }: Props) {
                   href={product.teepublic_url} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 text-lg font-bold text-white bg-blue-600 rounded-xl hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                  className="inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 text-lg font-bold text-white bg-indigo-600 rounded-xl hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
                   Buy on TeePublic
-                  <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+                  <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
                 </a>
                 <p className="text-xs text-slate-400 mt-4 text-center lg:text-left">
                   Secure checkout via TeePublic. Available in multiple colors and styles.
@@ -165,7 +186,7 @@ export default async function ProductPage({ params }: Props) {
                 <Link 
                   key={cat.slug} 
                   href={`/${cat.slug}`}
-                  className="px-5 py-2.5 bg-white border border-slate-200 hover:border-blue-300 text-slate-700 hover:text-blue-700 rounded-full font-medium shadow-sm hover:shadow-md transition-all duration-300"
+                  className="px-5 py-2.5 bg-white border border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 rounded-full font-medium shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   {cat.title}
                 </Link>
