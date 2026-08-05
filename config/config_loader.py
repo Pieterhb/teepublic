@@ -27,6 +27,7 @@ class EnrichmentConfig:
     provider: str
     taxonomy_path: str
     api_key: str = ""
+    free_api_key: str = ""
     model: str = "gemini-2.5-flash-lite"
 
 class AppConfig:

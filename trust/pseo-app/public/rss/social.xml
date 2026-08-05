@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Panther Store - Social</title>
+    <link>https://blackpantherstore.co.za</link>
+    <description>Daily featured design from all collections</description>
+    <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 10:48:08 GMT</lastBuildDate>
+    
+    <item>
+      <title><![CDATA[White Cross #4 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/white-cross-4</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/66298593_0/1726907878/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_26_0_x626,s_630,q_90.jpg" alt="Minimalist white cross design on a comfortable t-shirt for Christian faith" />
+        <p>This clean and minimalist white cross design offers a subtle yet powerful statement on any product. Whether printed on t-shirts, hoodies, or home decor items like pillows and tapestries, this timeless symbol adds a touch of elegance and faith to your style or space. Perfect for those who appreciate simplicity and meaningful design.</p>
+      ]]></description>
+      <pubDate>Wed, 05 Aug 2026 10:48:08 GMT</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">social-66298593-2026-08-05</guid>
+    </item>
+  
+  </channel>
+</rss>

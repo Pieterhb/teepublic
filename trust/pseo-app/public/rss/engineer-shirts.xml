@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Panther Store - Engineer Shirts</title>
+    <link>https://blackpantherstore.co.za</link>
+    <description>Daily featured design for Engineer Shirts</description>
+    <atom:link href="https://blackpantherstore.co.za/rss/engineer-shirts.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 10:48:08 GMT</lastBuildDate>
+    
+    <item>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 141 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-141</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/23758297_0/1629278271/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Black Panther NASA Space Badge T-Shirt flat lay" />
+        <p>This badge is one of many that NASA personnel and the astronauts themselves created for space and other missions. The astronauts have been wearing official mission patches since 1965. There are more than 150 such patches, a treasure trove for collectors. Nearly all patches list the crew and display stars and stripes. Many show the space shuttle and the International Space Station. This original NASA badge was modified to a certain extent to make the badge look like a more general looking patch.</p>
+      ]]></description>
+      <pubDate>Wed, 05 Aug 2026 10:48:08 GMT</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">engineer-shirts-23758297-2026-08-05</guid>
+    </item>
+  
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Panther Store - Everyday Shirts</title>
+    <link>https://blackpantherstore.co.za</link>
+    <description>Daily featured design for Everyday Shirts</description>
+    <atom:link href="https://blackpantherstore.co.za/rss/everyday-shirts.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 10:48:08 GMT</lastBuildDate>
+    
+    <item>
+      <title><![CDATA[Motorcycle and Wolf #11 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/motorcycle-and-wolf-11</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/66103275_3/1726561669/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Motorcycle and Wolf #11 T-Shirt featuring a bold biker design" />
+        <p>Unleash your wild side with our striking motorcycle and wolf design, perfect for bikers and those with a rebellious spirit. This bold artwork captures the freedom of the open road and the untamed power of nature, available on a wide range of clothing and home decor products. Whether you're hitting the highway or adding a unique touch to your space, this design is sure to turn heads. From t-shirts and hoodies to wall art and pillows, gear up in style and let your passion for adventure shine. Ready to ride? Bring home this one-of-a-kind piece today!</p>
+      ]]></description>
+      <pubDate>Wed, 05 Aug 2026 10:48:08 GMT</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">everyday-shirts-66103275-2026-08-05</guid>
+    </item>
+  
+  </channel>
+</rss>

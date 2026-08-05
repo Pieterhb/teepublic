@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Panther Store - animals Shirts</title>
+    <link>https://blackpantherstore.co.za</link>
+    <description>Daily featured design for animals Shirts</description>
+    <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 10:48:08 GMT</lastBuildDate>
+    
+    <item>
+      <title><![CDATA[Western Era Pop Art #46 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-pop-art-46</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/60698895_0/1716388663/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Pop Art #46 T-Shirt featuring vibrant cowboy and cowgirl artwork" />
+        <p>Embrace the bold and vibrant spirit of the Western era with our striking pop art piece, where classic frontier imagery meets contemporary artistic flair. This unique artwork captures the dynamic essence of the Wild West into modern-day Pop Art, making it a standout addition to any modern collection.</p>
+      ]]></description>
+      <pubDate>Wed, 05 Aug 2026 10:48:08 GMT</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">animals-shirts-60698895-2026-08-05</guid>
+    </item>
+  
+  </channel>
+</rss>

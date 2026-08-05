@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Black Panther Store - hobbies Shirts</title>
+    <link>https://blackpantherstore.co.za</link>
+    <description>Daily featured design for hobbies Shirts</description>
+    <atom:link href="https://blackpantherstore.co.za/rss/hobbies-shirts.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Aug 2026 10:48:08 GMT</lastBuildDate>
+    
+    <item>
+      <title><![CDATA[France Monster Truck #86 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/france-monster-truck-86</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/61833569_0/1719054601/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="France Monster Truck #86 T-Shirt design featuring high-octane digital art" />
+        <p>Unleash the beast within and ride the wave of adrenaline with our jaw-dropping collection of monster truck images! Perfect for print-on-demand products, these high-octane designs will make you the king of the road. Whether you're a hardcore fan of crushing cars or just love the roar of a V8 engine, our monster truck images are a game-changer for your wardrobe and home decor.</p>
+      ]]></description>
+      <pubDate>Wed, 05 Aug 2026 10:48:08 GMT</pubDate>
+      <!-- The GUID contains today's date so Pinterest knows it's a new daily pin -->
+      <guid isPermaLink="false">hobbies-shirts-61833569-2026-08-05</guid>
+    </item>
+  
+  </channel>
+</rss>

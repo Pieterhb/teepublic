@@ -15,7 +15,8 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return products.map((product) => ({
+  // Limit to top 500 to stay under Cloudflare Pages 20,000-file limit
+  return products.slice(0, 500).map((product) => ({
     slug: product.slug,
   }));
 }
