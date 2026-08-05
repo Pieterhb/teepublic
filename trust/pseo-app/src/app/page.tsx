@@ -22,8 +22,24 @@ export default function HomePage() {
   return (
     <div className="min-h-screen">
       {/* Hero */}
-      <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-indigo-900 text-white py-24 px-4">
-        <div className="container mx-auto text-center max-w-3xl">
+      <section className="relative text-white py-24 px-4 overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          muted
+          loop
+          playsInline
+          poster="/poster-image.jpg"
+        >
+          <source src="/header-video.mp4" type="video/mp4" />
+        </video>
+
+        {/* Dark overlay so white text stays readable */}
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-900/70 via-slate-800/60 to-indigo-900/70" />
+
+        {/* Content */}
+        <div className="relative z-10 container mx-auto text-center max-w-3xl">
           <span className="inline-block px-4 py-1.5 bg-indigo-600/40 border border-indigo-500/50 rounded-full text-sm font-semibold tracking-wider uppercase mb-6">
             4,000+ Exclusive Designs
           </span>
@@ -36,7 +52,9 @@ export default function HomePage() {
           <p className="text-lg text-slate-300 mb-10 leading-relaxed">
             Unique designs on premium T-shirts, hoodies, and more. Every piece tells a story — find yours.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center" id="hero-buttons">
             <Link
               href="/designs"
               className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold text-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
@@ -50,6 +68,44 @@ export default function HomePage() {
               Browse Categories
             </Link>
           </div>
+
+          {/* Search Bar — same width as the two buttons combined */}
+          <form
+            action="/designs"
+            method="GET"
+            className="mt-5 flex items-center gap-2 w-full max-w-lg mx-auto"
+            id="hero-search-form"
+          >
+            <div className="relative flex-1">
+              <svg
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400 pointer-events-none"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z"
+                />
+              </svg>
+              <input
+                id="hero-search-input"
+                type="text"
+                name="q"
+                placeholder="Search designs, categories…"
+                className="w-full pl-12 pr-4 py-3.5 rounded-xl bg-white/15 backdrop-blur-sm border border-white/25 text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:border-transparent transition-all duration-200 text-base"
+              />
+            </div>
+            <button
+              type="submit"
+              id="hero-search-button"
+              className="px-5 py-3.5 bg-indigo-600 hover:bg-indigo-500 rounded-xl font-bold text-white transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg whitespace-nowrap"
+            >
+              Search
+            </button>
+          </form>
         </div>
       </section>
 

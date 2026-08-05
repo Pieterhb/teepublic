@@ -18,9 +18,25 @@ export const metadata: Metadata = {
 
 const PAGE_SIZE = 60;
 
-export default function DesignsPage() {
-  // Show first 60 designs — static page, no server pagination needed for SEO
-  const displayProducts = products.slice(0, PAGE_SIZE);
+export default async function DesignsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ q?: string }>;
+}) {
+  const { q } = await searchParams;
+  const query = q?.trim().toLowerCase() ?? '';
+
+  const filtered = query
+    ? products.filter(
+        (p) =>
+          p.title.toLowerCase().includes(query) ||
+          (p.tags ?? '').toLowerCase().includes(query) ||
+          (p.primary_keyword ?? '').toLowerCase().includes(query) ||
+          (p.description ?? '').toLowerCase().includes(query)
+      )
+    : products;
+
+  const displayProducts = query ? filtered.slice(0, PAGE_SIZE) : products.slice(0, PAGE_SIZE);
   const totalProducts = products.length;
 
   // Breadcrumb schema
@@ -44,14 +60,21 @@ export default function DesignsPage() {
       <div className="bg-slate-900 text-white py-16 px-4">
         <div className="container mx-auto text-center">
           <p className="text-indigo-400 font-semibold tracking-widest uppercase text-sm mb-3">
-            Full Collection
+            {query ? 'Search Results' : 'Full Collection'}
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4">
-            All Designs
+            {query ? `Results for "${q}"` : 'All Designs'}
           </h1>
           <p className="text-slate-300 text-lg max-w-xl mx-auto">
-            Browse all <strong className="text-white">{totalProducts.toLocaleString()}</strong> unique designs from independent artists. Find yours.
+            {query
+              ? <>Found <strong className="text-white">{filtered.length.toLocaleString()}</strong> designs matching your search.</>
+              : <>Browse all <strong className="text-white">{totalProducts.toLocaleString()}</strong> unique designs from independent artists. Find yours.</>}
           </p>
+          {query && (
+            <Link href="/designs" className="inline-block mt-4 text-sm text-indigo-400 hover:text-indigo-300 transition-colors">
+              ← Clear search &amp; show all designs
+            </Link>
+          )}
         </div>
       </div>
 
@@ -68,7 +91,9 @@ export default function DesignsPage() {
         {/* Stats bar */}
         <div className="flex items-center justify-between mb-8">
           <p className="text-slate-600 text-sm">
-            Showing <strong>{displayProducts.length}</strong> of <strong>{totalProducts.toLocaleString()}</strong> designs
+            {query
+              ? <>Showing <strong>{displayProducts.length}</strong> of <strong>{filtered.length.toLocaleString()}</strong> results for &quot;{q}&quot;</>
+              : <>Showing <strong>{displayProducts.length}</strong> of <strong>{totalProducts.toLocaleString()}</strong> designs</>}
           </p>
           <Link href="/categories" className="text-indigo-600 hover:text-indigo-800 text-sm font-semibold transition-colors">
             Browse by Category →
