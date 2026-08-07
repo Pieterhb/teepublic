@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { categories } from '@/lib/data';
 
 export default function Header() {
@@ -10,8 +11,9 @@ export default function Header() {
         
         {/* Left Side: Logo + Internal Nav */}
         <div className="flex items-center gap-8">
-          <Link href="/" className="text-xl font-extrabold tracking-tight hover:text-indigo-300 transition-colors shrink-0">
-            🐾 Black Panther Store
+          <Link href="/" className="flex items-center gap-2 text-xl font-extrabold tracking-tight hover:text-indigo-300 transition-colors shrink-0">
+            <Image src="/logo.png" alt="Black Panther Store" width={40} height={40} className="w-10 h-auto" />
+            Black Panther Store
           </Link>
           <nav className="hidden xl:flex items-center gap-6 text-sm font-medium text-slate-300">
             <Link href="/" className="hover:text-white transition-colors">Home</Link>

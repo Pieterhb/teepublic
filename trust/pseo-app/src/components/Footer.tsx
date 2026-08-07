@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,7 +9,10 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
           <div>
-            <p className="font-bold text-white text-lg mb-2">🐾 Black Panther Store</p>
+            <div className="flex items-center gap-2 mb-2">
+              <Image src="/logo.png" alt="Black Panther Store" width={32} height={32} className="w-8 h-auto" />
+              <p className="font-bold text-white text-lg">Black Panther Store</p>
+            </div>
             <p className="text-sm leading-relaxed">
               Unique designs on premium apparel — supporting independent artists worldwide via TeePublic.
             </p>
