@@ -43,6 +43,15 @@ export const metadata: Metadata = {
       "p:domain_verify": "2cfc6fd4e87222e0a4b329d7c2518c04",
     },
   },
+  icons: {
+    icon: [
+      { url: '/icon.png' },
+      { url: '/apple-icon.png', rel: 'apple-touch-icon' },
+    ],
+    apple: [
+      { url: '/apple-icon.png' }
+    ]
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
