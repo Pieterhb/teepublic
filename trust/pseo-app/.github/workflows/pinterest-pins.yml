@@ -1,0 +1,75 @@
+name: Pinterest Auto-Pins
+
+# Runs every 2 hours at the top of the hour (UTC 00:00, 02:00, 04:00 ... 20:00)
+# then has a 4-hour gap (no run at 22:00) before restarting at 00:00.
+#
+# GitHub Actions cron uses UTC. The schedule below runs every even-numbered hour.
+# The publish-pin.mjs script detects if the current hour has a scheduled board,
+# and exits cleanly (exit code 0) if not — so running at 22:00 is safe.
+
+on:
+  schedule:
+    # Every 2 hours starting at midnight UTC
+    # 00:00, 02:00, 04:00, 06:00, 08:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00, 22:00
+    - cron: '0 */2 * * *'
+
+  # Allow manual triggering from GitHub Actions tab (useful for testing)
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (print what would be pinned without posting)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+      force_hour:
+        description: 'Force a specific UTC hour (0-22) to test a specific board'
+        required: false
+        default: ''
+        type: string
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  publish-pin:
+    name: Publish Pinterest Pin
+    runs-on: ubuntu-latest
+    # Only run on the main branch
+    if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: trust/pseo-app/package-lock.json
+
+      - name: Install dependencies
+        working-directory: trust/pseo-app
+        run: npm ci --prefer-offline
+
+      - name: Publish Pinterest pin
+        working-directory: trust/pseo-app
+        env:
+          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
+          PINTEREST_BOARD_IDS: ${{ secrets.PINTEREST_BOARD_IDS }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+          FORCE_HOUR: ${{ github.event.inputs.force_hour }}
+        run: node scripts/publish-pin.mjs
+
+      - name: Log summary
+        if: always()
+        run: |
+          echo "### Pinterest Pin Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time (UTC):** $(date -u '+%Y-%m-%d %H:%M:%S')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Dry Run:** ${{ github.event.inputs.dry_run || 'false' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Forced Hour:** ${{ github.event.inputs.force_hour || 'none (auto)' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Status:** ${{ job.status }}" >> $GITHUB_STEP_SUMMARY
