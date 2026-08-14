@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 px-4 mt-auto">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-2">
               <Image src="/logo.png" alt="Black Panther Store" width={32} height={32} className="w-8 h-auto" />
@@ -23,6 +23,12 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
               <li><Link href="/designs" className="hover:text-white transition-colors">All Designs</Link></li>
               <li><Link href="/categories" className="hover:text-white transition-colors">All Categories</Link></li>
+            </ul>
+          </div>
+          <div>
+            <p className="font-semibold text-white mb-3">Legal</p>
+            <ul className="space-y-2 text-sm">
+              <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
           <div>
