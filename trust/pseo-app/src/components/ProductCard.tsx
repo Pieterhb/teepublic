@@ -1,23 +1,47 @@
+'use client';
+
 import Image from 'next/image';
-import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+import { useState } from 'react';
 import { Product } from '@/lib/data';
 
 export default function ProductCard({ product }: { product: Product }) {
+  const router = useRouter();
+  const [imageError, setImageError] = useState(false);
+
+  const handleClick = (e: React.MouseEvent) => {
+    // Handle middle click or cmd/ctrl click to open in new tab if possible
+    // though native middle click won't work on divs.
+    if (e.ctrlKey || e.metaKey || e.button === 1) {
+      window.open(`/design/${product.slug}`, '_blank');
+    } else {
+      router.push(`/design/${product.slug}`);
+    }
+  };
+
   return (
-    <Link href={`/design/${product.slug}`} className="group block h-full">
+    <div 
+      onClick={handleClick}
+      onAuxClick={(e) => { if (e.button === 1) handleClick(e); }}
+      className="group block h-full cursor-pointer"
+      role="link"
+      tabIndex={0}
+      onKeyDown={(e) => { if (e.key === 'Enter') handleClick(e as any); }}
+    >
       <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
         <div className="relative aspect-square bg-slate-50 overflow-hidden">
-          {product.image_url ? (
+          {product.image_url && !imageError ? (
             <Image
               src={product.image_url}
               alt={product.image_alt || product.title}
               fill
+              onError={() => setImageError(true)}
               className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           ) : (
-            <div className="flex items-center justify-center h-full w-full bg-slate-100 text-slate-400">
-              No Image
+            <div className="flex items-center justify-center h-full w-full bg-slate-100 text-slate-400 font-medium">
+              Preview Unavailable
             </div>
           )}
           {/* Subtle overlay gradient on hover */}
@@ -41,6 +65,6 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }

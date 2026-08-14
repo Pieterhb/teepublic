@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { products } from '@/lib/data';
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { useSearchParams } from 'next/navigation';
+import ProductCard from '@/components/ProductCard';
 
 const PAGE_SIZE = 60;
 
@@ -12,9 +12,12 @@ export default function DesignsClient() {
   const searchParams = useSearchParams();
   const q = searchParams.get('q') ?? '';
   const [query, setQuery] = useState(q);
+  const [page, setPage] = useState(1);
+  const observerTarget = useRef(null);
 
   useEffect(() => {
     setQuery(q);
+    setPage(1); // Reset page on search
   }, [q]);
 
   const filtered = useMemo(() => {
@@ -29,8 +32,26 @@ export default function DesignsClient() {
     );
   }, [query]);
 
-  const displayProducts = filtered.slice(0, PAGE_SIZE);
+  const displayProducts = filtered.slice(0, PAGE_SIZE * page);
   const totalProducts = products.length;
+  const hasMore = displayProducts.length < filtered.length;
+
+  const handleObserver = useCallback((entries: IntersectionObserverEntry[]) => {
+    const [target] = entries;
+    if (target.isIntersecting && hasMore) {
+      setPage((prev) => prev + 1);
+    }
+  }, [hasMore]);
+
+  useEffect(() => {
+    const element = observerTarget.current;
+    if (!element) return;
+    
+    const observer = new IntersectionObserver(handleObserver, { threshold: 0.1 });
+    observer.observe(element);
+    
+    return () => observer.unobserve(element);
+  }, [handleObserver]);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -93,63 +114,46 @@ export default function DesignsClient() {
         </div>
 
         {/* Product Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {displayProducts.map((product) => (
-            <Link
-              key={product.design_id}
-              href={`/design/${product.slug}`}
-              className="group bg-white rounded-2xl overflow-hidden border border-slate-100 hover:border-indigo-200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <div className="aspect-square bg-slate-100 relative overflow-hidden">
-                {product.image_url && (
-                  <Image
-                    src={product.image_url}
-                    alt={product.image_alt || product.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 20vw"
-                  />
-                )}
-              </div>
-              <div className="p-3">
-                <h2 className="font-semibold text-slate-900 text-xs leading-snug line-clamp-2 group-hover:text-indigo-700 transition-colors">
-                  {product.title}
-                </h2>
-                {product.primary_keyword && (
-                  <span className="inline-block mt-1.5 px-2 py-0.5 text-xs bg-indigo-50 text-indigo-600 rounded-full font-medium">
-                    {product.primary_keyword}
-                  </span>
-                )}
-              </div>
-            </Link>
+            <ProductCard key={product.design_id} product={product} />
           ))}
         </div>
 
-        {/* Note about full catalog */}
-        <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
-          <p className="text-slate-700 text-lg font-semibold mb-2">
-            Looking for something specific?
-          </p>
-          <p className="text-slate-500 text-sm mb-6">
-            Browse by category to find exactly what you&apos;re looking for, or visit our full TeePublic store.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="/categories"
-              className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5"
-            >
-              Browse All 501 Categories
-            </Link>
-            <a
-              href="https://www.teepublic.com/user/theblackpanther"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 font-bold rounded-xl transition-all duration-300"
-            >
-              View Full Store on TeePublic →
-            </a>
+        {/* Infinite Scroll Observer Target */}
+        {hasMore && (
+          <div ref={observerTarget} className="flex justify-center mt-12 py-8">
+            <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
           </div>
-        </div>
+        )}
+
+        {/* Note about full catalog */}
+        {!hasMore && (
+          <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
+            <p className="text-slate-700 text-lg font-semibold mb-2">
+              Looking for something specific?
+            </p>
+            <p className="text-slate-500 text-sm mb-6">
+              Browse by category to find exactly what you&apos;re looking for, or visit our full TeePublic store.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="/categories"
+                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5"
+              >
+                Browse All 501 Categories
+              </Link>
+              <a
+                href="https://www.teepublic.com/user/theblackpanther"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 font-bold rounded-xl transition-all duration-300"
+              >
+                View Full Store on TeePublic →
+              </a>
+            </div>
+          </div>
+        )}
       </main>
     </div>
   );
