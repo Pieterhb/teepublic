@@ -127,7 +127,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <p className="text-indigo-400 font-semibold tracking-widest uppercase mb-4 text-sm">Curated Collection</p>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize">
             {category.title}
           </h1>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
