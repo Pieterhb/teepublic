@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 px-4 mt-auto">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 mb-10">
-          <div>
+        <div className="flex flex-col md:flex-row md:items-start justify-between gap-8 mb-10">
+          <div className="md:max-w-xs">
             <div className="flex items-center gap-2 mb-2">
               <Image src="/logo.png" alt="Black Panther Store" width={32} height={32} className="w-8 h-auto" />
               <p className="font-bold text-white text-lg">Black Panther Store</p>
@@ -31,7 +31,7 @@ export default function Footer() {
               <li><Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
-          <div>
+          <div className="md:max-w-xs">
             <p className="font-semibold text-white mb-3">Shop on TeePublic</p>
             <p className="text-sm leading-relaxed mb-3">
               All designs are sold via TeePublic — secure checkout, worldwide shipping.
