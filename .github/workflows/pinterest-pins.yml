@@ -37,8 +37,8 @@ jobs:
   publish-pin:
     name: Publish Pinterest Pin
     runs-on: ubuntu-latest
-    # Only run on the main branch
-    if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
+    # Only run on the main or master branch
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
 
     # Required so the job can commit pinned_history.json back to the repo
     permissions:
