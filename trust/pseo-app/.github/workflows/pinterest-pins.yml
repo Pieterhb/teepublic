@@ -40,9 +40,17 @@ jobs:
     # Only run on the main branch
     if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
 
+    # Required so the job can commit pinned_history.json back to the repo
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # Use a token that can push commits (needed to save pinned history)
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 1
 
       - name: Set up Node.js
         uses: actions/setup-node@v4

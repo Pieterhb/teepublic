@@ -7,62 +7,69 @@ Complete step-by-step guide to connect the auto-pinning system to your Pinterest
 
 ---
 
+## ⚠️ URGENT: Stop the RSS-based auto-pinning first!
+
+Before activating the proper API-based pinning, you **must** disconnect your Pinterest boards from the RSS feeds. This is what has been creating duplicate pins without going through the API.
+
+**How to disconnect RSS feeds from each board:**
+1. Go to [pinterest.com](https://pinterest.com) and log in
+2. Click on each of your 11 boards (e.g. "Astronomy Shirts")
+3. Click the **pencil/edit icon** on the board
+4. Look for **"RSS feed URL"** or a feed link — **delete it / clear it**
+5. Save the board settings
+6. Repeat for all 11 boards
+
+Once all RSS feeds are removed, **only the GitHub Actions API-based system will create pins** — and that system has full duplicate prevention.
+
+---
+
 ## Understanding Trial vs Standard Access
 
 | | Trial | Standard |
 |---|---|---|
 | **Cost** | Free | Free |
 | **Create Pins** | ✅ Yes | ✅ Yes |
-| **Pins visible publicly?** | ❌ No — sandbox only | ✅ Yes — fully public |
+| **Pins visible publicly?** | ✅ Yes (for your own account) | ✅ Yes — fully public |
 | **Rate limit** | 1,000 requests/day | 100 requests/minute for pin creation |
 | **Purpose** | Build & test your code | Production / real pinning |
-| **Approval** | Immediate | Application required |
+| **Approval** | Application required | Upgrade from Trial |
 
-**The plan:**
-1. Start with **Trial** → build and test everything (pins won't be public yet)
-2. Once it works → apply to upgrade to **Standard** → pins go live publicly
-
-Your automated system creates ~11 pins/day — Standard's 100/minute limit is more than sufficient.
+Your App ID **1600990** has been approved for Trial access. You can start pinning immediately.
 
 ---
 
-## Step 1: Create a Pinterest Developer App
+## Your App Details
+
+- **App ID**: `1600990`
+- **App Name**: BlackPantherStore Auto-Pinner (or as you named it)
+- **Pinterest Account**: [za.pinterest.com/PantherMerch](https://za.pinterest.com/PantherMerch/)
+
+---
+
+## Step 1: Generate an Access Token (using your approved App ID 1600990)
 
 1. Go to **[developers.pinterest.com](https://developers.pinterest.com)**
-2. Log in with the Pinterest account that **owns your boards**
-3. Click **My Apps** → **Create App**
-4. Fill in:
-   - **App name**: `BlackPantherStore Auto-Pinner`
-   - **Description**: Automated Pinterest pinning for blackpantherstore.co.za
-   - **Website URL**: `https://blackpantherstore.co.za`
-   - **Redirect URI**: `https://blackpantherstore.co.za`
-5. Click **Create** and accept the terms
-
-You'll start on **Trial** access automatically.
-
----
-
-## Step 2: Generate an Access Token
-
-1. In your app's dashboard → go to the **"Access token"** tab
-2. Click **Generate access token**
-3. Select these **scopes** (checkboxes):
+2. Log in with your Pinterest account (the one that owns the PantherMerch boards)
+3. Click **My Apps** → find your app with ID `1600990`
+4. Click on the app → go to the **"Access token"** tab
+5. Click **Generate access token**
+6. Select these **scopes** (checkboxes):
    - ✅ `pins:write` — create pins
    - ✅ `boards:read` — read your board IDs
-4. Click **Generate** — copy the token immediately
+7. Click **Generate** — **copy the token immediately** (it won't be shown again)
 
-> **Token expiry**: Trial tokens last **60 days**. Standard tokens can last up to **365 days**. Set a calendar reminder to regenerate before expiry or GitHub Actions will start logging `401 Unauthorized`.
+> **Token expiry**: Trial tokens last **60 days**. Set a calendar reminder to regenerate before expiry — GitHub will email you when a run fails with `401 Unauthorized`.
 
 ---
 
-## Step 3: Find Your Pinterest Board IDs
+## Step 2: Find Your Pinterest Board IDs
 
 You need the numeric ID for each of your 11 boards.
 
 **Use the Pinterest API Explorer:**
 
 1. Go to: [developers.pinterest.com/tools/api-explorer](https://developers.pinterest.com/tools/api-explorer/)
-2. Authenticate with your account
+2. Authenticate with your PantherMerch account
 3. Select **GET /boards** → click **Try it out** → **Execute**
 4. Find your boards in the response. Copy the `id` field for each:
 
@@ -95,9 +102,9 @@ You need the numeric ID for each of your 11 boards.
 
 ---
 
-## Step 4: Build the PINTEREST_BOARD_IDS JSON
+## Step 3: Build the PINTEREST_BOARD_IDS JSON
 
-Create a single-line JSON object mapping each slug → its board ID.  
+Create a single-line JSON object mapping each slug → its board ID.
 Replace the placeholder numbers with your real board IDs:
 
 ```json
@@ -106,21 +113,21 @@ Replace the placeholder numbers with your real board IDs:
 
 ---
 
-## Step 5: Add Secrets to GitHub
+## Step 4: Add Secrets to GitHub
 
 1. Go to: **[github.com/Pieterhb/teepublic/settings/secrets/actions](https://github.com/Pieterhb/teepublic/settings/secrets/actions)**
 2. Click **New repository secret** — add these two:
 
 | Secret Name | Value |
 |---|---|
-| `PINTEREST_ACCESS_TOKEN` | The token from Step 2 |
-| `PINTEREST_BOARD_IDS` | The full JSON from Step 4 |
+| `PINTEREST_ACCESS_TOKEN` | The token from Step 1 |
+| `PINTEREST_BOARD_IDS` | The full JSON from Step 3 |
 
 GitHub encrypts these — they are never visible after saving.
 
 ---
 
-## Step 6: Test With a Dry Run
+## Step 5: Test With a Dry Run
 
 1. Go to **[github.com/Pieterhb/teepublic/actions](https://github.com/Pieterhb/teepublic/actions)**
 2. Click **"Pinterest Auto-Pins"** workflow on the left
@@ -133,8 +140,9 @@ GitHub encrypts these — they are never visible after saving.
 You should see output like:
 ```
 🎯 Targeting board: astronomy-shirts (UTC hour 0)
-📅 Day index since launch: 5
-📌 Category "Astronomy Shirts": product index 5 of 585
+📅 Day index since launch: 11
+📚 Loaded pinned history: 0 design(s) already pinned.
+📌 Category "Astronomy Shirts": product index 11 of 585
 📋 Pin details:
    Title   : Deep Space - Light Blue T-Shirt
    Board ID: 1234567890123456789
@@ -144,7 +152,7 @@ You should see output like:
 
 ---
 
-## Step 7: Send Your First Real Pin
+## Step 6: Send Your First Real Pin
 
 Once dry run looks good:
 
@@ -154,20 +162,28 @@ Once dry run looks good:
 4. Click **Run workflow**
 5. Check your Pinterest board — the pin should appear within seconds
 
-> **Trial note**: During Trial access, the pin will only be visible to you (sandbox). This is expected. Once you upgrade to Standard, all pins become public.
-
 ---
 
-## Step 8: Apply for Standard Access
+## Step 7: Apply for Standard Access (Optional — for public pins)
 
-Once your automation is tested and working:
+Your Trial access already creates real, visible pins on your own account. Standard access is mainly needed for enterprise-level rate limits.
 
+If you want to upgrade:
 1. In your Pinterest Developer dashboard → click **"Request upgrade"** or **"Apply for Standard"**
 2. Fill out the short form explaining your use case:
    - "Automated pinning to promote t-shirt designs on blackpantherstore.co.za"
    - "~11 pins per day across 11 boards, scheduled every 2 hours"
 3. Pinterest typically approves standard access within a few days
-4. Once approved, all future pins (and backdated ones) become public
+
+---
+
+## How Duplicate Prevention Works
+
+Every time a pin is successfully posted via the API, the `design_id` is recorded in `data/pinned_history.json`. This file is committed back to the GitHub repository after every successful pin.
+
+**Key guarantee**: A `design_id` that appears in `pinned_history.json` will **NEVER** be pinned again — not on the same board, not on any other board. The script scans forward through the product list to find the next un-pinned product.
+
+To inspect what has been pinned: [data/pinned_history.json](file:///c:/teepublic/trust/pseo-app/data/pinned_history.json)
 
 ---
 
@@ -175,7 +191,7 @@ Once your automation is tested and working:
 
 ### Renewing your access token (before expiry)
 
-1. In the Pinterest Developer dashboard → **Access token** tab → **Generate access token**
+1. In the Pinterest Developer dashboard → app `1600990` → **Access token** tab → **Generate access token**
 2. Use the same scopes (`pins:write`, `boards:read`)
 3. Copy the new token
 4. Update `PINTEREST_ACCESS_TOKEN` in GitHub secrets
@@ -201,13 +217,15 @@ Each run shows a summary with the pin status, board targeted, and timestamp.
 | `No pin scheduled for UTC hour 22` | Normal — 4-hour gap | No action needed |
 | `Category not found: [slug]` | Slug typo in BOARD_SCHEDULE | Check slugs match `data/categories.json` |
 | `No board ID found for slug` | Missing entry in PINTEREST_BOARD_IDS | Add the missing slug to the JSON secret |
+| `All products already pinned` | Entire category exhausted | Add more products or check pinned_history.json |
 
 ---
 
-## What to Delete
+## What to Delete / Clean Up
 
 Now that GitHub Actions handles everything:
 
+- ✅ **Remove RSS feed URLs from all Pinterest boards** — the RSS feeds were causing duplicate pins
 - ✅ **Delete your cron-job.com account** — no longer needed
 - ✅ **Delete your Make.com account/scenarios** — no longer needed
 - ✅ The `MAKE_WEBHOOK_URL` env var has already been removed from the codebase

@@ -13,11 +13,19 @@
  * Optional environment variables:
  *   DRY_RUN=true            — Print what would be pinned without actually posting
  *   FORCE_HOUR=N            — Override the current UTC hour for testing (0-22)
+ *
+ * Duplicate prevention:
+ *   A JSON file (data/pinned_history.json) tracks every design_id that has ever
+ *   been pinned to Pinterest. Once a design_id appears in that file it will NEVER
+ *   be pinned again — regardless of which board is targeted.
+ *   The file is committed back to the repository after each successful pin so the
+ *   history persists across GitHub Actions runs.
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -79,9 +87,33 @@ try {
 
 const productsPath = path.join(__dirname, '..', 'data', 'products.json');
 const categoriesPath = path.join(__dirname, '..', 'data', 'categories.json');
+const pinnedHistoryPath = path.join(__dirname, '..', 'data', 'pinned_history.json');
 
 const products = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
 const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
+
+// ── Load pinned history (duplicate prevention) ─────────────────────────────────
+
+/**
+ * pinnedHistory is a Set of design_id strings that have already been pinned.
+ * Once a design_id is in here it will NEVER be pinned again on any board.
+ */
+let pinnedHistory;
+if (fs.existsSync(pinnedHistoryPath)) {
+  try {
+    const raw = JSON.parse(fs.readFileSync(pinnedHistoryPath, 'utf8'));
+    // Support both array format and {pinnedIds: [...]} format
+    const ids = Array.isArray(raw) ? raw : (raw.pinnedIds || []);
+    pinnedHistory = new Set(ids.map(String));
+    console.log(`📚 Loaded pinned history: ${pinnedHistory.size} design(s) already pinned.`);
+  } catch (e) {
+    console.warn(`⚠️  Could not parse pinned_history.json (${e.message}). Starting fresh.`);
+    pinnedHistory = new Set();
+  }
+} else {
+  console.log('📚 No pinned history found — starting fresh.');
+  pinnedHistory = new Set();
+}
 
 // ── Determine which board to pin to ───────────────────────────────────────────
 
@@ -100,7 +132,7 @@ if (!scheduleEntry) {
 const targetSlug = scheduleEntry.slug;
 console.log(`🎯 Targeting board: ${targetSlug} (UTC hour ${currentHour})`);
 
-// ── Calculate which product to pin (day-based index) ──────────────────────────
+// ── Calculate which product to pin (day-based index with duplicate skipping) ──
 
 const msPerDay = 1000 * 60 * 60 * 24;
 // Use noon UTC for stable day calculation (avoids DST edge cases)
@@ -114,17 +146,34 @@ if (dayIndex < 0) {
 
 console.log(`📅 Day index since launch: ${dayIndex}`);
 
-// ── Find the product to pin ────────────────────────────────────────────────────
+// ── Find the product to pin (with duplicate-prevention) ───────────────────────
 
+/**
+ * Get the candidate product list for the target board/slug, then find the
+ * first product (starting from the day-index position) that has NOT yet been
+ * pinned to Pinterest on ANY board.
+ *
+ * This means the day-index acts as a "starting cursor" — if that product was
+ * already pinned (e.g. by a previous RSS-feed import), we advance forward
+ * through the list until we find a fresh one.
+ */
 let productToPin = null;
 let boardName = '';
 
 if (targetSlug === 'social') {
-  // For the social board: cycle through all products
-  const index = dayIndex % products.length;
-  productToPin = products[index];
+  // For the social board: cycle through all products globally
   boardName = 'social';
-  console.log(`📌 Social board: product index ${index} of ${products.length}`);
+  const startIndex = dayIndex % products.length;
+  // Scan forward from startIndex to find the first un-pinned product
+  for (let offset = 0; offset < products.length; offset++) {
+    const candidate = products[(startIndex + offset) % products.length];
+    if (!pinnedHistory.has(String(candidate.design_id))) {
+      productToPin = candidate;
+      const resolvedIndex = (startIndex + offset) % products.length;
+      console.log(`📌 Social board: product index ${resolvedIndex} of ${products.length}${offset > 0 ? ` (skipped ${offset} already-pinned)` : ''}`);
+      break;
+    }
+  }
 } else {
   const category = categories.find(c => c.slug === targetSlug);
   if (!category) {
@@ -142,15 +191,23 @@ if (targetSlug === 'social') {
     process.exit(1);
   }
 
-  // Cycle through products for this category using modulo (never runs out)
-  const index = dayIndex % categoryProducts.length;
-  productToPin = categoryProducts[index];
-  console.log(`📌 Category "${category.title}": product index ${index} of ${categoryProducts.length}`);
+  const startIndex = dayIndex % categoryProducts.length;
+  // Scan forward from startIndex to find the first un-pinned product for this category
+  for (let offset = 0; offset < categoryProducts.length; offset++) {
+    const candidate = categoryProducts[(startIndex + offset) % categoryProducts.length];
+    if (!pinnedHistory.has(String(candidate.design_id))) {
+      productToPin = candidate;
+      const resolvedIndex = (startIndex + offset) % categoryProducts.length;
+      console.log(`📌 Category "${category.title}": product index ${resolvedIndex} of ${categoryProducts.length}${offset > 0 ? ` (skipped ${offset} already-pinned)` : ''}`);
+      break;
+    }
+  }
 }
 
 if (!productToPin) {
-  console.error('❌ Failed to resolve product to pin.');
-  process.exit(1);
+  console.warn(`⚠️  All products for board "${targetSlug}" have already been pinned. Nothing new to post.`);
+  console.warn('   Consider adding more products or resetting pinned_history.json.');
+  process.exit(0);
 }
 
 // ── Resolve the Pinterest Board ID ────────────────────────────────────────────
@@ -183,6 +240,7 @@ console.log('   Title   :', pinPayload.title);
 console.log('   Board ID:', boardId);
 console.log('   Link    :', pinPayload.link);
 console.log('   Image   :', pinPayload.media_source.url);
+console.log('   Design  :', productToPin.design_id, '(will be added to pinned history)');
 
 // ── Dry run mode ──────────────────────────────────────────────────────────────
 
@@ -214,6 +272,33 @@ if (response.ok) {
   console.log('   Pin ID:', result?.id || '(unknown)');
   console.log('   Board :', boardName);
   console.log('   Day   :', dayIndex);
+
+  // ── Record this design_id in pinned history ──────────────────────────────
+  pinnedHistory.add(String(productToPin.design_id));
+  const historyData = {
+    lastUpdated: new Date().toISOString(),
+    totalPinned: pinnedHistory.size,
+    pinnedIds: Array.from(pinnedHistory),
+  };
+
+  if (!DRY_RUN) {
+    fs.writeFileSync(pinnedHistoryPath, JSON.stringify(historyData, null, 2));
+    console.log(`\n💾 Updated pinned_history.json (${pinnedHistory.size} total pinned design IDs).`);
+
+    // Commit the updated history file back to the repo so it persists
+    try {
+      execSync('git config user.email "github-actions[bot]@users.noreply.github.com"', { stdio: 'inherit' });
+      execSync('git config user.name "github-actions[bot]"', { stdio: 'inherit' });
+      execSync(`git add "${pinnedHistoryPath}"`, { stdio: 'inherit' });
+      execSync(`git commit -m "chore: record pinned design ${productToPin.design_id} [skip ci]"`, { stdio: 'inherit' });
+      execSync('git push', { stdio: 'inherit' });
+      console.log('📤 Committed pinned_history.json to repository.');
+    } catch (gitErr) {
+      console.warn('⚠️  Could not commit pinned_history.json to git:', gitErr.message);
+      console.warn('   The pin was still published successfully. Manually commit data/pinned_history.json.');
+    }
+  }
+
 } else {
   console.error(`\n❌ Pinterest API returned status ${response.status}`);
   console.error('   Response:', responseText);
