@@ -12,5 +12,6 @@
 - **Live URL**: https://blackpantherstore.co.za
 
 ## App Architecture
-- Run `npm run build` to compile and export static pages to `out/`.
-- Pinterest automatic pinning is controlled by `.github/workflows/pinterest-pins.yml` and `scripts/publish-pin.mjs`.
+- The Next.js static export web app lives under `trust/pseo-app/`.
+- Run `npm run build` inside `trust/pseo-app` to compile and export static pages to `out/`.
+- Pinterest automatic pinning is controlled by `.github/workflows/pinterest-pins.yml` and `trust/pseo-app/scripts/publish-pin.mjs`.
