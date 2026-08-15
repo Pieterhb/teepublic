@@ -60,7 +60,9 @@ const PINTEREST_API_BASE = 'https://api.pinterest.com/v5';
 const ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN;
 const BOARD_IDS_JSON = process.env.PINTEREST_BOARD_IDS;
 const DRY_RUN = process.env.DRY_RUN === 'true';
-const FORCE_HOUR = process.env.FORCE_HOUR !== undefined ? parseInt(process.env.FORCE_HOUR, 10) : null;
+const rawForceHour = process.env.FORCE_HOUR ? process.env.FORCE_HOUR.trim() : '';
+const parsedForceHour = rawForceHour !== '' ? parseInt(rawForceHour, 10) : null;
+const FORCE_HOUR = (parsedForceHour !== null && !isNaN(parsedForceHour)) ? parsedForceHour : null;
 
 if (!ACCESS_TOKEN) {
   console.error('❌ PINTEREST_ACCESS_TOKEN environment variable is not set.');
@@ -118,7 +120,9 @@ if (fs.existsSync(pinnedHistoryPath)) {
 // ── Determine which board to pin to ───────────────────────────────────────────
 
 const now = new Date();
-const currentHour = FORCE_HOUR !== null ? FORCE_HOUR : now.getUTCHours();
+// When running automatically on schedule, round to the nearest scheduled even hour
+// (e.g. 08:35 UTC maps to hour 8, 10:28 UTC maps to hour 10) to account for GitHub Actions queue delays
+const currentHour = FORCE_HOUR !== null ? FORCE_HOUR : Math.floor(now.getUTCHours() / 2) * 2;
 
 // Find the matching schedule entry for this hour
 const scheduleEntry = BOARD_SCHEDULE.find(entry => entry.hour === currentHour);
@@ -291,7 +295,7 @@ if (response.ok) {
       execSync('git config user.name "github-actions[bot]"', { stdio: 'inherit' });
       execSync(`git add "${pinnedHistoryPath}"`, { stdio: 'inherit' });
       execSync(`git commit -m "chore: record pinned design ${productToPin.design_id} [skip ci]"`, { stdio: 'inherit' });
-      execSync('git push', { stdio: 'inherit' });
+      execSync('git push origin HEAD', { stdio: 'inherit' });
       console.log('📤 Committed pinned_history.json to repository.');
     } catch (gitErr) {
       console.warn('⚠️  Could not commit pinned_history.json to git:', gitErr.message);
