@@ -20,6 +20,9 @@ ENV/
 # Data & database files (large / sensitive)
 data/
 db/*.db
+# Exception: Pinterest pinned history must be tracked in git (persists across CI runs)
+!trust/pseo-app/data/
+!trust/pseo-app/data/pinned_history.json
 db/*.sqlite
 db/*.sqlite3
 downloaded_files/
