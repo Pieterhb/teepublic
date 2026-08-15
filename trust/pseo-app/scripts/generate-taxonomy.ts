@@ -8,10 +8,24 @@ const INTERNAL_LINKS_FILE = path.join(DATA_DIR, 'internalLinks.json');
 
 const MIN_PRODUCTS_PER_PAGE = 5;
 
-// Helpers to format slug
+// Helpers to format slug and title
 function sluggify(text: string) {
   if (!text) return '';
   return text.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+}
+
+function titleCase(text: string) {
+  if (!text) return '';
+  return text
+    .trim()
+    .split(/\s+/)
+    .map(word => {
+      if (word.includes('-')) {
+        return word.split('-').map(part => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()).join('-');
+      }
+      return word.charAt(0).toUpperCase() + word.slice(1);
+    })
+    .join(' ');
 }
 
 function main() {
@@ -29,7 +43,8 @@ function main() {
 
   function addProductToCategory(product: any, rawTitle: string, suffix: string = 'Shirts') {
     if (!rawTitle || rawTitle.trim() === '' || rawTitle.toLowerCase() === 'nan') return;
-    const title = `${rawTitle.trim()} ${suffix}`;
+    const formattedRaw = titleCase(rawTitle);
+    const title = suffix ? `${formattedRaw} ${suffix}`.trim() : formattedRaw;
     const slug = sluggify(title);
     if (!categoryMap.has(slug)) {
       categoryMap.set(slug, { title, slug, products: [] });

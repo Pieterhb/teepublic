@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - animals Shirts</title>
+    <title>Black Panther Store - Animals Shirts</title>
     <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for animals Shirts</description>
+    <description>Daily featured design for Animals Shirts</description>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 14 Aug 2026 16:47:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 08:34:24 GMT</lastBuildDate>
     
+    <item>
+      <title><![CDATA[The Black Panther - Secret of the White Witch (Unique Art) T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/the-black-panther-secret-of-the-white-witch-unique</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/8329354_1/1587401353/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Secret of the White Witch Unique Art T-Shirt" />
+        <p>This art is the front cover of an Afrikaans series of books from the 1980's, called "Die Swart Luiperd Reeks". The authors of this particular series was Braam le Roux and Meiring Fouche. This cover is the 18th story book in this exciting series.</p>
+      ]]></description>
+      <pubDate>Sat, 15 Aug 2026 04:00:00 GMT</pubDate>
+      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
+      <guid isPermaLink="false">animals-shirts-8329354-2026-08-15</guid>
+    </item>
+  
     <item>
       <title><![CDATA[The Black Panther - Adventure in the Kongo (Unique Art) T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/the-black-panther-adventure-in-the-kongo-unique-ar</link>

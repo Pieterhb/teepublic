@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - hobbies Shirts</title>
+    <title>Black Panther Store - Hobbies Shirts</title>
     <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for hobbies Shirts</description>
+    <description>Daily featured design for Hobbies Shirts</description>
     <atom:link href="https://blackpantherstore.co.za/rss/hobbies-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 14 Aug 2026 16:47:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 08:34:24 GMT</lastBuildDate>
     
+    <item>
+      <title><![CDATA[Motorcycle and Wolf #11 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/motorcycle-and-wolf-11</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/66103275_3/1726561669/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Motorcycle and Wolf #11 T-Shirt featuring a bold biker design" />
+        <p>Unleash your wild side with our striking motorcycle and wolf design, perfect for bikers and those with a rebellious spirit. This bold artwork captures the freedom of the open road and the untamed power of nature, available on a wide range of clothing and home decor products. Whether you're hitting the highway or adding a unique touch to your space, this design is sure to turn heads. From t-shirts and hoodies to wall art and pillows, gear up in style and let your passion for adventure shine. Ready to ride? Bring home this one-of-a-kind piece today!</p>
+      ]]></description>
+      <pubDate>Sat, 15 Aug 2026 02:00:00 GMT</pubDate>
+      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
+      <guid isPermaLink="false">hobbies-shirts-66103275-2026-08-15</guid>
+    </item>
+  
     <item>
       <title><![CDATA[Motorcycle and Wolf #17 T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/motorcycle-and-wolf-17</link>

@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - professions Shirts</title>
+    <title>Black Panther Store - Professions Shirts</title>
     <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for professions Shirts</description>
+    <description>Daily featured design for Professions Shirts</description>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 14 Aug 2026 16:47:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 08:34:24 GMT</lastBuildDate>
     
+    <item>
+      <title><![CDATA[Western Era - Sheriff Badge 2 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-sheriff-badge-2</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/11604463_0/1592921306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Sheriff Badge 2 T-Shirt Design" />
+        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
+      ]]></description>
+      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
+      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
+      <guid isPermaLink="false">professions-shirts-11604463-2026-08-15</guid>
+    </item>
+  
     <item>
       <title><![CDATA[Western Era - Cowboy with Hat and Neckerchief T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-era-cowboy-with-hat-and-neckerchief</link>

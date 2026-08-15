@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - science Shirts</title>
+    <title>Black Panther Store - Science Shirts</title>
     <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for science Shirts</description>
+    <description>Daily featured design for Science Shirts</description>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 14 Aug 2026 16:47:46 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 15 Aug 2026 08:34:24 GMT</lastBuildDate>
     
+    <item>
+      <title><![CDATA[Fourier Transform Deinonychus - Math Dinosaur T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/fourier-transform-deinonychus-math-dinosaur</link>
+      <description><![CDATA[
+        <img src="https://images.teepublic.com/derived/production/designs/94199749_0/1781617398/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_52_0_x626,s_630,q_90.jpg" alt="Green neon Fourier Transform Deinonychus dinosaur graphic t-shirt" />
+        <p>This design was created using a custom-coded application programmed to trace the Deinonychus outline using Fourier transform math. Rather than a standard text-to-image AI generation, this piece features authentic mathematical plotting, with the body details filled in using the actual FFT equations from the process.</p>
+      ]]></description>
+      <pubDate>Sat, 15 Aug 2026 18:00:00 GMT</pubDate>
+      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
+      <guid isPermaLink="false">science-shirts-94199749-2026-08-15</guid>
+    </item>
+  
     <item>
       <title><![CDATA[Bigfoot Is Imaginary - Math Makes Him Real T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/bigfoot-is-imaginary-math-makes-him-real</link>
