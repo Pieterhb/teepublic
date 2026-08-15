@@ -313,8 +313,15 @@ if (response.ok) {
     console.error('   Generate a new token at: https://developers.pinterest.com/tools/access-token/');
     console.error('   Then update the PINTEREST_ACCESS_TOKEN secret in GitHub Actions.');
   } else if (response.status === 403) {
-    console.error('\n💡 Status 403 = Insufficient permissions.');
-    console.error('   Make sure your Pinterest app has "pins:write" and "boards:read" scopes.');
+    if (responseText.includes('Trial access may not create Pins in production')) {
+      console.error('\n💡 Status 403 = Your Pinterest app has "Trial" access, which is limited to the sandbox API.');
+      console.error('   To post live pins to your real Pinterest boards (api.pinterest.com), you must upgrade to Standard Access.');
+      console.error('   Go to: https://developers.pinterest.com/apps/');
+      console.error('   Select your app (1600990) -> Click "Upgrade to Standard Access" / "Apply for Production".');
+    } else {
+      console.error('\n💡 Status 403 = Insufficient permissions.');
+      console.error('   Make sure your Pinterest token was generated with "pins:write" and "boards:write" scopes.');
+    }
   } else if (response.status === 422) {
     console.error('\n💡 Status 422 = Invalid pin data (e.g. bad board_id or image URL).');
     console.error('   Check that your board IDs are correct and the image URL is publicly accessible.');

@@ -25,16 +25,19 @@ Once all RSS feeds are removed, **only the GitHub Actions API-based system will 
 
 ## Understanding Trial vs Standard Access
 
-| | Trial | Standard |
+| | Trial Access (Current) | Standard Access (Required for Live Pins) |
 |---|---|---|
 | **Cost** | Free | Free |
-| **Create Pins** | ✅ Yes | ✅ Yes |
-| **Pins visible publicly?** | ✅ Yes (for your own account) | ✅ Yes — fully public |
+| **Sandbox Pins (`api-sandbox.pinterest.com`)** | ✅ Yes | ✅ Yes |
+| **Real Pins on Live Boards (`api.pinterest.com`)** | ❌ No (Pinterest blocks live pins on Trial) | ✅ Yes — creates real live pins on your boards |
 | **Rate limit** | 1,000 requests/day | 100 requests/minute for pin creation |
-| **Purpose** | Build & test your code | Production / real pinning |
-| **Approval** | Application required | Upgrade from Trial |
+| **Purpose** | Development & sandbox testing | Live production pinning to your boards |
+| **How to get** | Default when app created | One-click upgrade form in developer portal |
 
-Your App ID **1600990** has been approved for Trial access. You can start pinning immediately.
+> **Pinterest API Error on Trial:**
+> `{"code":29,"message":"Apps with Trial access may not create Pins in production https://api.pinterest.com - use API Sandbox https://api-sandbox.pinterest.com instead."}`
+>
+> Therefore, to post pins to your live Pinterest account ([za.pinterest.com/PantherMerch](https://za.pinterest.com/PantherMerch/)), you must complete the quick upgrade to **Standard Access**.
 
 ---
 
