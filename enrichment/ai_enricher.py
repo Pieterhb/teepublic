@@ -45,7 +45,7 @@ Please output a JSON object containing EXACTLY the following keys:
 - h1 (the page's primary heading)
 - meta_description (~155 characters, compelling and descriptive)
 - image_alt (ALT text for the design image)
-- canonical_url (URL path only, e.g. /designs/cool-dinosaur-shirt)
+- canonical_url (URL path only, e.g. /design/cool-dinosaur-shirt)
 - jsonld_type (Schema.org type, e.g. Product)
 
 Respond ONLY with valid JSON. No markdown, no code block, just the JSON object.

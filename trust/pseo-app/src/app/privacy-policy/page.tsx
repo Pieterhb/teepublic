@@ -3,7 +3,20 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy | Black Panther Store',
-  description: 'Privacy Policy for Black Panther Store.',
+  description: 'Privacy Policy and data protection standards for Black Panther Store.',
+  alternates: {
+    canonical: 'https://blackpantherstore.co.za/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Black Panther Store',
+    description: 'Privacy Policy and data protection standards for Black Panther Store.',
+    url: 'https://blackpantherstore.co.za/privacy-policy',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Black Panther Store',
+    description: 'Privacy Policy and data protection standards for Black Panther Store.',
+  },
 };
 
 export default function PrivacyPolicyPage() {

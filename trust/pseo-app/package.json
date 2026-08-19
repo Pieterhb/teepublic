@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-rss.mjs && next build",
+    "build": "node scripts/generate-rss.mjs && npx tsx scripts/generate-sitemaps.ts && next build",
+    "sitemap": "npx tsx scripts/generate-sitemaps.ts",
     "pin": "node scripts/publish-pin.mjs",
     "pin:dry": "node -e \"process.env.DRY_RUN='true'; import('./scripts/publish-pin.mjs')\"",
     "start": "next start",

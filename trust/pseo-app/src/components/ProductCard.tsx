@@ -1,32 +1,17 @@
 'use client';
 
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import { useState } from 'react';
 import { Product } from '@/lib/data';
 
 export default function ProductCard({ product }: { product: Product }) {
-  const router = useRouter();
   const [imageError, setImageError] = useState(false);
 
-  const handleClick = (e: React.MouseEvent) => {
-    // Handle middle click or cmd/ctrl click to open in new tab if possible
-    // though native middle click won't work on divs.
-    if (e.ctrlKey || e.metaKey || e.button === 1) {
-      window.open(`/design/${product.slug}`, '_blank');
-    } else {
-      router.push(`/design/${product.slug}`);
-    }
-  };
-
   return (
-    <div 
-      onClick={handleClick}
-      onAuxClick={(e) => { if (e.button === 1) handleClick(e); }}
-      className="group block h-full cursor-pointer"
-      role="link"
-      tabIndex={0}
-      onKeyDown={(e) => { if (e.key === 'Enter') handleClick(e as any); }}
+    <Link 
+      href={`/design/${product.slug}`}
+      className="group block h-full"
     >
       <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
         <div className="relative aspect-square bg-slate-50 overflow-hidden">
@@ -65,6 +50,6 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

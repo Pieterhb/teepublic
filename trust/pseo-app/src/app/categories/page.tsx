@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Browse All 501 Categories | Black Panther Store',
     description: 'From funny to professional, animals to holidays — 501 categories to explore.',
+    url: 'https://blackpantherstore.co.za/categories',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Browse All 501 Categories | Black Panther Store',
+    description: 'From funny to professional, animals to holidays — 501 categories to explore.',
   },
 };
 
@@ -78,9 +84,9 @@ export default function CategoriesPage() {
                 <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-indigo-100 transition-colors">
                   <span className="text-base">🐾</span>
                 </div>
-                <h2 className="font-semibold text-slate-800 text-xs leading-tight capitalize line-clamp-2">
+                <span className="block font-semibold text-slate-800 text-xs leading-tight capitalize line-clamp-2">
                   {cat.title}
-                </h2>
+                </span>
                 <p className="text-xs text-slate-400 mt-1">{cat.productIds.length} designs</p>
               </Link>
             ))}

@@ -14,8 +14,7 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  // Limit to top 200 to stay under Cloudflare Pages 20,000-file limit
-  return categories.slice(0, 200).map((category) => ({
+  return categories.map((category) => ({
     category: category.slug,
   }));
 }
@@ -26,6 +25,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!category) return {};
 
+  const categoryProducts = getProductsForCategory(category.slug);
+  const featuredImage = categoryProducts[0]?.image_url;
+
   return {
     title: `Best ${category.title} — Unique Designs & Apparel`,
     description: `Shop the best ${category.title.toLowerCase()} created by independent artists. Browse ${category.productIds.length}+ unique designs — find the perfect gift or addition to your wardrobe today.`,
@@ -35,11 +37,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs from independent artists.`,
+      url: `https://blackpantherstore.co.za/${category.slug}`,
+      images: featuredImage ? [{ url: featuredImage }] : [],
     },
     twitter: {
       card: 'summary_large_image',
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs.`,
+      images: featuredImage ? [featuredImage] : [],
     },
   };
 }
@@ -89,6 +94,12 @@ export default async function CategoryPage({ params }: Props) {
         description: `Shop the best ${category.title.toLowerCase()} created by independent artists.`,
         url: `https://blackpantherstore.co.za/${category.slug}`,
         numberOfItems: category.productIds.length,
+        itemListElement: products.slice(0, 10).map((p, idx) => ({
+          '@type': 'ListItem',
+          position: idx + 1,
+          url: `https://blackpantherstore.co.za/design/${p.slug}`,
+          name: p.title,
+        })),
       },
       {
         '@type': 'FAQPage',

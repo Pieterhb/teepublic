@@ -22,10 +22,20 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Black Panther Store",
     locale: "en_ZA",
+    url: "https://blackpantherstore.co.za",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Black Panther Store",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     site: "@BlackPantherSA",
+    images: ["/logo.png"],
   },
   robots: {
     index: true,
@@ -54,10 +64,49 @@ export const metadata: Metadata = {
   },
 };
 
+const rootJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://blackpantherstore.co.za/#website",
+      "url": "https://blackpantherstore.co.za",
+      "name": "Black Panther Store",
+      "description": "Discover 4,000+ unique designs on T-shirts, hoodies, and apparel by independent artists.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://blackpantherstore.co.za/designs?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://blackpantherstore.co.za/#organization",
+      "name": "Black Panther Store",
+      "url": "https://blackpantherstore.co.za",
+      "logo": "https://blackpantherstore.co.za/logo.png",
+      "sameAs": [
+        "https://www.teepublic.com/user/theblackpanther",
+        "https://www.redbubble.com/people/Pieterhb/shop",
+        "https://www.redbubble.com/people/Pieterhk/shop",
+        "https://toppopclothing-shop.fourthwall.com/"
+      ]
+    }
+  ]
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <head>
+        {/* Root Structured Data (WebSite & Organization) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(rootJsonLd) }}
+        />
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-10NLJHPKWY"

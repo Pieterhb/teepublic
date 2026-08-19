@@ -76,6 +76,7 @@ export default async function ProductPage({ params }: Props) {
         name: product.title,
         image: product.image_url,
         description: product.description,
+        sku: String(product.design_id),
         brand: {
           '@type': 'Brand',
           name: 'TeePublic - The Black Panther'
@@ -83,8 +84,14 @@ export default async function ProductPage({ params }: Props) {
         offers: {
           '@type': 'Offer',
           url: product.teepublic_url,
+          price: '22.00',
           priceCurrency: 'USD',
+          itemCondition: 'https://schema.org/NewCondition',
           availability: 'https://schema.org/InStock',
+          seller: {
+            '@type': 'Organization',
+            name: 'TeePublic'
+          }
         }
       }
     ]
@@ -146,7 +153,7 @@ export default async function ProductPage({ params }: Props) {
               {/* Tags */}
               {product.tags && (
                 <div className="mb-10">
-                  <h3 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Tags</h3>
+                  <h2 className="text-sm font-semibold text-slate-900 uppercase tracking-wider mb-3">Tags</h2>
                   <div className="flex flex-wrap gap-2">
                     {product.tags.split(',').map((tag, i) => (
                       <span key={i} className="px-3 py-1 bg-slate-100 text-slate-600 rounded-lg text-sm border border-slate-200">
@@ -181,7 +188,7 @@ export default async function ProductPage({ params }: Props) {
         {/* Related Categories Pills */}
         {relatedCategories.length > 0 && (
           <div className="mb-16 text-center">
-            <h3 className="text-xl font-bold text-slate-900 mb-6">Explore Related Collections</h3>
+            <h2 className="text-xl font-bold text-slate-900 mb-6">Explore Related Collections</h2>
             <div className="flex flex-wrap justify-center gap-3">
               {relatedCategories.map(cat => (
                 <Link 

@@ -7,7 +7,18 @@ export const metadata: Metadata = {
   title: "Black Panther Store — Unique Designs on T-Shirts & Apparel",
   description:
     "Discover 4,000+ unique designs on T-shirts, hoodies, and more. Shop the Black Panther Store — exclusive apparel by independent artists, shipped worldwide via TeePublic.",
+  alternates: {
+    canonical: "https://blackpantherstore.co.za",
+  },
   openGraph: {
+    title: "Black Panther Store — Unique T-Shirt & Apparel Designs",
+    description:
+      "4,000+ unique designs from independent artists. Find the perfect tee, hoodie, or gift.",
+    url: "https://blackpantherstore.co.za",
+    images: [products[0]?.image_url ?? ""],
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Black Panther Store — Unique T-Shirt & Apparel Designs",
     description:
       "4,000+ unique designs from independent artists. Find the perfect tee, hoodie, or gift.",
