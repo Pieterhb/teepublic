@@ -86,11 +86,47 @@ export default async function ProductPage({ params }: Props) {
           url: product.teepublic_url,
           price: '22.00',
           priceCurrency: 'USD',
+          priceValidUntil: new Date(new Date().getFullYear() + 1, 0, 1).toISOString().split('T')[0],
           itemCondition: 'https://schema.org/NewCondition',
           availability: 'https://schema.org/InStock',
           seller: {
             '@type': 'Organization',
             name: 'TeePublic'
+          },
+          shippingDetails: {
+            '@type': 'OfferShippingDetails',
+            shippingRate: {
+              '@type': 'MonetaryAmount',
+              value: '0',
+              currency: 'USD'
+            },
+            shippingDestination: {
+              '@type': 'DefinedRegion',
+              addressCountry: 'US'
+            },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 1,
+                maxValue: 3,
+                unitCode: 'DAY'
+              },
+              transitTime: {
+                '@type': 'QuantitativeValue',
+                minValue: 3,
+                maxValue: 7,
+                unitCode: 'DAY'
+              }
+            }
+          },
+          hasMerchantReturnPolicy: {
+            '@type': 'MerchantReturnPolicy',
+            applicableCountry: 'US',
+            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+            merchantReturnDays: 30,
+            returnMethod: 'https://schema.org/ReturnByMail',
+            returnFees: 'https://schema.org/FreeReturn'
           }
         }
       }
