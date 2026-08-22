@@ -1,25 +1,22 @@
 /**
  * publish-pin.mjs
  *
- * Standalone Pinterest pin publisher.
- * Runs via GitHub Actions on a schedule (every 2 hours, UTC 00:00-20:00).
- * Posts directly to the Pinterest API — no Make.com or external webhook needed.
+ * Standalone Pinterest automated pin publisher.
+ * Runs via GitHub Actions 10 times daily (spaced every 2 hours: UTC 04:00 to 22:00).
+ * Posts directly to the Pinterest API v5 — 100% free, no external automation tools.
  *
- * Required environment variables:
- *   PINTEREST_ACCESS_TOKEN  — Your Pinterest OAuth2 access token
- *   PINTEREST_BOARD_IDS     — JSON object mapping board slugs to Pinterest board IDs
- *                             e.g. '{"astronomy-shirts":"123456789","hobbies-shirts":"987654321",...}'
- *
- * Optional environment variables:
- *   DRY_RUN=true            — Print what would be pinned without actually posting
- *   FORCE_HOUR=N            — Override the current UTC hour for testing (0-22)
+ * Environment variables:
+ *   PINTEREST_ACCESS_TOKEN  - Pinterest OAuth 2.0 Access Token
+ *   PINTEREST_BOARD_IDS     - JSON mapping of board slugs/names to Pinterest board IDs
+ *                             e.g. '{"astronomy-shirts":"1094937796846013010",...}'
+ *   DRY_RUN                 - If 'true', logs pin details without posting to API
+ *   FORCE_BOARD             - Optional slug to override target board (e.g. 'astronomy-shirts')
+ *   FORCE_HOUR              - Optional UTC hour (0-23) to test specific schedule slot
  *
  * Duplicate prevention:
- *   A JSON file (data/pinned_history.json) tracks every design_id that has ever
- *   been pinned to Pinterest. Once a design_id appears in that file it will NEVER
- *   be pinned again — regardless of which board is targeted.
- *   The file is committed back to the repository after each successful pin so the
- *   history persists across GitHub Actions runs.
+ *   Tracks every pinned design in data/pinned_history.json.
+ *   Each run picks the next unpinned product for the target board.
+ *   Commits updated history back to the GitHub repository automatically.
  */
 
 import fs from 'fs';
@@ -29,63 +26,65 @@ import { execSync } from 'child_process';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-// ── Configuration ──────────────────────────────────────────────────────────────
+// ── Configuration ─────────────────────────────────────────────────────────────
 
 const SITE_URL = 'https://blackpantherstore.co.za';
-const LAUNCH_DATE = new Date('2026-08-04T00:00:00Z'); // Day 0 of pinning
-
-/**
- * Schedule: 11 boards, one pin per board per day.
- * Each board is pinned at a specific UTC hour (every 2 hrs, starting midnight).
- * After UTC 20:00 there is a 4-hour gap until the next day's cycle begins at UTC 00:00.
- */
-const BOARD_SCHEDULE = [
-  { hour: 0,  slug: 'astronomy-shirts' },
-  { hour: 2,  slug: 'hobbies-shirts' },
-  { hour: 4,  slug: 'animals-shirts' },
-  { hour: 6,  slug: 'minimalist-engineer-shirts' },
-  { hour: 8,  slug: 'minimalist-shirts' },
-  { hour: 10, slug: 'math-shirts' },
-  { hour: 12, slug: 'engineer-shirts' },
-  { hour: 14, slug: 'everyday-shirts' },
-  { hour: 16, slug: 'professions-shirts' },
-  { hour: 18, slug: 'science-shirts' },
-  { hour: 20, slug: 'social' },
-];
-
 const PINTEREST_API_BASE = 'https://api.pinterest.com/v5';
 
-// ── Environment ────────────────────────────────────────────────────────────────
+/**
+ * 10-slot daily posting schedule (UTC hours: 04, 06, 08, 10, 12, 14, 16, 18, 20, 22)
+ * Maps each time slot to one of our 10 product categories.
+ */
+const BOARD_SCHEDULE = [
+  { hour: 4,  slug: 'astronomy-shirts',          title: 'Astronomy Shirts' },
+  { hour: 6,  slug: 'hobbies-shirts',            title: 'Hobbies Shirts' },
+  { hour: 8,  slug: 'animals-shirts',            title: 'Animals Shirts' },
+  { hour: 10, slug: 'minimalist-engineer-shirts', title: 'Minimalist Engineer Shirts' },
+  { hour: 12, slug: 'minimalist-shirts',         title: 'Minimalist Shirts' },
+  { hour: 14, slug: 'math-shirts',               title: 'Math Shirts' },
+  { hour: 16, slug: 'engineer-shirts',           title: 'Engineer Shirts' },
+  { hour: 18, slug: 'everyday-shirts',           title: 'Everyday Shirts' },
+  { hour: 20, slug: 'professions-shirts',        title: 'Professions Shirts' },
+  { hour: 22, slug: 'science-shirts',            title: 'Science Shirts' },
+];
 
-const ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN;
-const BOARD_IDS_JSON = process.env.PINTEREST_BOARD_IDS;
+// ── Environment & Inputs ──────────────────────────────────────────────────────
+
+const ACCESS_TOKEN = process.env.PINTEREST_ACCESS_TOKEN?.trim();
+const BOARD_IDS_JSON = process.env.PINTEREST_BOARD_IDS?.trim();
 const DRY_RUN = process.env.DRY_RUN === 'true';
-const rawForceHour = process.env.FORCE_HOUR ? process.env.FORCE_HOUR.trim() : '';
+const FORCE_BOARD = process.env.FORCE_BOARD?.trim() || null;
+const rawForceHour = process.env.FORCE_HOUR?.trim() || '';
 const parsedForceHour = rawForceHour !== '' ? parseInt(rawForceHour, 10) : null;
 const FORCE_HOUR = (parsedForceHour !== null && !isNaN(parsedForceHour)) ? parsedForceHour : null;
 
-if (!ACCESS_TOKEN) {
-  console.error('❌ PINTEREST_ACCESS_TOKEN environment variable is not set.');
-  console.error('   Get your token from: https://developers.pinterest.com/docs/getting-started/authentication/');
+if (!ACCESS_TOKEN && !DRY_RUN) {
+  console.error('❌ PINTEREST_ACCESS_TOKEN secret is not set.');
+  console.error('   Please add PINTEREST_ACCESS_TOKEN to GitHub repository secrets.');
   process.exit(1);
 }
 
-if (!BOARD_IDS_JSON) {
-  console.error('❌ PINTEREST_BOARD_IDS environment variable is not set.');
-  console.error('   Set it to a JSON object mapping board slugs to Pinterest board IDs.');
-  console.error('   Example: \'{"astronomy-shirts":"123456789","hobbies-shirts":"987654321"}\'');
+let BOARD_IDS = {};
+if (BOARD_IDS_JSON) {
+  try {
+    BOARD_IDS = JSON.parse(BOARD_IDS_JSON);
+  } catch (e) {
+    console.warn(`⚠️ PINTEREST_BOARD_IDS is not valid JSON (${e.message}).`);
+    // Attempt relaxed parsing if simple key=val or unquoted format
+    try {
+      const fixed = BOARD_IDS_JSON.replace(/'/g, '"');
+      BOARD_IDS = JSON.parse(fixed);
+    } catch {
+      console.warn('   Could not auto-fix BOARD_IDS JSON format.');
+    }
+  }
+} else if (!DRY_RUN) {
+  console.error('❌ PINTEREST_BOARD_IDS secret is not set.');
+  console.error('   Add PINTEREST_BOARD_IDS JSON mapping to GitHub repository secrets.');
   process.exit(1);
 }
 
-let BOARD_IDS;
-try {
-  BOARD_IDS = JSON.parse(BOARD_IDS_JSON);
-} catch (e) {
-  console.error('❌ PINTEREST_BOARD_IDS is not valid JSON:', e.message);
-  process.exit(1);
-}
-
-// ── Data Loading ───────────────────────────────────────────────────────────────
+// ── Load Data Files ───────────────────────────────────────────────────────────
 
 const productsPath = path.join(__dirname, '..', 'data', 'products.json');
 const categoriesPath = path.join(__dirname, '..', 'data', 'categories.json');
@@ -94,238 +93,357 @@ const pinnedHistoryPath = path.join(__dirname, '..', 'data', 'pinned_history.jso
 const products = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
 const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
 
-// ── Load pinned history (duplicate prevention) ─────────────────────────────────
+// ── Load Pinned History ───────────────────────────────────────────────────────
 
-/**
- * pinnedHistory is a Set of design_id strings that have already been pinned.
- * Once a design_id is in here it will NEVER be pinned again on any board.
- */
-let pinnedHistory;
+let historyFile = {
+  lastUpdated: new Date().toISOString(),
+  totalPinned: 0,
+  pinnedIds: [],
+  history: []
+};
+
 if (fs.existsSync(pinnedHistoryPath)) {
   try {
     const raw = JSON.parse(fs.readFileSync(pinnedHistoryPath, 'utf8'));
-    // Support both array format and {pinnedIds: [...]} format
-    const ids = Array.isArray(raw) ? raw : (raw.pinnedIds || []);
-    pinnedHistory = new Set(ids.map(String));
-    console.log(`📚 Loaded pinned history: ${pinnedHistory.size} design(s) already pinned.`);
+    if (Array.isArray(raw)) {
+      historyFile.pinnedIds = raw.map(String);
+      historyFile.totalPinned = raw.length;
+    } else {
+      historyFile.pinnedIds = Array.isArray(raw.pinnedIds) ? raw.pinnedIds.map(String) : [];
+      historyFile.totalPinned = historyFile.pinnedIds.length;
+      historyFile.history = Array.isArray(raw.history) ? raw.history : [];
+      historyFile.lastUpdated = raw.lastUpdated || historyFile.lastUpdated;
+    }
+    console.log(`📚 Loaded pinned history: ${historyFile.pinnedIds.length} design(s) already recorded.`);
   } catch (e) {
-    console.warn(`⚠️  Could not parse pinned_history.json (${e.message}). Starting fresh.`);
-    pinnedHistory = new Set();
+    console.warn(`⚠️ Could not parse pinned_history.json (${e.message}). Starting fresh.`);
   }
 } else {
-  console.log('📚 No pinned history found — starting fresh.');
-  pinnedHistory = new Set();
+  console.log('📚 No pinned_history.json found — starting new history tracking.');
 }
 
-// ── Determine which board to pin to ───────────────────────────────────────────
+const pinnedSet = new Set(historyFile.pinnedIds);
+
+// ── Determine Target Board ────────────────────────────────────────────────────
 
 const now = new Date();
-// When running automatically on schedule, round to the nearest scheduled even hour
-// (e.g. 08:35 UTC maps to hour 8, 10:28 UTC maps to hour 10) to account for GitHub Actions queue delays
-const currentHour = FORCE_HOUR !== null ? FORCE_HOUR : Math.floor(now.getUTCHours() / 2) * 2;
+const currentUtcHour = now.getUTCHours();
 
-// Find the matching schedule entry for this hour
-const scheduleEntry = BOARD_SCHEDULE.find(entry => entry.hour === currentHour);
+let targetSlug = null;
+let targetTitle = '';
 
-if (!scheduleEntry) {
-  console.log(`ℹ️  No pin scheduled for UTC hour ${currentHour}. Exiting cleanly.`);
-  console.log(`   Pinning hours are: ${BOARD_SCHEDULE.map(e => e.hour).join(', ')}`);
-  process.exit(0);
+if (FORCE_BOARD) {
+  targetSlug = FORCE_BOARD;
+  const match = BOARD_SCHEDULE.find(b => b.slug === targetSlug) || categories.find(c => c.slug === targetSlug);
+  targetTitle = match?.title || targetSlug;
+  console.log(`🎯 Target board forced via input: "${targetSlug}" (${targetTitle})`);
+} else if (FORCE_HOUR !== null) {
+  const match = BOARD_SCHEDULE.find(b => b.hour === FORCE_HOUR) || BOARD_SCHEDULE[FORCE_HOUR % BOARD_SCHEDULE.length];
+  targetSlug = match.slug;
+  targetTitle = match.title;
+  console.log(`🎯 Target board from forced hour ${FORCE_HOUR} UTC: "${targetSlug}" (${targetTitle})`);
+} else {
+  // Find matching scheduled hour or closest slot
+  const exactMatch = BOARD_SCHEDULE.find(b => b.hour === currentUtcHour);
+  if (exactMatch) {
+    targetSlug = exactMatch.slug;
+    targetTitle = exactMatch.title;
+    console.log(`🎯 Target board for ${currentUtcHour}:00 UTC slot: "${targetSlug}" (${targetTitle})`);
+  } else {
+    // Pick closest slot in schedule so manual / delayed runs always post
+    let closest = BOARD_SCHEDULE[0];
+    let minDiff = 24;
+    for (const item of BOARD_SCHEDULE) {
+      const diff = Math.abs(item.hour - currentUtcHour);
+      if (diff < minDiff) {
+        minDiff = diff;
+        closest = item;
+      }
+    }
+    targetSlug = closest.slug;
+    targetTitle = closest.title;
+    console.log(`🎯 Current hour is ${currentUtcHour}:00 UTC. Closest scheduled slot: "${targetSlug}" (${targetTitle})`);
+  }
 }
 
-const targetSlug = scheduleEntry.slug;
-console.log(`🎯 Targeting board: ${targetSlug} (UTC hour ${currentHour})`);
+// ── Resolve Board ID ──────────────────────────────────────────────────────────
 
-// ── Calculate which product to pin (day-based index with duplicate skipping) ──
+function resolveBoardId(boardIds, slug, title) {
+  if (!boardIds || typeof boardIds !== 'object') return null;
 
-const msPerDay = 1000 * 60 * 60 * 24;
-// Use noon UTC for stable day calculation (avoids DST edge cases)
-const noonToday = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), 12, 0, 0));
-const dayIndex = Math.floor((noonToday - LAUNCH_DATE) / msPerDay);
+  // 1. Direct slug match
+  if (boardIds[slug]) return String(boardIds[slug]);
 
-if (dayIndex < 0) {
-  console.log(`⏳ Too early to pin. Launch date is ${LAUNCH_DATE.toISOString().split('T')[0]}, today is ${now.toISOString().split('T')[0]}`);
-  process.exit(0);
+  // 2. Case-insensitive slug match
+  const lowerSlug = slug.toLowerCase();
+  for (const [k, v] of Object.entries(boardIds)) {
+    if (k.toLowerCase() === lowerSlug) return String(v);
+  }
+
+  // 3. Category title match
+  if (title) {
+    const lowerTitle = title.toLowerCase();
+    for (const [k, v] of Object.entries(boardIds)) {
+      if (k.toLowerCase() === lowerTitle) return String(v);
+      const cleanK = k.toLowerCase().replace(/[^a-z0-9]/g, '');
+      const cleanT = lowerTitle.replace(/[^a-z0-9]/g, '');
+      if (cleanK && cleanK === cleanT) return String(v);
+    }
+  }
+
+  // 4. Default / Fallback keys
+  if (boardIds['default']) return String(boardIds['default']);
+  if (boardIds['all']) return String(boardIds['all']);
+  if (boardIds['social']) return String(boardIds['social']);
+
+  // 5. If only 1 key exists in the mapping, use that board ID
+  const values = Object.values(boardIds);
+  if (values.length === 1) return String(values[0]);
+
+  return null;
 }
 
-console.log(`📅 Day index since launch: ${dayIndex}`);
+const boardId = resolveBoardId(BOARD_IDS, targetSlug, targetTitle);
 
-// ── Find the product to pin (with duplicate-prevention) ───────────────────────
+if (!boardId && !DRY_RUN) {
+  console.error(`❌ Could not find Pinterest Board ID for "${targetSlug}" (${targetTitle}).`);
+  console.error(`   Available keys in PINTEREST_BOARD_IDS: ${JSON.stringify(Object.keys(BOARD_IDS))}`);
+  console.error(`   Please ensure PINTEREST_BOARD_IDS contains "${targetSlug}" or a "default" board ID.`);
+  process.exit(1);
+}
 
-/**
- * Get the candidate product list for the target board/slug, then find the
- * first product (starting from the day-index position) that has NOT yet been
- * pinned to Pinterest on ANY board.
- *
- * This means the day-index acts as a "starting cursor" — if that product was
- * already pinned (e.g. by a previous RSS-feed import), we advance forward
- * through the list until we find a fresh one.
- */
-let productToPin = null;
-let boardName = '';
+// ── Select Next Product to Pin (Duplicate Prevention + Rotation) ──────────────
+
+let candidates = [];
 
 if (targetSlug === 'social') {
-  // For the social board: cycle through all products globally
-  boardName = 'social';
-  const startIndex = dayIndex % products.length;
-  // Scan forward from startIndex to find the first un-pinned product
-  for (let offset = 0; offset < products.length; offset++) {
-    const candidate = products[(startIndex + offset) % products.length];
-    if (!pinnedHistory.has(String(candidate.design_id))) {
-      productToPin = candidate;
-      const resolvedIndex = (startIndex + offset) % products.length;
-      console.log(`📌 Social board: product index ${resolvedIndex} of ${products.length}${offset > 0 ? ` (skipped ${offset} already-pinned)` : ''}`);
-      break;
-    }
-  }
+  candidates = [...products];
 } else {
   const category = categories.find(c => c.slug === targetSlug);
-  if (!category) {
-    console.error(`❌ Category not found: ${targetSlug}. Check your BOARD_SCHEDULE slugs match categories.json.`);
-    process.exit(1);
+  if (category && Array.isArray(category.productIds)) {
+    candidates = category.productIds
+      .map(id => products.find(p => String(p.design_id) === String(id)))
+      .filter(Boolean);
   }
-  boardName = targetSlug;
-
-  const categoryProducts = category.productIds
-    .map(id => products.find(p => String(p.design_id) === String(id)))
-    .filter(Boolean);
-
-  if (categoryProducts.length === 0) {
-    console.error(`❌ No products found for category: ${targetSlug}`);
-    process.exit(1);
-  }
-
-  const startIndex = dayIndex % categoryProducts.length;
-  // Scan forward from startIndex to find the first un-pinned product for this category
-  for (let offset = 0; offset < categoryProducts.length; offset++) {
-    const candidate = categoryProducts[(startIndex + offset) % categoryProducts.length];
-    if (!pinnedHistory.has(String(candidate.design_id))) {
-      productToPin = candidate;
-      const resolvedIndex = (startIndex + offset) % categoryProducts.length;
-      console.log(`📌 Category "${category.title}": product index ${resolvedIndex} of ${categoryProducts.length}${offset > 0 ? ` (skipped ${offset} already-pinned)` : ''}`);
-      break;
-    }
+  if (candidates.length === 0) {
+    console.warn(`⚠️ No specific products found for category slug "${targetSlug}". Using all products.`);
+    candidates = [...products];
   }
 }
 
-if (!productToPin) {
-  console.warn(`⚠️  All products for board "${targetSlug}" have already been pinned. Nothing new to post.`);
-  console.warn('   Consider adding more products or resetting pinned_history.json.');
-  process.exit(0);
-}
-
-// ── Resolve the Pinterest Board ID ────────────────────────────────────────────
-
-const boardId = BOARD_IDS[boardName];
-if (!boardId) {
-  console.error(`❌ No Pinterest board ID found for slug: "${boardName}"`);
-  console.error('   Available board IDs:', JSON.stringify(Object.keys(BOARD_IDS)));
-  console.error('   Add it to PINTEREST_BOARD_IDS in your GitHub Actions secrets.');
-  process.exit(1);
-}
-
-// ── Build the pin payload ──────────────────────────────────────────────────────
-
-const pinPayload = {
-  board_id: boardId,
-  title: productToPin.seo_title || productToPin.title,
-  description: productToPin.meta_description || productToPin.description,
-  link: `${SITE_URL}/design/${productToPin.slug}`,
-  media_source: {
-    source_type: 'image_url',
-    url: productToPin.image_url,
-  },
-  // alt_text for accessibility
-  alt_text: productToPin.image_alt || productToPin.title,
-};
-
-console.log('\n📋 Pin details:');
-console.log('   Title   :', pinPayload.title);
-console.log('   Board ID:', boardId);
-console.log('   Link    :', pinPayload.link);
-console.log('   Image   :', pinPayload.media_source.url);
-console.log('   Design  :', productToPin.design_id, '(will be added to pinned history)');
-
-// ── Dry run mode ──────────────────────────────────────────────────────────────
-
-if (DRY_RUN) {
-  console.log('\n🔍 DRY RUN MODE — Pin NOT sent. Set DRY_RUN=false or unset it to post for real.');
-  console.log('   Full payload:', JSON.stringify(pinPayload, null, 2));
-  process.exit(0);
-}
-
-// ── Post to Pinterest API ─────────────────────────────────────────────────────
-
-console.log('\n🚀 Posting pin to Pinterest...');
-
-const response = await fetch(`${PINTEREST_API_BASE}/pins`, {
-  method: 'POST',
-  headers: {
-    'Authorization': `Bearer ${ACCESS_TOKEN}`,
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify(pinPayload),
+// Sort candidates newest scrape first
+candidates.sort((a, b) => {
+  const da = a.scrape_timestamp ? new Date(a.scrape_timestamp) : new Date(0);
+  const db = b.scrape_timestamp ? new Date(b.scrape_timestamp) : new Date(0);
+  return db - da;
 });
 
-const responseText = await response.text();
+// Filter for unpinned products
+const unpinnedCandidates = candidates.filter(p => !pinnedSet.has(String(p.design_id)));
 
-if (response.ok) {
-  let result;
-  try { result = JSON.parse(responseText); } catch { result = responseText; }
-  console.log(`\n✅ Pin published successfully!`);
-  console.log('   Pin ID:', result?.id || '(unknown)');
-  console.log('   Board :', boardName);
-  console.log('   Day   :', dayIndex);
+let selectedProduct = null;
+let isRecycled = false;
 
-  // ── Record this design_id in pinned history ──────────────────────────────
-  pinnedHistory.add(String(productToPin.design_id));
-  const historyData = {
-    lastUpdated: new Date().toISOString(),
-    totalPinned: pinnedHistory.size,
-    pinnedIds: Array.from(pinnedHistory),
-  };
-
-  if (!DRY_RUN) {
-    fs.writeFileSync(pinnedHistoryPath, JSON.stringify(historyData, null, 2));
-    console.log(`\n💾 Updated pinned_history.json (${pinnedHistory.size} total pinned design IDs).`);
-
-    // Commit the updated history file back to the repo so it persists
-    try {
-      execSync('git config user.email "github-actions[bot]@users.noreply.github.com"', { stdio: 'inherit' });
-      execSync('git config user.name "github-actions[bot]"', { stdio: 'inherit' });
-      execSync(`git add "${pinnedHistoryPath}"`, { stdio: 'inherit' });
-      execSync(`git commit -m "chore: record pinned design ${productToPin.design_id} [skip ci]"`, { stdio: 'inherit' });
-      execSync('git push origin HEAD', { stdio: 'inherit' });
-      console.log('📤 Committed pinned_history.json to repository.');
-    } catch (gitErr) {
-      console.warn('⚠️  Could not commit pinned_history.json to git:', gitErr.message);
-      console.warn('   The pin was still published successfully. Manually commit data/pinned_history.json.');
-    }
-  }
-
+if (unpinnedCandidates.length > 0) {
+  selectedProduct = unpinnedCandidates[0];
+  console.log(`✨ Found ${unpinnedCandidates.length} unpinned product(s) for "${targetSlug}". Selected: ${selectedProduct.title} (ID: ${selectedProduct.design_id})`);
 } else {
-  console.error(`\n❌ Pinterest API returned status ${response.status}`);
-  console.error('   Response:', responseText);
+  // All products for this board have been pinned once!
+  // Cycle back to the least recently pinned product so the automation never halts.
+  console.log(`🔄 All ${candidates.length} products for "${targetSlug}" have been pinned. Rotating to least-recently pinned item.`);
+  isRecycled = true;
 
-  // Provide helpful error guidance
-  if (response.status === 401) {
-    console.error('\n💡 Status 401 = Invalid or expired access token.');
-    console.error('   Generate a new token at: https://developers.pinterest.com/tools/access-token/');
-    console.error('   Then update the PINTEREST_ACCESS_TOKEN secret in GitHub Actions.');
-  } else if (response.status === 403) {
-    if (responseText.includes('Trial access may not create Pins in production')) {
-      console.error('\n💡 Status 403 = Your Pinterest app has "Trial" access, which is limited to the sandbox API.');
-      console.error('   To post live pins to your real Pinterest boards (api.pinterest.com), you must upgrade to Standard Access.');
-      console.error('   Go to: https://developers.pinterest.com/apps/');
-      console.error('   Select your app (1600990) -> Click "Upgrade to Standard Access" / "Apply for Production".');
-    } else {
-      console.error('\n💡 Status 403 = Insufficient permissions.');
-      console.error('   Make sure your Pinterest token was generated with "pins:write" and "boards:write" scopes.');
+  // Find the candidate whose design_id was pinned longest ago in history
+  let oldestPinnedIndex = -1;
+  let oldestPinnedProduct = candidates[0];
+
+  for (const candidate of candidates) {
+    const histIndex = historyFile.history.findIndex(h => String(h.design_id) === String(candidate.design_id));
+    if (histIndex === -1) {
+      oldestPinnedProduct = candidate;
+      break;
     }
-  } else if (response.status === 422) {
-    console.error('\n💡 Status 422 = Invalid pin data (e.g. bad board_id or image URL).');
-    console.error('   Check that your board IDs are correct and the image URL is publicly accessible.');
+    if (oldestPinnedIndex === -1 || histIndex < oldestPinnedIndex) {
+      oldestPinnedIndex = histIndex;
+      oldestPinnedProduct = candidate;
+    }
   }
 
+  selectedProduct = oldestPinnedProduct;
+}
+
+if (!selectedProduct) {
+  console.error('❌ Could not find any product to pin.');
   process.exit(1);
 }
+
+// ── Build Pin Payload ─────────────────────────────────────────────────────────
+
+function buildHashtags(product) {
+  const tagPool = new Set(['teepublic', 'apparel', 'merch']);
+  if (product.niche) tagPool.add(product.niche.replace(/[^a-zA-Z0-9]/g, '').toLowerCase());
+  if (product.secondary_niche) tagPool.add(product.secondary_niche.replace(/[^a-zA-Z0-9]/g, '').toLowerCase());
+  if (product.primary_keyword) {
+    const clean = product.primary_keyword.replace(/[^a-zA-Z0-9]/g, '');
+    if (clean) tagPool.add(clean);
+  }
+  if (product.tags) {
+    product.tags.split(',').slice(0, 2).forEach(t => {
+      const clean = t.trim().replace(/[^a-zA-Z0-9]/g, '');
+      if (clean && clean.length > 2 && clean.length < 20) tagPool.add(clean);
+    });
+  }
+  return [...tagPool].slice(0, 4).map(t => `#${t}`).join(' ');
+}
+
+// Clean and truncate title (Pinterest max: 100 chars)
+let pinTitle = (selectedProduct.seo_title || selectedProduct.title || 'Graphic T-Shirt').trim();
+if (pinTitle.length > 100) {
+  pinTitle = pinTitle.slice(0, 97) + '...';
+}
+
+// Clean and format description (Pinterest max: 800 chars, ideal: ~300)
+const hashtags = buildHashtags(selectedProduct);
+let rawDesc = (selectedProduct.meta_description || selectedProduct.description || pinTitle).trim();
+let pinDescription = `${rawDesc} ${hashtags}`.trim();
+if (pinDescription.length > 500) {
+  pinDescription = pinDescription.slice(0, 497 - hashtags.length) + '... ' + hashtags;
+}
+
+const pinLink = `${SITE_URL}/design/${selectedProduct.slug}`;
+const imageUrl = selectedProduct.image_url.startsWith('http://')
+  ? selectedProduct.image_url.replace('http://', 'https://')
+  : selectedProduct.image_url;
+
+const pinPayload = {
+  board_id: boardId || '1094937796846013010',
+  title: pinTitle,
+  description: pinDescription,
+  link: pinLink,
+  media_source: {
+    source_type: 'image_url',
+    url: imageUrl,
+  },
+  alt_text: (selectedProduct.image_alt || pinTitle).slice(0, 500),
+};
+
+console.log('\n📌 Pin Payload to Post:');
+console.log(`   Board ID   : ${pinPayload.board_id} ("${targetTitle}")`);
+console.log(`   Title      : ${pinPayload.title}`);
+console.log(`   Link       : ${pinPayload.link}`);
+console.log(`   Image URL  : ${pinPayload.media_source.url}`);
+console.log(`   Description: ${pinPayload.description}`);
+console.log(`   Design ID  : ${selectedProduct.design_id} (Recycled: ${isRecycled})\n`);
+
+// ── Dry Run Mode ──────────────────────────────────────────────────────────────
+
+if (DRY_RUN) {
+  console.log('🔍 DRY RUN ENABLED — Pin was NOT sent to Pinterest API.');
+  console.log('   Payload verified successfully.');
+  process.exit(0);
+}
+
+// ── Post to Pinterest API v5 ──────────────────────────────────────────────────
+
+console.log('🚀 Sending POST request to https://api.pinterest.com/v5/pins ...');
+
+async function publishPin() {
+  try {
+    const res = await fetch(`${PINTEREST_API_BASE}/pins`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${ACCESS_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(pinPayload),
+    });
+
+    const responseText = await res.text();
+    let responseData = {};
+    try { responseData = JSON.parse(responseText); } catch { responseData = { text: responseText }; }
+
+    if (!res.ok) {
+      console.error(`\n❌ Pinterest API returned HTTP ${res.status}:`);
+      console.error(JSON.stringify(responseData, null, 2));
+
+      if (res.status === 401) {
+        console.error('\n💡 HTTP 401: Invalid or expired PINTEREST_ACCESS_TOKEN.');
+        console.error('   Please generate a fresh token at https://developers.pinterest.com/tools/access-token/');
+      } else if (res.status === 403) {
+        console.error('\n💡 HTTP 403: Permission denied. Ensure your token has "pins:write" and "boards:read/write" scopes.');
+      } else if (res.status === 422) {
+        console.error('\n💡 HTTP 422: Invalid pin data. Check board ID and image URL accessibility.');
+      }
+      process.exit(1);
+    }
+
+    const createdPinId = responseData.id || 'N/A';
+    console.log(`\n🎉 Pin published successfully to Pinterest!`);
+    console.log(`   Pin ID : ${createdPinId}`);
+    console.log(`   Board  : ${targetTitle} (${pinPayload.board_id})`);
+    console.log(`   Product: ${selectedProduct.title}`);
+
+    // ── Update History ────────────────────────────────────────────────────────
+
+    pinnedSet.add(String(selectedProduct.design_id));
+    historyFile.lastUpdated = new Date().toISOString();
+    historyFile.totalPinned = pinnedSet.size;
+    historyFile.pinnedIds = Array.from(pinnedSet);
+
+    if (!Array.isArray(historyFile.history)) historyFile.history = [];
+    historyFile.history.push({
+      design_id: String(selectedProduct.design_id),
+      pin_id: createdPinId,
+      board_slug: targetSlug,
+      board_id: pinPayload.board_id,
+      title: selectedProduct.title,
+      pinned_at: new Date().toISOString(),
+    });
+
+    // Keep history list bounded to last 1000 pins
+    if (historyFile.history.length > 1000) {
+      historyFile.history = historyFile.history.slice(-1000);
+    }
+
+    fs.writeFileSync(pinnedHistoryPath, JSON.stringify(historyFile, null, 2), 'utf8');
+    console.log(`💾 Saved updated history to data/pinned_history.json (${historyFile.totalPinned} total recorded pins).`);
+
+    // ── Write GitHub Actions Step Summary ─────────────────────────────────────
+
+    if (process.env.GITHUB_STEP_SUMMARY) {
+      const summaryMarkdown = `
+### 📌 Pinterest Pin Published Successfully!
+
+- **Product:** [${selectedProduct.title}](${pinLink})
+- **Board:** ${targetTitle} (\`${pinPayload.board_id}\`)
+- **Pin ID:** \`${createdPinId}\`
+- **Time (UTC):** ${new Date().toUTCString()}
+- **Total Unique Products Pinned:** ${historyFile.totalPinned}
+`;
+      fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summaryMarkdown, 'utf8');
+    }
+
+    // ── Commit & Push History in CI ───────────────────────────────────────────
+
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      try {
+        console.log('📤 Committing updated pinned_history.json back to repository...');
+        execSync('git config user.name "github-actions[bot]"', { stdio: 'inherit' });
+        execSync('git config user.email "github-actions[bot]@users.noreply.github.com"', { stdio: 'inherit' });
+        execSync(`git add "${pinnedHistoryPath}"`, { stdio: 'inherit' });
+        execSync(`git commit -m "chore(pins): record pin ${createdPinId} for design ${selectedProduct.design_id} [skip ci]"`, { stdio: 'inherit' });
+        execSync('git pull --rebase origin HEAD', { stdio: 'inherit' });
+        execSync('git push origin HEAD', { stdio: 'inherit' });
+        console.log('✅ History committed and pushed to git.');
+      } catch (gitErr) {
+        console.warn(`⚠️ Could not auto-commit history to git (${gitErr.message}). Pin was still posted successfully.`);
+      }
+    }
+
+  } catch (err) {
+    console.error('❌ Failed to publish pin due to network/runtime error:', err);
+    process.exit(1);
+  }
+}
+
+publishPin();
