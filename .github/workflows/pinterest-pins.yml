@@ -47,13 +47,23 @@ jobs:
           cache-dependency-path: trust/pseo-app/package-lock.json
 
       - name: Install dependencies
-        run: npm ci --prefer-offline
+        # --include=optional ensures platform-specific native binaries are fetched
+        # (e.g. lightningcss-linux-x64-gnu required by Tailwind CSS v4 on Ubuntu runners)
+        run: npm ci --include=optional
+
+      - name: Install lightningcss Linux binary (safety net)
+        # Explicitly installs the Linux native binding in case it was omitted from
+        # the Windows-generated lockfile
+        run: npm install --no-save lightningcss-linux-x64-gnu || true
 
       - name: Generate RSS feeds
         run: node scripts/generate-rss.mjs
 
+      - name: Generate sitemaps
+        run: npx tsx scripts/generate-sitemaps.ts
+
       - name: Build Next.js static export
-        run: npx tsx scripts/generate-sitemaps.ts && npx next build
+        run: npx next build
 
       - name: Deploy to Cloudflare Pages
         env:
