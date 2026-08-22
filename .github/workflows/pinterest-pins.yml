@@ -73,11 +73,11 @@ jobs:
 
       - name: Commit & Push updated pinned history
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/pinned_history.json public/rss/*.xml
-          git diff --quiet && git diff --staged --quiet || (
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --staged --quiet; then
             git commit -m "chore(pins): update daily 11-board RSS feeds [skip ci]"
-            git pull --rebase origin HEAD
-            git push origin HEAD
-          )
+            git pull --rebase --autostash origin master || true
+            git push origin master
+          fi
