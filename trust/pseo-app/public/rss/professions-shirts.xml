@@ -1,179 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - Professions Shirts</title>
-    <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for Professions Shirts</description>
+    <title>Black Panther Store — Professions Shirts</title>
+    <link>https://blackpantherstore.co.za/</link>
+    <description>TeePublic products for Professions Shirts</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Aug 2026 06:22:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 19 Aug 2026 11:24:58 GMT</lastBuildDate>
     
     <item>
+      <guid isPermaLink="false">teepublic-prod-59853541</guid>
+      <title><![CDATA[American Man NFL Football Player #25 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-man-nfl-football-player-25</link>
+      <description><![CDATA[Experience the passion of the gridiron with our exclusive NFL Football Player #25 t-shirt. Perfect gift for football fans and sports lovers everywhere. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:10:30 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59853541_0/1714563557/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59853541_0/1714563557/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59854174</guid>
+      <title><![CDATA[American Woman NFL Football Player #2 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-woman-nfl-football-player-2</link>
+      <description><![CDATA[Celebrate the gridiron with our exclusive American Woman NFL Football Player T-Shirt. Perfect gift for football fans and sports lovers everywhere. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:10:08 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59854174_0/1714565290/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59854174_0/1714565290/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59853390</guid>
+      <title><![CDATA[American Man NFL Football Player #16 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-man-nfl-football-player-16</link>
+      <description><![CDATA[Experience the power of the gridiron with our exclusive American Man NFL Football Player #16 T-Shirt. Perfect gift for football fans worldwide. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:05:51 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59853390_0/1714563116/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59853390_0/1714563116/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59892987</guid>
+      <title><![CDATA[American Woman NFL Football Player #20 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-woman-nfl-football-player-20</link>
+      <description><![CDATA[Shop the American Woman NFL Football Player #20 T-Shirt. Celebrate gridiron legends with this exclusive sports design. Order yours today! #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 23:57:52 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59892987_0/1714654526/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59892987_0/1714654526/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59854939</guid>
+      <title><![CDATA[American Woman NFL Football Player #24 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-woman-nfl-football-player-24</link>
+      <description><![CDATA[Experience the power of gridiron legends with our exclusive American Woman NFL Football Player #24 T-Shirt. Perfect gift for football fans. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 23:56:35 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59854939_0/1714566937/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59854939_0/1714566937/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59854562</guid>
+      <title><![CDATA[American Woman NFL Football Player #11 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/american-woman-nfl-football-player-11</link>
+      <description><![CDATA[Experience the power of gridiron legends with this exclusive American Woman NFL Football Player #11 T-Shirt. Perfect gift for football fans worldwide. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 23:52:14 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59854562_0/1714566108/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59854562_0/1714566108/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-59854597</guid>
       <title><![CDATA[American Woman NFL Football Player #17 T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/american-woman-nfl-football-player-17</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/59854597_0/1714566166/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="American Woman NFL Football Player #17 T-Shirt featuring digital sports art" />
-        <p>Experience the power and passion of America's gridiron legends with our exclusive NFL Football Players series. From hard-hitting action shots to iconic moments frozen in time, these collectible pieces capture the heart and soul of the game, destined to electrify fans worldwide.</p>
-      ]]></description>
-      <pubDate>Wed, 19 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-59854597-2026-08-19</guid>
+      <description><![CDATA[Celebrate gridiron legends with the American Woman NFL Football Player #17 T-Shirt. A must-have digital art collectible for football fans worldwide. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 23:51:52 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59854597_0/1714566166/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59854597_0/1714566166/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-13208028</guid>
       <title><![CDATA[Western Era aka American Frontier - Yellow T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-era-aka-american-frontier-yellow</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/13208028_0/1597829778/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era American Frontier Yellow T-Shirt with cowboy design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and rifle, who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era. #pieterhb</p>
-      ]]></description>
-      <pubDate>Tue, 18 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-13208028-2026-08-18</guid>
+      <description><![CDATA[Celebrate the Old West with our Western Era American Frontier yellow t-shirt. Featuring classic cowboy style, it's perfect for fans of wild west history. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 23:18:20 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/13208028_0/1597829778/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/13208028_0/1597829778/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11776884</guid>
       <title><![CDATA[Western Slogan - Did Not Last Long T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-slogan-did-not-last-long</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11776884_0/1593442170/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" alt="Western Slogan Did Not Last Long T-Shirt with Old West cowboy design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
-      ]]></description>
-      <pubDate>Mon, 17 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11776884-2026-08-17</guid>
+      <description><![CDATA[Celebrate the Old West with this Western Slogan Did Not Last Long T-Shirt. Perfect for cowboy and gunslinger fans. Shop retro vintage graphic tees today! #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 21:12:15 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11776884_0/1593442170/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11776884_0/1593442170/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11745976</guid>
       <title><![CDATA[Western Slogan - A Hard Day's Work T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-slogan-a-hard-days-work</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11745976_0/1593353835/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" alt="Western Slogan A Hard Days Work Cowboy T-Shirt Design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
-      ]]></description>
-      <pubDate>Sun, 16 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11745976-2026-08-16</guid>
+      <description><![CDATA[Celebrate the Old West with our Western Slogan A Hard Days Work T-Shirt. Featuring classic cowboy imagery, perfect for fans of frontier history. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 21:01:33 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11745976_0/1593353835/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11745976_0/1593353835/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11604463</guid>
       <title><![CDATA[Western Era - Sheriff Badge 2 T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-era-sheriff-badge-2</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11604463_0/1592921306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Sheriff Badge 2 T-Shirt Design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
-      ]]></description>
-      <pubDate>Sat, 15 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11604463-2026-08-15</guid>
+      <description><![CDATA[Celebrate the Old West with our Western Era Sheriff Badge T-Shirt. Perfect for cowboy and gunslinger fans. Order your vintage style tee today! #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:10:40 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11604463_0/1592921306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11604463_0/1592921306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11562539</guid>
       <title><![CDATA[Western Era - Cowboy with Hat and Neckerchief T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-era-cowboy-with-hat-and-neckerchief</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11562539_0/1592810566/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Cowboy with Hat and Neckerchief T-Shirt Design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
-      ]]></description>
-      <pubDate>Fri, 14 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11562539-2026-08-14</guid>
+      <description><![CDATA[Celebrate the legendary Old West with our Western Era Cowboy T-Shirt. Featuring a classic cowboy design, it's a must-have for fans of western history. #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:01:09 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11562539_0/1592810566/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11562539_0/1592810566/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11562536</guid>
       <title><![CDATA[Western Era - Cowboy with Revolver T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/western-era-cowboy-with-revolver</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11562536_0/1592810575/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_3_0_x626,s_630,q_90.jpg" alt="Western Era Cowboy with Revolver T-Shirt vintage design" />
-        <p>According to Wikipedia, Western is a genre of fiction set primarily in the latter half of the 19th century in the Western United States, which is styled the “Old West”. Its stories commonly center on the life of a nomadic cowboy or gunfighter, armed with a revolver and a rifle who rides a horse. Cowboys and gunslingers typically wear Stetson hats, neckerchief bandannas, vests, spurs, cowboy boots and buckskins (alternatively dusters). Recurring characters include the aforementioned cowboys, Native Americans, Spaniards, Mexicans, bandits, lawmen, bounty hunters, outlaws, gamblers, soldiers (especially mounted cavalry, such as buffalo soldiers) and settlers (farmers, ranchers and townsfolk). This image gives credit to that great era.</p>
-      ]]></description>
-      <pubDate>Thu, 13 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11562536-2026-08-13</guid>
+      <description><![CDATA[Celebrate the Old West with our Western Era Cowboy with Revolver T-Shirt. Vintage-style gunslinger design for history and cowboy fans. Shop now! #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:00:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11562536_0/1592810575/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_3_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11562536_0/1592810575/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_3_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-11348551</guid>
       <title><![CDATA[Zentangle Art - Six T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/zentangle-art-six</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/11348551_0/1592221908/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg" alt="Zentangle Art colorful pattern design on a t-shirt" />
-        <p>The name “Zentangle” was formulated by Rick Roberts, a former monk and Maria Thomas, a very well qualified calligrapher, an illuminast, artist and designer. Zentangle art is easy to learn, relaxing and a fun way to create beautiful images by drawing lots of different structured patterns. The patterns are called tangles and consist out of combinations of dots, lines, simple curves, s-curves and orbs. These simple shapes are the "elemental strokes" and the patterns are drawn on small pieces of paper called "tiles." The tiles can be assemble into mosaics which makes this art even more stunning to look at. This particular design were modified into colour with software, to create colour zentangle artwork.</p>
-      ]]></description>
-      <pubDate>Wed, 12 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-11348551-2026-08-12</guid>
+      <description><![CDATA[Discover our colorful Zentangle Art T-Shirt featuring relaxing structured patterns. Perfect for artists, designers, and creative souls. Shop now! #teepublic #apparel #merch #hobbies #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 19:23:01 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11348551_0/1592221908/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11348551_0/1592221908/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94081845</guid>
       <title><![CDATA[No Footprints Required - Math Equations Bigfoot T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/no-footprints-required-math-equations-bigfoot</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94081845_2/1781445179/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Glowing green wireframe Bigfoot design with math equations and 'No Footprints Required' text" />
-        <p>Who needs physical footprints when you have mathematical proof? This glowing green wireframe Bigfoot was plotted using Fourier Transform epicycles on a custom-built drawing application. A great design for programmers, physicists, and mathematicians who prefer precise equations over field research.</p>
-      ]]></description>
-      <pubDate>Tue, 11 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94081845-2026-08-11</guid>
+      <description><![CDATA[No Footprints Required! Funny Bigfoot math equations t-shirt. Glowing wireframe Bigfoot plotted with Fourier Transform. Ideal for programmers, physicists, and mathematicians. #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:34:24 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94081845_2/1781445179/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94081845_2/1781445179/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94081170</guid>
       <title><![CDATA[Decomposing The Myth - Fourier Analysis Bigfoot T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/decomposing-the-myth-fourier-analysis-bigfoot</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Fourier Analysis Bigfoot T-Shirt design showing Bigfoot outline drawn with mathematical epicycles" />
-        <p>This design was generated using a custom-built application programmed specifically to plot Bigfoot's outline through Fourier Transform epicycles. Instead of using standard online filters, pure mathematical equations drew these precise lines, making it an authentic piece of STEM art. Perfect for engineers, mathematicians, and science enthusiasts who appreciate genuine math-based design.</p>
-      ]]></description>
-      <pubDate>Mon, 10 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94081170-2026-08-10</guid>
+      <description><![CDATA[Explore the myth with this unique Fourier Analysis Bigfoot T-Shirt. Perfect STEM art for engineers, mathematicians, and science enthusiasts. A genuine math-based design. #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:33:04 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94082388</guid>
       <title><![CDATA[Bigfoot Is Imaginary - Math Makes Him Real T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/bigfoot-is-imaginary-math-makes-him-real</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94082388_0/1781445536/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green-to-blue gradient Bigfoot design, plotted with Fourier Transform epicycles, illustrating a math pun about imaginary numbers." />
-        <p>A clever math pun playing on real and imaginary numbers. This green-to-blue gradient Bigfoot was plotted using Fourier Transform epicycles on a custom-designed mathematical application. An ideal design for math majors, physicists, and engineers who know that complex math makes the imaginary real.</p>
-      ]]></description>
-      <pubDate>Sun, 09 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94082388-2026-08-09</guid>
+      <description><![CDATA[A clever math pun on real & imaginary numbers featuring a Fourier Transform Bigfoot. Perfect for math majors, physicists, & engineers who love complex math humor. #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:30:59 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94082388_0/1781445536/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94082388_0/1781445536/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94032347</guid>
       <title><![CDATA[Bigfoot Drawn with Math: Fourier Transform Red Glow T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/bigfoot-drawn-with-math-fourier-transform-red-glow</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94032347_0/1781346690/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg" alt="Red neon Bigfoot design drawn with Fourier Transform math equations" />
-        <p>A glowing neon red Bigfoot design that is 100% drawn and traced using mathematical equations, specifically Fourier Transform math formulas that plot the lines to create the artwork. The vibrant red nodes and epicycles visualize the complex mathematics used to draw Sasquatch. Perfect for math teachers, physics students, programmers, and anyone who loves geeky, science-themed apparel with a striking red hot laser aesthetic.</p>
-      ]]></description>
-      <pubDate>Sat, 08 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94032347-2026-08-08</guid>
+      <description><![CDATA[Discover our unique Bigfoot design, 100% drawn with Fourier Transform math equations. Features a vibrant red neon glow, perfect for math teachers, physics students, and science geeks. Get your geeky Sasquatch apparel today! #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:30:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94032347_0/1781346690/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94032347_0/1781346690/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94083920</guid>
       <title><![CDATA[Leaving No Footprints - Frequency Signatures (Cyan) T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/leaving-no-footprints-frequency-signatures-cyan</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94083920_0/1781447373/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Cyan wireframe design of Bigfoot's frequency signature on a t-shirt" />
-        <p>In the mathematical universe, Bigfoot leaves no physical tracks, only a distinct frequency signature. Plotted on a custom-designed application using Fourier Transform epicycles, this vibrant cyan/teal wireframe features a clean, holographic blueprint style. An ideal design for electrical engineers, RF analysts, and physics lovers.</p>
-      ]]></description>
-      <pubDate>Fri, 07 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94083920-2026-08-07</guid>
+      <description><![CDATA[Explore the mathematical universe with our unique Bigfoot frequency signature t-shirt. Perfect for electrical engineers, physics lovers, and math geeks. Features a vibrant cyan wireframe design. #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:29:51 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94083920_0/1781447373/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94083920_0/1781447373/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
+      <guid isPermaLink="false">teepublic-prod-94032207</guid>
       <title><![CDATA[Bigfoot Drawn with Math: Fourier Transform Aurora Gradient T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/bigfoot-drawn-with-math-fourier-transform-aurora-g</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94032207_0/1781346495/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_40_0_x626,s_630,q_90.jpg" alt="Bigfoot silhouette with an aurora gradient fill, created using Fourier Transform math." />
-        <p>A beautiful green, blue, and purple gradient neon Bigfoot design that is 100% drawn and traced using mathematical equations, specifically Fourier Transform math formulas that plot the lines to create the artwork. The colorful glowing nodes and epicycles visualize the complex mathematics used to draw Sasquatch. Perfect for math teachers, physics students, programmers, and anyone who loves geeky, science-themed apparel with a northern lights or aurora gradient aesthetic.</p>
-      ]]></description>
-      <pubDate>Thu, 06 Aug 2026 16:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">professions-shirts-94032207-2026-08-06</guid>
+      <description><![CDATA[Unique Bigfoot t-shirt featuring an aurora gradient, drawn entirely with Fourier Transform math equations. Perfect for science and math lovers. #teepublic #apparel #merch #science #professions]]></description>
+      <pubDate>Sat, 01 Aug 2026 16:28:01 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/94032207_0/1781346495/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_40_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/94032207_0/1781346495/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_40_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
   </channel>
 </rss>

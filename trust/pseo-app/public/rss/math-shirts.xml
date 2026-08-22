@@ -1,179 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - Math Shirts</title>
-    <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for Math Shirts</description>
+    <title>Black Panther Store — Math Shirts</title>
+    <link>https://blackpantherstore.co.za/</link>
+    <description>TeePublic products for Math Shirts</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Aug 2026 06:22:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 19 Aug 2026 11:24:58 GMT</lastBuildDate>
     
     <item>
-      <title><![CDATA[Drawn with Fourier Transforms - Bigfoot Math Art T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/drawn-with-fourier-transforms-bigfoot-math-art</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/93984966_0/1781270428/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bigfoot outline drawn with Fourier Transforms equation in neon blue and pink gradient on a t-shirt" />
-        <p>Literally drawn with Fourier Transforms! This design was plotted by a custom-built app using the complex Fourier Series equation shown below to trace Bigfoot's outline. Features a vibrant blue-to-pink neon gradient. Ideal for engineering majors, physics teachers, and signal processing nerds.</p>
-      ]]></description>
-      <pubDate>Wed, 19 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-93984966-2026-08-19</guid>
+      <guid isPermaLink="false">teepublic-prod-15825768</guid>
+      <title><![CDATA[Yin Yang Design - Purple-Orange Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-purple-orange-color-pattern</link>
+      <description><![CDATA[Discover the Yin Yang Design Purple-Orange Color Pattern T-Shirt featuring Chinese philosophy and zodiac symbols. Shop unique print-on-demand apparel today. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:10:24 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825768_0/1604669367/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825768_0/1604669367/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Albert Einstein - Fourier Transform Math Line Art T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/albert-einstein-fourier-transform-math-line-art</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/93521760_0/1780581657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_51_0_x626,s_630,q_90.jpg" alt="Albert Einstein portrait rendered in Fourier Transform math line art on a t-shirt" />
-        <p>A striking portrait of Albert Einstein, rendered entirely through Fourier Transform mathematical epicycles (rotating circles) by a custom-designed app. This minimalist line art beautifully fuses physics, mathematics, and computer science into a clean, modern graphic. An ideal t-shirt for physicists, math teachers, engineers, programmers, and science lovers.</p>
-      ]]></description>
-      <pubDate>Tue, 18 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-93521760-2026-08-18</guid>
+      <guid isPermaLink="false">teepublic-prod-15862307</guid>
+      <title><![CDATA[Chess Logo in Black, White and Pink Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/chess-logo-in-black-white-and-pink-pattern</link>
+      <description><![CDATA[Show your love for the ultimate strategy game with this stylish chess logo t-shirt featuring a unique black, white and pink pattern. Order yours today! #teepublic #apparel #merch #gaming #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:09:28 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15862307_0/1604761688/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15862307_0/1604761688/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Chess Slogan - The Pion T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/chess-slogan-the-pion</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8389213_0/1583757560/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Chess Slogan The Pion T-Shirt with typography design" />
-        <p>Chess is a game that is played by millions of people worldwide. This game is believed to be derived from the Indian game chaturanga, sometime before the 7th century. The first generally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886. For me, it is the ultimate game on earth, with the amount of possible legal board positions worked out to be a factor of ten multiplied with itself, hundred and twenty times! I have created these slogans to give some credit to a great game I love and respect a lot. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Mon, 17 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-8389213-2026-08-17</guid>
+      <guid isPermaLink="false">teepublic-prod-15825767</guid>
+      <title><![CDATA[Yin Yang Design - Yellow-Green Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-yellow-green-color-pattern</link>
+      <description><![CDATA[Discover our unique Yin Yang T-Shirt featuring a yellow-green color pattern, 12 Chinese zodiac sides, and a cool ball effect. Shop balance and peace today! #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:09:17 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825767_0/1604669407/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825767_0/1604669407/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Chess Slogan - Don't Mess with my Chess 1 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/chess-slogan-dont-mess-with-my-chess-1</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8390038_1/1583761064/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Don't Mess with my Chess Slogan T-Shirt Design" />
-        <p>Chess is a game that is played by millions of people worldwide. This game is believed to be derived from the Indian game chaturanga, sometime before the 7th century. The first generally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886. For me, it is the ultimate game on earth, with the amount of possible legal board positions worked out to be a factor of ten multiplied with itself, hundred and twenty times! I have created these slogans to give some credit to a great game I love and respect a lot. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sun, 16 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-8390038-2026-08-16</guid>
+      <guid isPermaLink="false">teepublic-prod-15861547</guid>
+      <title><![CDATA[Yin Yang Design - Red-Blue Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-red-blue-color-pattern</link>
+      <description><![CDATA[Discover our Yin Yang Red-Blue Color Pattern T-Shirt featuring Chinese philosophy and the 12 zodiac signs. Perfect for everyday wear. Shop now! #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:09:06 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15861547_0/1604759992/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15861547_0/1604759992/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Chess Slogan - King in a Corner 2 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/chess-slogan-king-in-a-corner-2</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8407459_0/1583843445/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Chess Slogan King in a Corner T-Shirt featuring board game typography" />
-        <p>Chess is a game that is played by millions of people worldwide. This game is believed to be derived from the Indian game chaturanga, sometime before the 7th century. The first generally recognized World Chess Champion, Wilhelm Steinitz, claimed his title in 1886. For me, it is the ultimate game on earth, with the amount of possible legal board positions worked out to be a factor of ten multiplied with itself, hundred and twenty times! I have created these slogans to give some credit to a great game I love and respect a lot. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sat, 15 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-8407459-2026-08-15</guid>
+      <guid isPermaLink="false">teepublic-prod-15862309</guid>
+      <title><![CDATA[Chess Logo in Black, White and Purple Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/chess-logo-in-black-white-and-purple-pattern</link>
+      <description><![CDATA[Shop the ultimate Chess Logo T-Shirt in black, white, and purple. Perfect for chess lovers and strategy board game fans. Order yours today! #teepublic #apparel #merch #gaming #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:08:32 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15862309_0/1604761692/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15862309_0/1604761692/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Bigfoot Drawn with Math: Fourier Transform Pink & Blue Gradient T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/bigfoot-drawn-with-math-fourier-transform-pink-and</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94031951_0/1781346110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg" alt="Pink and blue gradient Bigfoot t-shirt drawn with Fourier Transform math equations, showing neon nodes and epicycles." />
-        <p>A beautiful pink, purple, and blue gradient neon Bigfoot design that is 100% drawn and traced using mathematical equations, specifically Fourier Transform math formulas that plot the lines to create the artwork. The glowing neon nodes and epicycles visualize the complex mathematics used to draw Sasquatch. Perfect for math teachers, physics students, programmers, and anyone who loves geeky, science-themed apparel with a vaporwave or cosmic gradient aesthetic.</p>
-      ]]></description>
-      <pubDate>Fri, 14 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94031951-2026-08-14</guid>
+      <guid isPermaLink="false">teepublic-prod-15862312</guid>
+      <title><![CDATA[Chess Logo in Black, White and Turquoise Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/chess-logo-in-black-white-and-turquoise-pattern</link>
+      <description><![CDATA[Get the ultimate Chess Logo T-Shirt featuring a stylish black, white, and turquoise pattern. Perfect for chess lovers and strategy gamers everywhere. #teepublic #apparel #merch #gaming #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:08:09 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15862312_0/1604761705/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15862312_0/1604761705/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[An Unresolved Mystery - Math Bigfoot (Red and Cyan) T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/an-unresolved-mystery-math-bigfoot-red-and-cyan</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94082995_0/1781446230/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Red and cyan wireframe Bigfoot design with math elements, futuristic holographic style." />
-        <p>The ultimate cryptid mystery remains unsolved, until you calculate the solution. Plotted on a custom-designed application using Fourier Transform epicycles, this striking red and cyan split-color Bigfoot wireframe features a futuristic, holographic style. A great fit for data analysts, programmers, and geometry enthusiasts.</p>
-      ]]></description>
-      <pubDate>Thu, 13 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94082995-2026-08-13</guid>
+      <guid isPermaLink="false">teepublic-prod-15862299</guid>
+      <title><![CDATA[Chess Logo in Black, White and Blue Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/chess-logo-in-black-white-and-blue-pattern</link>
+      <description><![CDATA[Show your love for the ultimate game with this stylish black, white and blue chess logo t-shirt. Perfect for chess players and enthusiasts everywhere. #teepublic #apparel #merch #gaming #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:06:52 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15862299_0/1604761627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15862299_0/1604761627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Discreet in the Forest - Continuous Math Bigfoot T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/discreet-in-the-forest-continuous-math-bigfoot</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94084664_0/1781448309/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Vibrant gradient Bigfoot design made with Fourier Transform epicycles, illustrating a continuous math pun." />
-        <p>A clever signal processing pun featuring a vibrant gradient Bigfoot, plotted entirely with Fourier Transform epicycles using a custom-designed mathematical application. Playing on the classic concepts of discrete systems and continuous functions, this unique wireframe design is made for calculus students, engineers, and math teachers.</p>
-      ]]></description>
-      <pubDate>Wed, 12 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94084664-2026-08-12</guid>
+      <guid isPermaLink="false">teepublic-prod-15825133</guid>
+      <title><![CDATA[Yin Yang Design - Turquoise Color Spider Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-turquoise-color-spider-pattern</link>
+      <description><![CDATA[Discover our unique Yin Yang T-Shirt featuring a turquoise spider pattern and Chinese zodiac dodecagon. Balance and harmony in a cool trippy design. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:06:10 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825133_0/1604668409/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825133_0/1604668409/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Fourier Transform Stegosaurus - Math Dinosaur T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/fourier-transform-stegosaurus-math-dinosaur</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94198132_0/1781615324/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green Fourier Transform Stegosaurus math dinosaur design" />
-        <p>This design was created using a custom-coded application programmed to trace the Stegosaurus outline using Fourier transform math. Rather than a standard text-to-image AI generation, this piece features authentic mathematical plotting, with the body details filled in using the actual FFT equations from the process.</p>
-      ]]></description>
-      <pubDate>Tue, 11 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94198132-2026-08-11</guid>
+      <guid isPermaLink="false">teepublic-prod-59634208</guid>
+      <title><![CDATA[Thermal Image - Sport #17 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/thermal-image-sport-17</link>
+      <description><![CDATA[Capture the intensity of sports with our dynamic thermal image t-shirt. Showcasing the heat and passion of athletes in action. Shop now! #teepublic #apparel #merch #gaming #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 01:03:26 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/59634208_1/1713962913/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/59634208_1/1713962913/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Fourier Transform Triceratops - Math Dinosaur T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/fourier-transform-triceratops-math-dinosaur</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green Fourier Transform Triceratops math dinosaur t-shirt design" />
-        <p>This design was created using a custom-coded application programmed to trace the Triceratops outline using Fourier transform math. Rather than a standard text-to-image AI generation, this piece features authentic mathematical plotting, with the body details filled in using the actual FFT equations from the process.</p>
-      ]]></description>
-      <pubDate>Mon, 10 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94198235-2026-08-10</guid>
+      <guid isPermaLink="false">teepublic-prod-15824831</guid>
+      <title><![CDATA[Yin Yang Design - Blue Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-blue-color-pattern</link>
+      <description><![CDATA[Discover our blue Yin Yang T-Shirt featuring a 12-sided Chinese zodiac dodecagon design. Embrace balance, harmony, and ancient philosophy in style. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:58:33 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824831_0/1604667086/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824831_0/1604667086/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Bigfoot Drawn with Math: Fourier Transform 3D Glitch T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/bigfoot-drawn-with-math-fourier-transform-3d-glitc</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94032101_0/1781346309/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg" alt="Bigfoot illustration created with Fourier Transform math, featuring a 3D anaglyph and chromatic aberration glitch effect." />
-        <p>A retro 3D anaglyph and chromatic aberration glitch Bigfoot design that is 100% drawn and traced using mathematical equations, specifically Fourier Transform math formulas that plot the lines to create the artwork. The cyan and magenta shifting outlines visualize the complex mathematics used to draw Sasquatch. Perfect for math teachers, physics students, programmers, and anyone who loves geeky, science-themed apparel with a cool retro 3D glasses glitch aesthetic.</p>
-      ]]></description>
-      <pubDate>Sun, 09 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94032101-2026-08-09</guid>
+      <guid isPermaLink="false">teepublic-prod-15825106</guid>
+      <title><![CDATA[Yin Yang Design - Green Color Spider Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-green-color-spider-pattern</link>
+      <description><![CDATA[Discover our unique green yin yang spider pattern t-shirt featuring Chinese zodiac symbols. Perfect balance design for daily wear. Shop now! #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:58:21 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825106_0/1604668233/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825106_0/1604668233/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[No Mystery At All - Just An Outlier Bigfoot T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/no-mystery-at-all-just-an-outlier-bigfoot</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94083111_4/1781514417/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bigfoot outlier statistical joke t-shirt design" />
-        <p>He is not a legendary cryptid, just a highly anomalous data point. Plotted on a custom-designed mathematical application using Fourier Transform epicycles, this vibrant red-to-green gradient Bigfoot design is made for statisticians, data scientists, researchers, and math teachers who love a good outlier joke.</p>
-      ]]></description>
-      <pubDate>Sat, 08 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94083111-2026-08-08</guid>
+      <guid isPermaLink="false">teepublic-prod-15824839</guid>
+      <title><![CDATA[Yin Yang Design - Pink Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-pink-color-pattern</link>
+      <description><![CDATA[Discover our Yin Yang Design Pink Color Pattern T-Shirt featuring Chinese philosophy and zodiac symbols. Perfect for lovers of balance and trippy art. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:58:10 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824839_0/1604667105/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824839_0/1604667105/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Detecting The Unexplained - Squatch Signal Analysis T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/detecting-the-unexplained-squatch-signal-analysis</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94083349_0/1781446713/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Squatch Signal Analysis T-Shirt with vintage oscilloscope wireframe design" />
-        <p>Isolate the signal from the forest noise. Plotted on a custom-designed mathematical application using Fourier Transform epicycles, this warm amber wireframe design mimics vintage oscilloscopes and vector displays. Perfect for DSP (digital signal processing) engineers, radar analysts, and telecommunications professionals.</p>
-      ]]></description>
-      <pubDate>Fri, 07 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94083349-2026-08-07</guid>
+      <guid isPermaLink="false">teepublic-prod-15825125</guid>
+      <title><![CDATA[Yin Yang Design - Orange Color Spider Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-orange-color-spider-pattern</link>
+      <description><![CDATA[Discover our unique Orange Spider Pattern Yin Yang T-Shirt featuring a 12-sided Chinese zodiac design. Perfect for philosophy lovers and everyday wear. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:57:48 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825125_0/1604668393/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825125_0/1604668393/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[An Unresolved Mystery - Until You Do The Math T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/an-unresolved-mystery-until-you-do-the-math</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/94084722_0/1781448432/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bigfoot cryptid design using Fourier Transform epicycles and math equations" />
-        <p>The legendary cryptid remains an unsolved mystery—until you run the calculations. Plotted on a custom-designed mathematical application using Fourier Transform epicycles, this blue-to-pink gradient Bigfoot proves that math is the key to decoding legends. A fun design for physicists, math teachers, and data analysts.</p>
-      ]]></description>
-      <pubDate>Thu, 06 Aug 2026 10:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">math-shirts-94084722-2026-08-06</guid>
+      <guid isPermaLink="false">teepublic-prod-15824848</guid>
+      <title><![CDATA[Yin Yang Design - Turquoise Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-turquoise-color-pattern</link>
+      <description><![CDATA[Discover our turquoise Yin Yang design featuring a 12-sided zodiac dodecagon. Embrace balance and ancient Chinese philosophy with this cool graphic tee. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:57:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824848_0/1604667119/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824848_0/1604667119/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15824221</guid>
+      <title><![CDATA[Yin Yang Diamond Design - Green Color with a Ball Effect Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-diamond-design-green-color-with-a-ball-ef</link>
+      <description><![CDATA[Discover the Yin Yang Diamond Design t-shirt featuring Chinese philosophy, 12 zodiac signs dodecagon, and a unique ball effect pattern. Shop now! #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:57:27 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824221_0/1604665589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824221_0/1604665589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15824236</guid>
+      <title><![CDATA[Yin Yang Diamond Design - Purple Color with a Ball Effect Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-diamond-design-purple-color-with-a-ball-e</link>
+      <description><![CDATA[Discover the balance of the universe with our purple yin yang diamond design t-shirt featuring a unique ball effect pattern. Shop now for peace and style. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:57:16 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824236_0/1604665560/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824236_0/1604665560/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15824287</guid>
+      <title><![CDATA[Yin Yang Diamond Design - Red Color with a Ball Effect Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-diamond-design-red-color-with-a-ball-effe</link>
+      <description><![CDATA[Discover the Yin Yang Diamond Design featuring a red ball effect and Chinese zodiac symbols. Perfect balance and philosophy style t-shirt for everyday wear. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:56:12 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824287_0/1604665570/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824287_0/1604665570/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15824843</guid>
+      <title><![CDATA[Yin Yang Design - Purple Color Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-purple-color-pattern</link>
+      <description><![CDATA[Discover our purple pattern Yin Yang t-shirt featuring a 12-sided Chinese zodiac dodecagon. Embrace balance, peace, and ancient philosophy today. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:55:40 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824843_0/1604667102/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824843_0/1604667102/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15825104</guid>
+      <title><![CDATA[Yin Yang Design - Blue Color Spider Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-design-blue-color-spider-pattern</link>
+      <description><![CDATA[Discover our unique blue spider pattern Yin Yang t-shirt featuring a 12-sided Chinese zodiac design. Balance your wardrobe with this philosophical apparel. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:55:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15825104_0/1604668247/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15825104_0/1604668247/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-15824245</guid>
+      <title><![CDATA[Yin Yang Diamond Design - Yellow Color with a Ball Effect Pattern T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/yin-yang-diamond-design-yellow-color-with-a-ball-e</link>
+      <description><![CDATA[Discover the unique Yin Yang Diamond Design in yellow with a ball effect pattern and 12 Chinese zodiac sides. Perfect philosophical apparel for everyday wear. #teepublic #apparel #merch #astronomy #math]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:54:56 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15824245_0/1604665592/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15824245_0/1604665592/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
   </channel>
 </rss>

@@ -1,179 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - Minimalist Engineer Shirts</title>
-    <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for Minimalist Engineer Shirts</description>
+    <title>Black Panther Store — Minimalist Engineer Shirts</title>
+    <link>https://blackpantherstore.co.za/</link>
+    <description>TeePublic products for Minimalist Engineer Shirts</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Aug 2026 06:22:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 19 Aug 2026 11:24:58 GMT</lastBuildDate>
     
     <item>
-      <title><![CDATA[Futuristic Toy Robot #50 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-50</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576147_0/1718451081/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #50 T-Shirt featuring high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Wed, 19 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576147-2026-08-19</guid>
+      <guid isPermaLink="false">teepublic-prod-15406999</guid>
+      <title><![CDATA[Electrical Engineer in White Color Text T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/electrical-engineer-in-white-color-text</link>
+      <description><![CDATA[Showcase your profession with this Electrical Engineer T-Shirt featuring clean white text. Perfect apparel for electrical engineers and science lovers. #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sun, 02 Aug 2026 00:14:09 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15406999_0/1603637918/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_16_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15406999_0/1603637918/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_16_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #47 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-47</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576136_0/1718451049/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #47 T-Shirt with high-tech robotic design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Tue, 18 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576136-2026-08-18</guid>
+      <guid isPermaLink="false">teepublic-prod-61505137</guid>
+      <title><![CDATA[Futuristic Toy Robot #15 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-15</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #15 T-Shirt. Discover high-tech robotic art blending playfulness with innovation. Perfect for sci-fi fans. Order now! #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:51 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505137_0/1718280212/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505137_0/1718280212/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #46 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-46</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576133_0/1718451041/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #46 T-Shirt featuring high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Mon, 17 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576133-2026-08-17</guid>
+      <guid isPermaLink="false">teepublic-prod-61505139</guid>
+      <title><![CDATA[Futuristic Toy Robot #16 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-16</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot #16 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for tech lovers. #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:41 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505139_0/1718280212/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505139_0/1718280212/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #37 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-37</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61533890_0/1718349561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #37 T-Shirt Design featuring high-tech robotic character" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Sun, 16 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61533890-2026-08-16</guid>
+      <guid isPermaLink="false">teepublic-prod-61532730</guid>
+      <title><![CDATA[Futuristic Toy Robot #34 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-34</link>
+      <description><![CDATA[Explore high-tech innovation with our Futuristic Toy Robot #34 T-Shirt. Perfect for sci-fi fans and tech enthusiasts. Shop this unique robotic design today! #teepublic #apparel #merch #engineer #futuristictoyrobott-shirt]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:31 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61532730_0/1718348642/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61532730_0/1718348642/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #39 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-39</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61533906_0/1718349582/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #39 T-Shirt with high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Sat, 15 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61533906-2026-08-15</guid>
+      <guid isPermaLink="false">teepublic-prod-61505457</guid>
+      <title><![CDATA[Futuristic Toy Robot #20 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-20</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot T-Shirt. High-tech robotic art blending playfulness and futuristic innovation for everyday wear and home decor. #teepublic #apparel #merch #engineer #developer]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:22 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505457_0/1718280891/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505457_0/1718280891/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #49 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-49</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576143_0/1718451069/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #49 graphic printed on a premium t-shirt" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Fri, 14 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576143-2026-08-14</guid>
+      <guid isPermaLink="false">teepublic-prod-61504652</guid>
+      <title><![CDATA[Futuristic Toy Robot #5 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-5</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot #5 T-Shirt. High-tech robotic art blending playfulness with futuristic innovation. Shop sci-fi apparel today! #teepublic #apparel #merch #engineer #FuturisticToyRobot]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:11 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504652_0/1718279031/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504652_0/1718279031/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #56 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-56</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576552_0/1718452257/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #56 T-Shirt featuring high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Thu, 13 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576552-2026-08-13</guid>
+      <guid isPermaLink="false">teepublic-prod-61505525</guid>
+      <title><![CDATA[Futuristic Toy Robot #24 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-24</link>
+      <description><![CDATA[Explore our Futuristic Toy Robot T-Shirt featuring cutting-edge robotic art. Perfect sci-fi apparel for tech and robot enthusiasts. Shop now! #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:09:02 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505525_0/1718281213/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505525_0/1718281213/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #38 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-38</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61533915_0/1718349570/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #38 T-Shirt featuring a high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Wed, 12 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61533915-2026-08-12</guid>
+      <guid isPermaLink="false">teepublic-prod-61504661</guid>
+      <title><![CDATA[Futuristic Toy Robot #9 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-9</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #9 T-Shirt. Discover cutting-edge robotic designs blending playfulness and sci-fi innovation. Perfect for everyday wear. #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:51 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504661_0/1718279038/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504661_0/1718279038/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #48 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-48</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576139_0/1718451061/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #48 T-Shirt featuring high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Tue, 11 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576139-2026-08-11</guid>
+      <guid isPermaLink="false">teepublic-prod-61505519</guid>
+      <title><![CDATA[Futuristic Toy Robot #21 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-21</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #21 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for tech fans. #teepublic #apparel #merch #engineer #FuturisticToyRobotT-Shirt]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:41 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505519_0/1718281180/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505519_0/1718281180/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #45 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-45</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576128_0/1718451030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #45 T-Shirt Design with high-tech robotic character graphic" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Mon, 10 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576128-2026-08-10</guid>
+      <guid isPermaLink="false">teepublic-prod-61532728</guid>
+      <title><![CDATA[Futuristic Toy Robot #33 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-33</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #33 T-Shirt. Discover high-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for everyday wear. #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:31 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61532728_0/1718348636/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61532728_0/1718348636/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #43 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-43</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576123_0/1718451010/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #43 T-Shirt Design featuring high-tech robotic character art" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Sun, 09 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576123-2026-08-09</guid>
+      <guid isPermaLink="false">teepublic-prod-61505140</guid>
+      <title><![CDATA[Futuristic Toy Robot #17 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-17</link>
+      <description><![CDATA[Discover our futuristic toy robot t-shirt. High-tech robotic character design blending playfulness and sci-fi innovation. Shop the collection today! #teepublic #apparel #merch #engineer #gaming]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:22 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505140_0/1718280218/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505140_0/1718280218/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Futuristic Toy Robot #44 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-44</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/61576127_0/1718451020/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Futuristic Toy Robot #44 T-Shirt with high-tech robotic character design" />
-        <p>Dive into a world of imagination and cutting-edge technology with our Futuristic Toy Robots Art Collection! Perfect for T-shirts, mugs, pillows, posters, and more, these designs feature high-tech robotic characters that blend playfulness with futuristic innovation. Each piece in our collection brings the excitement and wonder of the future to life, making it a must-have for anyone looking to add a touch of sci-fi fun to their everyday clothing and home decor items.</p>
-      ]]></description>
-      <pubDate>Sat, 08 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-61576127-2026-08-08</guid>
+      <guid isPermaLink="false">teepublic-prod-61504660</guid>
+      <title><![CDATA[Futuristic Toy Robot #8 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-8</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #8 T-Shirt. High-tech robotic design blending playful sci-fi innovation. Perfect for everyday wear and tech fans. #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:12 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504660_0/1718279037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504660_0/1718279037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Louis Pasteur - Fourier Transform Math Line Art T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/louis-pasteur-fourier-transform-math-line-art</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/93524080_0/1780584625/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_54_0_x626,s_630,q_90.jpg" alt="Louis Pasteur portrait rendered in Fourier Transform math line art on a t-shirt" />
-        <p>A striking portrait of Louis Pasteur, rendered entirely through Fourier Transform mathematical epicycles (rotating circles) by a custom-designed app. This minimalist line art elegantly connects the father of microbiology and vaccination with modern computer science and mathematics. An ideal t-shirt for chemists, biologists, doctors, science teachers, and engineers.</p>
-      ]]></description>
-      <pubDate>Fri, 07 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-93524080-2026-08-07</guid>
+      <guid isPermaLink="false">teepublic-prod-61504649</guid>
+      <title><![CDATA[Futuristic Toy Robot #4 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-4</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot T-Shirt featuring cutting-edge AI art design. Perfect for sci-fi fans and tech lovers. Shop high-quality robotic apparel today! #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:08:02 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504649_0/1718278883/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504649_0/1718278883/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Nikola Tesla - Fourier Transform Math Line Art T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/nikola-tesla-fourier-transform-math-line-art</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/93522414_1/1780582455/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_71_0_x626,s_630,q_90.jpg" alt="Nikola Tesla portrait rendered in Fourier Transform math line art on a t-shirt" />
-        <p>A striking portrait of Nikola Tesla, rendered entirely through Fourier Transform mathematical epicycles (rotating circles) by a custom-designed app. This minimalist line art elegantly blends electrical engineering, mathematics, and physics history into a clean, modern graphic. An ideal t-shirt for electrical engineers, physicists, programmers, and fans of Tesla's genius.</p>
-      ]]></description>
-      <pubDate>Thu, 06 Aug 2026 06:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">minimalist-engineer-shirts-93522414-2026-08-06</guid>
+      <guid isPermaLink="false">teepublic-prod-61505127</guid>
+      <title><![CDATA[Futuristic Toy Robot #11 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-11</link>
+      <description><![CDATA[Explore the future with our Futuristic Toy Robot #11 T-Shirt. High-tech robotic art blending playfulness and innovation. Order yours today! #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:52 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505127_0/1718280136/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505127_0/1718280136/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61505129</guid>
+      <title><![CDATA[Futuristic Toy Robot #12 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-12</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot #12 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for tech lovers. #teepublic #apparel #merch #engineer #physics]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:42 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505129_0/1718280206/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505129_0/1718280206/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61504659</guid>
+      <title><![CDATA[Futuristic Toy Robot #7 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-7</link>
+      <description><![CDATA[Discover the Futuristic Toy Robot T-Shirt. High-tech robotic art blending playfulness and sci-fi innovation for everyday wear. Shop now! #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:32 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504659_0/1718279030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504659_0/1718279030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61504339</guid>
+      <title><![CDATA[Futuristic Toy Robot #1 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-1</link>
+      <description><![CDATA[Discover our Futuristic Toy Robot T-Shirt featuring cutting-edge robotic art. Perfect sci-fi apparel and gift for robot lovers. Shop now! #teepublic #apparel #merch #engineer #FuturisticToyRobotT-Shirt]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:22 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61504339_0/1718277882/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61504339_0/1718277882/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61532714</guid>
+      <title><![CDATA[Futuristic Toy Robot #29 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-29</link>
+      <description><![CDATA[Shop the Futuristic Toy Robot #29 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect for sci-fi fans and tech enthusiasts. #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:13 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61532714_0/1718348585/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61532714_0/1718348585/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61505450</guid>
+      <title><![CDATA[Futuristic Toy Robot #19 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-19</link>
+      <description><![CDATA[Discover our Futuristic Toy Robot T-Shirt featuring cutting-edge tech art. Perfect sci-fi apparel and gift for robot lovers. Shop the collection today! #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:07:03 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61505450_0/1718280877/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61505450_0/1718280877/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-61532660</guid>
+      <title><![CDATA[Futuristic Toy Robot #26 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/futuristic-toy-robot-26</link>
+      <description><![CDATA[Explore cutting-edge tech style with our Futuristic Toy Robot #26 T-Shirt. Perfect for sci-fi fans and robot lovers. Shop high-quality apparel today! #teepublic #apparel #merch #engineer #science]]></description>
+      <pubDate>Sat, 01 Aug 2026 20:06:31 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61532660_0/1718347583/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61532660_0/1718347583/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
   </channel>
 </rss>

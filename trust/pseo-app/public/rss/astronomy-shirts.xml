@@ -1,179 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store - Astronomy Shirts</title>
-    <link>https://blackpantherstore.co.za</link>
-    <description>Daily featured design for Astronomy Shirts</description>
+    <title>Black Panther Store — Astronomy Shirts</title>
+    <link>https://blackpantherstore.co.za/</link>
+    <description>TeePublic products for Astronomy Shirts</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Aug 2026 06:22:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/astronomy-shirts.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 19 Aug 2026 11:24:58 GMT</lastBuildDate>
     
     <item>
-      <title><![CDATA[Deep Space - Pink T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/deep-space-pink</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608739_0/1584868003/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Deep Space Pink T-Shirt with Galaxy and Stars Design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608739-2026-08-19</guid>
+      <guid isPermaLink="false">teepublic-prod-21668512</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 2 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-2</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge T-Shirt. Featuring a modified cosmic astronaut design, perfect for space and astronomy fans. Order yours today! #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:44:45 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21668512_0/1620396086/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21668512_0/1620396086/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Pink Jupiter Planet T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/pink-jupiter-planet</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8609329_0/1584870390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Pink Jupiter Planet T-Shirt with galaxy and stars design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Tue, 18 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8609329-2026-08-18</guid>
+      <guid isPermaLink="false">teepublic-prod-21668764</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 4 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-4</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge T-Shirt. Perfect astronomy and space exploration tee featuring a unique astronaut galaxy badge design. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:44:25 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21668764_0/1620398134/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21668764_0/1620398134/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Unique Space Odyssey T-Shirt - Blue T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/unique-space-odyssey-t-shirt-blue</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8537291_0/1584525322/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x833,s_630,q_90.jpg" alt="Unique Space Odyssey Galaxy Blue T-Shirt" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8537291-2026-08-17</guid>
+      <guid isPermaLink="false">teepublic-prod-21668763</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 3 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-3</link>
+      <description><![CDATA[Get the Black Panther Art NASA Space Badge T-Shirt. A unique galactic design inspired by original space agency insignia. Shop comfortable space apparel today. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:41:52 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21668763_0/1620398110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21668763_0/1620398110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Brown Jupiter Planet T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/brown-jupiter-planet</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8609194_0/1584869815/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Brown Jupiter Planet T-Shirt featuring galaxy and star design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sun, 16 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8609194-2026-08-16</guid>
+      <guid isPermaLink="false">teepublic-prod-21668725</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 1 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-1</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge T-Shirt. Featuring a unique astronaut galaxy design, perfect for space and astronomy enthusiasts. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:39:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21668725_1/1620398110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21668725_1/1620398110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Light Blue Jupiter Planet T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/light-blue-jupiter-planet</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8609270_0/1584870189/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Light Blue Jupiter Planet T-Shirt featuring galaxy and stars design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8609270-2026-08-15</guid>
+      <guid isPermaLink="false">teepublic-prod-23693122</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 19 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-19</link>
+      <description><![CDATA[Get the Black Panther NASA Space Badge T-Shirt. Featuring a modified vintage astronaut mission patch design, perfect for space and astronomy fans. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:32:27 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23693122_0/1629010525/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23693122_0/1629010525/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Captain Scarlet & The Mysterons T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/captain-scarlet-and-the-mysterons</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8439868_0/1584007437/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Captain Scarlet and the Mysterons retro sci-fi t-shirt design" />
-        <p>Gerry Anderson's New Captain Scarlet, which debuted in February 2005, is a remake of the original and classic 1967 Supermarionation series, Captain Scarlet and the Mysterons, created by Gerry and Sylvia Anderson. It was a huge success and lead to films, DVD’s, toys, t-shirts and lots more. In the year 2068, peace on Earth is maintained by the Spectrum Organization, headquartered in the vast floating aircraft carrier Skybase, which hovers on the edge of Earth's atmosphere. Captain Scarlet is the main character and he has to battle the Alien nemeses from Mars, namely The Mysterons. I made this design to give credit to this brilliant CGI animation series, which is still one of my top three animations of all time.</p>
-      ]]></description>
-      <pubDate>Fri, 14 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8439868-2026-08-14</guid>
+      <guid isPermaLink="false">teepublic-prod-21669303</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 11 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-11</link>
+      <description><![CDATA[Explore the galaxy with this unique Black Panther NASA space badge t-shirt. Perfect astronomy gift for space lovers and science enthusiasts. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:32:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21669303_0/1620399038/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21669303_0/1620399038/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Deep Space - Orange T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/deep-space-orange</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608660_0/1584867792/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Deep Space Orange T-Shirt featuring a vibrant galaxy design with stars and planets" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Thu, 13 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608660-2026-08-13</guid>
+      <guid isPermaLink="false">teepublic-prod-23694903</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 33 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-33</link>
+      <description><![CDATA[Shop the Black Panther NASA Space Badge 33 T-Shirt. Featuring a classic astronaut mission patch design for space enthusiasts and collectors. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:32:07 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23694903_0/1629017653/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23694903_0/1629017653/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Deep Space - Purple T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/deep-space-purple</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608832_0/1584868386/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Deep Space Purple T-Shirt with Galaxy and Planet Design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Wed, 12 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608832-2026-08-12</guid>
+      <guid isPermaLink="false">teepublic-prod-23695074</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 38 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-38</link>
+      <description><![CDATA[Explore the cosmos with this Black Panther NASA space badge t-shirt. Featuring a classic astronaut mission patch design for space enthusiasts and collectors. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:57 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23695074_0/1629018300/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23695074_0/1629018300/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Unique Space Odyssey T-Shirt - Red T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/unique-space-odyssey-t-shirt-red</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8536488_0/1584521821/i_m:bi_production_blanks_fi9zhy8iszgn9fdsrtgu_1535405111,c_-16_-132_x893,bps_ba,s_630,q_90.jpg" alt="Red t-shirt featuring a unique space odyssey galaxy design with stars and planets" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Tue, 11 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8536488-2026-08-11</guid>
+      <guid isPermaLink="false">teepublic-prod-23693209</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 20 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-20</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge 20 T-Shirt. Featuring a unique astronaut mission patch design inspired by space exploration history. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:47 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23693209_2/1629011218/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23693209_2/1629011218/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Sun and Moon Eclipse - Blue 2 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/sun-and-moon-eclipse-blue-2</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608986_0/1584869025/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Blue t-shirt featuring a stunning sun and moon eclipse galaxy design with stars and planets" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608986-2026-08-10</guid>
+      <guid isPermaLink="false">teepublic-prod-21669331</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 13 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-13</link>
+      <description><![CDATA[Explore the galaxy with this unique Black Panther NASA space badge t-shirt. Perfect astronomy gift for space enthusiasts and fans of cosmic exploration. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:37 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21669331_0/1620399154/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21669331_0/1620399154/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Deep Space - Light Blue T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/deep-space-light-blue</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608493_0/1584867197/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Deep Space Light Blue T-Shirt with galaxy and stars design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608493-2026-08-09</guid>
+      <guid isPermaLink="false">teepublic-prod-23693381</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 23 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-23</link>
+      <description><![CDATA[Shop the Black Panther NASA Space Badge T-Shirt. Featuring a classic astronaut mission patch design inspired by space history. Order yours today! #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:28 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23693381_2/1629011453/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23693381_2/1629011453/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Sun and Moon Eclipse - Green 1 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/sun-and-moon-eclipse-green-1</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8609037_0/1584869186/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green t-shirt featuring a stunning sun and moon eclipse galaxy design" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Sat, 08 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8609037-2026-08-08</guid>
+      <guid isPermaLink="false">teepublic-prod-23693799</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 26 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-26</link>
+      <description><![CDATA[Shop the Black Panther NASA Space Badge 26 T-Shirt. Featuring an authentic-style mission patch design for space enthusiasts and collectors. Order yours today! #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:17 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23693799_4/1629014282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23693799_4/1629014282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Unique Space Odyssey T-Shirt - Green T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/unique-space-odyssey-t-shirt-green</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8537442_0/1584525999/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_2_0_x826,s_630,q_90.jpg" alt="Unique Space Odyssey Green T-Shirt with galaxy and planet graphic" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Fri, 07 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8537442-2026-08-07</guid>
+      <guid isPermaLink="false">teepublic-prod-23694826</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 29 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-29</link>
+      <description><![CDATA[Shop the Black Panther NASA Space Badge T-Shirt. Featuring a unique vintage astronaut mission patch design for space enthusiasts and collectors. #teepublic #apparel #merch #astronomy #physics]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:31:07 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23694826_0/1629017213/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_11_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23694826_0/1629017213/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_11_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
     <item>
-      <title><![CDATA[Deep Space - Green T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/deep-space-green</link>
-      <description><![CDATA[
-        <img src="https://images.teepublic.com/derived/production/designs/8608445_0/1584867009/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_-7_0_484x,s_630,q_90.jpg" alt="Deep Space Green T-Shirt with galaxy stars and planets print" />
-        <p>Our awesome galaxy with its stars, planets, interstellar gas, dust, dark matter and stellar remnants has always peak my interest since I was a small boy. During night times on our farm, I could look up into the sky for hours on end, enjoying our beautiful creation. Of course, the real beauty only comes to light once you look at our planet system via strong telescopes. Anyhow, I created this stunning and beautiful image with photoshop, with the help from online youtube video’s. Hope you enjoy it too.</p>
-      ]]></description>
-      <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">astronomy-shirts-8608445-2026-08-06</guid>
+      <guid isPermaLink="false">teepublic-prod-21669667</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 15 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-15</link>
+      <description><![CDATA[Explore the galaxy with this unique NASA space badge t-shirt featuring original Black Panther art. Perfect astronomy gift for space lovers. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:57 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21669667_0/1620399968/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21669667_0/1620399968/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
-  
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-23694177</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 25 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-25</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge T-Shirt. Featuring vintage astronaut mission patch design. Perfect gift for space lovers. Order yours today! #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:48 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23694177_0/1629014889/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23694177_0/1629014889/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-23692940</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 21 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-21</link>
+      <description><![CDATA[Shop the Black Panther Art NASA Space Badge T-Shirt. Featuring a unique astronaut mission patch design inspired by authentic space exploration history. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23692940_1/1629010044/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23692940_1/1629010044/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-23695080</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 40 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-40</link>
+      <description><![CDATA[Explore the cosmos with our Black Panther NASA Space Badge T-Shirt. Featuring an authentic-style mission patch design for space enthusiasts and collectors. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23695080_0/1629018281/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23695080_0/1629018281/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-21668769</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 7 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-7</link>
+      <description><![CDATA[Get the unique Black Panther NASA Space Badge 7 T-Shirt. Featuring an original modified space agency badge design for astronomy and space fans. #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/21668769_0/1620397972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_15_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/21668769_0/1620397972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_15_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-23694901</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 32 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-32</link>
+      <description><![CDATA[Explore the cosmos with our Black Panther NASA Space Badge T-Shirt. Inspired by authentic astronaut mission patches. Order your space-themed tee today! #teepublic #apparel #merch #astronomy #physics]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:30:08 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23694901_0/1629017539/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23694901_0/1629017539/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
+    <item>
+      <guid isPermaLink="false">teepublic-prod-23695073</guid>
+      <title><![CDATA[Black Panther Art - NASA Space Badge 37 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/black-panther-art-nasa-space-badge-37</link>
+      <description><![CDATA[Explore the cosmos with this NASA Space Badge t-shirt. Featuring a vintage mission patch design inspired by space exploration. Shop now! #teepublic #apparel #merch #astronomy #engineer]]></description>
+      <pubDate>Sun, 02 Aug 2026 03:29:57 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/23695073_0/1629018253/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/23695073_0/1629018253/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
   </channel>
 </rss>

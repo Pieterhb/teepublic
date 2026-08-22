@@ -5,9 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/generate-rss.mjs && npx tsx scripts/generate-sitemaps.ts && next build",
+    "rss": "node scripts/generate-rss.mjs",
     "sitemap": "npx tsx scripts/generate-sitemaps.ts",
-    "pin": "node scripts/publish-pin.mjs",
-    "pin:dry": "node -e \"process.env.DRY_RUN='true'; import('./scripts/publish-pin.mjs')\"",
     "start": "next start",
     "lint": "eslint",
     "deploy": "npm run build && wrangler pages deploy out"

@@ -1,15 +1,45 @@
+/**
+ * generate-rss.mjs
+ *
+ * Generates static RSS 2.0 XML feeds (one per Pinterest board category + one
+ * all-products "social" feed) and writes them to public/rss/{slug}.xml.
+ *
+ * These static files are served by Cloudflare Pages at:
+ *   https://blackpantherstore.co.za/rss/{slug}.xml
+ *
+ * Publer ingests each feed URL and auto-schedules up to 10 pins per day to
+ * the matching Pinterest board — no Pinterest API key required on our end.
+ *
+ * Feed spec:
+ *   - RSS 2.0 + Yahoo Media RSS namespace (xmlns:media)
+ *   - Rolling buffer of 20 items per feed (most-recently-scraped products first)
+ *   - GUID = "teepublic-prod-{design_id}" — static, one pin per product, forever
+ *   - <link> points to blackpantherstore.co.za/design/{slug} (your site first)
+ *   - <media:content> + <enclosure> for image (required by Publer/Pinterest)
+ *   - Description includes meta_description + hashtags from niche/tags
+ *   - pubDate derived from scrape_timestamp (RFC 2822)
+ */
+
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-// Load data
-const productsPath = path.join(process.cwd(), 'data', 'products.json');
-const categoriesPath = path.join(process.cwd(), 'data', 'categories.json');
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const DATA_DIR   = path.join(__dirname, '..', 'data');
+const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 
-const products = JSON.parse(fs.readFileSync(productsPath, 'utf8'));
-const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
+// ── Load data ─────────────────────────────────────────────────────────────────
 
-// The Pinterest board names mapped to your slugs
-const targetCategories = [
+const products   = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'products.json'),   'utf8'));
+const categories = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'categories.json'), 'utf8'));
+
+const SITE_URL = 'https://blackpantherstore.co.za';
+
+// ── Board/Category configuration ─────────────────────────────────────────────
+// These 11 slugs map 1-to-1 with your Pinterest boards.
+// The "social" feed is the all-products fallback (no specific board).
+
+const BOARD_SLUGS = [
   'astronomy-shirts',
   'hobbies-shirts',
   'animals-shirts',
@@ -18,129 +48,189 @@ const targetCategories = [
   'math-shirts',
   'engineer-shirts',
   'everyday-shirts',
-  'professions-shirts', // Professional Shirts
-  'science-shirts'
+  'professions-shirts',
+  'science-shirts',
 ];
 
-const RSS_DIR = path.join(process.cwd(), 'public', 'rss');
-if (!fs.existsSync(RSS_DIR)) {
-  fs.mkdirSync(RSS_DIR, { recursive: true });
+const FEED_SIZE = 20; // rolling buffer: how many items to include per feed
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+
+/**
+ * Convert an ISO timestamp string (or Date) to RFC 2822 format required by RSS.
+ * Falls back to a deterministic offset from a base date using itemIndex so every
+ * product always has a unique, stable pubDate.
+ */
+function toRfc2822(timestamp, itemIndex = 0) {
+  if (timestamp) {
+    const d = new Date(timestamp);
+    if (!isNaN(d.getTime())) return d.toUTCString();
+  }
+  // Fallback: stagger dates starting from launch day, 1 day apart per product
+  const base = new Date('2026-08-01T08:00:00Z');
+  base.setDate(base.getDate() + itemIndex);
+  return base.toUTCString();
 }
 
-const SITE_URL = 'https://blackpantherstore.co.za';
+/**
+ * Build 3–5 relevant hashtags from a product's niche and tags fields.
+ */
+function buildHashtags(product) {
+  const tagPool = new Set(['teepublic', 'apparel', 'merch']);
 
-// 1. Calculate current Day of the Year (1 - 365)
-const now = new Date();
-const startOfYear = new Date(now.getFullYear(), 0, 0);
-const diff = now - startOfYear;
-const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-const todayDateStr = now.toISOString().split('T')[0]; // e.g. "2026-08-04"
+  if (product.niche)           tagPool.add(product.niche.replace(/\s+/g, '').toLowerCase());
+  if (product.secondary_niche) tagPool.add(product.secondary_niche.replace(/\s+/g, '').toLowerCase());
+  if (product.primary_keyword) {
+    // Convert "Bigfoot Fourier Transform" → #BigfootFourierTransform
+    tagPool.add(product.primary_keyword.replace(/\s+/g, ''));
+  }
 
-function generateRssXml(title, description, feedUrl, items, categorySlug) {
-  const rssItems = items.map(item => `
+  // Pull first 2 words from tags string
+  if (product.tags) {
+    product.tags.split(',').slice(0, 2).forEach(t => {
+      const clean = t.trim().replace(/\s+/g, '');
+      if (clean.length > 1 && clean.length < 25) tagPool.add(clean);
+    });
+  }
+
+  return [...tagPool].slice(0, 5).map(h => `#${h}`).join(' ');
+}
+
+/**
+ * Escape XML special characters outside of CDATA sections.
+ */
+function escapeXml(str) {
+  if (!str) return '';
+  return String(str)
+    .replace(/&/g,  '&amp;')
+    .replace(/</g,  '&lt;')
+    .replace(/>/g,  '&gt;')
+    .replace(/"/g,  '&quot;')
+    .replace(/'/g,  '&apos;');
+}
+
+/**
+ * Ensure an image URL is absolute HTTPS. TeePublic URLs are already absolute.
+ */
+function ensureHttps(url) {
+  if (!url) return '';
+  if (url.startsWith('http://')) return url.replace('http://', 'https://');
+  return url;
+}
+
+// ── RSS XML builder ───────────────────────────────────────────────────────────
+
+function buildRssXml({ slug, title, description, feedUrl, items }) {
+  const now = new Date().toUTCString();
+
+  const itemsXml = items.map(({ product, pubDate }) => {
+    const productLink  = `${SITE_URL}/design/${product.slug}`;
+    const imageUrl     = ensureHttps(product.image_url);
+    const hashtags     = buildHashtags(product);
+    const descContent  = product.meta_description || product.description || product.title;
+    const fullDesc     = `${descContent} ${hashtags}`;
+
+    return `
     <item>
-      <title><![CDATA[${item.title}]]></title>
-      <link>${SITE_URL}/design/${item.slug}</link>
-      <description><![CDATA[
-        <img src="${item.image_url}" alt="${item.image_alt}" />
-        <p>${item.description}</p>
-      ]]></description>
-      <pubDate>${item.date.toUTCString()}</pubDate>
-      <!-- The GUID contains the specific date so Pinterest knows it's a unique daily pin -->
-      <guid isPermaLink="false">${categorySlug}-${item.design_id}-${item.dateStr}</guid>
-    </item>
-  `).join('');
+      <guid isPermaLink="false">teepublic-prod-${escapeXml(String(product.design_id))}</guid>
+      <title><![CDATA[${product.title}]]></title>
+      <link>${escapeXml(productLink)}</link>
+      <description><![CDATA[${fullDesc}]]></description>
+      <pubDate>${pubDate}</pubDate>
+      <media:content url="${escapeXml(imageUrl)}" medium="image" type="image/jpeg" />
+      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" length="0" />
+    </item>`;
+  }).join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${title}</title>
-    <link>${SITE_URL}</link>
-    <description>${description}</description>
-    <atom:link href="${feedUrl}" rel="self" type="application/rss+xml" />
-    <lastBuildDate>${now.toUTCString()}</lastBuildDate>
-    ${rssItems}
+    <title>${escapeXml(title)}</title>
+    <link>${SITE_URL}/</link>
+    <description>${escapeXml(description)}</description>
+    <language>en-us</language>
+    <lastBuildDate>${now}</lastBuildDate>
+    <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
+    ${itemsXml}
   </channel>
 </rss>`;
 }
 
-console.log('Generating RSS feeds for Pinterest (14 items per feed)...');
-console.log(`Today is day ${dayOfYear} of the year.`);
+// ── Feed generation ───────────────────────────────────────────────────────────
 
-// Helper to get up to 14 past days of items, with a specific hour offset
-function getRecentItems(productsList, hourOffset = 0) {
-  const recentItems = [];
-  // We started pinning around day 216 (Aug 4). 
-  // We use this to prevent looping/duplicates when boards run out of fresh pins.
-  const LAUNCH_DAY_OF_YEAR = 216; 
-  
-  for (let i = 0; i < 14; i++) {
-    const targetDayOfYear = dayOfYear - i;
-    if (targetDayOfYear < 1) continue; // Skip days from previous year to avoid complexity
-    
-    const index = targetDayOfYear - LAUNCH_DAY_OF_YEAR;
-    
-    // Stop if we ran out of fresh pins or if the day is before launch
-    if (index < 0 || index >= productsList.length) {
-      continue;
-    }
-    
-    // Set the specific hour for this category so pins are spaced out
-    const targetDate = new Date(now.getTime() - i * 24 * 60 * 60 * 1000);
-    targetDate.setUTCHours(hourOffset, 0, 0, 0); // Sets time to e.g., 08:00:00 UTC
-    
-    const targetDateStr = targetDate.toISOString().split('T')[0];
-    
-    const product = productsList[index];
-    recentItems.push({
-      ...product,
-      date: targetDate,
-      dateStr: targetDateStr
-    });
-  }
-  return recentItems;
+/**
+ * Pick the most-recently-scraped FEED_SIZE products from a list.
+ * Products are sorted by scrape_timestamp descending (newest first).
+ * GUID is static (design_id only) so Publer never re-pins the same product.
+ */
+function buildFeedItems(productList) {
+  const sorted = [...productList].sort((a, b) => {
+    const da = a.scrape_timestamp ? new Date(a.scrape_timestamp) : new Date(0);
+    const db = b.scrape_timestamp ? new Date(b.scrape_timestamp) : new Date(0);
+    return db - da; // newest first
+  });
+
+  return sorted.slice(0, FEED_SIZE).map((product, i) => ({
+    product,
+    pubDate: toRfc2822(product.scrape_timestamp, i),
+  }));
 }
 
-// Generate category feeds
-targetCategories.forEach((slug, index) => {
+// Ensure output directory exists
+fs.mkdirSync(PUBLIC_RSS, { recursive: true });
+
+console.log(`\n🗞  Generating RSS feeds → public/rss/  (${FEED_SIZE} items per feed)\n`);
+
+// ── Per-board category feeds ──────────────────────────────────────────────────
+
+let generated = 0;
+
+for (const slug of BOARD_SLUGS) {
   const category = categories.find(c => c.slug === slug);
   if (!category) {
-    console.warn(`Category not found: ${slug}`);
-    return;
+    console.warn(`  ⚠  Category not found in categories.json: "${slug}" — skipping`);
+    continue;
   }
 
-  // Get all products for this category
   const categoryProducts = category.productIds
-    .map(id => products.find(p => p.design_id == id))
+    .map(id => products.find(p => String(p.design_id) === String(id)))
     .filter(Boolean);
 
-  // Spread out pins by assigning a different hour (0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20)
-  const hourOffset = index * 2;
-  const recentCategoryProducts = getRecentItems(categoryProducts, hourOffset);
-  
-  const xml = generateRssXml(
-    `Black Panther Store - ${category.title}`,
-    `Daily featured design for ${category.title}`,
-    `${SITE_URL}/rss/${slug}.xml`,
-    recentCategoryProducts,
-    slug
-  );
+  if (categoryProducts.length === 0) {
+    console.warn(`  ⚠  No products for category: "${slug}" — skipping`);
+    continue;
+  }
 
-  fs.writeFileSync(path.join(RSS_DIR, `${slug}.xml`), xml);
-  console.log(`✅ Created RSS feed for ${slug} (${recentCategoryProducts.length} items, scheduled ~${hourOffset}:00 UTC)`);
+  const items   = buildFeedItems(categoryProducts);
+  const feedUrl = `${SITE_URL}/rss/${slug}.xml`;
+  const xml     = buildRssXml({
+    slug,
+    title:       `Black Panther Store — ${category.title}`,
+    description: `TeePublic products for ${category.title}`,
+    feedUrl,
+    items,
+  });
+
+  fs.writeFileSync(path.join(PUBLIC_RSS, `${slug}.xml`), xml, 'utf8');
+  console.log(`  ✅  ${slug}.xml  (${items.length} items)`);
+  generated++;
+}
+
+// ── All-products social / fallback feed ──────────────────────────────────────
+
+const socialItems = buildFeedItems(products);
+const socialXml   = buildRssXml({
+  slug:        'social',
+  title:       'Black Panther Store — All Products',
+  description: 'All TeePublic products from Black Panther Store',
+  feedUrl:     `${SITE_URL}/rss/social.xml`,
+  items:       socialItems,
 });
 
-// Generate the "Social" feed (1 fully random item from across all designs based on day)
-// Assign it to 22:00 UTC
-const recentSocialProducts = getRecentItems(products, 22);
-const socialXml = generateRssXml(
-  'Black Panther Store - Social',
-  'Daily featured design from all collections',
-  `${SITE_URL}/rss/social.xml`,
-  recentSocialProducts,
-  'social'
-);
-fs.writeFileSync(path.join(RSS_DIR, `social.xml`), socialXml);
-console.log(`✅ Created RSS feed for social (${recentSocialProducts.length} items, scheduled ~22:00 UTC)`);
+fs.writeFileSync(path.join(PUBLIC_RSS, 'social.xml'), socialXml, 'utf8');
+console.log(`  ✅  social.xml  (${socialItems.length} items)`);
+generated++;
 
-console.log('Done!');
+console.log(`\n✔  Done — generated ${generated} RSS feeds\n`);
