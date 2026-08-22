@@ -1,0 +1,7 @@
+# Host canonicalization (force https and apex domain blackpantherstore.co.za)
+http://www.blackpantherstore.co.za/*  https://blackpantherstore.co.za/:splat  301!
+https://www.blackpantherstore.co.za/* https://blackpantherstore.co.za/:splat  301!
+http://blackpantherstore.co.za/*      https://blackpantherstore.co.za/:splat  301!
+
+# Legacy /designs/:slug -> /design/:slug redirects
+/designs/:slug  /design/:slug  301

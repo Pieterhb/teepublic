@@ -10,6 +10,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://blackpantherstore.co.za",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
     title: "Black Panther Store — Unique T-Shirt & Apparel Designs",
     description:

@@ -34,6 +34,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://blackpantherstore.co.za/${category.slug}`,
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
     openGraph: {
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs from independent artists.`,
@@ -49,6 +59,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+function getCategoryDescription(slug: string, title: string, count: number): string {
+  const lowerSlug = slug.toLowerCase();
+  if (lowerSlug.includes('everyday')) {
+    return `Our ${title} collection brings together versatile, ultra-comfortable apparel built for day-to-day comfort and effortless style. With over ${count} unique graphic tees, hoodies, and tops created by independent creators, you will find designs spanning clever humor, mathematical art, nature illustrations, and bold typography.`;
+  }
+  if (lowerSlug.includes('minimalist')) {
+    return `Discover clean, sophisticated ${title.toLowerCase()} celebrating subtle aesthetics, delicate line art, and modern typography. Featuring over ${count} curated designs, our minimalist apparel offers understated elegance perfect for any casual or professional setting.`;
+  }
+  if (lowerSlug.includes('engineer') || lowerSlug.includes('math') || lowerSlug.includes('science')) {
+    return `Designed for analytical minds, software developers, mathematicians, and STEM enthusiasts. Browse ${count}+ intelligent designs featuring genuine Fourier Transform mathematical equations, wireframe schematics, and technical humor.`;
+  }
+  if (lowerSlug.includes('gift') || lowerSlug.includes('dad') || lowerSlug.includes('husband') || lowerSlug.includes('boyfriend')) {
+    return `Looking for a memorable gift? Our ${title} collection offers ${count}+ hand-picked apparel designs tailored for birthdays, holidays, and special milestones. Shipped worldwide with premium print-on-demand quality.`;
+  }
+  if (lowerSlug.includes('animal') || lowerSlug.includes('bird') || lowerSlug.includes('wolf')) {
+    return `Explore majestic wildlife and creature-themed art in our ${title} gallery. From fierce predators to endearing pets, enjoy ${count}+ authentic illustrations printed on durable, soft apparel.`;
+  }
+  return `Explore our hand-curated ${title.toLowerCase()} collection featuring ${count}+ original creations from independent artists. Each item is made to order using premium materials and sustainable printing techniques.`;
+}
+
 export default async function CategoryPage({ params }: Props) {
   const { category: slug } = await params;
   const category = getCategoryBySlug(slug);
@@ -59,20 +89,25 @@ export default async function CategoryPage({ params }: Props) {
 
   const products = getProductsForCategory(category.slug);
   const relatedCategories = getRelatedCategoriesForCategory(category.slug);
+  const editorialDesc = getCategoryDescription(category.slug, category.title, products.length);
 
-  // Generate dynamic FAQ
+  // Dynamic FAQ tailored to category
   const faqs = [
     {
-      question: `What types of ${category.title.toLowerCase()} do you offer?`,
-      answer: `We offer a wide variety of ${category.title.toLowerCase()} ranging from t-shirts to hoodies and more. All designs are printed on high-quality, comfortable materials and created by independent artists.`
+      question: `What types of ${category.title.toLowerCase()} apparel are available?`,
+      answer: `Our ${category.title.toLowerCase()} collection includes classic heavyweight tees, soft tri-blend shirts, v-necks, tank tops, pullover hoodies, and crewneck sweatshirts in sizes from S to 5XL.`
     },
     {
-      question: `How do I find the right size for ${category.title.toLowerCase()}?`,
-      answer: `Each product page on TeePublic has a detailed sizing chart. We recommend comparing those measurements to a shirt you currently own that fits well.`
+      question: `How do I choose the best size for ${category.title.toLowerCase()}?`,
+      answer: `All products feature an exact sizing chart on their TeePublic product page with chest and length measurements. For a relaxed fit, many customers choose to size up one size.`
     },
     {
-      question: `Are these designs exclusive?`,
-      answer: `Yes! Many of the designs in our ${category.title} collection are unique artworks submitted by independent creators that you won't find in big-box retail stores.`
+      question: `How is the print quality and durability of these designs?`,
+      answer: `Designs are produced using state-of-the-art Direct-to-Garment (DTG) printing with eco-friendly inks that sink directly into the fabric fibers for rich color and long-lasting wash durability.`
+    },
+    {
+      question: `Where does my order ship from?`,
+      answer: `Orders are fulfilled and shipped globally through TeePublic's network of regional fulfillment centers across the US, UK, Europe, and Australia to ensure fast international delivery.`
     }
   ];
 
@@ -91,10 +126,10 @@ export default async function CategoryPage({ params }: Props) {
       {
         '@type': 'CollectionPage',
         name: `Best ${category.title}`,
-        description: `Shop the best ${category.title.toLowerCase()} created by independent artists.`,
+        description: editorialDesc,
         url: `https://blackpantherstore.co.za/${category.slug}`,
         numberOfItems: category.productIds.length,
-        itemListElement: products.slice(0, 10).map((p, idx) => ({
+        itemListElement: products.slice(0, 12).map((p, idx) => ({
           '@type': 'ListItem',
           position: idx + 1,
           url: `https://blackpantherstore.co.za/design/${p.slug}`,
@@ -137,13 +172,14 @@ export default async function CategoryPage({ params }: Props) {
       <div className="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <p className="text-indigo-400 font-semibold tracking-widest uppercase mb-4 text-sm">Curated Collection</p>
-          <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-500/20 border border-indigo-400/30 rounded-full text-indigo-300 font-semibold tracking-wider uppercase mb-4 text-xs">
+            <span>🐾</span> Curated Collection · {products.length} Designs
+          </div>
+          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize">
             {category.title}
           </h1>
-          <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Discover {products.length}+ hand-picked designs in our {category.title.toLowerCase()} collection. 
-            Printed on premium apparel by independent artists.
+          <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+            {editorialDesc}
           </p>
         </div>
       </div>
@@ -155,24 +191,25 @@ export default async function CategoryPage({ params }: Props) {
         {/* Buying Guide / SEO Content block */}
         <section className="my-20 bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6">Why shop our {category.title}?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">Why Shop Our {category.title}?</h2>
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-              When you browse our curated selection of <strong>{category.title.toLowerCase()}</strong>, you are supporting 
-              independent artists from around the world. Every design is printed on demand on high-quality, ethically sourced 
-              garments. Whether you are looking for a funny gift or a unique addition to your wardrobe, we have you covered.
+              When you purchase from our <strong>{category.title}</strong> collection, you directly support independent digital artists and designers. Every garment is made to order using premium combed cotton blends and environmentally friendly inks.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-12">
-              <div>
-                <h3 className="font-bold text-slate-900 mb-2">Unique Designs</h3>
-                <p className="text-sm text-slate-600">Exclusive art you won&apos;t find anywhere else.</p>
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div className="text-2xl mb-2">🎨</div>
+                <h3 className="font-bold text-slate-900 mb-2">Original Art</h3>
+                <p className="text-sm text-slate-600">Exclusive graphics and concepts not found in retail big-box stores.</p>
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 mb-2">High Quality</h3>
-                <p className="text-sm text-slate-600">Printed on premium, durable materials.</p>
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div className="text-2xl mb-2">✨</div>
+                <h3 className="font-bold text-slate-900 mb-2">Premium Fabrics</h3>
+                <p className="text-sm text-slate-600">Ultra-soft, pre-shrunk cotton for all-day comfort and durability.</p>
               </div>
-              <div>
-                <h3 className="font-bold text-slate-900 mb-2">Support Artists</h3>
-                <p className="text-sm text-slate-600">Every purchase directly supports the creator.</p>
+              <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                <div className="text-2xl mb-2">🌍</div>
+                <h3 className="font-bold text-slate-900 mb-2">Worldwide Delivery</h3>
+                <p className="text-sm text-slate-600">Reliable global shipping via TeePublic&apos;s fulfillment centers.</p>
               </div>
             </div>
           </div>

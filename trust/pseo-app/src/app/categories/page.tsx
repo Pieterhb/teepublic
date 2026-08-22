@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://blackpantherstore.co.za/categories',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Browse All 501 Categories | Black Panther Store',
     description: 'From funny to professional, animals to holidays — 501 categories to explore.',

@@ -7,6 +7,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://blackpantherstore.co.za/privacy-policy',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'Privacy Policy | Black Panther Store',
     description: 'Privacy Policy and data protection standards for Black Panther Store.',
@@ -38,7 +48,7 @@ export default function PrivacyPolicyPage() {
               1. Introduction
             </h2>
             <p className="mb-4">
-              Welcome to Black Panther Store. We operate the website <a href="https://www.blackpantherstore.co.za" className="text-indigo-600 dark:text-indigo-400 hover:underline">https://www.blackpantherstore.co.za</a>
+              Welcome to Black Panther Store. We operate the website <a href="https://blackpantherstore.co.za" className="text-indigo-600 dark:text-indigo-400 hover:underline">https://blackpantherstore.co.za</a>
             </p>
             <p>
               We respect your privacy and are committed to protecting your personal information in accordance with the Protection of Personal Information Act (POPIA) of South Africa and global data protection standards (GDPR). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or interact with our automated services and social media features.
@@ -138,7 +148,7 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong className="text-slate-900 dark:text-white">Website:</strong> <a href="https://www.blackpantherstore.co.za/" className="text-indigo-600 dark:text-indigo-400 hover:underline break-all">https://www.blackpantherstore.co.za/</a>
+                <strong className="text-slate-900 dark:text-white">Website:</strong> <a href="https://blackpantherstore.co.za" className="text-indigo-600 dark:text-indigo-400 hover:underline break-all">https://blackpantherstore.co.za</a>
               </li>
               <li>
                 <strong className="text-slate-900 dark:text-white">Email:</strong> <a href="mailto:haasbroek.pieter@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">haasbroek.pieter@gmail.com</a>

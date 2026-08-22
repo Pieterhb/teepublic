@@ -9,6 +9,16 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://blackpantherstore.co.za/designs',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
     title: 'All Designs | Black Panther Store',
     description: 'Browse 4,000+ unique T-shirt and apparel designs from independent artists.',

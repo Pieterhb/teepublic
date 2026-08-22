@@ -5,8 +5,8 @@ const DOMAIN = 'https://blackpantherstore.co.za';
 const PUBLIC_DIR = path.join(__dirname, '../public');
 const DATA_DIR = path.join(__dirname, '../data');
 
-function generateSitemapItem(url: string, lastmod: string) {
-  return `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n  </url>`;
+function generateSitemapItem(url: string, lastmod: string, changefreq: string = 'weekly', priority: string = '0.7') {
+  return `  <url>\n    <loc>${url}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${changefreq}</changefreq>\n    <priority>${priority}</priority>\n  </url>`;
 }
 
 function main() {
@@ -22,7 +22,7 @@ function main() {
 
   // 1. Generate Static Pages Sitemap
   const staticPages = [
-    { url: `${DOMAIN}/`, changefreq: 'daily', priority: '1.0' },
+    { url: `${DOMAIN}`, changefreq: 'daily', priority: '1.0' },
     { url: `${DOMAIN}/designs`, changefreq: 'daily', priority: '0.9' },
     { url: `${DOMAIN}/categories`, changefreq: 'weekly', priority: '0.9' },
     { url: `${DOMAIN}/privacy-policy`, changefreq: 'monthly', priority: '0.3' },
@@ -38,7 +38,7 @@ function main() {
   // 2. Generate Categories Sitemap
   let catXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
   categories.forEach((c: any) => {
-    catXml += generateSitemapItem(`${DOMAIN}/${c.slug}`, today) + '\n';
+    catXml += generateSitemapItem(`${DOMAIN}/${c.slug}`, today, 'weekly', '0.8') + '\n';
   });
   catXml += `</urlset>`;
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-categories.xml'), catXml);
@@ -50,7 +50,7 @@ function main() {
     const chunk = products.slice(i, i + chunkSize);
     let pXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
     chunk.forEach((p: any) => {
-      pXml += generateSitemapItem(`${DOMAIN}/design/${p.slug}`, today) + '\n';
+      pXml += generateSitemapItem(`${DOMAIN}/design/${p.slug}`, today, 'weekly', '0.7') + '\n';
     });
     pXml += `</urlset>`;
     const name = `sitemap-products-${Math.floor(i / chunkSize) + 1}.xml`;
