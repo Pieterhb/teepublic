@@ -47,14 +47,13 @@ jobs:
           cache-dependency-path: trust/pseo-app/package-lock.json
 
       - name: Install dependencies
-        # --include=optional ensures platform-specific native binaries are fetched
-        # (e.g. lightningcss-linux-x64-gnu required by Tailwind CSS v4 on Ubuntu runners)
         run: npm ci --include=optional
 
-      - name: Install lightningcss Linux binary (safety net)
-        # Explicitly installs the Linux native binding in case it was omitted from
-        # the Windows-generated lockfile
-        run: npm install --no-save lightningcss-linux-x64-gnu || true
+      - name: Install Linux native bindings
+        # npm has a known bug where optional platform-specific deps are skipped when
+        # the lockfile was generated on a different OS (Windows). Force-install the
+        # Linux x64 native bindings for @tailwindcss/oxide and lightningcss directly.
+        run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
 
       - name: Generate RSS feeds
         run: node scripts/generate-rss.mjs
