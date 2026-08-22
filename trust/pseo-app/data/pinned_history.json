@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-22T08:27:40.459Z",
-  "dayCounter": 0,
-  "totalPinned": 11,
+  "lastUpdated": "2026-08-22T08:37:55.689Z",
+  "dayCounter": 1,
+  "totalPinned": 22,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -13,10 +13,35 @@
     "94037075",
     "94084061",
     "94199664",
-    "94197978"
+    "94197978",
+    "8609133",
+    "8371666",
+    "94197406",
+    "93985632",
+    "8357651",
+    "94084722",
+    "94083765",
+    "94032207",
+    "94083920",
+    "94197886",
+    "94083111"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8609133",
+        "slug": "blue-jupiter-planet",
+        "title": "Blue Jupiter Planet T-Shirt",
+        "seo_title": "Blue Jupiter Planet T-Shirt | Galaxy Space Tee",
+        "description": "Explore the cosmos with this stunning Blue Jupiter Planet T-Shirt. Featuring a gorgeous galaxy and space design, perfect for astronomy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8609133_0/1584869591/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Blue Jupiter Planet T-Shirt with galaxy space design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Blue Jupiter Planet T-Shirt",
+        "tags": "jupiter, black, blue, child, cool, galaxy, new, planet, space, star, sun, white, woman",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "93523632",
         "slug": "galileo-galilei-fourier-transform-math-line-art",
@@ -34,6 +59,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "8371666",
+        "slug": "zentangle-art-yellow-black-and-blue-colours",
+        "title": "Zentangle Art - Yellow, Black & Blue colours T-Shirt",
+        "seo_title": "Zentangle Art T-Shirt | Yellow, Black & Blue",
+        "description": "Discover our vibrant yellow, black and blue Zentangle art t-shirt. Featuring stunning patterned ink designs, perfect for art lovers and everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8371666_0/1583672496/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg",
+        "image_alt": "Yellow, black and blue Zentangle art t-shirt with intricate pattern design",
+        "niche": "hobbies",
+        "secondary_niche": "Art",
+        "primary_keyword": "Zentangle Art T-Shirt",
+        "tags": "dots, ink, lines, mosaic, paper, pattern, shape, zentangle",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
+      {
         "design_id": "8330152",
         "slug": "the-black-panther-deadly-droplets-unique-art",
         "title": "The Black Panther - Deadly Droplets (Unique Art) T-Shirt",
@@ -49,6 +88,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "94197406",
+        "slug": "fourier-transform-parasaurolophus-math-dinosaur",
+        "title": "Fourier Transform Parasaurolophus - Math Dinosaur T-Shirt",
+        "seo_title": "Fourier Transform Dinosaur Math T-Shirt",
+        "description": "Unique Parasaurolophus dinosaur design created with Fourier Transform math. Perfect for science, math, and dinosaur lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94197406_0/1781613985/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_35_0_x626,s_630,q_90.jpg",
+        "image_alt": "Parasaurolophus dinosaur outline created using Fourier Transform math, with neon green details.",
+        "niche": "science",
+        "secondary_niche": "animals",
+        "primary_keyword": "Fourier Transform Dinosaur",
+        "tags": "parasaurolophus, dinosaur, fourier transform, geek, green, math, mathematics, neon, nerd, paleontology, physics, science, stem",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "94199890",
         "slug": "fourier-transform-tyrannosaurus-rex-math-dinosaur",
@@ -66,6 +119,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "93985632",
+        "slug": "fft-sasquatch-fast-fourier-transform-art",
+        "title": "FFT Sasquatch - Fast Fourier Transform Art T-Shirt",
+        "seo_title": "FFT Sasquatch Fast Fourier Transform T-Shirt",
+        "description": "Discover the FFT Sasquatch T-Shirt, blending the Fast Fourier Transform equation with Bigfoot. Perfect for electrical engineers and computer scientists.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/93985632_0/1781271281/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_25_0_x626,s_630,q_90.jpg",
+        "image_alt": "FFT Sasquatch Fast Fourier Transform Art T-Shirt in Gold and Green",
+        "niche": "Engineer",
+        "secondary_niche": "Math",
+        "primary_keyword": "Fast Fourier Transform T-Shirt",
+        "tags": "fourier transform, coder, computer science, cryptid, electrical engineering, fourier, physics, sasquatch",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
+      {
         "design_id": "94082830",
         "slug": "leaving-no-footprints-only-frequency-signatures",
         "title": "Leaving No Footprints - Only Frequency Signatures T-Shirt",
@@ -81,6 +148,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "8357651",
+        "slug": "white-tiger-from-india-yellow-colour",
+        "title": "White Tiger from India - Yellow colour T-Shirt",
+        "seo_title": "White Tiger India Yellow T-Shirt | Wildlife Tee",
+        "description": "Shop the stunning White Tiger from India yellow T-shirt. Featuring a majestic Bengal tiger design inspired by nature's beauty. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8357651_0/1583583840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "White Tiger from India Yellow colour T-Shirt featuring a majestic Bengal tiger graphic",
+        "niche": "Animals",
+        "secondary_niche": "Nature",
+        "primary_keyword": "White Tiger T-Shirt",
+        "tags": "white tiger, beautiful, bengal, creature, forest, india, nature, stripes, tiger, white",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "94198328",
         "slug": "fourier-transform-spinosaurus-math-dinosaur",
@@ -98,6 +179,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "94084722",
+        "slug": "an-unresolved-mystery-until-you-do-the-math",
+        "title": "An Unresolved Mystery - Until You Do The Math T-Shirt",
+        "seo_title": "Bigfoot Math Shirt: Fourier Transform Cryptid Mystery",
+        "description": "Solve the Bigfoot mystery with this unique shirt! Features a Bigfoot design using Fourier Transform epicycles. Perfect for math and science lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94084722_0/1781448432/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bigfoot cryptid design using Fourier Transform epicycles and math equations",
+        "niche": "Math",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Bigfoot Math Shirt",
+        "tags": "cryptid, data science, engineering, fourier transform, geek, math humor, math joke, math teacher, physics, sasquatch, stem, wireframe",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
+      {
         "design_id": "94083586",
         "slug": "just-a-sine-wave-walking-in-the-woods-bigfoot",
         "title": "Just A Sine Wave - Walking In The Woods Bigfoot T-Shirt",
@@ -113,6 +208,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "94083765",
+        "slug": "hidden-in-the-noise-revealed-in-the-frequency-bigf",
+        "title": "Hidden In The Noise - Revealed In The Frequency Bigfoot T-Shirt",
+        "seo_title": "Bigfoot Fourier Transform T-Shirt | Engineer Math Physics Gift",
+        "description": "Filter noise to reveal the legend! This unique Bigfoot Fourier Transform T-shirt is perfect for acoustical engineers, data analysts, and signal processing pros. A geeky math & physics gift.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94083765_0/1781447201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Blue-to-magenta gradient Bigfoot design created with Fourier Transform epicycles, representing signal processing.",
+        "niche": "Engineer",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Bigfoot Fourier Transform",
+        "tags": "engineering, fourier transform, geek, math humor, math pun, math teacher, physics, sasquatch, stem, wireframe",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "94083349",
         "slug": "detecting-the-unexplained-squatch-signal-analysis",
@@ -130,6 +239,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "94032207",
+        "slug": "bigfoot-drawn-with-math-fourier-transform-aurora-g",
+        "title": "Bigfoot Drawn with Math: Fourier Transform Aurora Gradient T-Shirt",
+        "seo_title": "Bigfoot Fourier Transform Aurora Gradient T-Shirt",
+        "description": "Unique Bigfoot t-shirt featuring an aurora gradient, drawn entirely with Fourier Transform math equations. Perfect for science and math lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94032207_0/1781346495/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_40_0_x626,s_630,q_90.jpg",
+        "image_alt": "Bigfoot silhouette with an aurora gradient fill, created using Fourier Transform math.",
+        "niche": "Science",
+        "secondary_niche": "Professions",
+        "primary_keyword": "Fourier Transform Bigfoot",
+        "tags": "bigfoot, aurora, cryptid, engineering, fourier transform, gradient, math, math teacher, mathematics, neon, physics, sasquatch, science, stem",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
+      {
         "design_id": "94037075",
         "slug": "generative-fft-bigfoot-fourier-transform-math-art-",
         "title": "Generative FFT Bigfoot - Fourier Transform Math Art (Cyan Teal Edition) T-Shirt",
@@ -145,6 +268,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "94083920",
+        "slug": "leaving-no-footprints-frequency-signatures-cyan",
+        "title": "Leaving No Footprints - Frequency Signatures (Cyan) T-Shirt",
+        "seo_title": "Fourier Transform Bigfoot T-Shirt - Math & Physics Engineer Gift",
+        "description": "Explore the mathematical universe with our unique Bigfoot frequency signature t-shirt. Perfect for electrical engineers, physics lovers, and math geeks. Features a vibrant cyan wireframe design.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94083920_0/1781447373/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Cyan wireframe design of Bigfoot's frequency signature on a t-shirt",
+        "niche": "science",
+        "secondary_niche": "professions",
+        "primary_keyword": "Fourier Transform T-Shirt",
+        "tags": "fourier transform, electrical engineer, engineering, geek, math humor, math pun, math teacher, physics, sasquatch, stem, wireframe",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "94084061",
         "slug": "fourier-transform-bigfoot-mathematical-wireframe-a",
@@ -162,6 +299,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "94197886",
+        "slug": "fourier-transform-brachiosaurus-math-dinosaur",
+        "title": "Fourier Transform Brachiosaurus - Math Dinosaur T-Shirt",
+        "seo_title": "Fourier Transform Brachiosaurus Math Dinosaur T-Shirt",
+        "description": "Unique Brachiosaurus design created with authentic Fourier Transform math equations. Perfect for science, math, and dinosaur lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94197886_0/1781614937/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_63_0_x626,s_630,q_90.jpg",
+        "image_alt": "Brachiosaurus dinosaur outline created using Fourier Transform math equations, with neon green details.",
+        "niche": "science",
+        "secondary_niche": "animals",
+        "primary_keyword": "Fourier Transform Dinosaur",
+        "tags": "brachiosaurus, dinosaur, fourier transform, geek, green, math, mathematics, neon, nerd, paleontology, physics, science, stem",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
+      {
         "design_id": "94199664",
         "slug": "fourier-transform-ankylosaurus-math-dinosaur",
         "title": "Fourier Transform Ankylosaurus - Math Dinosaur T-Shirt",
@@ -177,6 +328,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "94083111",
+        "slug": "no-mystery-at-all-just-an-outlier-bigfoot",
+        "title": "No Mystery At All - Just An Outlier Bigfoot T-Shirt",
+        "seo_title": "Bigfoot Outlier Math Joke T-Shirt",
+        "description": "Funny Bigfoot t-shirt for statisticians & data scientists. Features an outlier Bigfoot plotted with Fourier Transform epicycles. Perfect math humor gift!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94083111_4/1781514417/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bigfoot outlier statistical joke t-shirt design",
+        "niche": "Math",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Bigfoot T-Shirt",
+        "tags": "analyst, data science, engineering, fourier transform, geek, math humor, math pun, math teacher, outlier, physics, sasquatch, statistics",
+        "pubDate": "Sat, 22 Aug 2026 08:37:55 GMT"
+      },
       {
         "design_id": "94197978",
         "slug": "fourier-transform-pteranodon-math-dinosaur",
