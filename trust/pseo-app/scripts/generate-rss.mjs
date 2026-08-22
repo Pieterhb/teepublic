@@ -1,21 +1,21 @@
 /**
  * generate-rss.mjs
  *
- * Multi-Board Dynamic RSS Feed Generator with 6-Board Daily Rotation.
+ * Multi-Board RSS 2.0 Feed Generator for Pinterest Auto-Publishing.
  *
- * Designed for Pinterest Native RSS Auto-Publishing (100% Free & Zero API Keys):
- *   1. 11 Board RSS Feeds (10 category feeds + 1 all-products "social" feed).
- *   2. Rotates 6 active boards per day (e.g. Day 1: Boards 1-6; Day 2: Boards 7-11 + Board 1; etc.).
- *   3. Exactly 6 new pins added across the entire store per day (1 per active board, 0 for inactive boards).
- *   4. 100% Duplicate Prevention:
+ * Requirements:
+ *   1. Generates 1 fresh product pin for ALL 11 Pinterest boards every single day.
+ *   2. Full RSS 2.0 + Yahoo Media RSS compliance (<title>, <link>, <description>, <guid>, <pubDate>, <media:content>, <enclosure>).
+ *   3. 100% Duplicate Prevention:
  *      - Permanent static GUIDs: <guid isPermaLink="false">teepublic-prod-{design_id}</guid>
  *      - Global history tracking in data/pinned_history.json (persisted across git runs).
- *      - Once a product ID is pinned, it is NEVER emitted in any feed again.
+ *      - Once a product ID is pinned, it is never emitted as a new pin again.
+ *   4. Outputs all 11 feeds to public/rss/{slug}.xml (deployed to https://blackpantherstore.co.za/rss/{slug}.xml).
  *
  * CLI Usage:
- *   node scripts/generate-rss.mjs --advance       (Daily cron: advances day & adds 6 new pins)
- *   node scripts/generate-rss.mjs --rebuild-only  (Build step: re-renders XML without advancing)
- *   node scripts/generate-rss.mjs --dry-run       (Simulate next rotation without writing files)
+ *   node scripts/generate-rss.mjs --advance       (Daily cron: advances day & adds 1 new pin to all 11 boards)
+ *   node scripts/generate-rss.mjs --rebuild-only  (Build step: re-renders existing XML without adding new pins)
+ *   node scripts/generate-rss.mjs --dry-run       (Simulate run without writing files)
  */
 
 import fs from 'fs';
@@ -32,20 +32,18 @@ const SITE_URL = 'https://blackpantherstore.co.za';
 const MAX_FEED_BUFFER = 10; // Keep up to 10 recent items per feed for RSS health
 
 const BOARD_SLUGS = [
-  'astronomy-shirts',          // 0
-  'hobbies-shirts',            // 1
-  'animals-shirts',            // 2
-  'minimalist-engineer-shirts', // 3
-  'minimalist-shirts',         // 4
-  'math-shirts',               // 5
-  'engineer-shirts',           // 6
-  'everyday-shirts',           // 7
-  'professions-shirts',        // 8
-  'science-shirts',            // 9
-  'social',                    // 10
+  'astronomy-shirts',          // 1. Astronomy Shirts
+  'hobbies-shirts',            // 2. Hobbies Shirts
+  'animals-shirts',            // 3. Animals Shirts
+  'minimalist-engineer-shirts', // 4. Minimalist Engineer Shirts
+  'minimalist-shirts',         // 5. Minimalist Shirts
+  'math-shirts',               // 6. Math Shirts
+  'engineer-shirts',           // 7. Engineer Shirts
+  'everyday-shirts',           // 8. Everyday Shirts
+  'professions-shirts',        // 9. Professions Shirts
+  'science-shirts',            // 10. Science Shirts
+  'social',                    // 11. Social / All Collections
 ];
-
-const PINS_PER_DAY = 6; // Number of boards that receive 1 new pin per day
 
 // ── Parse CLI Flags ───────────────────────────────────────────────────────────
 
@@ -142,29 +140,15 @@ function getCandidatesForSlug(slug) {
     .filter(Boolean);
 }
 
-// ── Determine Active Boards for Today's Rotation ──────────────────────────────
+// ── Processing: 1 New Pin for ALL 11 Boards Daily ─────────────────────────────
 
-const currentDay = history.dayCounter;
-const startIndex = (currentDay * PINS_PER_DAY) % BOARD_SLUGS.length;
-
-const activeBoardSlugs = [];
-for (let i = 0; i < PINS_PER_DAY; i++) {
-  const index = (startIndex + i) % BOARD_SLUGS.length;
-  activeBoardSlugs.push(BOARD_SLUGS[index]);
-}
-
-const inactiveBoardSlugs = BOARD_SLUGS.filter(s => !activeBoardSlugs.includes(s));
-
-console.log(`\n📅 Daily Pinterest RSS Engine — Day ${currentDay}`);
-console.log(`🎯 Active Boards Today (6 new pins): ${activeBoardSlugs.map(s => `"${s}"`).join(', ')}`);
-console.log(`⏸️  Inactive Boards Today (0 new pins): ${inactiveBoardSlugs.map(s => `"${s}"`).join(', ')}\n`);
-
-// ── Initial Seeding Check (First Ever Run) ─────────────────────────────────────
+console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter}`);
+console.log(`🎯 Processing ALL ${BOARD_SLUGS.length} Pinterest Boards (1 fresh product pin per board daily)\n`);
 
 const isFirstRun = history.totalPinned === 0 && Object.values(history.boardFeeds).every(arr => arr.length === 0);
 
 if (isFirstRun && !IS_REBUILD_ONLY) {
-  console.log('🌱 Initializing brand-new RSS feeds for all 11 boards (seeding 1 initial pin per board)...');
+  console.log('🌱 Initializing brand-new RSS feeds (seeding 1 initial product per board)...');
   BOARD_SLUGS.forEach(slug => {
     const candidates = getCandidatesForSlug(slug).filter(p => !pinnedSet.has(String(p.design_id)));
     if (candidates.length > 0) {
@@ -188,10 +172,9 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
     }
   });
 } else if (IS_ADVANCE && !IS_REBUILD_ONLY) {
-  // Advance daily rotation: Add exactly 1 new product to each of the 6 active boards
-  console.log('⚡ Advancing daily rotation — selecting 1 fresh unpinned product for each active board:');
+  console.log('⚡ Adding 1 fresh unpinned product to ALL 11 board feeds:');
 
-  activeBoardSlugs.forEach(slug => {
+  BOARD_SLUGS.forEach(slug => {
     const candidates = getCandidatesForSlug(slug).filter(p => !pinnedSet.has(String(p.design_id)));
 
     if (candidates.length > 0) {
@@ -225,7 +208,7 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
     }
   });
 
-  // Increment day counter for the next run
+  // Increment day counter
   history.dayCounter += 1;
 }
 
@@ -291,11 +274,24 @@ if (!IS_DRY_RUN) {
     const xml = buildRssXml(slug, title, items);
     const filePath = path.join(PUBLIC_RSS, `${slug}.xml`);
     fs.writeFileSync(filePath, xml, 'utf8');
-    const isNewToday = activeBoardSlugs.includes(slug) ? '🟢 +1 new pin' : '⚪ 0 new pins';
-    console.log(`   ✅ ${slug}.xml (${items.length} items in feed) [${isNewToday}]`);
+    console.log(`   ✅ ${slug}.xml (${items.length} items in feed) [🟢 +1 new pin daily]`);
   });
 
   console.log(`\n✨ Done! Total unique products recorded in history: ${history.totalPinned}\n`);
+
+  // ── Print Clean Summary Table ───────────────────────────────────────────────
+  console.log('┌──────────────────────────────────────────────────────────────────────────────────────────────────────────┐');
+  console.log('│                                  11 PINTEREST RSS FEEDS (1 PIN/BOARD/DAY)                               │');
+  console.log('├────┬─────────────────────────────┬───────────────────────────────────────────────────────────────────────┤');
+  console.log('│ #  │ Board Name                  │ Public RSS Feed URL                                                   │');
+  console.log('├────┼─────────────────────────────┼───────────────────────────────────────────────────────────────────────┤');
+  BOARD_SLUGS.forEach((slug, idx) => {
+    const num = String(idx + 1).padEnd(2);
+    const title = getCategoryTitle(slug).padEnd(27);
+    const url = `${SITE_URL}/rss/${slug}.xml`.padEnd(69);
+    console.log(`│ ${num} │ ${title} │ ${url} │`);
+  });
+  console.log('└────┴─────────────────────────────┴───────────────────────────────────────────────────────────────────────┘\n');
 } else {
   console.log('\n🔍 DRY RUN: No files written.\n');
 }

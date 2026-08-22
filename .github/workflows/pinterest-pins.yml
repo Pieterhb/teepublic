@@ -1,13 +1,12 @@
-name: Pinterest Daily RSS Rotation & Deploy
+name: Pinterest Daily 11-Board RSS Generation & Deploy
 
 # Runs daily at 05:00 UTC (07:00 South Africa Time).
 #
 # 100% Free & Zero API Keys:
-#   1. Advances the 6-board daily rotation cycle.
-#   2. Picks exactly 6 brand-new, never-before-pinned products (1 for each active board, 0 for inactive boards).
-#   3. Prevents duplicates using permanent static GUIDs + data/pinned_history.json.
-#   4. Builds Next.js static site and deploys to Cloudflare Pages at blackpantherstore.co.za.
-#   5. Commits updated pinned_history.json back to GitHub so state persists across runs.
+#   1. Generates exactly 1 fresh, unpinned product pin for ALL 11 Pinterest boards every single day.
+#   2. Prevents duplicates using permanent static GUIDs + data/pinned_history.json.
+#   3. Builds Next.js static export and deploys to Cloudflare Pages at blackpantherstore.co.za.
+#   4. Commits updated pinned_history.json back to GitHub so state persists across runs.
 #
 # Required GitHub Secrets (Settings -> Secrets and variables -> Actions):
 #   CLOUDFLARE_API_TOKEN   - Cloudflare API token with Pages:Edit permission
@@ -25,8 +24,8 @@ env:
   NODE_VERSION: '22'
 
 jobs:
-  rotate-rss-and-deploy:
-    name: Daily 6-Pin RSS Rotation & Deploy
+  rss-and-deploy:
+    name: Daily 11-Board RSS Generation & Deploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
 
@@ -57,7 +56,7 @@ jobs:
       - name: Install Linux native bindings
         run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
 
-      - name: Advance 6-Board Daily RSS Rotation
+      - name: Generate 1 Fresh Pin for All 11 Boards
         run: node scripts/generate-rss.mjs --advance
 
       - name: Generate Sitemaps
@@ -78,7 +77,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/pinned_history.json public/rss/*.xml
           git diff --quiet && git diff --staged --quiet || (
-            git commit -m "chore(pins): advance daily 6-pin RSS rotation [skip ci]"
+            git commit -m "chore(pins): update daily 11-board RSS feeds [skip ci]"
             git pull --rebase origin HEAD
             git push origin HEAD
           )
