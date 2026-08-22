@@ -1,65 +1,41 @@
-name: Pinterest Automated Product Pinning
+name: Pinterest Daily RSS Rotation & Deploy
 
-# Runs 10 times a day on a spaced-out schedule (every 2 hours: UTC 04:00 to 22:00).
-# Each run picks exactly 1 product matching that time slot's category board and
-# posts it directly to Pinterest via the Pinterest API v5.
+# Runs daily at 05:00 UTC (07:00 South Africa Time).
 #
-# 100% Free - no Publer, no Make.com, no third-party automation subscriptions.
+# 100% Free & Zero API Keys:
+#   1. Advances the 6-board daily rotation cycle.
+#   2. Picks exactly 6 brand-new, never-before-pinned products (1 for each active board, 0 for inactive boards).
+#   3. Prevents duplicates using permanent static GUIDs + data/pinned_history.json.
+#   4. Builds Next.js static site and deploys to Cloudflare Pages at blackpantherstore.co.za.
+#   5. Commits updated pinned_history.json back to GitHub so state persists across runs.
 #
 # Required GitHub Secrets (Settings -> Secrets and variables -> Actions):
-#   PINTEREST_ACCESS_TOKEN - Pinterest OAuth 2.0 Access Token (with pins:write & boards:read)
-#   PINTEREST_BOARD_IDS    - JSON object mapping board slugs or titles to Pinterest Board IDs
-#                            e.g. '{"astronomy-shirts":"1094937796846013010", "hobbies-shirts":"...", ...}'
+#   CLOUDFLARE_API_TOKEN   - Cloudflare API token with Pages:Edit permission
+#   CLOUDFLARE_ACCOUNT_ID  - Cloudflare Account ID
 
 on:
   schedule:
-    # 10 spaced-out runs daily (every 2 hours between 04:00 and 22:00 UTC)
-    # 04:00 UTC -> Astronomy Shirts
-    # 06:00 UTC -> Hobbies Shirts
-    # 08:00 UTC -> Animals Shirts
-    # 10:00 UTC -> Minimalist Engineer Shirts
-    # 12:00 UTC -> Minimalist Shirts
-    # 14:00 UTC -> Math Shirts
-    # 16:00 UTC -> Engineer Shirts
-    # 18:00 UTC -> Everyday Shirts
-    # 20:00 UTC -> Professions Shirts
-    # 22:00 UTC -> Science Shirts
-    - cron: '0 4,6,8,10,12,14,16,18,20,22 * * *'
+    # Runs every day at 05:00 UTC
+    - cron: '0 5 * * *'
 
-  # Allow manual testing / triggering from GitHub Actions tab
+  # Allow manual trigger at any time from GitHub Actions tab
   workflow_dispatch:
-    inputs:
-      dry_run:
-        description: 'Dry run (simulate selection without posting to Pinterest)'
-        required: false
-        default: 'false'
-        type: choice
-        options:
-          - 'false'
-          - 'true'
-      force_board:
-        description: 'Force specific board slug (e.g. astronomy-shirts, math-shirts, social)'
-        required: false
-        default: ''
-        type: string
-      force_hour:
-        description: 'Force specific UTC hour (4, 6, 8, 10, 12, 14, 16, 18, 20, 22) to test a specific slot'
-        required: false
-        default: ''
-        type: string
 
 env:
   NODE_VERSION: '22'
 
 jobs:
-  publish-pin:
-    name: Publish Scheduled Pin to Pinterest
+  rotate-rss-and-deploy:
+    name: Daily 6-Pin RSS Rotation & Deploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch' || github.event_name == 'schedule'
 
-    # Required so the action can commit data/pinned_history.json back to the repo
     permissions:
       contents: write
+
+    defaults:
+      run:
+        working-directory: trust/pseo-app
 
     steps:
       - name: Checkout repository
@@ -72,13 +48,37 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+          cache-dependency-path: trust/pseo-app/package-lock.json
 
-      - name: Publish Pin to Pinterest API v5
-        working-directory: trust/pseo-app
+      - name: Install dependencies
+        run: npm ci --include=optional
+
+      - name: Install Linux native bindings
+        run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
+
+      - name: Advance 6-Board Daily RSS Rotation
+        run: node scripts/generate-rss.mjs --advance
+
+      - name: Generate Sitemaps
+        run: npx tsx scripts/generate-sitemaps.ts
+
+      - name: Build Next.js static export
+        run: npx next build
+
+      - name: Deploy to Cloudflare Pages
         env:
-          PINTEREST_ACCESS_TOKEN: ${{ secrets.PINTEREST_ACCESS_TOKEN }}
-          PINTEREST_BOARD_IDS: ${{ secrets.PINTEREST_BOARD_IDS }}
-          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
-          FORCE_BOARD: ${{ github.event.inputs.force_board || '' }}
-          FORCE_HOUR: ${{ github.event.inputs.force_hour || '' }}
-        run: node scripts/publish-pin.mjs
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler pages deploy out --project-name=pseo-app --branch=master
+
+      - name: Commit & Push updated pinned history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/pinned_history.json public/rss/*.xml
+          git diff --quiet && git diff --staged --quiet || (
+            git commit -m "chore(pins): advance daily 6-pin RSS rotation [skip ci]"
+            git pull --rebase origin HEAD
+            git push origin HEAD
+          )

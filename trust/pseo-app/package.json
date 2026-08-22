@@ -4,10 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "node scripts/generate-rss.mjs && npx tsx scripts/generate-sitemaps.ts && next build",
-    "rss": "node scripts/generate-rss.mjs",
-    "pin": "node scripts/publish-pin.mjs",
-    "pin:dry": "node -e \"process.env.DRY_RUN='true'; import('./scripts/publish-pin.mjs')\"",
+    "build": "node scripts/generate-rss.mjs --rebuild-only && npx tsx scripts/generate-sitemaps.ts && next build",
+    "rss": "node scripts/generate-rss.mjs --advance",
+    "rss:rebuild": "node scripts/generate-rss.mjs --rebuild-only",
     "sitemap": "npx tsx scripts/generate-sitemaps.ts",
     "start": "next start",
     "lint": "eslint",
