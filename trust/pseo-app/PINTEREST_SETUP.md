@@ -1,234 +1,90 @@
-# Pinterest API Setup Guide
+# Pinterest 11-Board RSS Auto-Publishing & Setup Guide
 
-Complete step-by-step guide to connect the auto-pinning system to your Pinterest account.
-
-> **Pinterest API is free** — both Trial (development) and Standard (production) tiers cost nothing.
-> Standard is not a paid subscription; it's an approval/upgrade process.
+This guide explains how to set up and maintain the **100% Free & Zero-API Native RSS Auto-Publishing System** for your 11 Pinterest boards on [za.pinterest.com/PantherMerch](https://za.pinterest.com/PantherMerch/).
 
 ---
 
-## ⚠️ URGENT: Stop the RSS-based auto-pinning first!
+## 🎯 How The System Works
 
-Before activating the proper API-based pinning, you **must** disconnect your Pinterest boards from the RSS feeds. This is what has been creating duplicate pins without going through the API.
+1. **Daily Automation (05:00 UTC / 07:00 SAST)**:
+   - GitHub Actions runs every morning automatically.
+   - It selects **exactly 1 fresh, unpinned product** for each of your 11 boards.
+   - It writes 11 RSS 2.0 XML feeds to `public/rss/{slug}.xml` and deploys them to `https://blackpantherstore.co.za/rss/{slug}.xml`.
+   - It updates `data/pinned_history.json` and commits back to GitHub so no product is ever pinned twice.
 
-**How to disconnect RSS feeds from each board:**
-1. Go to [pinterest.com](https://pinterest.com) and log in
-2. Click on each of your 11 boards (e.g. "Astronomy Shirts")
-3. Click the **pencil/edit icon** on the board
-4. Look for **"RSS feed URL"** or a feed link — **delete it / clear it**
-5. Save the board settings
-6. Repeat for all 11 boards
-
-Once all RSS feeds are removed, **only the GitHub Actions API-based system will create pins** — and that system has full duplicate prevention.
-
----
-
-## Understanding Trial vs Standard Access
-
-| | Trial Access (Current) | Standard Access (Required for Live Pins) |
-|---|---|---|
-| **Cost** | Free | Free |
-| **Sandbox Pins (`api-sandbox.pinterest.com`)** | ✅ Yes | ✅ Yes |
-| **Real Pins on Live Boards (`api.pinterest.com`)** | ❌ No (Pinterest blocks live pins on Trial) | ✅ Yes — creates real live pins on your boards |
-| **Rate limit** | 1,000 requests/day | 100 requests/minute for pin creation |
-| **Purpose** | Development & sandbox testing | Live production pinning to your boards |
-| **How to get** | Default when app created | One-click upgrade form in developer portal |
-
-> **Pinterest API Error on Trial:**
-> `{"code":29,"message":"Apps with Trial access may not create Pins in production https://api.pinterest.com - use API Sandbox https://api-sandbox.pinterest.com instead."}`
->
-> Therefore, to post pins to your live Pinterest account ([za.pinterest.com/PantherMerch](https://za.pinterest.com/PantherMerch/)), you must complete the quick upgrade to **Standard Access**.
+2. **Strict 1-Pin-Per-Feed Duplicate Prevention**:
+   - Each XML feed strictly contains **EXACTLY 1 active item for the day** (`MAX_FEED_BUFFER = 1`).
+   - Because only 1 item exists in the feed at any time:
+     - Pinterest can never dump a 10-pin backlog into your boards.
+     - If you ever delete a pin on Pinterest, Pinterest will never re-pin it because past items are immediately cleared from the XML feed.
+     - Pinterest auto-publishes exactly **1 pin per board per day**.
 
 ---
 
-## Your App Details
+## ⚙️ Step-by-Step Pinterest Setup (One-Time Configuration)
 
-- **App ID**: `1600990`
-- **App Name**: BlackPantherStore Auto-Pinner (or as you named it)
-- **Pinterest Account**: [za.pinterest.com/PantherMerch](https://za.pinterest.com/PantherMerch/)
-
----
-
-## Step 1: Generate an Access Token (using your approved App ID 1600990)
-
-1. Go to **[developers.pinterest.com](https://developers.pinterest.com)**
-2. Log in with your Pinterest account (the one that owns the PantherMerch boards)
-3. Click **My Apps** → find your app with ID `1600990`
-4. Click on the app → go to the **"Access token"** tab
-5. Click **Generate access token**
-6. Select these **scopes** (checkboxes):
-   - ✅ `pins:write` — create pins
-   - ✅ `boards:read` — read your board IDs
-7. Click **Generate** — **copy the token immediately** (it won't be shown again)
-
-> **Token expiry**: Trial tokens last **60 days**. Set a calendar reminder to regenerate before expiry — GitHub will email you when a run fails with `401 Unauthorized`.
+### Step 1: Clear Any Old / Broken Feed Connections
+1. Log into your Pinterest Business account at [pinterest.com](https://pinterest.com).
+2. Go to **Settings** (top right profile icon → Settings).
+3. In the left-hand navigation, click **Bulk create Pins** (or **Auto-publish**).
+4. If you have any existing RSS feeds listed, click the **Disconnect** or **Delete** button next to each one to start completely fresh.
 
 ---
 
-## Step 2: Find Your Pinterest Board IDs
+### Step 2: Connect the 11 RSS Feeds to Their Respective Boards
+In the **Bulk create Pins / Auto-publish** section, click **Connect RSS Feed** for each of the 11 boards below.
 
-You need the numeric ID for each of your 11 boards.
+> [!IMPORTANT]
+> **For every feed you add**, ensure you select the **matching board name** from the Pinterest dropdown before clicking Save!
 
-**Use the Pinterest API Explorer:**
-
-1. Go to: [developers.pinterest.com/tools/api-explorer](https://developers.pinterest.com/tools/api-explorer/)
-2. Authenticate with your PantherMerch account
-3. Select **GET /boards** → click **Try it out** → **Execute**
-4. Find your boards in the response. Copy the `id` field for each:
-
-```json
-{
-  "items": [
-    { "id": "1234567890123456789", "name": "Astronomy Shirts" },
-    { "id": "9876543210987654321", "name": "Hobbies Shirts" }
-  ]
-}
-```
-
-**Your 11 boards — collect IDs for each:**
-
-| Slug (used in code) | Expected Pinterest Board Name |
-|---|---|
-| `astronomy-shirts` | Astronomy Shirts |
-| `hobbies-shirts` | Hobbies Shirts |
-| `animals-shirts` | Animals Shirts |
-| `minimalist-engineer-shirts` | Minimalist Engineer Shirts |
-| `minimalist-shirts` | Minimalist Shirts |
-| `math-shirts` | Math Shirts |
-| `engineer-shirts` | Engineer Shirts |
-| `everyday-shirts` | Everyday Shirts |
-| `professions-shirts` | Professions Shirts |
-| `science-shirts` | Science Shirts |
-| `social` | (your social/general board) |
-
-> **Board names don't need to match exactly** — only the IDs matter in the code.
+| # | Board Name on Pinterest | Exact Public RSS Feed URL | Destination Board in Dropdown |
+|---|---|---|---|
+| 1 | **Astronomy Shirts** | `https://blackpantherstore.co.za/rss/astronomy-shirts.xml` | Select: **Astronomy Shirts** |
+| 2 | **Hobbies Shirts** | `https://blackpantherstore.co.za/rss/hobbies-shirts.xml` | Select: **Hobbies Shirts** |
+| 3 | **Animals Shirts** | `https://blackpantherstore.co.za/rss/animals-shirts.xml` | Select: **Animals Shirts** |
+| 4 | **Minimalist Engineer Shirts** | `https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml` | Select: **Minimalist Engineer Shirts** |
+| 5 | **Minimalist Shirts** | `https://blackpantherstore.co.za/rss/minimalist-shirts.xml` | Select: **Minimalist Shirts** |
+| 6 | **Math Shirts** | `https://blackpantherstore.co.za/rss/math-shirts.xml` | Select: **Math Shirts** |
+| 7 | **Engineer Shirts** | `https://blackpantherstore.co.za/rss/engineer-shirts.xml` | Select: **Engineer Shirts** |
+| 8 | **Everyday Shirts** | `https://blackpantherstore.co.za/rss/everyday-shirts.xml` | Select: **Everyday Shirts** |
+| 9 | **Professions Shirts** | `https://blackpantherstore.co.za/rss/professions-shirts.xml` | Select: **Professions Shirts** |
+| 10 | **Science Shirts** | `https://blackpantherstore.co.za/rss/science-shirts.xml` | Select: **Science Shirts** |
+| 11 | **Social / All Collections** | `https://blackpantherstore.co.za/rss/social.xml` | Select: **Social** (or All Collections / Main Board) |
 
 ---
 
-## Step 3: Build the PINTEREST_BOARD_IDS JSON
+## 🔍 How Duplicate Prevention Works
 
-Create a single-line JSON object mapping each slug → its board ID.
-Replace the placeholder numbers with your real board IDs:
-
-```json
-{"astronomy-shirts":"1234567890123456789","hobbies-shirts":"9876543210987654321","animals-shirts":"1111111111111111111","minimalist-engineer-shirts":"2222222222222222222","minimalist-shirts":"3333333333333333333","math-shirts":"4444444444444444444","engineer-shirts":"5555555555555555555","everyday-shirts":"6666666666666666666","professions-shirts":"7777777777777777777","science-shirts":"8888888888888888888","social":"9999999999999999999"}
-```
-
----
-
-## Step 4: Add Secrets to GitHub
-
-1. Go to: **[github.com/Pieterhb/teepublic/settings/secrets/actions](https://github.com/Pieterhb/teepublic/settings/secrets/actions)**
-2. Click **New repository secret** — add these two:
-
-| Secret Name | Value |
-|---|---|
-| `PINTEREST_ACCESS_TOKEN` | The token from Step 1 |
-| `PINTEREST_BOARD_IDS` | The full JSON from Step 3 |
-
-GitHub encrypts these — they are never visible after saving.
+1. **Permanent Global History**:
+   - Every product ID selected is recorded in `data/pinned_history.json` under `pinnedIds`.
+   - Once a product ID is stored in `pinnedIds`, the engine skips it forever across all boards.
+2. **Single-Item Active Feed**:
+   - Each XML feed contains only the current day's product.
+   - When tomorrow's workflow runs, tomorrow's product replaces today's in the XML feed.
+   - Old products are retired from the XML feed and saved in permanent history.
+3. **Static Permanent GUIDs**:
+   - Each `<item>` contains `<guid isPermaLink="false">teepublic-prod-{design_id}</guid>`.
+   - Pinterest uses this GUID to verify uniqueness.
 
 ---
 
-## Step 5: Test With a Dry Run
+## 🛠️ CLI Commands & Maintenance
 
-1. Go to **[github.com/Pieterhb/teepublic/actions](https://github.com/Pieterhb/teepublic/actions)**
-2. Click **"Pinterest Auto-Pins"** workflow on the left
-3. Click **Run workflow** (top right)
-4. Set **Dry run** → `true` (safe — won't actually post anything)
-5. Leave **Force hour** blank
-6. Click **Run workflow**
-7. Click the running job → watch the logs
+Inside `trust/pseo-app`:
 
-You should see output like:
-```
-🎯 Targeting board: astronomy-shirts (UTC hour 0)
-📅 Day index since launch: 11
-📚 Loaded pinned history: 0 design(s) already pinned.
-📌 Category "Astronomy Shirts": product index 11 of 585
-📋 Pin details:
-   Title   : Deep Space - Light Blue T-Shirt
-   Board ID: 1234567890123456789
-   ...
-🔍 DRY RUN MODE — Pin NOT sent.
-```
-
----
-
-## Step 6: Send Your First Real Pin
-
-Once dry run looks good:
-
-1. Click **Run workflow** again
-2. Set **Dry run** → `false`
-3. Set **Force hour** → `0` (forces astronomy-shirts board)
-4. Click **Run workflow**
-5. Check your Pinterest board — the pin should appear within seconds
-
----
-
-## Step 7: Apply for Standard Access (Optional — for public pins)
-
-Your Trial access already creates real, visible pins on your own account. Standard access is mainly needed for enterprise-level rate limits.
-
-If you want to upgrade:
-1. In your Pinterest Developer dashboard → click **"Request upgrade"** or **"Apply for Standard"**
-2. Fill out the short form explaining your use case:
-   - "Automated pinning to promote t-shirt designs on blackpantherstore.co.za"
-   - "~11 pins per day across 11 boards, scheduled every 2 hours"
-3. Pinterest typically approves standard access within a few days
-
----
-
-## How Duplicate Prevention Works
-
-Every time a pin is successfully posted via the API, the `design_id` is recorded in `data/pinned_history.json`. This file is committed back to the GitHub repository after every successful pin.
-
-**Key guarantee**: A `design_id` that appears in `pinned_history.json` will **NEVER** be pinned again — not on the same board, not on any other board. The script scans forward through the product list to find the next un-pinned product.
-
-To inspect what has been pinned: [data/pinned_history.json](file:///c:/teepublic/trust/pseo-app/data/pinned_history.json)
-
----
-
-## Keeping the System Running
-
-### Renewing your access token (before expiry)
-
-1. In the Pinterest Developer dashboard → app `1600990` → **Access token** tab → **Generate access token**
-2. Use the same scopes (`pins:write`, `boards:read`)
-3. Copy the new token
-4. Update `PINTEREST_ACCESS_TOKEN` in GitHub secrets
-5. The next scheduled run picks it up automatically
-
-GitHub will email you when a run fails (e.g. `401 Unauthorized`) — this is your signal the token has expired.
-
-### Monitoring runs
-
-Every run is logged at: [github.com/Pieterhb/teepublic/actions](https://github.com/Pieterhb/teepublic/actions)
-
-Each run shows a summary with the pin status, board targeted, and timestamp.
-
----
-
-## Troubleshooting
-
-| Error | Cause | Fix |
-|---|---|---|
-| `401 Unauthorized` | Token expired or wrong | Regenerate token, update GitHub secret |
-| `403 Forbidden` | Missing `pins:write` scope | Regenerate token, select correct scopes |
-| `422 Unprocessable Entity` | Bad board ID or inaccessible image URL | Verify board IDs via API Explorer |
-| `No pin scheduled for UTC hour 22` | Normal — 4-hour gap | No action needed |
-| `Category not found: [slug]` | Slug typo in BOARD_SCHEDULE | Check slugs match `data/categories.json` |
-| `No board ID found for slug` | Missing entry in PINTEREST_BOARD_IDS | Add the missing slug to the JSON secret |
-| `All products already pinned` | Entire category exhausted | Add more products or check pinned_history.json |
-
----
-
-## What to Delete / Clean Up
-
-Now that GitHub Actions handles everything:
-
-- ✅ **Remove RSS feed URLs from all Pinterest boards** — the RSS feeds were causing duplicate pins
-- ✅ **Delete your cron-job.com account** — no longer needed
-- ✅ **Delete your Make.com account/scenarios** — no longer needed
-- ✅ The `MAKE_WEBHOOK_URL` env var has already been removed from the codebase
+- **Generate next day's pins**:
+  ```bash
+  node scripts/generate-rss.mjs --advance
+  ```
+- **Rebuild XML without advancing (build step)**:
+  ```bash
+  node scripts/generate-rss.mjs --rebuild-only
+  ```
+- **Reset feeds to fresh Day 1**:
+  ```bash
+  node scripts/generate-rss.mjs --reset
+  ```
+- **Test run without writing files**:
+  ```bash
+  node scripts/generate-rss.mjs --dry-run
+  ```

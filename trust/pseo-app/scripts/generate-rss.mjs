@@ -29,7 +29,7 @@ const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 // ── Configuration ─────────────────────────────────────────────────────────────
 
 const SITE_URL = 'https://blackpantherstore.co.za';
-const MAX_FEED_BUFFER = 10; // Keep up to 10 recent items per feed for RSS health
+const MAX_FEED_BUFFER = 1; // Strictly 1 active pin per feed per day to prevent backlog dumping & replay duplicates
 
 const BOARD_SLUGS = [
   'astronomy-shirts',          // 1. Astronomy Shirts
@@ -48,9 +48,10 @@ const BOARD_SLUGS = [
 // ── Parse CLI Flags ───────────────────────────────────────────────────────────
 
 const args = process.argv.slice(2);
-const IS_ADVANCE      = args.includes('--advance') || (!args.includes('--rebuild-only') && !args.includes('--dry-run'));
+const IS_RESET        = args.includes('--reset');
 const IS_REBUILD_ONLY = args.includes('--rebuild-only');
 const IS_DRY_RUN      = args.includes('--dry-run');
+const IS_ADVANCE      = !IS_RESET && !IS_REBUILD_ONLY && (args.includes('--advance') || !IS_DRY_RUN);
 
 // ── Load Catalog Data ─────────────────────────────────────────────────────────
 
@@ -71,7 +72,7 @@ let history = {
   boardFeeds: {},
 };
 
-if (fs.existsSync(historyPath)) {
+if (!IS_RESET && fs.existsSync(historyPath)) {
   try {
     const raw = JSON.parse(fs.readFileSync(historyPath, 'utf8'));
     if (Array.isArray(raw)) {
@@ -143,18 +144,21 @@ function getCandidatesForSlug(slug) {
 // ── Processing: 1 New Pin for ALL 11 Boards Daily ─────────────────────────────
 
 console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter}`);
-console.log(`🎯 Processing ALL ${BOARD_SLUGS.length} Pinterest Boards (1 fresh product pin per board daily)\n`);
+console.log(`🎯 Processing ALL ${BOARD_SLUGS.length} Pinterest Boards (strictly 1 fresh product pin per board daily)\n`);
 
-const isFirstRun = history.totalPinned === 0 && Object.values(history.boardFeeds).every(arr => arr.length === 0);
+const isFirstRun = IS_RESET || (history.totalPinned === 0 && Object.values(history.boardFeeds).every(arr => arr.length === 0));
 
 if (isFirstRun && !IS_REBUILD_ONLY) {
-  console.log('🌱 Initializing brand-new RSS feeds (seeding 1 initial product per board)...');
+  console.log('🌱 Initializing brand-new clean RSS feeds (seeding exactly 1 fresh product per board)...');
+  history.dayCounter = 1;
+  history.boardFeeds = {};
   BOARD_SLUGS.forEach(slug => {
+    history.boardFeeds[slug] = [];
     const candidates = getCandidatesForSlug(slug).filter(p => !pinnedSet.has(String(p.design_id)));
     if (candidates.length > 0) {
       const selected = candidates[0];
       pinnedSet.add(String(selected.design_id));
-      history.boardFeeds[slug].push({
+      history.boardFeeds[slug] = [{
         design_id: String(selected.design_id),
         slug: selected.slug,
         title: selected.title,
@@ -167,7 +171,7 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
         primary_keyword: selected.primary_keyword,
         tags: selected.tags,
         pubDate: new Date().toUTCString(),
-      });
+      }];
       console.log(`   ✅ Seeded [${slug}]: "${selected.title}" (ID: ${selected.design_id})`);
     }
   });
@@ -181,8 +185,8 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
       const selected = candidates[0];
       pinnedSet.add(String(selected.design_id));
 
-      // Prepend newest item to the top of the board's feed buffer
-      history.boardFeeds[slug].unshift({
+      // Strictly set the board feed to contain only the 1 latest item for today
+      history.boardFeeds[slug] = [{
         design_id: String(selected.design_id),
         slug: selected.slug,
         title: selected.title,
@@ -195,12 +199,7 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
         primary_keyword: selected.primary_keyword,
         tags: selected.tags,
         pubDate: new Date().toUTCString(),
-      });
-
-      // Trim feed buffer to max 10 items
-      if (history.boardFeeds[slug].length > MAX_FEED_BUFFER) {
-        history.boardFeeds[slug] = history.boardFeeds[slug].slice(0, MAX_FEED_BUFFER);
-      }
+      }];
 
       console.log(`   ➕ [${slug}] Added: "${selected.title}" (ID: ${selected.design_id})`);
     } else {
@@ -222,8 +221,9 @@ history.lastUpdated = new Date().toISOString();
 function buildRssXml(slug, title, items) {
   const now = new Date().toUTCString();
   const feedUrl = `${SITE_URL}/rss/${slug}.xml`;
+  const feedItems = items.slice(0, MAX_FEED_BUFFER);
 
-  const itemsXml = items.map(item => {
+  const itemsXml = feedItems.map(item => {
     const productLink = `${SITE_URL}/design/${item.slug}`;
     const imageUrl    = ensureHttps(item.image_url);
     const hashtags    = buildHashtags(item);
