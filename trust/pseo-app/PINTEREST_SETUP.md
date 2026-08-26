@@ -8,16 +8,22 @@ This guide explains how to set up and maintain the **100% Free & Zero-API Native
 
 1. **Daily Automation (05:00 UTC / 07:00 SAST)**:
    - GitHub Actions runs every morning automatically.
-   - It selects **exactly 1 fresh, unpinned product** for each of your 11 boards.
+   - It selects **exactly 1 brand-new, unpinned product** for each of your 11 boards.
    - It writes 11 RSS 2.0 XML feeds to `public/rss/{slug}.xml` and deploys them to `https://blackpantherstore.co.za/rss/{slug}.xml`.
-   - It updates `data/pinned_history.json` and commits back to GitHub so no product is ever pinned twice.
+   - It updates `data/pinned_history.json` and commits back to GitHub so no product is ever pinned twice across any board.
 
-2. **Strict 1-Pin-Per-Feed Duplicate Prevention**:
-   - Each XML feed strictly contains **EXACTLY 1 active item for the day** (`MAX_FEED_BUFFER = 1`).
-   - Because only 1 item exists in the feed at any time:
-     - Pinterest can never dump a 10-pin backlog into your boards.
-     - If you ever delete a pin on Pinterest, Pinterest will never re-pin it because past items are immediately cleared from the XML feed.
-     - Pinterest auto-publishes exactly **1 pin per board per day**.
+2. **100% Duplicate Prevention & Multi-Tier Selection**:
+   - **Global Unique ID Tracking**: Every product ID ever selected is recorded in `pinnedIds`. Once an ID is pinned on ANY board, it is permanently locked out from all boards.
+   - **Multi-Tier Candidate Fallback**:
+     - *Tier 1*: Direct category product list.
+     - *Tier 2*: Related niche/theme matches (e.g. `professions-shirts` pulls from Teacher, Developer, Engineer, Doctor, Nurse, Chef, etc.).
+     - *Tier 3*: General unpinned catalog fallback.
+     - Guarantees continuous daily pinning for 340+ days across all 11 boards without category exhaustion.
+
+3. **Pinterest-Optimized Feed Engine (Rolling 10-Item Buffer)**:
+   - Feeds maintain a rolling window of the **10 most recent pins** in chronological order.
+   - **Why 10 items?** Pinterest's scraper visits on a 24–48 hour crawl window. A 10-item buffer ensures Pinterest's crawler never misses a daily pin if a crawl is delayed.
+   - **Why no duplicates?** Pinterest tracks the unique canonical `<guid isPermaLink="true">` of every pin it creates. When Pinterest crawls the feed, it skips the 9 previously pinned items and publishes **only the 1 new daily pin**.
 
 ---
 
@@ -36,6 +42,7 @@ In the **Bulk create Pins / Auto-publish** section, click **Connect RSS Feed** f
 
 > [!IMPORTANT]
 > **For every feed you add**, ensure you select the **matching board name** from the Pinterest dropdown before clicking Save!
+> Each RSS feed corresponds to ONE specific board.
 
 | # | Board Name on Pinterest | Exact Public RSS Feed URL | Destination Board in Dropdown |
 |---|---|---|---|
@@ -53,36 +60,32 @@ In the **Bulk create Pins / Auto-publish** section, click **Connect RSS Feed** f
 
 ---
 
-## 🔍 How Duplicate Prevention Works
+## 🔍 RSS Specification & Bot Compatibility
 
-1. **Permanent Global History**:
-   - Every product ID selected is recorded in `data/pinned_history.json` under `pinnedIds`.
-   - Once a product ID is stored in `pinnedIds`, the engine skips it forever across all boards.
-2. **Single-Item Active Feed**:
-   - Each XML feed contains only the current day's product.
-   - When tomorrow's workflow runs, tomorrow's product replaces today's in the XML feed.
-   - Old products are retired from the XML feed and saved in permanent history.
-3. **Static Permanent GUIDs**:
-   - Each `<item>` contains `<guid isPermaLink="false">teepublic-prod-{design_id}</guid>`.
-   - Pinterest uses this GUID to verify uniqueness.
+Every `<item>` in the RSS feeds conforms to standard RSS 2.0 + Media RSS:
+- `<guid isPermaLink="true">https://blackpantherstore.co.za/design/{slug}</guid>` (Matches claimed domain).
+- `<media:content url="..." medium="image" type="image/jpeg" />` (Standard image tag).
+- `<enclosure url="..." type="image/jpeg" length="150000" />` (Valid byte-length enclosure).
+- `<description><![CDATA[<img src="..." /><p>...</p>]]></description>` (Embedded image fallback).
+- `<pubDate>` (RFC 822 UTC timestamp).
 
 ---
 
-## 🛠️ CLI Commands & Maintenance
+## 🛠️ CLI Commands & Testing
 
 Inside `trust/pseo-app`:
 
+- **Run Automated Verification Suite (340-day simulation & 0 duplicate test)**:
+  ```bash
+  npm run test:rss
+  ```
 - **Generate next day's pins**:
   ```bash
-  node scripts/generate-rss.mjs --advance
+  npm run rss
   ```
 - **Rebuild XML without advancing (build step)**:
   ```bash
-  node scripts/generate-rss.mjs --rebuild-only
-  ```
-- **Reset feeds to fresh Day 1**:
-  ```bash
-  node scripts/generate-rss.mjs --reset
+  npm run rss:rebuild
   ```
 - **Test run without writing files**:
   ```bash

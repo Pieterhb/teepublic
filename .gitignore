@@ -27,6 +27,7 @@ db/*.sqlite
 db/*.sqlite3
 downloaded_files/
 logs/
+backups/
 
 # Environment / secrets
 .env
