@@ -1,0 +1,17 @@
+# Cloudflare Pages custom HTTP response headers
+
+# RSS feeds: serve with correct MIME type for Pinterest & all RSS readers
+/rss/*.xml
+  Content-Type: application/rss+xml; charset=utf-8
+  Cache-Control: public, max-age=3600, s-maxage=3600
+
+# Sitemaps
+/sitemap*.xml
+  Content-Type: application/xml; charset=utf-8
+  Cache-Control: public, max-age=86400, s-maxage=86400
+
+# All pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
