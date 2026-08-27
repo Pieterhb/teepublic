@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-26T10:39:05.634Z",
-  "dayCounter": 4,
-  "totalPinned": 44,
+  "lastUpdated": "2026-08-27T10:59:30.981Z",
+  "dayCounter": 5,
+  "totalPinned": 55,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -46,10 +46,35 @@
     "94081170",
     "94081845",
     "8344811",
-    "94082995"
+    "94082995",
+    "8609037",
+    "66104984",
+    "8329499",
+    "61576127",
+    "8371543",
+    "94031951",
+    "93519928",
+    "8329394",
+    "11348551",
+    "94031335",
+    "8329450"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8609037",
+        "slug": "sun-and-moon-eclipse-green-1",
+        "title": "Sun and Moon Eclipse - Green 1 T-Shirt",
+        "seo_title": "Sun and Moon Eclipse Green T-Shirt | Galaxy Space Tee",
+        "description": "Explore the cosmos with this stunning sun and moon eclipse green t-shirt. Featuring a unique galaxy space design crafted for astronomy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8609037_0/1584869186/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green t-shirt featuring a stunning sun and moon eclipse galaxy design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "sun and moon eclipse t-shirt",
+        "tags": "eclipse, black, child, cool, galaxy, moon, new, planet, space, star, sun, white, woman",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "8537442",
         "slug": "unique-space-odyssey-t-shirt-green",
@@ -81,6 +106,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "66104984",
+        "slug": "motorcycle-and-wolf-20",
+        "title": "Motorcycle and Wolf #20 T-Shirt",
+        "seo_title": "Motorcycle and Wolf T-Shirt | Biker Apparel",
+        "description": "Unleash your wild side with our striking motorcycle and wolf design t-shirt. Perfect for bikers and rebels. Shop apparel and home decor today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66104984_0/1726562660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Motorcycle and Wolf #20 T-Shirt graphic design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "Motorcycle T-Shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
+      {
         "design_id": "8371705",
         "slug": "zentangle-art-black-blue-and-red-colours",
         "title": "Zentangle Art - Black, Blue & Red colours T-Shirt",
@@ -110,6 +149,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "8329499",
+        "slug": "the-black-panther-the-gorillas-are-coming-unique-a",
+        "title": "The Black Panther - The Gorillas are Coming (Unique Art) T-Shirt",
+        "seo_title": "Black Panther Book Cover T-Shirt | Vintage Afrikaans Art",
+        "description": "Relive the 80s with this unique Black Panther book cover art. From the Afrikaans 'Die Swart Luiperd Reeks' by Braam le Roux and Meiring Fouche. Perfect for book lovers and retro art fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8329499_0/1583433359/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage Black Panther book cover art t-shirt from the 1980s Afrikaans series 'Die Swart Luiperd Reeks', featuring a black panther and gorillas.",
+        "niche": "Reading",
+        "secondary_niche": "animals",
+        "primary_keyword": "Black Panther book cover",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "8329291",
         "slug": "the-black-panther-death-comes-silent-unique-art",
@@ -141,6 +194,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "61576127",
+        "slug": "futuristic-toy-robot-44",
+        "title": "Futuristic Toy Robot #44 T-Shirt",
+        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Robotic Tee",
+        "description": "Shop the Futuristic Toy Robot T-Shirt featuring cutting-edge robotic art. Perfect sci-fi apparel and high-tech gifts for robotics fans. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61576127_0/1718451020/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #44 T-Shirt with high-tech robotic character design",
+        "niche": "Engineer",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Futuristic Toy Robot T-Shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
+      {
         "design_id": "93524080",
         "slug": "louis-pasteur-fourier-transform-math-line-art",
         "title": "Louis Pasteur - Fourier Transform Math Line Art T-Shirt",
@@ -170,6 +237,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "8371543",
+        "slug": "zentangle-art-yellow-black-and-red-colours",
+        "title": "Zentangle Art - Yellow, Black & Red colours T-Shirt",
+        "seo_title": "Zentangle Art Yellow Black & Red T-Shirt",
+        "description": "Shop the Zentangle Art Yellow, Black & Red T-Shirt. Featuring a stunning colorful zentangle pattern created from intricate lines, dots, and mosaic shapes.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8371543_0/1583671844/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg",
+        "image_alt": "Zentangle Art Yellow Black and Red Colors T-Shirt Design",
+        "niche": "Art",
+        "secondary_niche": "Drawing",
+        "primary_keyword": "zentangle art t-shirt",
+        "tags": "dots, ink, lines, mosaic, paper, pattern, shape, zentangle",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "8371615",
         "slug": "zentangle-art-yellow-and-black-colours",
@@ -201,6 +282,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "94031951",
+        "slug": "bigfoot-drawn-with-math-fourier-transform-pink-and",
+        "title": "Bigfoot Drawn with Math: Fourier Transform Pink & Blue Gradient T-Shirt",
+        "seo_title": "Bigfoot Math Fourier Transform T-Shirt | Science Teacher Gift",
+        "description": "Discover our unique Bigfoot design, 100% drawn with Fourier Transform math. Featuring a pink & blue gradient, it's perfect for math teachers, science geeks, and programmers. Get your geeky vaporwave Sasquatch tee!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94031951_0/1781346110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg",
+        "image_alt": "Pink and blue gradient Bigfoot t-shirt drawn with Fourier Transform math equations, showing neon nodes and epicycles.",
+        "niche": "Math",
+        "secondary_niche": "Teacher",
+        "primary_keyword": "Bigfoot Math Shirt",
+        "tags": "bigfoot, cryptid, engineering, fourier transform, gradient, math, math teacher, mathematics, neon, physics, sasquatch, science, stem, vaporwave",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
+      {
         "design_id": "94084664",
         "slug": "discreet-in-the-forest-continuous-math-bigfoot",
         "title": "Discreet in the Forest - Continuous Math Bigfoot T-Shirt",
@@ -230,6 +325,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "93519928",
+        "slug": "leonardo-da-vinci-fourier-transform-math-line-art",
+        "title": "Leonardo da Vinci - Fourier Transform Math Line Art T-Shirt",
+        "seo_title": "Leonardo da Vinci Fourier Transform Math T-Shirt",
+        "description": "Discover the unique Leonardo da Vinci Fourier Transform math line art T-shirt. A minimalist blend of Renaissance history and computer science for STEM lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/93519928_0/1780579233/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_17_0_x626,s_630,q_90.jpg",
+        "image_alt": "Leonardo da Vinci portrait made with Fourier Transform math line art on a t-shirt",
+        "niche": "Math",
+        "secondary_niche": "Engineer",
+        "primary_keyword": "Fourier Transform T-Shirt",
+        "tags": "leonardo da vinci, da vinci, engineer gift, fourier transform, geek, line art, mathematics, renaissance, stem",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "93984966",
         "slug": "drawn-with-fourier-transforms-bigfoot-math-art",
@@ -261,6 +370,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "8329394",
+        "slug": "the-black-panther-blood-feast-of-the-apes-unique-a",
+        "title": "The Black Panther - Blood Feast of the Apes (Unique Art) T-Shirt",
+        "seo_title": "Black Panther Blood Feast Retro Book T-Shirt",
+        "description": "Wear a piece of history with this unique Black Panther Blood Feast of the Apes retro book cover art t-shirt. Perfect for vintage book lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther Blood Feast of the Apes retro book cover art t-shirt design",
+        "niche": "Reading",
+        "secondary_niche": "animals",
+        "primary_keyword": "Black Panther T-Shirt",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
+      {
         "design_id": "94081170",
         "slug": "decomposing-the-myth-fourier-analysis-bigfoot",
         "title": "Decomposing The Myth - Fourier Analysis Bigfoot T-Shirt",
@@ -290,6 +413,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "11348551",
+        "slug": "zentangle-art-six",
+        "title": "Zentangle Art - Six T-Shirt",
+        "seo_title": "Zentangle Art T-Shirt | Relaxing Pattern Tee",
+        "description": "Discover our colorful Zentangle Art T-Shirt featuring relaxing structured patterns. Perfect for artists, designers, and creative souls. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/11348551_0/1592221908/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_13_0_x626,s_630,q_90.jpg",
+        "image_alt": "Zentangle Art colorful pattern design on a t-shirt",
+        "niche": "hobbies",
+        "secondary_niche": "professions",
+        "primary_keyword": "Zentangle Art T-Shirt",
+        "tags": "artist, calligrapher, designer, dots, lines, patterns, zentangle",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "94081845",
         "slug": "no-footprints-required-math-equations-bigfoot",
@@ -321,6 +458,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "94031335",
+        "slug": "bigfoot-drawn-with-math-fourier-transform-orange-g",
+        "title": "Bigfoot Drawn with Math: Fourier Transform Orange Glow T-Shirt",
+        "seo_title": "Fourier Transform Bigfoot Math Orange Glow T-Shirt",
+        "description": "Shop the glowing orange Fourier Transform Bigfoot T-Shirt. Perfect math teacher and STEM apparel featuring complex mathematical equations.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94031335_0/1781345374/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_41_0_x626,s_630,q_90.jpg",
+        "image_alt": "Glowing orange Bigfoot design drawn with Fourier Transform math formulas on a t-shirt",
+        "niche": "Math",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Fourier Transform Bigfoot T-Shirt",
+        "tags": "bigfoot, cryptid, engineering, fourier transform, gradient, math, math teacher, mathematics, orange, physics, sasquatch, science, stem, synthwave",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
+      {
         "design_id": "8344811",
         "slug": "stop-your-grinnin",
         "title": "Stop your Grinnin T-Shirt",
@@ -350,6 +501,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "8329450",
+        "slug": "the-black-panther-the-last-shout-unique-art",
+        "title": "The Black Panther - The Last Shout (Unique Art) T-Shirt",
+        "seo_title": "The Black Panther Last Shout T-Shirt | Retro Book Art",
+        "description": "Shop The Black Panther The Last Shout T-Shirt featuring classic 1980s Afrikaans book series art. Unique retro vintage design for book lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8329450_1/1587399809/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther The Last Shout Unique Art T-Shirt front view",
+        "niche": "Reading",
+        "secondary_niche": "",
+        "primary_keyword": "Black Panther book cover t-shirt",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 10:59:30 GMT"
+      },
       {
         "design_id": "94082995",
         "slug": "an-unresolved-mystery-math-bigfoot-red-and-cyan",
