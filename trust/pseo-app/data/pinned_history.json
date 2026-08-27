@@ -1,7 +1,7 @@
 {
-  "lastUpdated": "2026-08-27T10:59:30.981Z",
-  "dayCounter": 5,
-  "totalPinned": 55,
+  "lastUpdated": "2026-08-27T11:05:10.659Z",
+  "dayCounter": 6,
+  "totalPinned": 66,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -57,10 +57,35 @@
     "8329394",
     "11348551",
     "94031335",
-    "8329450"
+    "8329450",
+    "8608493",
+    "66103290",
+    "8330226",
+    "61576123",
+    "8357630",
+    "8407459",
+    "93523811",
+    "8329391",
+    "11562536",
+    "94028888",
+    "8329454"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8608493",
+        "slug": "deep-space-light-blue",
+        "title": "Deep Space - Light Blue T-Shirt",
+        "seo_title": "Deep Space Light Blue T-Shirt | Galaxy Astronomy Tee",
+        "description": "Explore the cosmos with our Deep Space Light Blue T-Shirt. Featuring a stunning galaxy design, stars, and planets for astronomy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8608493_0/1584867197/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Deep Space Light Blue T-Shirt with galaxy and stars design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Deep Space T-Shirt",
+        "tags": "space, black, blue, child, cool, galaxy, light, new, planet, star, sun, white, woman",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "8609037",
         "slug": "sun-and-moon-eclipse-green-1",
@@ -106,6 +131,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "66103290",
+        "slug": "motorcycle-and-wolf-13",
+        "title": "Motorcycle and Wolf #13 T-Shirt",
+        "seo_title": "Motorcycle & Wolf T-Shirt | Biker Apparel",
+        "description": "Shop the striking Motorcycle and Wolf T-Shirt. Perfect for bikers and adventurers. Premium print-on-demand clothing and home decor. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66103290_0/1726560730/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Motorcycle and Wolf design printed on a black t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "Motorcycle Wolf T-Shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
+      {
         "design_id": "66104984",
         "slug": "motorcycle-and-wolf-20",
         "title": "Motorcycle and Wolf #20 T-Shirt",
@@ -149,6 +188,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "8330226",
+        "slug": "the-black-panther-adventure-in-the-kongo-unique-ar",
+        "title": "The Black Panther - Adventure in the Kongo (Unique Art) T-Shirt",
+        "seo_title": "Vintage Black Panther Book Cover T-Shirt - Afrikaans Series",
+        "description": "Discover unique vintage art from the 1980s Afrikaans 'Die Swart Luiperd Reeks'. This Black Panther book cover design is perfect for fans of classic adventure stories and retro art.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8330226_1/1587399191/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage 1980s Black Panther book cover art from Afrikaans 'Die Swart Luiperd Reeks' showing an adventure scene in the Kongo.",
+        "niche": "Reading",
+        "secondary_niche": "animals",
+        "primary_keyword": "Black Panther book cover",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "8329499",
         "slug": "the-black-panther-the-gorillas-are-coming-unique-a",
@@ -194,6 +247,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "61576123",
+        "slug": "futuristic-toy-robot-43",
+        "title": "Futuristic Toy Robot #43 T-Shirt",
+        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Apparel",
+        "description": "Shop the Futuristic Toy Robot #43 T-Shirt. High-tech robotic characters blending playfulness and sci-fi innovation for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61576123_0/1718451010/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #43 T-Shirt Design featuring high-tech robotic character art",
+        "niche": "Engineer",
+        "secondary_niche": "Developer",
+        "primary_keyword": "futuristic toy robot t-shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
+      {
         "design_id": "61576127",
         "slug": "futuristic-toy-robot-44",
         "title": "Futuristic Toy Robot #44 T-Shirt",
@@ -237,6 +304,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "8357630",
+        "slug": "white-tiger-from-india-white-colour",
+        "title": "White Tiger from India - White colour T-Shirt",
+        "seo_title": "White Tiger from India White T-Shirt | Wild Cat Tee",
+        "description": "Discover our stunning White Tiger from India white t-shirt. Featuring a majestic Bengal tiger design, this comfortable tee is perfect for wildlife lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8357630_0/1583583696/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "White Tiger from India graphic printed on a white colour t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "",
+        "primary_keyword": "White Tiger T-Shirt",
+        "tags": "white tiger, beautiful, bengal, creature, forest, india, nature, stripes, tiger, white",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "8371543",
         "slug": "zentangle-art-yellow-black-and-red-colours",
@@ -282,6 +363,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8407459",
+        "slug": "chess-slogan-king-in-a-corner-2",
+        "title": "Chess Slogan - King in a Corner 2 T-Shirt",
+        "seo_title": "Chess Slogan King in a Corner T-Shirt",
+        "description": "Shop the Chess Slogan King in a Corner T-Shirt. Perfect for chess lovers and strategy game fans. Premium quality apparel celebrating the ultimate game.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8407459_0/1583843445/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Chess Slogan King in a Corner T-Shirt featuring board game typography",
+        "niche": "Gaming",
+        "secondary_niche": "Math",
+        "primary_keyword": "chess t-shirt",
+        "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
+      {
         "design_id": "94031951",
         "slug": "bigfoot-drawn-with-math-fourier-transform-pink-and",
         "title": "Bigfoot Drawn with Math: Fourier Transform Pink & Blue Gradient T-Shirt",
@@ -325,6 +420,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "93523811",
+        "slug": "pablo-picasso-fourier-transform-math-line-art",
+        "title": "Pablo Picasso - Fourier Transform Math Line Art T-Shirt",
+        "seo_title": "Picasso Fourier Transform Math Line Art T-Shirt",
+        "description": "Discover the unique Pablo Picasso Fourier Transform math line art t-shirt. A minimalist blend of modern art and computer science for STEM lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/93523811_0/1780584280/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_23_0_x626,s_630,q_90.jpg",
+        "image_alt": "Pablo Picasso Fourier Transform Math Line Art T-Shirt",
+        "niche": "Math",
+        "secondary_niche": "Engineer",
+        "primary_keyword": "Fourier Transform T-Shirt",
+        "tags": "pablo picasso, art history, artist, cubism, engineer gift, fourier transform, geek, line art, mathematics, stem",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "93519928",
         "slug": "leonardo-da-vinci-fourier-transform-math-line-art",
@@ -370,6 +479,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "8329391",
+        "slug": "the-black-panther-spirit-from-the-fire-unique-art",
+        "title": "The Black Panther - Spirit from the Fire (Unique Art) T-Shirt",
+        "seo_title": "Black Panther Book T-Shirt Retro Art",
+        "description": "Discover the unique vintage art of the 1980s Afrikaans book series 'Die Swart Luiperd'. Get your Black Panther book cover t-shirt today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther Spirit from the Fire Unique Art T-Shirt front",
+        "niche": "Reading",
+        "secondary_niche": "",
+        "primary_keyword": "Black Panther book t-shirt",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
+      {
         "design_id": "8329394",
         "slug": "the-black-panther-blood-feast-of-the-apes-unique-a",
         "title": "The Black Panther - Blood Feast of the Apes (Unique Art) T-Shirt",
@@ -413,6 +536,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "11562536",
+        "slug": "western-era-cowboy-with-revolver",
+        "title": "Western Era - Cowboy with Revolver T-Shirt",
+        "seo_title": "Western Era Cowboy Revolver T-Shirt | Retro Old West Tee",
+        "description": "Celebrate the Old West with our Western Era Cowboy with Revolver T-Shirt. Vintage-style gunslinger design for history and cowboy fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/11562536_0/1592810575/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_3_0_x626,s_630,q_90.jpg",
+        "image_alt": "Western Era Cowboy with Revolver T-Shirt vintage design",
+        "niche": "hobbies",
+        "secondary_niche": "professions",
+        "primary_keyword": "cowboy t-shirt",
+        "tags": "cowboy, era, gunslinger, old west, revolver, rifle, spurs, usa, western",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "11348551",
         "slug": "zentangle-art-six",
@@ -458,6 +595,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "94028888",
+        "slug": "bigfoot-drawn-with-math-fourier-transform-purple-g",
+        "title": "Bigfoot Drawn with Math: Fourier Transform Purple Gradient T-Shirt",
+        "seo_title": "Fourier Transform Bigfoot Math T-Shirt",
+        "description": "Discover the ultimate geeky apparel: a Bigfoot design drawn entirely using Fourier Transform math formulas. Perfect for math teachers and STEM lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/94028888_0/1781342997/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_40_0_x626,s_630,q_90.jpg",
+        "image_alt": "Purple gradient Bigfoot design drawn with math equations and Fourier Transform epicycles on a t-shirt",
+        "niche": "Math",
+        "secondary_niche": "Engineer",
+        "primary_keyword": "Fourier Transform Bigfoot T-Shirt",
+        "tags": "bigfoot, cryptid, cyberpunk, engineering, fourier transform, math, math teacher, mathematics, neon, physics, sasquatch, science, stem, synthwave",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
+      {
         "design_id": "94031335",
         "slug": "bigfoot-drawn-with-math-fourier-transform-orange-g",
         "title": "Bigfoot Drawn with Math: Fourier Transform Orange Glow T-Shirt",
@@ -501,6 +652,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "8329454",
+        "slug": "the-black-panther-secret-of-the-green-hell-unique-",
+        "title": "The Black Panther - Secret of the Green Hell (Unique Art) T-Shirt",
+        "seo_title": "Black Panther Secret of Green Hell T-Shirt",
+        "description": "Discover the unique 1980s Die Swart Luiperd book cover t-shirt. Featuring retro art from the classic Afrikaans adventure series.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8329454_1/1587399805/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther Secret of the Green Hell retro book cover t-shirt",
+        "niche": "Reading",
+        "secondary_niche": "",
+        "primary_keyword": "Black Panther book cover t-shirt",
+        "tags": "action, black, books, online, panther, series, story, unique",
+        "pubDate": "Thu, 27 Aug 2026 11:05:10 GMT"
+      },
       {
         "design_id": "8329450",
         "slug": "the-black-panther-the-last-shout-unique-art",
