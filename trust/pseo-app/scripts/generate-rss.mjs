@@ -109,6 +109,7 @@ const BOARD_SLUGS = BOARDS.map(b => b.slug);
 const args = process.argv.slice(2);
 const IS_RESET        = args.includes('--reset');
 const IS_REBUILD_ONLY = args.includes('--rebuild-only');
+const IS_FORCE        = args.includes('--force');
 const IS_DRY_RUN      = args.includes('--dry-run');
 const IS_ADVANCE      = !IS_RESET && !IS_REBUILD_ONLY && (args.includes('--advance') || !IS_DRY_RUN);
 
@@ -125,6 +126,7 @@ const categories = JSON.parse(fs.readFileSync(categoriesPath, 'utf8'));
 
 let history = {
   lastUpdated: new Date().toISOString(),
+  lastAdvanceDate: '',
   dayCounter: 0,
   totalPinned: 0,
   pinnedIds: [],
@@ -138,10 +140,11 @@ if (!IS_RESET && fs.existsSync(historyPath)) {
       history.pinnedIds = raw.map(String);
       history.totalPinned = raw.length;
     } else {
-      history.dayCounter  = typeof raw.dayCounter === 'number' ? raw.dayCounter : 0;
-      history.pinnedIds   = Array.isArray(raw.pinnedIds) ? raw.pinnedIds.map(String) : [];
-      history.totalPinned = history.pinnedIds.length;
-      history.boardFeeds  = (raw.boardFeeds && typeof raw.boardFeeds === 'object') ? raw.boardFeeds : {};
+      history.dayCounter      = typeof raw.dayCounter === 'number' ? raw.dayCounter : 0;
+      history.lastAdvanceDate = typeof raw.lastAdvanceDate === 'string' ? raw.lastAdvanceDate : '';
+      history.pinnedIds       = Array.isArray(raw.pinnedIds) ? raw.pinnedIds.map(String) : [];
+      history.totalPinned     = history.pinnedIds.length;
+      history.boardFeeds      = (raw.boardFeeds && typeof raw.boardFeeds === 'object') ? raw.boardFeeds : {};
     }
   } catch (e) {
     console.warn(`⚠️ Could not parse pinned_history.json (${e.message}). Initializing fresh.`);
@@ -256,7 +259,10 @@ function createFeedItem(product, pubDateStr = new Date().toUTCString()) {
 
 // ── Processing: 1 New Pin for ALL 11 Boards Daily ─────────────────────────────
 
-console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter}`);
+const todayUtcDate = new Date().toISOString().slice(0, 10);
+const alreadyAdvancedToday = history.lastAdvanceDate === todayUtcDate;
+
+console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter} (Date: ${todayUtcDate})`);
 console.log(`🎯 Processing ALL ${BOARDS.length} Pinterest Boards (strictly 1 fresh product pin per board daily)\n`);
 
 const isFirstRun = IS_RESET || (history.totalPinned === 0 && Object.values(history.boardFeeds).every(arr => arr.length === 0));
@@ -264,6 +270,7 @@ const isFirstRun = IS_RESET || (history.totalPinned === 0 && Object.values(histo
 if (isFirstRun && !IS_REBUILD_ONLY) {
   console.log('🌱 Initializing brand-new clean RSS feeds (seeding 1 fresh product per board)...');
   history.dayCounter = 1;
+  history.lastAdvanceDate = todayUtcDate;
   history.boardFeeds = {};
 
   BOARDS.forEach(board => {
@@ -278,28 +285,35 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
     }
   });
 } else if (IS_ADVANCE && !IS_REBUILD_ONLY) {
-  console.log('⚡ Adding 1 fresh unpinned product to ALL 11 board feeds:');
+  if (alreadyAdvancedToday && !IS_FORCE) {
+    console.log(`ℹ️ All 11 feeds have already been advanced today (${todayUtcDate}, Day ${history.dayCounter}).`);
+    console.log(`   Re-rendering XML feeds to update timestamps without adding duplicate pins.`);
+    console.log(`   (Tip: Pass --force to add another pin batch manually).`);
+  } else {
+    console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'}):`);
 
-  BOARDS.forEach(board => {
-    const selected = getNextCandidateForBoard(board);
+    BOARDS.forEach(board => {
+      const selected = getNextCandidateForBoard(board);
 
-    if (selected) {
-      pinnedSet.add(String(selected.design_id));
+      if (selected) {
+        pinnedSet.add(String(selected.design_id));
 
-      const newItem = createFeedItem(selected);
+        const newItem = createFeedItem(selected);
 
-      // Prepend newest item to the top of the board's feed buffer
-      const currentFeed = history.boardFeeds[board.slug] || [];
-      history.boardFeeds[board.slug] = [newItem, ...currentFeed].slice(0, MAX_FEED_BUFFER);
+        // Prepend newest item to the top of the board's feed buffer
+        const currentFeed = history.boardFeeds[board.slug] || [];
+        history.boardFeeds[board.slug] = [newItem, ...currentFeed].slice(0, MAX_FEED_BUFFER);
 
-      console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id})`);
-    } else {
-      console.warn(`   ⚠️ [${board.slug}] Entire product catalog exhausted. No new product available.`);
-    }
-  });
+        console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id})`);
+      } else {
+        console.warn(`   ⚠️ [${board.slug}] Entire product catalog exhausted. No new product available.`);
+      }
+    });
 
-  // Increment day counter
-  history.dayCounter += 1;
+    // Advance day counter and record date
+    history.dayCounter += 1;
+    history.lastAdvanceDate = todayUtcDate;
+  }
 }
 
 // Update history totals
@@ -326,32 +340,35 @@ function buildRssXml(slug, title, items) {
     // CDATA description with embedded <img> guarantees 100% Pinterest bot image parsing
     const descriptionHtml = `<img src="${escapeXml(imageUrl)}" alt="${escapeXml(imageAlt)}" /><p>${escapeXml(fullDesc)}</p>`;
 
-    return `
-    <item>
+    return `    <item>
       <guid isPermaLink="true">${escapeXml(productLink)}</guid>
       <title><![CDATA[${itemTitle}]]></title>
       <link>${escapeXml(productLink)}</link>
       <description><![CDATA[${descriptionHtml}]]></description>
+      <content:encoded><![CDATA[${descriptionHtml}]]></content:encoded>
       <pubDate>${item.pubDate || now}</pubDate>
       <media:content url="${escapeXml(imageUrl)}" medium="image" type="image/jpeg" />
+      <media:thumbnail url="${escapeXml(imageUrl)}" />
       <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" length="150000" />
     </item>`;
-  }).join('\n');
+  }).join('\n\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:media="http://search.yahoo.com/mrss/"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>${escapeXml(`Black Panther Store — ${title}`)}</title>
+    <title>${escapeXml(`Black Panther Store - ${title}`)}</title>
     <link>${SITE_URL}/</link>
     <description>${escapeXml(`TeePublic products for ${title}`)}</description>
     <language>en-us</language>
     <lastBuildDate>${now}</lastBuildDate>
     <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
-    ${itemsXml}
+${itemsXml}
   </channel>
-</rss>`;
+</rss>
+`;
 }
 
 if (!IS_DRY_RUN) {

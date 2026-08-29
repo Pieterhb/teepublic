@@ -1,9 +1,10 @@
 # Cloudflare Pages custom HTTP response headers
 
-# RSS feeds: serve with correct MIME type for Pinterest & all RSS readers
+# RSS feeds: serve with correct MIME type and CORS for Pinterest & all RSS readers
 /rss/*.xml
   Content-Type: application/rss+xml; charset=utf-8
   Cache-Control: public, max-age=3600, s-maxage=3600
+  Access-Control-Allow-Origin: *
 
 # Sitemaps
 /sitemap*.xml

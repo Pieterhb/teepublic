@@ -1,6 +1,7 @@
 name: Pinterest Daily 11-Board RSS Generation & Deploy
 
-# Runs daily at 05:00 UTC (07:00 South Africa Time).
+# Runs idempotently 4 times daily at off-peak minutes (03:17, 09:17, 15:17, 21:17 UTC).
+# Generates exactly 1 fresh pin per board per calendar day (zero missed days, zero duplicates).
 #
 # 100% Free & Zero API Keys:
 #   1. Generates exactly 1 fresh, unpinned product pin for ALL 11 Pinterest boards every single day.
@@ -14,11 +15,17 @@ name: Pinterest Daily 11-Board RSS Generation & Deploy
 
 on:
   schedule:
-    # Runs every day at 05:00 UTC
-    - cron: '0 5 * * *'
+    # 4x daily off-peak schedule (03:17, 09:17, 15:17, 21:17 UTC)
+    - cron: '17 3,9,15,21 * * *'
 
   # Allow manual trigger at any time from GitHub Actions tab
   workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force add another batch of pins today (bypass daily idempotency check)'
+        required: false
+        type: boolean
+        default: false
 
 env:
   NODE_VERSION: '22'
@@ -57,7 +64,12 @@ jobs:
         run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
 
       - name: Generate 1 Fresh Pin for All 11 Boards
-        run: node scripts/generate-rss.mjs --advance
+        run: |
+          if [ "${{ github.event.inputs.force }}" = "true" ]; then
+            node scripts/generate-rss.mjs --advance --force
+          else
+            node scripts/generate-rss.mjs --advance
+          fi
 
       - name: Generate Sitemaps
         run: npx tsx scripts/generate-sitemaps.ts
@@ -80,4 +92,5 @@ jobs:
             git commit -m "chore(pins): update daily 11-board RSS feeds [skip ci]"
             git pull --rebase --autostash origin master || true
             git push origin master
+            git push origin master:main || true
           fi

@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
   xmlns:media="http://search.yahoo.com/mrss/"
   xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Black Panther Store — Everyday Shirts</title>
+    <title>Black Panther Store - Everyday Shirts</title>
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Everyday Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Aug 2026 16:20:50 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 29 Aug 2026 06:42:38 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/everyday-shirts.xml" rel="self" type="application/rss+xml" />
-    
+    <item>
+      <guid isPermaLink="true">https://blackpantherstore.co.za/design/the-black-panther-the-devil-is-a-woman-unique-art</guid>
+      <title><![CDATA[Black Panther Vintage Book Cover T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/the-black-panther-the-devil-is-a-woman-unique-art</link>
+      <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329346_1/1587400361/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther The Devil is a Woman Vintage Book Cover T-Shirt" /><p>Shop the unique Black Panther The Devil is a Woman vintage book cover t-shirt featuring classic 1980s Afrikaans pulp fiction art. #teepublic #apparel #merch #reading</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329346_1/1587400361/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther The Devil is a Woman Vintage Book Cover T-Shirt" /><p>Shop the unique Black Panther The Devil is a Woman vintage book cover t-shirt featuring classic 1980s Afrikaans pulp fiction art. #teepublic #apparel #merch #reading</p>]]></content:encoded>
+      <pubDate>Sat, 29 Aug 2026 06:42:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/8329346_1/1587400361/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8329346_1/1587400361/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/8329346_1/1587400361/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
+    </item>
+
+    <item>
+      <guid isPermaLink="true">https://blackpantherstore.co.za/design/the-black-panther-the-legend-of-kumara-unique-art</guid>
+      <title><![CDATA[Black Panther Legend of Kumara Retro Book T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/the-black-panther-the-legend-of-kumara-unique-art</link>
+      <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8330004_1/1587401301/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther The Legend of Kumara Unique Art T-Shirt" /><p>Shop the unique Black Panther retro book cover t-shirt featuring art from the classic Die Swart Luiperd series. Perfect for book lovers and vintage art fans. #teepublic #apparel #merch #reading</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8330004_1/1587401301/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther The Legend of Kumara Unique Art T-Shirt" /><p>Shop the unique Black Panther retro book cover t-shirt featuring art from the classic Die Swart Luiperd series. Perfect for book lovers and vintage art fans. #teepublic #apparel #merch #reading</p>]]></content:encoded>
+      <pubDate>Fri, 28 Aug 2026 16:18:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/8330004_1/1587401301/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8330004_1/1587401301/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/8330004_1/1587401301/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
+    </item>
+
     <item>
       <guid isPermaLink="true">https://blackpantherstore.co.za/design/the-black-panther-monsters-of-the-bambi-mountains-</guid>
       <title><![CDATA[Black Panther Vintage Book Cover T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/the-black-panther-monsters-of-the-bambi-mountains-</link>
       <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8330092_1/1587399798/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Monsters of the Bambi-Mountains Retro Book Cover T-Shirt" /><p>Discover the unique Black Panther retro book cover t-shirt featuring artwork from the 1980s Afrikaans series. Shop this vintage literary tee online. #teepublic #apparel #merch #reading</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8330092_1/1587399798/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Monsters of the Bambi-Mountains Retro Book Cover T-Shirt" /><p>Discover the unique Black Panther retro book cover t-shirt featuring artwork from the 1980s Afrikaans series. Shop this vintage literary tee online. #teepublic #apparel #merch #reading</p>]]></content:encoded>
       <pubDate>Thu, 27 Aug 2026 16:20:50 GMT</pubDate>
       <media:content url="https://images.teepublic.com/derived/production/designs/8330092_1/1587399798/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8330092_1/1587399798/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8330092_1/1587399798/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
     </item>
 
@@ -25,8 +51,10 @@
       <title><![CDATA[Black Panther Book T-Shirt Retro Art]]></title>
       <link>https://blackpantherstore.co.za/design/the-black-panther-spirit-from-the-fire-unique-art</link>
       <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Spirit from the Fire Unique Art T-Shirt front" /><p>Discover the unique vintage art of the 1980s Afrikaans book series &apos;Die Swart Luiperd&apos;. Get your Black Panther book cover t-shirt today! #teepublic #apparel #merch #reading</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Spirit from the Fire Unique Art T-Shirt front" /><p>Discover the unique vintage art of the 1980s Afrikaans book series &apos;Die Swart Luiperd&apos;. Get your Black Panther book cover t-shirt today! #teepublic #apparel #merch #reading</p>]]></content:encoded>
       <pubDate>Thu, 27 Aug 2026 11:05:10 GMT</pubDate>
       <media:content url="https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8329391_1/1587401244/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
     </item>
 
@@ -35,8 +63,10 @@
       <title><![CDATA[Black Panther Blood Feast Retro Book T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/the-black-panther-blood-feast-of-the-apes-unique-a</link>
       <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Blood Feast of the Apes retro book cover art t-shirt design" /><p>Wear a piece of history with this unique Black Panther Blood Feast of the Apes retro book cover art t-shirt. Perfect for vintage book lovers. #teepublic #apparel #merch #reading</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Black Panther Blood Feast of the Apes retro book cover art t-shirt design" /><p>Wear a piece of history with this unique Black Panther Blood Feast of the Apes retro book cover art t-shirt. Perfect for vintage book lovers. #teepublic #apparel #merch #reading</p>]]></content:encoded>
       <pubDate>Thu, 27 Aug 2026 10:59:30 GMT</pubDate>
       <media:content url="https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8329394_1/1587399201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
     </item>
 
@@ -45,8 +75,10 @@
       <title><![CDATA[Fourier Analysis Bigfoot T-Shirt - Math & Science Gift]]></title>
       <link>https://blackpantherstore.co.za/design/decomposing-the-myth-fourier-analysis-bigfoot</link>
       <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Fourier Analysis Bigfoot T-Shirt design showing Bigfoot outline drawn with mathematical epicycles" /><p>Explore the myth with this unique Fourier Analysis Bigfoot T-Shirt. Perfect STEM art for engineers, mathematicians, and science enthusiasts. A genuine math-based design. #teepublic #apparel #merch #science</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Fourier Analysis Bigfoot T-Shirt design showing Bigfoot outline drawn with mathematical epicycles" /><p>Explore the myth with this unique Fourier Analysis Bigfoot T-Shirt. Perfect STEM art for engineers, mathematicians, and science enthusiasts. A genuine math-based design. #teepublic #apparel #merch #science</p>]]></content:encoded>
       <pubDate>Wed, 26 Aug 2026 10:39:05 GMT</pubDate>
       <media:content url="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/94081170_0/1781444057/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
     </item>
 
@@ -55,8 +87,10 @@
       <title><![CDATA[Fourier Transform Triceratops - Math Dinosaur T-Shirt]]></title>
       <link>https://blackpantherstore.co.za/design/fourier-transform-triceratops-math-dinosaur</link>
       <description><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green Fourier Transform Triceratops math dinosaur t-shirt design" /><p>Explore the unique Fourier Transform Triceratops design! This math dinosaur t-shirt features authentic mathematical plotting, perfect for science, STEM, and paleontology enthusiasts. A truly geeky and original piece. #teepublic #apparel #merch #dinosaur</p>]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green Fourier Transform Triceratops math dinosaur t-shirt design" /><p>Explore the unique Fourier Transform Triceratops design! This math dinosaur t-shirt features authentic mathematical plotting, perfect for science, STEM, and paleontology enthusiasts. A truly geeky and original piece. #teepublic #apparel #merch #dinosaur</p>]]></content:encoded>
       <pubDate>Wed, 26 Aug 2026 05:41:32 GMT</pubDate>
       <media:content url="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/94198235_0/1781615464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="150000" />
     </item>
   </channel>
