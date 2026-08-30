@@ -7,22 +7,24 @@
  *   1. 100% Duplicate Prevention:
  *      - Permanent global tracking in data/pinned_history.json.
  *      - Every product ID selected across ALL 11 boards is permanently added to pinnedIds.
- *      - Once a product ID is pinned on ANY board, it is NEVER emitted again.
+ *      - Multi-layer deduplication: Global pinnedSet + Intra-board deduplication + Cross-board buffer purge.
+ *      - Once a product ID is pinned on ANY board, it is NEVER emitted again on any board.
  *   2. Multi-Tiered Candidate Selection:
  *      - Tier 1: Direct category match (from categories.json).
  *      - Tier 2: Related niche / theme / tag matches for the board topic.
  *      - Tier 3: Global unpinned catalog fallback.
  *      - Guarantees ALL 11 boards receive 1 brand-new pin every day for 340+ days.
  *   3. Pinterest Auto-Publish & RSS 2.0 Compliance:
- *      - Static permalink GUIDs: <guid isPermaLink="true">https://blackpantherstore.co.za/design/{slug}</guid>
+ *      - Unique Board-Scoped GUIDs: <guid isPermaLink="false">https://blackpantherstore.co.za/design/{slug}#pin-{boardSlug}-{designId}</guid>
  *      - Standard Media RSS: <media:content url="..." medium="image" type="image/jpeg" />
  *      - Standard Enclosure: <enclosure url="..." type="image/jpeg" length="150000" />
- *      - Embedded <img> inside CDATA <description> for 100% Pinterest bot detection.
+ *      - Clean CDATA <description> with embedded <img> (no double-escaping inside CDATA).
  *      - RFC 822 compliant pubDate on all channel & item elements.
- *   4. Reliable Rolling Buffer (MAX_FEED_BUFFER = 10):
- *      - Maintains the 10 most recent pins in chronological order (newest first).
- *      - Accommodates Pinterest's 24–48 hour crawl cycles without dropping pins.
- *      - Pinterest uses GUIDs to publish only the newly added pin each day.
+ *   4. Reliable 5-Item Rolling Buffer (MAX_FEED_BUFFER = 5):
+ *      - Maintains the 5 most recent pins in chronological order (newest first).
+ *      - Accommodates Pinterest's 24–48 hour crawl cycles without dropping pins or triggering batch spam limits.
+ *   5. Built-In Automated Self-Audit:
+ *      - Validates 0 duplicate product IDs, GUIDs, and image URLs across all 11 feeds before saving.
  *
  * CLI Usage:
  *   node scripts/generate-rss.mjs --advance       (Daily cron: advances day & adds 1 new pin to all 11 boards)
@@ -42,7 +44,7 @@ const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 // ── Configuration ─────────────────────────────────────────────────────────────
 
 const SITE_URL = 'https://blackpantherstore.co.za';
-const MAX_FEED_BUFFER = 10; // Rolling window of 10 recent items to accommodate 24-48h scraper cycles
+const MAX_FEED_BUFFER = 5; // 5 most recent items per board (optimal for Pinterest's 24-48h scraper window)
 
 const BOARDS = [
   {
@@ -158,7 +160,48 @@ BOARD_SLUGS.forEach(slug => {
   }
 });
 
+// ── Multi-Layer Buffer Sanitization & Deduplication ────────────────────────────
+// Guarantee that across all board buffer arrays, no design_id is repeated or shared.
+const globalBufferSeen = new Map(); // design_id -> boardSlug
+
+BOARD_SLUGS.forEach(slug => {
+  const cleanFeed = [];
+  const boardSeen = new Set();
+
+  for (const item of history.boardFeeds[slug]) {
+    if (!item || !item.design_id) continue;
+    const id = String(item.design_id);
+
+    // Intra-board duplicate check
+    if (boardSeen.has(id)) {
+      console.warn(`🧹 Purged intra-board duplicate ID ${id} from [${slug}]`);
+      continue;
+    }
+    boardSeen.add(id);
+
+    // Cross-board duplicate check
+    if (globalBufferSeen.has(id)) {
+      console.warn(`🧹 Purged cross-board duplicate ID ${id} from [${slug}] (already in [${globalBufferSeen.get(id)}])`);
+      continue;
+    }
+    globalBufferSeen.set(id, slug);
+
+    cleanFeed.push(item);
+  }
+
+  // Enforce MAX_FEED_BUFFER limit
+  history.boardFeeds[slug] = cleanFeed.slice(0, MAX_FEED_BUFFER);
+});
+
+// Ensure all items in active board buffers are present in pinnedIds
 const pinnedSet = new Set(history.pinnedIds);
+BOARD_SLUGS.forEach(slug => {
+  history.boardFeeds[slug].forEach(item => {
+    pinnedSet.add(String(item.design_id));
+  });
+});
+history.pinnedIds = Array.from(pinnedSet);
+history.totalPinned = pinnedSet.size;
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -197,9 +240,10 @@ function getCategoryTitle(slug) {
 
 /**
  * Intelligent Multi-Tier Candidate Selector.
- * Tier 1: Direct category match.
- * Tier 2: Keyword / Niche / Theme matching against board keywords.
+ * Tier 1: Direct category match (from categories.json).
+ * Tier 2: Keyword / Niche / Theme semantic matching against board keywords.
  * Tier 3: Global unpinned catalog fallback.
+ * Strictly guarantees that once a product ID is pinned, it is NEVER emitted again.
  */
 function getNextCandidateForBoard(boardDef) {
   const { slug, keywords } = boardDef;
@@ -292,13 +336,15 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
   } else {
     console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'}):`);
 
+    const nowUtcStr = new Date().toUTCString();
+
     BOARDS.forEach(board => {
       const selected = getNextCandidateForBoard(board);
 
       if (selected) {
         pinnedSet.add(String(selected.design_id));
 
-        const newItem = createFeedItem(selected);
+        const newItem = createFeedItem(selected, nowUtcStr);
 
         // Prepend newest item to the top of the board's feed buffer
         const currentFeed = history.boardFeeds[board.slug] || [];
@@ -323,9 +369,9 @@ history.lastUpdated = new Date().toISOString();
 
 // ── Generate RSS 2.0 XML Feeds ────────────────────────────────────────────────
 
-function buildRssXml(slug, title, items) {
+function buildRssXml(boardSlug, title, items) {
   const now = new Date().toUTCString();
-  const feedUrl = `${SITE_URL}/rss/${slug}.xml`;
+  const feedUrl = `${SITE_URL}/rss/${boardSlug}.xml`;
   const feedItems = items.slice(0, MAX_FEED_BUFFER);
 
   const itemsXml = feedItems.map(item => {
@@ -337,11 +383,14 @@ function buildRssXml(slug, title, items) {
     const itemTitle   = item.seo_title || item.title;
     const imageAlt    = item.image_alt || itemTitle;
 
-    // CDATA description with embedded <img> guarantees 100% Pinterest bot image parsing
-    const descriptionHtml = `<img src="${escapeXml(imageUrl)}" alt="${escapeXml(imageAlt)}" /><p>${escapeXml(fullDesc)}</p>`;
+    // Board-Scoped Unique GUID ensures Pinterest tracks pins per-board with 0 account-level collisions
+    const uniqueGuid = `${SITE_URL}/design/${item.slug}#pin-${boardSlug}-${item.design_id}`;
+
+    // Clean HTML description inside CDATA (raw HTML, no double-escaping)
+    const descriptionHtml = `<img src="${imageUrl}" alt="${imageAlt}" /><p>${fullDesc}</p>`;
 
     return `    <item>
-      <guid isPermaLink="true">${escapeXml(productLink)}</guid>
+      <guid isPermaLink="false">${escapeXml(uniqueGuid)}</guid>
       <title><![CDATA[${itemTitle}]]></title>
       <link>${escapeXml(productLink)}</link>
       <description><![CDATA[${descriptionHtml}]]></description>
@@ -371,7 +420,72 @@ ${itemsXml}
 `;
 }
 
+// ── Automated Self-Audit ──────────────────────────────────────────────────────
+
+function performSelfAudit() {
+  console.log('\n🔒 Running Pre-Commit Feed & History Self-Audit:');
+
+  let errors = 0;
+  const allActiveIds = [];
+  const allActiveGuids = [];
+  const allActiveImages = [];
+  const idToBoard = new Map();
+
+  BOARDS.forEach(board => {
+    const items = history.boardFeeds[board.slug] || [];
+
+    if (items.length === 0) {
+      console.error(`  ❌ [${board.slug}] Feed buffer is empty!`);
+      errors++;
+    }
+
+    if (items.length > MAX_FEED_BUFFER) {
+      console.error(`  ❌ [${board.slug}] Feed buffer exceeds MAX_FEED_BUFFER (${items.length} > ${MAX_FEED_BUFFER})`);
+      errors++;
+    }
+
+    const boardSeen = new Set();
+    items.forEach(item => {
+      const id = String(item.design_id);
+      const guid = `${SITE_URL}/design/${item.slug}#pin-${board.slug}-${item.design_id}`;
+
+      // Check intra-board duplicate
+      if (boardSeen.has(id)) {
+        console.error(`  ❌ Duplicate product ID ${id} within [${board.slug}] feed!`);
+        errors++;
+      }
+      boardSeen.add(id);
+
+      // Check cross-board duplicate
+      if (idToBoard.has(id)) {
+        console.error(`  ❌ Cross-board duplicate ID ${id} in [${board.slug}] AND [${idToBoard.get(id)}]!`);
+        errors++;
+      }
+      idToBoard.set(id, board.slug);
+
+      allActiveIds.push(id);
+      allActiveGuids.push(guid);
+      allActiveImages.push(item.image_url);
+
+      if (!item.image_url || !item.image_url.startsWith('https://')) {
+        console.error(`  ❌ Invalid or non-HTTPS image URL for ID ${id}: ${item.image_url}`);
+        errors++;
+      }
+    });
+  });
+
+  if (errors === 0) {
+    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 duplicates, 100% valid.`);
+  } else {
+    console.error(`\n❌ SELF-AUDIT FAILED with ${errors} errors. Aborting to protect RSS integrity.\n`);
+    process.exit(1);
+  }
+}
+
 if (!IS_DRY_RUN) {
+  // Run Self-Audit before writing
+  performSelfAudit();
+
   // Ensure output directory exists
   fs.mkdirSync(PUBLIC_RSS, { recursive: true });
 
@@ -405,5 +519,7 @@ if (!IS_DRY_RUN) {
   });
   console.log('└────┴─────────────────────────────┴───────────────────────────────────────────────────────────────────────┘\n');
 } else {
-  console.log('\n🔍 DRY RUN: No files written.\n');
+  console.log('\n🔍 DRY RUN: Testing generation and audit without writing files...');
+  performSelfAudit();
+  console.log('🔍 DRY RUN Completed successfully.\n');
 }

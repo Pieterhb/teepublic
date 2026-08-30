@@ -115,7 +115,7 @@ for (let day = 1; day <= TOTAL_DAYS; day++) {
       title: selected.title,
       pubDate: new Date(Date.now() - (TOTAL_DAYS - day) * 86400000).toUTCString(),
     };
-    boardFeeds[board.slug] = [item, ...boardFeeds[board.slug]].slice(0, 10);
+    boardFeeds[board.slug] = [item, ...boardFeeds[board.slug]].slice(0, 5);
   });
 }
 
@@ -132,20 +132,21 @@ if (duplicates > 0 || emptyDays > 0) {
 }
 
 // ── Test 2: Buffer Behavior & Order Verification ─────────────────────────────
-console.log('Test 2: Verifying Rolling Buffer Behavior (MAX_FEED_BUFFER = 10)...');
+console.log('Test 2: Verifying Rolling Buffer Behavior (MAX_FEED_BUFFER = 5)...');
 BOARDS.forEach(b => {
   const feed = boardFeeds[b.slug];
-  if (feed.length !== 10) {
-    console.error(`❌ Board [${b.slug}] feed length is ${feed.length}, expected 10!`);
+  if (feed.length !== 5) {
+    console.error(`❌ Board [${b.slug}] feed length is ${feed.length}, expected 5!`);
     process.exit(1);
   }
 });
-console.log('   ✅ Test 2 PASSED: All 11 board feeds maintain exactly 10 recent items.\n');
+console.log('   ✅ Test 2 PASSED: All 11 board feeds maintain exactly 5 recent items.\n');
 
 // ── Test 3: XML Tag & Format Compliance ──────────────────────────────────────
-console.log('Test 3: Validating Production RSS Generation XML Tags...');
+console.log('Test 3: Validating Production RSS Generation XML Tags & Self-Audit...');
 
 const dryRunOutput = execSync('node scripts/generate-rss.mjs --dry-run', { cwd: path.join(__dirname, '..') }).toString();
 console.log(dryRunOutput);
 
 console.log('🎉 ALL AUTOMATED RSS VERIFICATION TESTS PASSED SUCCESSFULLY!\n');
+
