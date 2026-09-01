@@ -113,7 +113,7 @@ const IS_RESET        = args.includes('--reset');
 const IS_REBUILD_ONLY = args.includes('--rebuild-only');
 const IS_FORCE        = args.includes('--force');
 const IS_DRY_RUN      = args.includes('--dry-run');
-const IS_ADVANCE      = !IS_RESET && !IS_REBUILD_ONLY && (args.includes('--advance') || !IS_DRY_RUN);
+const IS_ADVANCE      = !IS_RESET && !IS_REBUILD_ONLY && args.includes('--advance');
 
 // ── Load Catalog Data ─────────────────────────────────────────────────────────
 
@@ -195,9 +195,12 @@ BOARD_SLUGS.forEach(slug => {
 
 // Ensure all items in active board buffers are present in pinnedIds
 const pinnedSet = new Set(history.pinnedIds);
+const pinnedImageUrls = new Set(); // Bug 4 fix: track pinned image URLs to catch variant products with identical visuals
+
 BOARD_SLUGS.forEach(slug => {
   history.boardFeeds[slug].forEach(item => {
     pinnedSet.add(String(item.design_id));
+    if (item.image_url) pinnedImageUrls.add(item.image_url);
   });
 });
 history.pinnedIds = Array.from(pinnedSet);
@@ -255,7 +258,8 @@ function getNextCandidateForBoard(boardDef) {
       for (const id of cat.productIds) {
         if (!pinnedSet.has(String(id))) {
           const product = products.find(p => String(p.design_id) === String(id));
-          if (product) return product;
+          // Bug 4 fix: also skip if this image URL was already used by another product/board
+          if (product && !pinnedImageUrls.has(product.image_url)) return product;
         }
       }
     }
@@ -265,7 +269,7 @@ function getNextCandidateForBoard(boardDef) {
   if (keywords && keywords.length > 0) {
     for (const p of products) {
       const id = String(p.design_id);
-      if (!pinnedSet.has(id)) {
+      if (!pinnedSet.has(id) && !pinnedImageUrls.has(p.image_url)) {
         const haystack = `${p.title} ${p.niche} ${p.secondary_niche} ${p.theme} ${p.style} ${p.primary_keyword} ${p.tags}`.toLowerCase();
         if (keywords.some(k => haystack.includes(k.toLowerCase()))) {
           return p;
@@ -276,7 +280,7 @@ function getNextCandidateForBoard(boardDef) {
 
   // Tier 3: Global unpinned catalog fallback
   for (const p of products) {
-    if (!pinnedSet.has(String(p.design_id))) {
+    if (!pinnedSet.has(String(p.design_id)) && !pinnedImageUrls.has(p.image_url)) {
       return p;
     }
   }
@@ -322,6 +326,7 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
     const selected = getNextCandidateForBoard(board);
     if (selected) {
       pinnedSet.add(String(selected.design_id));
+      if (selected.image_url) pinnedImageUrls.add(selected.image_url); // Bug 4 fix
       history.boardFeeds[board.slug] = [createFeedItem(selected)];
       console.log(`   ✅ Seeded [${board.slug}]: "${selected.title}" (ID: ${selected.design_id})`);
     } else {
@@ -343,6 +348,7 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
 
       if (selected) {
         pinnedSet.add(String(selected.design_id));
+        if (selected.image_url) pinnedImageUrls.add(selected.image_url); // Bug 4 fix: prevent same-image cross-board picks
 
         const newItem = createFeedItem(selected, nowUtcStr);
 
@@ -430,6 +436,7 @@ function performSelfAudit() {
   const allActiveGuids = [];
   const allActiveImages = [];
   const idToBoard = new Map();
+  const imageToBoard = new Map(); // Bug 4 fix: catch same-image cross-board duplicates
 
   BOARDS.forEach(board => {
     const items = history.boardFeeds[board.slug] || [];
@@ -445,23 +452,38 @@ function performSelfAudit() {
     }
 
     const boardSeen = new Set();
+    const boardImageSeen = new Set();
     items.forEach(item => {
       const id = String(item.design_id);
       const guid = `${SITE_URL}/design/${item.slug}#pin-${board.slug}-${item.design_id}`;
 
-      // Check intra-board duplicate
+      // Check intra-board duplicate ID
       if (boardSeen.has(id)) {
         console.error(`  ❌ Duplicate product ID ${id} within [${board.slug}] feed!`);
         errors++;
       }
       boardSeen.add(id);
 
-      // Check cross-board duplicate
+      // Check intra-board duplicate image URL
+      if (item.image_url && boardImageSeen.has(item.image_url)) {
+        console.error(`  ❌ Duplicate image URL within [${board.slug}] for ID ${id}!`);
+        errors++;
+      }
+      if (item.image_url) boardImageSeen.add(item.image_url);
+
+      // Check cross-board duplicate ID
       if (idToBoard.has(id)) {
         console.error(`  ❌ Cross-board duplicate ID ${id} in [${board.slug}] AND [${idToBoard.get(id)}]!`);
         errors++;
       }
       idToBoard.set(id, board.slug);
+
+      // Bug 4 fix: Check cross-board duplicate image URL (catches visual duplicates from variant products)
+      if (item.image_url && imageToBoard.has(item.image_url)) {
+        console.error(`  ❌ Cross-board duplicate IMAGE URL for ID ${id} in [${board.slug}] AND [${imageToBoard.get(item.image_url)}] — visual duplicate on Pinterest!`);
+        errors++;
+      }
+      if (item.image_url) imageToBoard.set(item.image_url, board.slug);
 
       allActiveIds.push(id);
       allActiveGuids.push(guid);
@@ -475,7 +497,7 @@ function performSelfAudit() {
   });
 
   if (errors === 0) {
-    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 duplicates, 100% valid.`);
+    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 ID duplicates, 0 image duplicates, 100% valid.`);
   } else {
     console.error(`\n❌ SELF-AUDIT FAILED with ${errors} errors. Aborting to protect RSS integrity.\n`);
     process.exit(1);

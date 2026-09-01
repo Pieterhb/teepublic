@@ -30,6 +30,13 @@ on:
 env:
   NODE_VERSION: '22'
 
+# Bug 3 fix: Only allow one run at a time to prevent race-condition duplicate pins.
+# A new trigger (e.g. manual dispatch) will QUEUE and wait for the running job to finish
+# rather than launching a concurrent instance that reads stale pinned_history.json.
+concurrency:
+  group: pinterest-pins-deploy
+  cancel-in-progress: false
+
 jobs:
   rss-and-deploy:
     name: Daily 11-Board RSS Generation & Deploy
@@ -89,8 +96,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if ! git diff --staged --quiet; then
+            # Bug 6 fix: pull latest before committing to avoid stale overwrites
+            git pull --rebase --autostash origin master
             git commit -m "chore(pins): update daily 11-board RSS feeds [skip ci]"
-            git pull --rebase --autostash origin master || true
-            git push origin master
-            git push origin master:main || true
+            # Use --force-with-lease so push fails loudly if someone else pushed in the meantime,
+            # rather than silently overwriting and regressing pinned_history.json state.
+            git push --force-with-lease origin master
+            git push --force-with-lease origin master:main || true
           fi
