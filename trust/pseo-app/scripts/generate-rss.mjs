@@ -44,7 +44,7 @@ const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 // ── Configuration ─────────────────────────────────────────────────────────────
 
 const SITE_URL = 'https://blackpantherstore.co.za';
-const MAX_FEED_BUFFER = 5; // 5 most recent items per board (optimal for Pinterest's 24-48h scraper window)
+const MAX_FEED_BUFFER = 7; // 7 most recent items per board (covers Pinterest's 24-72h scraper window with margin)
 
 const BOARDS = [
   {

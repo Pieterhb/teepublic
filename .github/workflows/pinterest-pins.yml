@@ -2,6 +2,7 @@ name: Pinterest Daily 11-Board RSS Generation & Deploy
 
 # Runs idempotently 4 times daily at off-peak minutes (03:17, 09:17, 15:17, 21:17 UTC).
 # Generates exactly 1 fresh pin per board per calendar day (zero missed days, zero duplicates).
+# RSS feed buffer = 7 items per board, covering Pinterest's 24–72h scraper window.
 #
 # 100% Free & Zero API Keys:
 #   1. Generates exactly 1 fresh, unpinned product pin for ALL 11 Pinterest boards every single day.
