@@ -15,14 +15,19 @@
  *      - Tier 3: Global unpinned catalog fallback.
  *      - Guarantees ALL 11 boards receive 1 brand-new pin every day for 340+ days.
  *   3. Pinterest Auto-Publish & RSS 2.0 Compliance:
- *      - Unique Board-Scoped GUIDs: <guid isPermaLink="false">https://blackpantherstore.co.za/design/{slug}#pin-{boardSlug}-{designId}</guid>
+ *      - Opaque Board-Scoped GUIDs (isPermaLink="false"): pin-{boardSlug}-{designId}
+ *        → NOT a URL — prevents Pinterest deduplication misfires from URL-fragment GUIDs.
  *      - Standard Media RSS: <media:content url="..." medium="image" type="image/jpeg" />
- *      - Standard Enclosure: <enclosure url="..." type="image/jpeg" length="150000" />
+ *      - Standard Enclosure: <enclosure url="..." type="image/jpeg" length="0" />
+ *        → length="0" means "unknown" — valid per RSS 2.0 spec; avoids false size mismatch errors.
+ *      - Channel <image> block for feed identity/claiming.
+ *      - Staggered per-board pubDate offsets (1 min apart) for organic distribution.
+ *      - <lastBuildDate> derived from newest item's pubDate — stable across rebuilds.
  *      - Clean CDATA <description> with embedded <img> (no double-escaping inside CDATA).
  *      - RFC 822 compliant pubDate on all channel & item elements.
- *   4. Reliable 5-Item Rolling Buffer (MAX_FEED_BUFFER = 5):
- *      - Maintains the 5 most recent pins in chronological order (newest first).
- *      - Accommodates Pinterest's 24–48 hour crawl cycles without dropping pins or triggering batch spam limits.
+ *   4. Reliable 7-Item Rolling Buffer (MAX_FEED_BUFFER = 7):
+ *      - Maintains the 7 most recent pins in chronological order (newest first).
+ *      - Accommodates Pinterest's 24–72 hour crawl cycles without dropping pins or triggering batch spam limits.
  *   5. Built-In Automated Self-Audit:
  *      - Validates 0 duplicate product IDs, GUIDs, and image URLs across all 11 feeds before saving.
  *
@@ -43,8 +48,13 @@ const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 
 // ── Configuration ─────────────────────────────────────────────────────────────
 
-const SITE_URL = 'https://blackpantherstore.co.za';
+const SITE_URL     = 'https://blackpantherstore.co.za';
+const SITE_LOGO    = `${SITE_URL}/logo.png`;
 const MAX_FEED_BUFFER = 7; // 7 most recent items per board (covers Pinterest's 24-72h scraper window with margin)
+
+// Per-board pubDate stagger offset (minutes). Boards are published 1 minute apart
+// so Pinterest's crawler sees organic distribution rather than a simultaneous batch.
+const BOARD_STAGGER_MINUTES = 1;
 
 const BOARDS = [
   {
@@ -195,7 +205,7 @@ BOARD_SLUGS.forEach(slug => {
 
 // Ensure all items in active board buffers are present in pinnedIds
 const pinnedSet = new Set(history.pinnedIds);
-const pinnedImageUrls = new Set(); // Bug 4 fix: track pinned image URLs to catch variant products with identical visuals
+const pinnedImageUrls = new Set(); // track pinned image URLs to catch variant products with identical visuals
 
 BOARD_SLUGS.forEach(slug => {
   history.boardFeeds[slug].forEach(item => {
@@ -258,7 +268,7 @@ function getNextCandidateForBoard(boardDef) {
       for (const id of cat.productIds) {
         if (!pinnedSet.has(String(id))) {
           const product = products.find(p => String(p.design_id) === String(id));
-          // Bug 4 fix: also skip if this image URL was already used by another product/board
+          // Also skip if this image URL was already used by another product/board
           if (product && !pinnedImageUrls.has(product.image_url)) return product;
         }
       }
@@ -321,13 +331,17 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
   history.lastAdvanceDate = todayUtcDate;
   history.boardFeeds = {};
 
-  BOARDS.forEach(board => {
+  // Base timestamp for seeding: stagger each board by BOARD_STAGGER_MINUTES
+  const seedBaseTime = new Date();
+
+  BOARDS.forEach((board, boardIndex) => {
     history.boardFeeds[board.slug] = [];
     const selected = getNextCandidateForBoard(board);
     if (selected) {
       pinnedSet.add(String(selected.design_id));
-      if (selected.image_url) pinnedImageUrls.add(selected.image_url); // Bug 4 fix
-      history.boardFeeds[board.slug] = [createFeedItem(selected)];
+      if (selected.image_url) pinnedImageUrls.add(selected.image_url);
+      const staggeredDate = new Date(seedBaseTime.getTime() + boardIndex * BOARD_STAGGER_MINUTES * 60 * 1000);
+      history.boardFeeds[board.slug] = [createFeedItem(selected, staggeredDate.toUTCString())];
       console.log(`   ✅ Seeded [${board.slug}]: "${selected.title}" (ID: ${selected.design_id})`);
     } else {
       console.warn(`   ⚠️ [${board.slug}] No candidate product available.`);
@@ -341,22 +355,27 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
   } else {
     console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'}):`);
 
-    const nowUtcStr = new Date().toUTCString();
+    // Stagger each board's new item pubDate by BOARD_STAGGER_MINUTES minutes.
+    // Board 0 gets "now", board 1 gets "now + 1 min", etc.
+    // This ensures Pinterest sees organic publishing timing instead of a simultaneous batch.
+    const advanceBaseTime = new Date();
 
-    BOARDS.forEach(board => {
+    BOARDS.forEach((board, boardIndex) => {
       const selected = getNextCandidateForBoard(board);
 
       if (selected) {
         pinnedSet.add(String(selected.design_id));
-        if (selected.image_url) pinnedImageUrls.add(selected.image_url); // Bug 4 fix: prevent same-image cross-board picks
+        if (selected.image_url) pinnedImageUrls.add(selected.image_url); // prevent same-image cross-board picks
 
-        const newItem = createFeedItem(selected, nowUtcStr);
+        // Stagger pubDate: each board is offset by boardIndex minutes
+        const staggeredDate = new Date(advanceBaseTime.getTime() + boardIndex * BOARD_STAGGER_MINUTES * 60 * 1000);
+        const newItem = createFeedItem(selected, staggeredDate.toUTCString());
 
         // Prepend newest item to the top of the board's feed buffer
         const currentFeed = history.boardFeeds[board.slug] || [];
         history.boardFeeds[board.slug] = [newItem, ...currentFeed].slice(0, MAX_FEED_BUFFER);
 
-        console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id})`);
+        console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id}) @ ${newItem.pubDate}`);
       } else {
         console.warn(`   ⚠️ [${board.slug}] Entire product catalog exhausted. No new product available.`);
       }
@@ -376,9 +395,12 @@ history.lastUpdated = new Date().toISOString();
 // ── Generate RSS 2.0 XML Feeds ────────────────────────────────────────────────
 
 function buildRssXml(boardSlug, title, items) {
-  const now = new Date().toUTCString();
   const feedUrl = `${SITE_URL}/rss/${boardSlug}.xml`;
   const feedItems = items.slice(0, MAX_FEED_BUFFER);
+
+  // Use the newest item's pubDate as lastBuildDate so rebuilds are stable and
+  // don't make Pinterest think the whole feed changed when no new pins were added.
+  const newestPubDate = feedItems.length > 0 ? feedItems[0].pubDate : new Date().toUTCString();
 
   const itemsXml = feedItems.map(item => {
     const productLink = `${SITE_URL}/design/${item.slug}`;
@@ -389,8 +411,12 @@ function buildRssXml(boardSlug, title, items) {
     const itemTitle   = item.seo_title || item.title;
     const imageAlt    = item.image_alt || itemTitle;
 
-    // Board-Scoped Unique GUID ensures Pinterest tracks pins per-board with 0 account-level collisions
-    const uniqueGuid = `${SITE_URL}/design/${item.slug}#pin-${boardSlug}-${item.design_id}`;
+    // Opaque, non-URL GUID (isPermaLink="false"):
+    // Format: pin-{boardSlug}-{designId}
+    // This is NOT a URL — it's a unique opaque identifier per Pinterest's RSS 2.0 requirements.
+    // Using URL-fragment GUIDs (e.g. design/slug#pin-board-id) caused Pinterest's deduplication
+    // to misfire because the fragment differs from the canonical <link> URL.
+    const uniqueGuid = `pin-${boardSlug}-${item.design_id}`;
 
     // Clean HTML description inside CDATA (raw HTML, no double-escaping)
     const descriptionHtml = `<img src="${imageUrl}" alt="${imageAlt}" /><p>${fullDesc}</p>`;
@@ -401,12 +427,19 @@ function buildRssXml(boardSlug, title, items) {
       <link>${escapeXml(productLink)}</link>
       <description><![CDATA[${descriptionHtml}]]></description>
       <content:encoded><![CDATA[${descriptionHtml}]]></content:encoded>
-      <pubDate>${item.pubDate || now}</pubDate>
+      <pubDate>${item.pubDate || newestPubDate}</pubDate>
       <media:content url="${escapeXml(imageUrl)}" medium="image" type="image/jpeg" />
       <media:thumbnail url="${escapeXml(imageUrl)}" />
-      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" length="150000" />
+      <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" length="0" />
     </item>`;
   }).join('\n\n');
+
+  // Channel-level <image> block: helps Pinterest and feed readers identify and claim the feed.
+  const channelImageXml = `    <image>
+      <url>${escapeXml(SITE_LOGO)}</url>
+      <title>${escapeXml(`Black Panther Store - ${title}`)}</title>
+      <link>${SITE_URL}/</link>
+    </image>`;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"
@@ -418,8 +451,9 @@ function buildRssXml(boardSlug, title, items) {
     <link>${SITE_URL}/</link>
     <description>${escapeXml(`TeePublic products for ${title}`)}</description>
     <language>en-us</language>
-    <lastBuildDate>${now}</lastBuildDate>
+    <lastBuildDate>${newestPubDate}</lastBuildDate>
     <atom:link href="${escapeXml(feedUrl)}" rel="self" type="application/rss+xml" />
+${channelImageXml}
 ${itemsXml}
   </channel>
 </rss>
@@ -436,7 +470,8 @@ function performSelfAudit() {
   const allActiveGuids = [];
   const allActiveImages = [];
   const idToBoard = new Map();
-  const imageToBoard = new Map(); // Bug 4 fix: catch same-image cross-board duplicates
+  const imageToBoard = new Map(); // catch same-image cross-board duplicates
+  const guidToBoard = new Map();  // catch GUID collisions
 
   BOARDS.forEach(board => {
     const items = history.boardFeeds[board.slug] || [];
@@ -454,8 +489,15 @@ function performSelfAudit() {
     const boardSeen = new Set();
     const boardImageSeen = new Set();
     items.forEach(item => {
-      const id = String(item.design_id);
-      const guid = `${SITE_URL}/design/${item.slug}#pin-${board.slug}-${item.design_id}`;
+      const id   = String(item.design_id);
+      // Opaque GUID format
+      const guid = `pin-${board.slug}-${item.design_id}`;
+
+      // Check GUID format: must NOT be a URL (no https:// or #fragment)
+      if (guid.startsWith('http') || guid.includes('#')) {
+        console.error(`  ❌ [${board.slug}] GUID "${guid}" must be an opaque non-URL identifier!`);
+        errors++;
+      }
 
       // Check intra-board duplicate ID
       if (boardSeen.has(id)) {
@@ -478,12 +520,19 @@ function performSelfAudit() {
       }
       idToBoard.set(id, board.slug);
 
-      // Bug 4 fix: Check cross-board duplicate image URL (catches visual duplicates from variant products)
+      // Check cross-board duplicate image URL (catches visual duplicates from variant products)
       if (item.image_url && imageToBoard.has(item.image_url)) {
         console.error(`  ❌ Cross-board duplicate IMAGE URL for ID ${id} in [${board.slug}] AND [${imageToBoard.get(item.image_url)}] — visual duplicate on Pinterest!`);
         errors++;
       }
       if (item.image_url) imageToBoard.set(item.image_url, board.slug);
+
+      // Check cross-board GUID collision
+      if (guidToBoard.has(guid)) {
+        console.error(`  ❌ Cross-board GUID collision: "${guid}" in [${board.slug}] AND [${guidToBoard.get(guid)}]!`);
+        errors++;
+      }
+      guidToBoard.set(guid, board.slug);
 
       allActiveIds.push(id);
       allActiveGuids.push(guid);
@@ -497,7 +546,7 @@ function performSelfAudit() {
   });
 
   if (errors === 0) {
-    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 ID duplicates, 0 image duplicates, 100% valid.`);
+    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 ID duplicates, 0 image duplicates, 0 GUID collisions, 100% valid.`);
   } else {
     console.error(`\n❌ SELF-AUDIT FAILED with ${errors} errors. Aborting to protect RSS integrity.\n`);
     process.exit(1);

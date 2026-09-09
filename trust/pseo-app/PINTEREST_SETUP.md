@@ -6,8 +6,8 @@ This guide explains how to set up and maintain the **100% Free & Zero-API Native
 
 ## 🎯 How The System Works
 
-1. **Daily Automation (05:00 UTC / 07:00 SAST)**:
-   - GitHub Actions runs every morning automatically.
+1. **Daily Automation (03:17, 09:17, 15:17, 21:17 UTC — 4× redundant)**:
+   - GitHub Actions runs 4 times daily (idempotent — only advances once per calendar day).
    - It selects **exactly 1 brand-new, unpinned product** for each of your 11 boards.
    - It writes 11 RSS 2.0 XML feeds to `public/rss/{slug}.xml` and deploys them to `https://blackpantherstore.co.za/rss/{slug}.xml`.
    - It updates `data/pinned_history.json` and commits back to GitHub so no product is ever pinned twice across any board.
@@ -20,10 +20,11 @@ This guide explains how to set up and maintain the **100% Free & Zero-API Native
      - *Tier 3*: General unpinned catalog fallback.
      - Guarantees continuous daily pinning for 340+ days across all 11 boards without category exhaustion.
 
-3. **Pinterest-Optimized Feed Engine (Rolling 10-Item Buffer)**:
-   - Feeds maintain a rolling window of the **10 most recent pins** in chronological order.
-   - **Why 10 items?** Pinterest's scraper visits on a 24–48 hour crawl window. A 10-item buffer ensures Pinterest's crawler never misses a daily pin if a crawl is delayed.
-   - **Why no duplicates?** Pinterest tracks the unique canonical `<guid isPermaLink="true">` of every pin it creates. When Pinterest crawls the feed, it skips the 9 previously pinned items and publishes **only the 1 new daily pin**.
+3. **Pinterest-Optimized Feed Engine (Rolling 7-Item Buffer)**:
+   - Feeds maintain a rolling window of the **7 most recent pins** in chronological order.
+   - **Why 7 items?** Pinterest's scraper visits on a 24–72 hour crawl window. A 7-item buffer ensures Pinterest's crawler never misses a daily pin if a crawl is delayed.
+   - **Why no duplicates?** Pinterest tracks the unique opaque `<guid>` of every pin it creates. When Pinterest crawls the feed, it skips the 6 previously pinned items and publishes **only the 1 new daily pin**.
+   - **Staggered pubDates**: Each board's new pin is published 1 minute apart (board 1 at 08:11, board 2 at 08:12, etc.) to look like organic publishing rather than a simultaneous batch upload.
 
 ---
 
@@ -63,11 +64,13 @@ In the **Bulk create Pins / Auto-publish** section, click **Connect RSS Feed** f
 ## 🔍 RSS Specification & Bot Compatibility
 
 Every `<item>` in the RSS feeds conforms to standard RSS 2.0 + Media RSS:
-- `<guid isPermaLink="true">https://blackpantherstore.co.za/design/{slug}</guid>` (Matches claimed domain).
+- `<guid isPermaLink="false">pin-{boardSlug}-{designId}</guid>` — **Opaque non-URL GUID** (correct RSS 2.0 pattern). URL-fragment GUIDs caused Pinterest's deduplication to misfire.
 - `<media:content url="..." medium="image" type="image/jpeg" />` (Standard image tag).
-- `<enclosure url="..." type="image/jpeg" length="150000" />` (Valid byte-length enclosure).
+- `<enclosure url="..." type="image/jpeg" length="0" />` — `length="0"` means "unknown" per RSS 2.0 spec; avoids false size mismatch errors.
 - `<description><![CDATA[<img src="..." /><p>...</p>]]></description>` (Embedded image fallback).
-- `<pubDate>` (RFC 822 UTC timestamp).
+- `<pubDate>` (RFC 822 UTC timestamp, staggered 1 minute per board).
+- `<image>` channel element for feed identity and Pinterest claiming.
+- `<lastBuildDate>` is derived from the newest item's pubDate (stable — doesn't change on rebuilds).
 
 ---
 
@@ -75,19 +78,59 @@ Every `<item>` in the RSS feeds conforms to standard RSS 2.0 + Media RSS:
 
 Inside `trust/pseo-app`:
 
-- **Run Automated Verification Suite (340-day simulation & 0 duplicate test)**:
+- **Run Automated Verification Suite (340-day simulation, 7 validation tests)**:
   ```bash
   npm run test:rss
   ```
-- **Generate next day's pins**:
+- **Generate next day's pins (daily use)**:
   ```bash
   npm run rss
   ```
-- **Rebuild XML without advancing (build step)**:
+- **Rebuild XML without advancing (build step only)**:
   ```bash
   npm run rss:rebuild
   ```
-- **Test run without writing files**:
+- **Live feed diagnostic — checks all 11 boards vs live Cloudflare site**:
+  ```bash
+  node scripts/check-status.mjs
+  ```
+- **Dry run (audit without writing any files)**:
   ```bash
   node scripts/generate-rss.mjs --dry-run
   ```
+
+---
+
+## 🚨 Troubleshooting
+
+### Pinterest says "RSS feed does not work"
+This is most commonly caused by one of these issues (all now fixed):
+
+| # | Issue | Status |
+|---|-------|--------|
+| 1 | GUID was a URL-fragment (`design/slug#pin-board-id`) — caused deduplication misfires | ✅ Fixed: opaque `pin-{board}-{id}` |
+| 2 | `enclosure length="150000"` was fabricated — flagged as untrustworthy | ✅ Fixed: `length="0"` (unknown) |
+| 3 | `<lastBuildDate>` changed on every deploy — Pinterest thought feed was entirely new | ✅ Fixed: derived from newest item |
+| 4 | Missing `<image>` channel element — Pinterest couldn't claim the feed | ✅ Fixed: added |
+| 5 | All 11 boards pinned simultaneously — looked like spam batch | ✅ Fixed: staggered 1 min apart |
+| 6 | Cloudflare 1-hour cache — Pinterest bot saw stale feed after deploy | ✅ Fixed: 5-minute cache |
+
+### All boards show "STALE" in check-status.mjs
+Usually means your local machine hasn't pulled the latest from GitHub. Run:
+```bash
+git pull origin master
+node scripts/check-status.mjs
+```
+
+### A board ran out of products
+The system falls back through 3 tiers. If Tier 3 (global catalog) is exhausted (~340 days), re-import the product catalog.
+
+---
+
+## ⚠️ Important Notes
+
+> [!WARNING]
+> **Always run `git pull origin master` before running `PIN_DAILY_PINS.bat` manually.** GitHub Actions commits back to the repo every day. If you run the BAT file on a stale local copy, you'll create a divergent history that can cause merge conflicts.
+
+> [!NOTE]
+> Pinterest's crawler visits every 24–72 hours. New pins may take up to 3 days to appear on your board after the feed is updated. This is normal — the 7-item buffer ensures no pin is ever missed.
