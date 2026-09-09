@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-08T23:25:29.815Z",
-  "lastAdvanceDate": "2026-09-08",
-  "dayCounter": 19,
-  "totalPinned": 209,
+  "lastUpdated": "2026-09-09T08:11:47.825Z",
+  "lastAdvanceDate": "2026-09-09",
+  "dayCounter": 20,
+  "totalPinned": 220,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -212,10 +212,35 @@
     "8389595",
     "8953614",
     "8611189",
-    "8330144"
+    "8330144",
+    "8609360",
+    "66100622",
+    "66100630",
+    "61576515",
+    "66299137",
+    "8786720",
+    "61533887",
+    "8312216",
+    "8953609",
+    "8611456",
+    "8330318"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8609360",
+        "slug": "purple-jupiter-planet",
+        "title": "Purple Jupiter Planet T-Shirt",
+        "seo_title": "Purple Jupiter Planet T-Shirt | Galaxy Space Tee",
+        "description": "Explore the cosmos with our stunning Purple Jupiter Planet T-Shirt. Perfect for space and astronomy lovers. Premium galaxy design tee available now.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8609360_0/1584870543/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Purple Jupiter Planet T-Shirt featuring a stunning galaxy space design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Purple Jupiter Planet T-Shirt",
+        "tags": "jupiter, black, child, cool, galaxy, new, planet, space, star, sun, white, woman",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8607847",
         "slug": "cool-cold-planet-blue",
@@ -299,23 +324,23 @@
         "primary_keyword": "Space Odyssey T-Shirt",
         "tags": "space, 3d, child, fan, new, odyssey, planet, stars, unique, women",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "8609194",
-        "slug": "brown-jupiter-planet",
-        "title": "Brown Jupiter Planet T-Shirt",
-        "seo_title": "Brown Jupiter Planet T-Shirt | Space Galaxy Tee",
-        "description": "Explore the galaxy with our Brown Jupiter Planet T-Shirt. Featuring a stunning space and star design, perfect for astronomy lovers. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8609194_0/1584869815/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Brown Jupiter Planet T-Shirt featuring galaxy and star design",
-        "niche": "Astronomy",
-        "secondary_niche": "Physics",
-        "primary_keyword": "Brown Jupiter Planet T-Shirt",
-        "tags": "jupiter, black, brown, child, cool, galaxy, new, planet, space, star, sun, white, woman",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "66100622",
+        "slug": "motorcycle-and-wolf-2",
+        "title": "Motorcycle and Wolf #2 T-Shirt",
+        "seo_title": "Motorcycle & Wolf T-Shirt | Biker Apparel",
+        "description": "Embrace the open road with our motorcycle and wolf t-shirt. Perfect for bikers and adventure seekers. Shop bold apparel and home decor today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66100622_0/1726557617/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Motorcycle and wolf design on a premium t-shirt for bikers",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "motorcycle wolf t-shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "65310896",
         "slug": "musical-instrument-saxophone-27",
@@ -399,23 +424,23 @@
         "primary_keyword": "motorcycle wolf t-shirt",
         "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "66103317",
-        "slug": "motorcycle-and-wolf-21",
-        "title": "Motorcycle and Wolf #21 T-Shirt",
-        "seo_title": "Motorcycle and Wolf #21 T-Shirt | Biker Apparel",
-        "description": "Unleash your wild side with our striking Motorcycle and Wolf #21 T-Shirt. Perfect for bikers and rebels. Shop quality apparel and home decor today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66103317_1/1726560760/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Motorcycle and Wolf #21 T-Shirt design featuring a bold biker graphic",
-        "niche": "Animals",
-        "secondary_niche": "Hobbies",
-        "primary_keyword": "Motorcycle T-Shirt",
-        "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "66100630",
+        "slug": "motorcycle-and-wolf-3",
+        "title": "Motorcycle and Wolf #3 T-Shirt",
+        "seo_title": "Motorcycle and Wolf T-Shirt | Biker Apparel",
+        "description": "Unleash your wild side with our Motorcycle and Wolf T-Shirt. Perfect for bikers and rebels. Shop bold apparel and home decor today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66100630_0/1726557624/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Motorcycle and Wolf #3 T-Shirt featuring bold biker artwork",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "Motorcycle Wolf T-Shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, clothing, digital, home decor, motorcycles, nature, outdoor, rebel, travel, wolf, wolves",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "66099467",
         "slug": "motorcycle-and-wolf-1",
@@ -499,23 +524,23 @@
         "primary_keyword": "Black Panther T-Shirt",
         "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "8311940",
-        "slug": "the-black-panther-gold-and-assegaaie-unique-art",
-        "title": "The Black Panther - Gold and Assegaaie (Unique Art) T-Shirt",
-        "seo_title": "Black Panther Vintage Book Cover T-Shirt",
-        "description": "Shop the unique Black Panther retro book cover art t-shirt featuring Die Swart Luiperd series. Perfect gift for readers and vintage art lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8311940_2/1587395795/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Black Panther Gold and Assegaaie Vintage Book Cover T-Shirt",
-        "niche": "Reading",
-        "secondary_niche": "Animals",
-        "primary_keyword": "Black Panther T-Shirt",
-        "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "61576515",
+        "slug": "futuristic-toy-robot-53",
+        "title": "Futuristic Toy Robot #53 T-Shirt",
+        "seo_title": "Futuristic Toy Robot #53 T-Shirt | Sci-Fi Tee",
+        "description": "Shop the Futuristic Toy Robot #53 T-Shirt. Discover high-tech robotic character designs blending playfulness and futuristic innovation.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61576515_0/1718452206/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #53 T-Shirt featuring a high-tech robotic character",
+        "niche": "Engineer",
+        "secondary_niche": "Gaming",
+        "primary_keyword": "futuristic toy robot t-shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "61576122",
         "slug": "futuristic-toy-robot-42",
@@ -599,23 +624,23 @@
         "primary_keyword": "futuristic toy robot t-shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "61533890",
-        "slug": "futuristic-toy-robot-37",
-        "title": "Futuristic Toy Robot #37 T-Shirt",
-        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Graphic Tee",
-        "description": "Discover our Futuristic Toy Robot T-Shirt featuring cutting-edge robotic art. Perfect sci-fi apparel for tech lovers and robot fans. Shop today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61533890_0/1718349561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #37 T-Shirt Design featuring high-tech robotic character",
-        "niche": "Engineer",
-        "secondary_niche": "Gaming",
-        "primary_keyword": "futuristic toy robot t-shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "66299137",
+        "slug": "white-angel-2",
+        "title": "White Angel #2 T-Shirt",
+        "seo_title": "White Angel T-Shirt | Graceful Christian Apparel",
+        "description": "Shop the White Angel T-Shirt. Graceful and serene, this elegant Christian design brings peace and protection to your everyday wardrobe and home decor.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66299137_0/1726908657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "White Angel #2 T-Shirt featuring a graceful and serene heavenly design",
+        "niche": "Religion",
+        "secondary_niche": "Christianity",
+        "primary_keyword": "white angel t-shirt",
+        "tags": "angel, artistic, bible, christ, christian, christianity, faith, god, jesus, jesus christ, religion, religious, religious symbol",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "66298697",
         "slug": "white-cross-5",
@@ -699,23 +724,23 @@
         "primary_keyword": "Fourier Transform Bigfoot",
         "tags": "bigfoot, calculus, cryptid, engineering, fourier transform, geek, math, math teacher, mathematics, nerd, physics, sasquatch, science, stem",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "66479195",
-        "slug": "a-golden-cross-4",
-        "title": "A Golden Cross #4 T-Shirt",
-        "seo_title": "Golden Cross T-Shirt | Christian Apparel",
-        "description": "Shop the Golden Cross #4 T-Shirt featuring a stunning golden angel design. Express your faith with high-quality Christian apparel and streetwear.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66479195_2/1727264931/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "A Golden Cross #4 T-Shirt with golden angel design",
-        "niche": "Religion",
-        "secondary_niche": "Christianity",
-        "primary_keyword": "golden cross t-shirt",
-        "tags": "angel, angel wings, angels, bible, christ, christian apparel, christian clothing, christian designs, christian streetwear, christianity, golden, heaven, jesus, jesus christ, religious",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "8786720",
+        "slug": "yin-yang-green",
+        "title": "Yin Yang - Green T-Shirt",
+        "seo_title": "Yin Yang Chinese Zodiac Green T-Shirt",
+        "description": "Discover our Yin Yang green t-shirt featuring ancient Chinese philosophy and the 12 zodiac signs in a dodecagon design. Perfect for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8786720_0/1585676036/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green t-shirt with Yin Yang symbol and Chinese zodiac signs",
+        "niche": "Astronomy",
+        "secondary_niche": "Math",
+        "primary_keyword": "Yin Yang T-Shirt",
+        "tags": "yin yang, ancient, bad, chinese, cosmology, dark, energy, good, light, positive, yin",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8786833",
         "slug": "yin-yang-orange",
@@ -799,23 +824,23 @@
         "primary_keyword": "Math Made Me Do It shirt",
         "tags": "bigfoot, calculus, cryptid, fourier transform, gradient design, math humor, math teacher, neon, sasquatch, science humor",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "93984767",
-        "slug": "i-drew-bigfoot-with-math-fourier-series-art",
-        "title": "I Drew Bigfoot With Math - Fourier Series Art T-Shirt",
-        "seo_title": "Bigfoot Fourier Series Math Art T-Shirt",
-        "description": "Discover the ultimate Bigfoot Fourier Series math art t-shirt. Perfect for math teachers, programmers, and STEM nerds. Get yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/93984767_0/1781270185/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bigfoot drawn with math using Fourier Series equation with cyan and green gradient glow on a t-shirt",
-        "niche": "Math",
-        "secondary_niche": "Teacher",
-        "primary_keyword": "Fourier Series art",
-        "tags": "bigfoot, coder, computer science, cryptid, data science, fourier transform, generative art, math teacher, programmer, sasquatch, stem",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "61533887",
+        "slug": "futuristic-toy-robot-36",
+        "title": "Futuristic Toy Robot #36 T-Shirt",
+        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Robot Apparel",
+        "description": "Shop the Futuristic Toy Robot #36 T-Shirt. Discover cutting-edge robotic designs blending playfulness and sci-fi innovation for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61533887_0/1718349568/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #36 T-Shirt featuring high-tech robotic character design",
+        "niche": "Engineer",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Futuristic Toy Robot T-Shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "61576095",
         "slug": "futuristic-toy-robot-41",
@@ -899,23 +924,23 @@
         "primary_keyword": "Hot Shot T-Shirt",
         "tags": "hotshot, child, fresh, hot, new, online, trend, unique, women",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "94030916",
-        "slug": "bigfoot-drawn-with-math-fourier-transform-red-and-",
-        "title": "Bigfoot Drawn with Math: Fourier Transform Red & Cyan Split T-Shirt",
-        "seo_title": "Fourier Transform Math Bigfoot T-Shirt",
-        "description": "Discover the Bigfoot Fourier Transform math T-shirt. A striking red and cyan neon Sasquatch plotted with mathematical equations. Perfect for STEM geeks.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/94030916_0/1781344951/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_37_0_x626,s_630,q_90.jpg",
-        "image_alt": "Red and cyan neon Bigfoot drawn with Fourier Transform math equations on a t-shirt",
-        "niche": "Math",
-        "secondary_niche": "Engineer",
-        "primary_keyword": "Fourier Transform Math T-Shirt",
-        "tags": "bigfoot, cryptid, cyan, engineering, fourier transform, math, math teacher, mathematics, neon, physics, sasquatch, science, stem",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "8312216",
+        "slug": "the-black-panther-sacrifice-for-the-snake-god-uniq",
+        "title": "The Black Panther - Sacrifice for the Snake God (Unique Art) T-Shirt",
+        "seo_title": "Black Panther Vintage Book Cover T-Shirt",
+        "description": "Shop the unique Black Panther Sacrifice for the Snake God book cover t-shirt featuring vintage 1980s Afrikaans pulp fiction art.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8312216_2/1587394385/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther Sacrifice for the Snake God Vintage Book Cover T-Shirt",
+        "niche": "Reading",
+        "secondary_niche": "",
+        "primary_keyword": "Black Panther book cover t-shirt",
+        "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8389595",
         "slug": "chess-slogan-impress-with-chess-1",
@@ -999,23 +1024,23 @@
         "primary_keyword": "Chess T-Shirt",
         "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "8389597",
-        "slug": "chess-slogan-impress-with-chess-2",
-        "title": "Chess Slogan - Impress with Chess 2 T-Shirt",
-        "seo_title": "Chess Slogan T-Shirt | Impress with Chess",
-        "description": "Show your love for the ultimate strategy game with this chess slogan t-shirt. Perfect for chess champions and players worldwide. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8389597_0/1583759273/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Chess Slogan Impress with Chess 2 T-Shirt featuring board game typography",
-        "niche": "Gaming",
-        "secondary_niche": "",
-        "primary_keyword": "Chess T-Shirt",
-        "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8953609",
+        "slug": "golden-letter-a",
+        "title": "Golden Letter A T-Shirt",
+        "seo_title": "Golden Letter A T-Shirt | Typography Alphabet Tee",
+        "description": "Shop the Golden Letter A T-Shirt featuring a stylish Latin alphabet design. Perfect for teachers and alphabet lovers. Order your typography tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8953609_0/1586343359/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Golden Letter A T-Shirt with typography design",
+        "niche": "Teacher",
+        "secondary_niche": "",
+        "primary_keyword": "Golden Letter A T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8953614",
         "slug": "golden-letter-b",
@@ -1099,23 +1124,23 @@
         "primary_keyword": "NFL football player t-shirt",
         "tags": "football, ai art, artistic, digital artwork, football gift, football player, nfl football, nfl player, sport",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "59854562",
-        "slug": "american-woman-nfl-football-player-11",
-        "title": "American Woman NFL Football Player #11 T-Shirt",
-        "seo_title": "American Woman NFL Football Player #11 T-Shirt",
-        "description": "Experience the power of gridiron legends with this exclusive American Woman NFL Football Player #11 T-Shirt. Perfect gift for football fans worldwide.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/59854562_0/1714566108/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "American Woman NFL Football Player #11 T-Shirt product view",
-        "niche": "hobbies",
-        "secondary_niche": "professions",
-        "primary_keyword": "NFL football player t-shirt",
-        "tags": "football, ai art, artistic, digital artwork, football gift, football player, nfl football, nfl player, sport",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "8611456",
+        "slug": "space-design-red",
+        "title": "Space Design - Red T-Shirt",
+        "seo_title": "Red Space T-Shirt | Galaxy Astronomy Shirt",
+        "description": "Explore the cosmos with our Red Space T-Shirt. Featuring a stunning galaxy design of stars, planets, and nebulae. Perfect for astronomy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8611456_0/1584880110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Red t-shirt featuring a stunning galaxy space design with stars and planets",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "space t-shirt",
+        "tags": "space, black, child, cool, galaxy, moon, new, planet, solar, star, sun, white, woman",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8611189",
         "slug": "space-design-blue",
@@ -1199,23 +1224,23 @@
         "primary_keyword": "Pink Solar Eclipse T-Shirt",
         "tags": "eclipse, black, child, cool, galaxy, new, pink, planet, solar, space, star, sun, white, woman",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "8441413",
-        "slug": "captain-scarlet-and-colonel-white",
-        "title": "Captain Scarlet & Colonel White T-Shirt",
-        "seo_title": "Captain Scarlet & Colonel White T-Shirt",
-        "description": "Shop the official-inspired Captain Scarlet & Colonel White T-Shirt. Celebrate Gerry Anderson's classic CGI animation series with this retro sci-fi tee.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8441413_0/1584016775/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Captain Scarlet and Colonel White retro design t-shirt",
-        "niche": "Gaming",
-        "secondary_niche": "Science",
-        "primary_keyword": "Captain Scarlet T-Shirt",
-        "tags": "captain scarlet, anderson, black, captain, film, green, new, scarlet, sylvia, toys, white",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "8330318",
+        "slug": "the-black-panther-the-secret-of-the-elephants-ceme",
+        "title": "The Black Panther - The Secret of the Elephants' Cemetery (Unique Art) T-Shirt",
+        "seo_title": "The Black Panther Book Cover T-Shirt | Retro Vintage Art",
+        "description": "Shop The Black Panther book cover t-shirt featuring vintage art from Die Swart Luiperd series. Unique retro apparel for book lovers and retro fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8330318_1/1587393973/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Black Panther The Secret of the Elephants Cemetery Unique Art T-Shirt",
+        "niche": "Reading",
+        "secondary_niche": "",
+        "primary_keyword": "Black Panther book cover t-shirt",
+        "tags": "action, adventure, black, books, elephant, online, panther, secret, series, story, unique",
+        "pubDate": "Wed, 09 Sep 2026 08:11:47 GMT"
+      },
       {
         "design_id": "8330144",
         "slug": "the-black-panther-the-plague-from-egypt-unique-art",
@@ -1299,20 +1324,6 @@
         "primary_keyword": "chess t-shirt",
         "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
         "pubDate": "Thu, 03 Sep 2026 05:42:35 GMT"
-      },
-      {
-        "design_id": "8389316",
-        "slug": "chess-slogan-the-bishop",
-        "title": "Chess Slogan - The Bishop T-Shirt",
-        "seo_title": "Chess Slogan The Bishop T-Shirt | Strategy Game Tee",
-        "description": "Showcase your love for strategy with this Chess Slogan The Bishop T-Shirt. Perfect for chess players and board game enthusiasts. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8389316_0/1583757904/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Chess Slogan The Bishop T-Shirt with typography design",
-        "niche": "Gaming",
-        "secondary_niche": "",
-        "primary_keyword": "Chess T-Shirt",
-        "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
-        "pubDate": "Wed, 02 Sep 2026 07:57:21 GMT"
       }
     ]
   }
