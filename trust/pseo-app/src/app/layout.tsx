@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description:
     "Discover 4,000+ unique designs on T-shirts, hoodies, and more. Shop the Black Panther Store — exclusive apparel by independent artists, shipped worldwide via TeePublic.",
   metadataBase: new URL("https://blackpantherstore.co.za"),
+  alternates: {
+    canonical: "https://blackpantherstore.co.za",
+  },
   openGraph: {
     type: "website",
     siteName: "Black Panther Store",

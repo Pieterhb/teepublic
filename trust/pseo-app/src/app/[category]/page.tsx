@@ -19,6 +19,17 @@ export async function generateStaticParams() {
   }));
 }
 
+// Helper: generate a unique editorial description per category
+function getCategoryDescription(slug: string, title: string, count: number): string {
+  const descriptions: Record<string, string> = {
+    'everyday-shirts': `Browse ${count} everyday shirt designs crafted for comfort and style. From casual tees to relaxed fits, find the perfect shirt for any occasion.`,
+    'minimalist-shirts': `Discover ${count} minimalist shirt designs that speak through simplicity. Clean lines, subtle art, and understated style for those who appreciate less is more.`,
+    'retro-vintage-shirts': `Explore ${count} retro and vintage-inspired shirt designs. Nostalgic artwork and classic aesthetics reimagined for modern wear.`,
+    'boyfriend-gifts': `Find the perfect gift from ${count} unique designs ideal for boyfriends. From funny to heartfelt, there is something for every personality.`,
+  };
+  return descriptions[slug] ?? `Shop ${count} unique ${title.toLowerCase()} designs from independent artists. Premium quality T-shirts, hoodies, and apparel — made to order and shipped worldwide via TeePublic.`;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { category: slug } = await params;
   const category = getCategoryBySlug(slug);
@@ -48,7 +59,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs from independent artists.`,
       url: `https://blackpantherstore.co.za/${category.slug}`,
-      images: featuredImage ? [{ url: featuredImage }] : [],
+      images: featuredImage ? [{ url: featuredImage, alt: `${category.title} designs` }] : [],
     },
     twitter: {
       card: 'summary_large_image',
@@ -57,26 +68,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: featuredImage ? [featuredImage] : [],
     },
   };
-}
-
-function getCategoryDescription(slug: string, title: string, count: number): string {
-  const lowerSlug = slug.toLowerCase();
-  if (lowerSlug.includes('everyday')) {
-    return `Our ${title} collection brings together versatile, ultra-comfortable apparel built for day-to-day comfort and effortless style. With over ${count} unique graphic tees, hoodies, and tops created by independent creators, you will find designs spanning clever humor, mathematical art, nature illustrations, and bold typography.`;
-  }
-  if (lowerSlug.includes('minimalist')) {
-    return `Discover clean, sophisticated ${title.toLowerCase()} celebrating subtle aesthetics, delicate line art, and modern typography. Featuring over ${count} curated designs, our minimalist apparel offers understated elegance perfect for any casual or professional setting.`;
-  }
-  if (lowerSlug.includes('engineer') || lowerSlug.includes('math') || lowerSlug.includes('science')) {
-    return `Designed for analytical minds, software developers, mathematicians, and STEM enthusiasts. Browse ${count}+ intelligent designs featuring genuine Fourier Transform mathematical equations, wireframe schematics, and technical humor.`;
-  }
-  if (lowerSlug.includes('gift') || lowerSlug.includes('dad') || lowerSlug.includes('husband') || lowerSlug.includes('boyfriend')) {
-    return `Looking for a memorable gift? Our ${title} collection offers ${count}+ hand-picked apparel designs tailored for birthdays, holidays, and special milestones. Shipped worldwide with premium print-on-demand quality.`;
-  }
-  if (lowerSlug.includes('animal') || lowerSlug.includes('bird') || lowerSlug.includes('wolf')) {
-    return `Explore majestic wildlife and creature-themed art in our ${title} gallery. From fierce predators to endearing pets, enjoy ${count}+ authentic illustrations printed on durable, soft apparel.`;
-  }
-  return `Explore our hand-curated ${title.toLowerCase()} collection featuring ${count}+ original creations from independent artists. Each item is made to order using premium materials and sustainable printing techniques.`;
 }
 
 export default async function CategoryPage({ params }: Props) {
@@ -173,7 +164,7 @@ export default async function CategoryPage({ params }: Props) {
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-500/20 border border-indigo-400/30 rounded-full text-indigo-300 font-semibold tracking-wider uppercase mb-4 text-xs">
-            <span>🐾</span> Curated Collection · {products.length} Designs
+            <span>&#10024;</span> Curated Collection &mdash; {products.length} Designs
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize">
             {category.title}
@@ -197,17 +188,17 @@ export default async function CategoryPage({ params }: Props) {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left mt-12">
               <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <div className="text-2xl mb-2">🎨</div>
+                <div className="text-2xl mb-2">&#127912;</div>
                 <h3 className="font-bold text-slate-900 mb-2">Original Art</h3>
                 <p className="text-sm text-slate-600">Exclusive graphics and concepts not found in retail big-box stores.</p>
               </div>
               <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <div className="text-2xl mb-2">✨</div>
+                <div className="text-2xl mb-2">&#128083;</div>
                 <h3 className="font-bold text-slate-900 mb-2">Premium Fabrics</h3>
                 <p className="text-sm text-slate-600">Ultra-soft, pre-shrunk cotton for all-day comfort and durability.</p>
               </div>
               <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                <div className="text-2xl mb-2">🌍</div>
+                <div className="text-2xl mb-2">&#127758;</div>
                 <h3 className="font-bold text-slate-900 mb-2">Worldwide Delivery</h3>
                 <p className="text-sm text-slate-600">Reliable global shipping via TeePublic&apos;s fulfillment centers.</p>
               </div>

@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Prevent indexing of search/filter query-parameter URLs to avoid duplicate content
+Disallow: /designs?*
+
 Sitemap: https://blackpantherstore.co.za/sitemap.xml
