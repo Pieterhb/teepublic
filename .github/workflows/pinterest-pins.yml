@@ -4,6 +4,9 @@ name: Pinterest Daily 11-Board RSS Generation & Deploy
 # Generates exactly 1 fresh pin per board per calendar day (zero missed days, zero duplicates).
 # RSS feed buffer = 7 items per board, covering Pinterest's 24–72h scraper window.
 #
+# Self-Healing: If the workflow was missed for N days (e.g. due to GitHub outage or billing),
+# it auto-detects the gap and runs --advance --force for each missed day to fully catch up.
+#
 # 100% Free & Zero API Keys:
 #   1. Generates exactly 1 fresh, unpinned product pin for ALL 11 Pinterest boards every single day.
 #   2. Prevents duplicates using permanent static GUIDs + data/pinned_history.json.
@@ -19,6 +22,20 @@ on:
     # 4x daily off-peak schedule (03:17, 09:17, 15:17, 21:17 UTC)
     - cron: '17 3,9,15,21 * * *'
 
+  # Trigger on pushes to master or main — ensures the workflow catches up
+  # after any manual commit that might have interrupted the cron schedule.
+  push:
+    branches:
+      - master
+      - main
+    paths-ignore:
+      # Don't trigger on commits that only update pinned_history or RSS XML files
+      # (those are written by this workflow itself — avoids infinite push loops)
+      - 'trust/pseo-app/data/pinned_history.json'
+      - 'trust/pseo-app/public/rss/**'
+      - 'trust/pseo-app/public/sitemap*.xml'
+      - '**.md'
+
   # Allow manual trigger at any time from GitHub Actions tab
   workflow_dispatch:
     inputs:
@@ -31,7 +48,7 @@ on:
 env:
   NODE_VERSION: '22'
 
-# Bug 3 fix: Only allow one run at a time to prevent race-condition duplicate pins.
+# Only allow one run at a time to prevent race-condition duplicate pins.
 # A new trigger (e.g. manual dispatch) will QUEUE and wait for the running job to finish
 # rather than launching a concurrent instance that reads stale pinned_history.json.
 concurrency:
@@ -71,8 +88,49 @@ jobs:
       - name: Install Linux native bindings
         run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
 
-      - name: Generate 1 Fresh Pin for All 11 Boards
+      - name: Catch-up missed days + Daily Advance
         run: |
+          # ── Self-Healing Catch-Up ──────────────────────────────────────────────
+          # Read the lastAdvanceDate from pinned_history.json.
+          # If it is more than 1 day behind today (UTC), run --advance --force
+          # for each missed day to bring the feeds fully up to date.
+          HISTORY_FILE="data/pinned_history.json"
+          LAST_ADVANCE=$(node -e "
+            const h = JSON.parse(require('fs').readFileSync('$HISTORY_FILE','utf8'));
+            console.log(h.lastAdvanceDate || '');
+          ")
+
+          TODAY=$(date -u +%Y-%m-%d)
+
+          if [ -z "$LAST_ADVANCE" ]; then
+            echo "ℹ️  No lastAdvanceDate found — treating as first run."
+            MISSED_DAYS=0
+          else
+            # Compute days since last advance
+            LAST_TS=$(date -d "$LAST_ADVANCE" +%s 2>/dev/null || date -jf "%Y-%m-%d" "$LAST_ADVANCE" +%s 2>/dev/null || echo 0)
+            TODAY_TS=$(date -d "$TODAY" +%s 2>/dev/null || date -jf "%Y-%m-%d" "$TODAY" +%s 2>/dev/null || echo 0)
+            if [ "$LAST_TS" -eq 0 ] || [ "$TODAY_TS" -eq 0 ]; then
+              echo "⚠️  Could not compute date gap — skipping catch-up."
+              MISSED_DAYS=0
+            else
+              DIFF_SECS=$((TODAY_TS - LAST_TS))
+              DIFF_DAYS=$((DIFF_SECS / 86400))
+              # Missed days = total gap minus today's own advance (1 day)
+              MISSED_DAYS=$(( DIFF_DAYS > 1 ? DIFF_DAYS - 1 : 0 ))
+            fi
+          fi
+
+          if [ "$MISSED_DAYS" -gt 0 ]; then
+            echo "⚠️  Detected $MISSED_DAYS missed day(s) since $LAST_ADVANCE. Catching up..."
+            for i in $(seq 1 $MISSED_DAYS); do
+              echo "--- Catch-up advance $i / $MISSED_DAYS ---"
+              node scripts/generate-rss.mjs --advance --force
+            done
+          else
+            echo "✅ No missed days detected. Proceeding with normal daily advance."
+          fi
+
+          # ── Normal Daily Advance ───────────────────────────────────────────────
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             node scripts/generate-rss.mjs --advance --force
           else
@@ -97,11 +155,11 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if ! git diff --staged --quiet; then
-            # Bug 6 fix: pull latest before committing to avoid stale overwrites
+            # Pull latest before committing to avoid stale overwrites
             git pull --rebase --autostash origin master
             git commit -m "chore(pins): update daily 11-board RSS feeds [skip ci]"
-            # Use --force-with-lease so push fails loudly if someone else pushed in the meantime,
-            # rather than silently overwriting and regressing pinned_history.json state.
+            # Use --force-with-lease so push fails loudly if someone else pushed in the meantime
             git push --force-with-lease origin master
             git push --force-with-lease origin master:main || true
           fi
+

@@ -155,10 +155,11 @@ async function auditAll() {
         console.log(`       ${i + 1} │ ${pubDate} │ ${agePad} │ ${title}`);
       });
 
-      // Check if newest item in live feed matches local buffer
+      // Check if newest item in live feed matches local buffer.
+      // GUIDs in the RSS feed are opaque (non-URL) format: pin-{boardSlug}-{designId}
       const liveTop  = liveItems[0]?.guid || '';
       const localTop = localItems[0]
-        ? `${SITE_URL}/design/${localItems[0].slug}#pin-${slug}-${localItems[0].design_id}`
+        ? `pin-${slug}-${localItems[0].design_id}`
         : '';
       if (liveTop && localTop && liveTop !== localTop) {
         console.log(`       ⚠️  STALE: Live feed top item differs from local buffer top!`);
