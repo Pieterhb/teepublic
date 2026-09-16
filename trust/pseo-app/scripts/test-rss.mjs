@@ -129,7 +129,7 @@ for (let day = 1; day <= TOTAL_DAYS; day++) {
       title: selected.title,
       pubDate: new Date(Date.now() - (TOTAL_DAYS - day) * 86400000).toUTCString(),
     };
-    boardFeeds[board.slug] = [item, ...boardFeeds[board.slug]].slice(0, 7);
+    boardFeeds[board.slug] = [item, ...boardFeeds[board.slug]].slice(0, 30);
   });
 }
 
@@ -146,12 +146,12 @@ if (duplicates > 0 || emptyDays > 0) {
 }
 
 // ── Test 2: Buffer Behavior & Order Verification ─────────────────────────────
-console.log('Test 2: Verifying Rolling Buffer Behavior (MAX_FEED_BUFFER = 7)...');
+console.log('Test 2: Verifying Rolling Buffer Behavior (MAX_FEED_BUFFER = 30)...');
 BOARDS.forEach(b => {
   const feed = boardFeeds[b.slug];
-  assert(feed.length === 7, `Board [${b.slug}] feed has exactly 7 items (got ${feed.length})`);
+  assert(feed.length === 30, `Board [${b.slug}] feed has exactly 30 items (got ${feed.length})`);
 });
-console.log('   ✅ Test 2 PASSED: All 11 board feeds maintain exactly 7 recent items.\n');
+console.log('   ✅ Test 2 PASSED: All 11 board feeds maintain exactly 30 recent items.\n');
 
 // ── Test 3: XML Tag & Format Compliance ──────────────────────────────────────
 console.log('Test 3: Validating Production RSS Generation XML Tags & Self-Audit...');
@@ -268,6 +268,38 @@ if (history.boardFeeds) {
   }
 } else {
   console.log('   ⚠️ Test 7 SKIPPED: pinned_history.json not in expected format.\n');
+}
+
+// ── Test 8: Non-Future & Unique pubDates Validation ──────────────────────────
+console.log('Test 8: Validating that no pubDates are in the future and none are duplicated in any feed...');
+let dateTestFailed = false;
+BOARDS.forEach(board => {
+  const xmlPath = path.join(PUBLIC_RSS, `${board.slug}.xml`);
+  if (!fs.existsSync(xmlPath)) return;
+  const xml = fs.readFileSync(xmlPath, 'utf8');
+  const pubDateMatches = [...xml.matchAll(/<pubDate>([^<]+)<\/pubDate>/g)].map(m => m[1].trim());
+  const seenDates = new Set();
+  pubDateMatches.forEach(d => {
+    const ts = new Date(d).getTime();
+    if (isNaN(ts)) {
+      console.error(`   ❌ [${board.slug}] Invalid pubDate: "${d}"`);
+      dateTestFailed = true;
+    } else if (ts > Date.now() + 60000) {
+      console.error(`   ❌ [${board.slug}] Future pubDate detected: "${d}"`);
+      dateTestFailed = true;
+    }
+    if (seenDates.has(d)) {
+      console.error(`   ❌ [${board.slug}] Duplicate pubDate within feed: "${d}"`);
+      dateTestFailed = true;
+    }
+    seenDates.add(d);
+  });
+});
+if (!dateTestFailed) {
+  console.log('   ✅ Test 8 PASSED: All pubDates are valid, non-future, and strictly unique per feed.\n');
+} else {
+  console.error('❌ Test 8 FAILED!\n');
+  totalFailed++;
 }
 
 // ── Final Result ───────────────────────────────────────────────────────────────

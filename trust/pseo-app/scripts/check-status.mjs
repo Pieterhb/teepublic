@@ -186,7 +186,7 @@ async function auditAll() {
   console.log('   • Each new item in the feed may take up to 3 days to appear in Pinterest.');
   console.log('   • If an item is pinned by Pinterest, it will NOT appear in your board count');
   console.log('     until Pinterest finishes processing (can lag 1-2 extra days).');
-  console.log('   • Buffer size is now 7 items/board, giving Pinterest a 7-day window.');
+  console.log('   • Buffer size is now up to 30 items/board, giving Pinterest a full 30-day window.');
   console.log('   • Run this script daily to track live feed health.');
   console.log('================================================================================\n');
 }

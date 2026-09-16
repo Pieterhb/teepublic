@@ -50,7 +50,7 @@ const PUBLIC_RSS = path.join(__dirname, '..', 'public', 'rss');
 
 const SITE_URL     = 'https://blackpantherstore.co.za';
 const SITE_LOGO    = `${SITE_URL}/logo.png`;
-const MAX_FEED_BUFFER = 7; // 7 most recent items per board (covers Pinterest's 24-72h scraper window with margin)
+const MAX_FEED_BUFFER = 30; // 30 most recent items per board (gives Pinterest a full 30-day window with zero dropped pins)
 
 // Per-board pubDate stagger offset (minutes). Boards are published 1 minute apart
 // so Pinterest's crawler sees organic distribution rather than a simultaneous batch.
@@ -124,6 +124,11 @@ const IS_REBUILD_ONLY = args.includes('--rebuild-only');
 const IS_FORCE        = args.includes('--force');
 const IS_DRY_RUN      = args.includes('--dry-run');
 const IS_ADVANCE      = !IS_RESET && !IS_REBUILD_ONLY && args.includes('--advance');
+
+const dateFlagIdx = args.indexOf('--date');
+const TARGET_DATE = (dateFlagIdx !== -1 && args[dateFlagIdx + 1] && /^\d{4}-\d{2}-\d{2}$/.test(args[dateFlagIdx + 1]))
+  ? args[dateFlagIdx + 1]
+  : null;
 
 // ── Load Catalog Data ─────────────────────────────────────────────────────────
 
@@ -201,6 +206,22 @@ BOARD_SLUGS.forEach(slug => {
 
   // Enforce MAX_FEED_BUFFER limit
   history.boardFeeds[slug] = cleanFeed.slice(0, MAX_FEED_BUFFER);
+
+  // Guarantee strictly descending, non-future, distinct pubDates for all items in buffer
+  const feed = history.boardFeeds[slug];
+  for (let i = 0; i < feed.length; i++) {
+    const current = feed[i];
+    if (i > 0) {
+      const prevDate = new Date(feed[i - 1].pubDate);
+      const currDate = new Date(current.pubDate);
+      // Items must be strictly older than previous item (newer items first)
+      if (isNaN(currDate.getTime()) || currDate >= prevDate) {
+        // Space backwards by 1 day from the newer item
+        const fixedDate = new Date(prevDate.getTime() - 24 * 60 * 60 * 1000);
+        current.pubDate = fixedDate.toUTCString();
+      }
+    }
+  }
 });
 
 // Ensure all items in active board buffers are present in pinnedIds
@@ -317,8 +338,9 @@ function createFeedItem(product, pubDateStr = new Date().toUTCString()) {
 
 // ── Processing: 1 New Pin for ALL 11 Boards Daily ─────────────────────────────
 
-const todayUtcDate = new Date().toISOString().slice(0, 10);
+const todayUtcDate = TARGET_DATE || new Date().toISOString().slice(0, 10);
 const alreadyAdvancedToday = history.lastAdvanceDate === todayUtcDate;
+let historyChanged = false;
 
 console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter} (Date: ${todayUtcDate})`);
 console.log(`🎯 Processing ALL ${BOARDS.length} Pinterest Boards (strictly 1 fresh product pin per board daily)\n`);
@@ -327,12 +349,13 @@ const isFirstRun = IS_RESET || (history.totalPinned === 0 && Object.values(histo
 
 if (isFirstRun && !IS_REBUILD_ONLY) {
   console.log('🌱 Initializing brand-new clean RSS feeds (seeding 1 fresh product per board)...');
+  historyChanged = true;
   history.dayCounter = 1;
   history.lastAdvanceDate = todayUtcDate;
   history.boardFeeds = {};
 
-  // Base timestamp for seeding: stagger each board by BOARD_STAGGER_MINUTES
-  const seedBaseTime = new Date();
+  // Base timestamp for seeding: stagger backwards so NO board is in the future
+  const seedBaseTime = TARGET_DATE ? new Date(`${TARGET_DATE}T12:00:00Z`) : new Date();
 
   BOARDS.forEach((board, boardIndex) => {
     history.boardFeeds[board.slug] = [];
@@ -340,7 +363,8 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
     if (selected) {
       pinnedSet.add(String(selected.design_id));
       if (selected.image_url) pinnedImageUrls.add(selected.image_url);
-      const staggeredDate = new Date(seedBaseTime.getTime() + boardIndex * BOARD_STAGGER_MINUTES * 60 * 1000);
+      const staggerOffsetMs = (BOARDS.length - 1 - boardIndex) * BOARD_STAGGER_MINUTES * 60 * 1000;
+      const staggeredDate = new Date(seedBaseTime.getTime() - staggerOffsetMs);
       history.boardFeeds[board.slug] = [createFeedItem(selected, staggeredDate.toUTCString())];
       console.log(`   ✅ Seeded [${board.slug}]: "${selected.title}" (ID: ${selected.design_id})`);
     } else {
@@ -349,16 +373,16 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
   });
 } else if (IS_ADVANCE && !IS_REBUILD_ONLY) {
   if (alreadyAdvancedToday && !IS_FORCE) {
-    console.log(`ℹ️ All 11 feeds have already been advanced today (${todayUtcDate}, Day ${history.dayCounter}).`);
-    console.log(`   Re-rendering XML feeds to update timestamps without adding duplicate pins.`);
+    console.log(`ℹ️ All 11 feeds have already been advanced for ${todayUtcDate} (Day ${history.dayCounter}).`);
+    console.log(`   Re-rendering XML feeds without adding duplicate pins.`);
     console.log(`   (Tip: Pass --force to add another pin batch manually).`);
   } else {
-    console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'}):`);
+    historyChanged = true;
+    console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'} for ${todayUtcDate}):`);
 
-    // Stagger each board's new item pubDate by BOARD_STAGGER_MINUTES minutes.
-    // Board 0 gets "now", board 1 gets "now + 1 min", etc.
-    // This ensures Pinterest sees organic publishing timing instead of a simultaneous batch.
-    const advanceBaseTime = new Date();
+    // Stagger backwards so board 0 is earliest and board 10 is at advanceBaseTime.
+    // This strictly guarantees that NO board's pubDate is in the future!
+    const advanceBaseTime = TARGET_DATE ? new Date(`${TARGET_DATE}T12:00:00Z`) : new Date();
 
     BOARDS.forEach((board, boardIndex) => {
       const selected = getNextCandidateForBoard(board);
@@ -367,8 +391,9 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
         pinnedSet.add(String(selected.design_id));
         if (selected.image_url) pinnedImageUrls.add(selected.image_url); // prevent same-image cross-board picks
 
-        // Stagger pubDate: each board is offset by boardIndex minutes
-        const staggeredDate = new Date(advanceBaseTime.getTime() + boardIndex * BOARD_STAGGER_MINUTES * 60 * 1000);
+        // Stagger backwards: board 0 is offset earliest, board 10 is at advanceBaseTime
+        const staggerOffsetMs = (BOARDS.length - 1 - boardIndex) * BOARD_STAGGER_MINUTES * 60 * 1000;
+        const staggeredDate = new Date(advanceBaseTime.getTime() - staggerOffsetMs);
         const newItem = createFeedItem(selected, staggeredDate.toUTCString());
 
         // Prepend newest item to the top of the board's feed buffer
@@ -390,7 +415,9 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
 // Update history totals
 history.pinnedIds   = Array.from(pinnedSet);
 history.totalPinned = pinnedSet.size;
-history.lastUpdated = new Date().toISOString();
+if (historyChanged) {
+  history.lastUpdated = new Date().toISOString();
+}
 
 // ── Generate RSS 2.0 XML Feeds ────────────────────────────────────────────────
 
@@ -488,6 +515,7 @@ function performSelfAudit() {
 
     const boardSeen = new Set();
     const boardImageSeen = new Set();
+    const boardPubDates = new Set();
     items.forEach(item => {
       const id   = String(item.design_id);
       // Opaque GUID format
@@ -498,6 +526,19 @@ function performSelfAudit() {
         console.error(`  ❌ [${board.slug}] GUID "${guid}" must be an opaque non-URL identifier!`);
         errors++;
       }
+
+      // Check for future pubDate (allow 60s clock skew)
+      if (item.pubDate && new Date(item.pubDate).getTime() > Date.now() + 60000) {
+        console.error(`  ❌ [${board.slug}] Item ID ${id} has a future pubDate: ${item.pubDate}`);
+        errors++;
+      }
+
+      // Check for duplicate pubDate within same feed
+      if (item.pubDate && boardPubDates.has(item.pubDate)) {
+        console.error(`  ❌ [${board.slug}] Duplicate pubDate within feed: ${item.pubDate} (Item ID: ${id})`);
+        errors++;
+      }
+      if (item.pubDate) boardPubDates.add(item.pubDate);
 
       // Check intra-board duplicate ID
       if (boardSeen.has(id)) {
@@ -546,7 +587,7 @@ function performSelfAudit() {
   });
 
   if (errors === 0) {
-    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 ID duplicates, 0 image duplicates, 0 GUID collisions, 100% valid.`);
+    console.log(`  ✅ Audit Passed: ${allActiveIds.length} active items across 11 boards, 0 ID duplicates, 0 image duplicates, 0 GUID collisions, 0 future dates, 0 pubDate collisions, 100% valid.`);
   } else {
     console.error(`\n❌ SELF-AUDIT FAILED with ${errors} errors. Aborting to protect RSS integrity.\n`);
     process.exit(1);
@@ -560,8 +601,13 @@ if (!IS_DRY_RUN) {
   // Ensure output directory exists
   fs.mkdirSync(PUBLIC_RSS, { recursive: true });
 
-  // Save history state
-  fs.writeFileSync(historyPath, JSON.stringify(history, null, 2), 'utf8');
+  // Save history state ONLY if new pins were added (keeps git diff clean on no-op runs)
+  if (historyChanged) {
+    fs.writeFileSync(historyPath, JSON.stringify(history, null, 2), 'utf8');
+    console.log(`💾 Saved updated history to data/pinned_history.json (${history.totalPinned} total recorded pins).`);
+  } else {
+    console.log(`ℹ️ History state unchanged (no new pins added, keeping pinned_history.json pristine).`);
+  }
 
   // Write all 11 RSS files
   console.log(`\n📝 Writing 11 RSS feeds to public/rss/:`);

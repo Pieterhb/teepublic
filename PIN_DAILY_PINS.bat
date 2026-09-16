@@ -7,9 +7,18 @@ echo   Pinterest 11-Board Daily Pin Generator and Deployer
 echo ================================================================================
 echo.
 
-cd /d "%~dp0\trust\pseo-app"
+echo [1/5] Syncing latest state from GitHub...
+cd /d "%~dp0"
+git pull --rebase origin master
+if %ERRORLEVEL% NEQ 0 (
+    echo ❌ Git sync failed! Check network or git status.
+    pause
+    exit /b %ERRORLEVEL%
+)
 
-echo [1/4] Generating 1 Fresh Pin for ALL 11 Boards...
+echo.
+echo [2/5] Generating 1 Fresh Pin for ALL 11 Boards...
+cd /d "%~dp0\trust\pseo-app"
 node scripts\generate-rss.mjs --advance
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ RSS Generation Failed!
@@ -18,7 +27,7 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo.
-echo [2/4] Building Next.js Static Export...
+echo [3/5] Building Next.js Static Export...
 call npm run build
 if %ERRORLEVEL% NEQ 0 (
     echo ❌ Build Failed!
@@ -27,14 +36,14 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 echo.
-echo [3/4] Deploying to Cloudflare Pages (blackpantherstore.co.za)...
+echo [4/5] Deploying to Cloudflare Pages (blackpantherstore.co.za)...
 call npx wrangler pages deploy out --project-name=pseo-app --branch=master
 if %ERRORLEVEL% NEQ 0 (
     echo ⚠️ Cloudflare deployment returned code %ERRORLEVEL%. Continuing with git backup...
 )
 
 echo.
-echo [4/4] Backing up updated pinned history to GitHub (main and master)...
+echo [5/5] Backing up updated pinned history to GitHub (main and master)...
 cd /d "%~dp0"
 git add -A
 git diff --staged --quiet

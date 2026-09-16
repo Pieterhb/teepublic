@@ -7,7 +7,6 @@
   Content-Type: application/rss+xml; charset=utf-8
   Cache-Control: public, max-age=300, s-maxage=300, must-revalidate
   Access-Control-Allow-Origin: *
-  X-Robots-Tag: noindex
 
 # Sitemaps
 /sitemap*.xml

@@ -121,10 +121,12 @@ jobs:
           fi
 
           if [ "$MISSED_DAYS" -gt 0 ]; then
-            echo "⚠️  Detected $MISSED_DAYS missed day(s) since $LAST_ADVANCE. Catching up..."
+            echo "⚠️  Detected $MISSED_DAYS missed day(s) since $LAST_ADVANCE. Catching up with back-dated pubDates..."
             for i in $(seq 1 $MISSED_DAYS); do
-              echo "--- Catch-up advance $i / $MISSED_DAYS ---"
-              node scripts/generate-rss.mjs --advance --force
+              CATCHUP_TS=$((LAST_TS + i * 86400))
+              MISSED_DATE=$(date -u -d "@$CATCHUP_TS" +%Y-%m-%d 2>/dev/null || date -u -r "$CATCHUP_TS" +%Y-%m-%d 2>/dev/null)
+              echo "--- Catch-up advance $i / $MISSED_DAYS for $MISSED_DATE ---"
+              node scripts/generate-rss.mjs --advance --force --date "$MISSED_DATE"
             done
           else
             echo "✅ No missed days detected. Proceeding with normal daily advance."
@@ -161,5 +163,7 @@ jobs:
             # Use --force-with-lease so push fails loudly if someone else pushed in the meantime
             git push --force-with-lease origin master
             git push --force-with-lease origin master:main || true
+          else
+            echo "ℹ️ No feed changes to commit (already up to date today)."
           fi
 
