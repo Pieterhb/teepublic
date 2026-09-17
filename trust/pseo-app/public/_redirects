@@ -3,5 +3,7 @@ http://www.blackpantherstore.co.za/*  https://blackpantherstore.co.za/:splat  30
 https://www.blackpantherstore.co.za/* https://blackpantherstore.co.za/:splat  301!
 http://blackpantherstore.co.za/*      https://blackpantherstore.co.za/:splat  301!
 
-# Legacy /designs/:slug -> /design/:slug redirects
-/designs/:slug  /design/:slug  301
+# Canonical slug path: plural /designs/:slug -> singular /design/:slug (permanent)
+/designs/:slug  /design/:slug  301!
+# Bare /design (no slug) -> /designs listing page
+/design         /designs       301!

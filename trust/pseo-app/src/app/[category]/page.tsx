@@ -79,6 +79,13 @@ export default async function CategoryPage({ params }: Props) {
   }
 
   const products = getProductsForCategory(category.slug);
+
+  // Guard: if category has no products, return a hard 404 rather than an
+  // empty page that Google treats as a soft 404.
+  if (products.length === 0) {
+    notFound();
+  }
+
   const relatedCategories = getRelatedCategoriesForCategory(category.slug);
   const editorialDesc = getCategoryDescription(category.slug, category.title, products.length);
 

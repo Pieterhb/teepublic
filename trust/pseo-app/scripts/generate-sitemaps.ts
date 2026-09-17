@@ -35,13 +35,15 @@ function main() {
   pagesXml += `</urlset>`;
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-pages.xml'), pagesXml);
 
-  // 2. Generate Categories Sitemap
+  // 2. Generate Categories Sitemap (only categories with at least 1 product)
+  const activeCategories = categories.filter((c: any) => c.productIds && c.productIds.length > 0);
   let catXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
-  categories.forEach((c: any) => {
+  activeCategories.forEach((c: any) => {
     catXml += generateSitemapItem(`${DOMAIN}/${c.slug}`, today, 'weekly', '0.8') + '\n';
   });
   catXml += `</urlset>`;
   fs.writeFileSync(path.join(PUBLIC_DIR, 'sitemap-categories.xml'), catXml);
+  console.log(`Categories sitemap: ${activeCategories.length} active (${categories.length - activeCategories.length} empty filtered out).`);
   
   // 3. Generate Products Sitemaps (Split every 2000 to keep them small)
   const productSitemaps = [];
