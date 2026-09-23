@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-22T00:09:15.423Z",
-  "lastAdvanceDate": "2026-09-22",
-  "dayCounter": 33,
-  "totalPinned": 363,
+  "lastUpdated": "2026-09-23T08:38:09.082Z",
+  "lastAdvanceDate": "2026-09-23",
+  "dayCounter": 34,
+  "totalPinned": 374,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -366,10 +366,35 @@
     "66335148",
     "8954355",
     "9304801",
-    "66335515"
+    "66335515",
+    "8610368",
+    "65142964",
+    "64964540",
+    "61532728",
+    "66204606",
+    "8980703",
+    "61505519",
+    "8540286",
+    "8979570",
+    "9304802",
+    "8407505"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8610368",
+        "slug": "colourful-solar-eclipse",
+        "title": "Colourful Solar Eclipse T-Shirt",
+        "seo_title": "Colourful Solar Eclipse T-Shirt | Space & Galaxy Tee",
+        "description": "Explore the cosmos with our stunning Colourful Solar Eclipse T-Shirt. Perfect for space lovers and astronomy enthusiasts. Order your galaxy tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8610368_0/1584874722/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_-97_x833,s_630,q_90.jpg",
+        "image_alt": "Colourful Solar Eclipse T-Shirt featuring galaxy, stars, and planets design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Solar Eclipse T-Shirt",
+        "tags": "eclipse, black, child, colors, cool, galaxy, new, planet, solar, space, star, sun, white, woman",
+        "pubDate": "Wed, 23 Sep 2026 08:28:09 GMT"
+      },
       {
         "design_id": "8610098",
         "slug": "light-blue-solar-eclipse",
@@ -569,6 +594,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "65142964",
+        "slug": "bikers-and-rebels-digital-art-1",
+        "title": "Bikers and Rebels - Digital Art #1 T-Shirt",
+        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Apparel",
+        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom lovers, bikers, and rebels. Order your comfortable tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65142964_0/1724845642/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bikers and Rebels Human Skull and Motorcycle Design T-Shirt",
+        "niche": "hobbies",
+        "secondary_niche": "Gaming",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Wed, 23 Sep 2026 08:29:09 GMT"
+      },
+      {
         "design_id": "64968258",
         "slug": "bikers-and-rebels-art-49",
         "title": "Bikers and Rebels Art #49 T-Shirt",
@@ -766,6 +805,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64964540",
+        "slug": "bikers-and-rebels-art-39",
+        "title": "Bikers and Rebels Art #39 T-Shirt",
+        "seo_title": "Wolf Motorcycle Biker T-Shirt | Rebel Apparel",
+        "description": "Rev up your style with our wolf motorcycle biker t-shirt. Featuring a striking wolf and bike design, it captures the ultimate spirit of freedom.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64964540_0/1724590828/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Striking wolf and motorcycle design on a biker t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Wed, 23 Sep 2026 08:30:09 GMT"
+      },
       {
         "design_id": "64966781",
         "slug": "bikers-and-rebels-art-51",
@@ -965,6 +1018,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "61532728",
+        "slug": "futuristic-toy-robot-33",
+        "title": "Futuristic Toy Robot #33 T-Shirt",
+        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Robotic Tee",
+        "description": "Shop the Futuristic Toy Robot #33 T-Shirt. Discover high-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61532728_0/1718348636/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #33 T-Shirt with high-tech robotic character design",
+        "niche": "Engineer",
+        "secondary_niche": "science",
+        "primary_keyword": "futuristic toy robot t-shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Wed, 23 Sep 2026 08:31:09 GMT"
+      },
+      {
         "design_id": "61504660",
         "slug": "futuristic-toy-robot-8",
         "title": "Futuristic Toy Robot #8 T-Shirt",
@@ -1162,6 +1229,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "66204606",
+        "slug": "yellow-and-white-cross",
+        "title": "Yellow and White Cross T-Shirt",
+        "seo_title": "Yellow and White Cross T-Shirt | Minimalist Faith Apparel",
+        "description": "Shop the bold Yellow and White Cross T-Shirt. A striking, minimalist design expressing faith and classic style. Available in multiple products.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66204606_0/1726736038/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg",
+        "image_alt": "Yellow and White Cross T-Shirt Minimalist Faith Design",
+        "niche": "Religion",
+        "secondary_niche": "Christian",
+        "primary_keyword": "Yellow and White Cross T-Shirt",
+        "tags": "cross, bible, christ, christian, christianity, colors, crosses, faith, god, jesus, jesus christ, religion, religious, white, yellow",
+        "pubDate": "Wed, 23 Sep 2026 08:32:09 GMT"
+      },
       {
         "design_id": "66478522",
         "slug": "a-golden-cross-2",
@@ -1361,6 +1442,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8980703",
+        "slug": "silver-letter-l",
+        "title": "Silver Letter L T-Shirt",
+        "seo_title": "Silver Letter L T-Shirt | Typography Alphabet Tee",
+        "description": "Shop the Silver Letter L T-Shirt featuring a sleek chrome alphabet typography design. Perfect everyday apparel for letter L enthusiasts and teachers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8980703_0/1586436698/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Silver Letter L T-Shirt featuring metallic chrome typography design",
+        "niche": "Teacher",
+        "secondary_niche": "Math",
+        "primary_keyword": "Silver Letter L T-Shirt",
+        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
+        "pubDate": "Wed, 23 Sep 2026 08:33:09 GMT"
+      },
+      {
         "design_id": "8980070",
         "slug": "silver-letter-j",
         "title": "Silver Letter J T-Shirt",
@@ -1558,6 +1653,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "61505519",
+        "slug": "futuristic-toy-robot-21",
+        "title": "Futuristic Toy Robot #21 T-Shirt",
+        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Apparel",
+        "description": "Shop the Futuristic Toy Robot #21 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for tech fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61505519_0/1718281180/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #21 graphic printed on a premium t-shirt",
+        "niche": "Engineer",
+        "secondary_niche": "",
+        "primary_keyword": "Futuristic Toy Robot T-Shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Wed, 23 Sep 2026 08:34:09 GMT"
+      },
       {
         "design_id": "61505140",
         "slug": "futuristic-toy-robot-17",
@@ -1757,6 +1866,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "8540286",
+        "slug": "whats-up-in-chrome-colour",
+        "title": "What's Up in Chrome Colour T-Shirt",
+        "seo_title": "What's Up in Chrome Colour T-Shirt | Unique Slogan Tee",
+        "description": "Shop the world-famous What's Up slogan featuring a unique chrome effect design. Perfect trendy chrome colour t-shirt for everyday wear. Order yours online today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8540286_1/1584540594/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "What's Up in Chrome Colour T-Shirt with metallic typography effect",
+        "niche": "Everyday",
+        "secondary_niche": "Typography",
+        "primary_keyword": "chrome colour t-shirt",
+        "tags": "child, chrome, new, online, slogan, trend, unique, up, woman",
+        "pubDate": "Wed, 23 Sep 2026 08:35:09 GMT"
+      },
+      {
         "design_id": "66335148",
         "slug": "a-silver-cross-3",
         "title": "A Silver Cross #3 T-Shirt",
@@ -1954,6 +2077,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8979570",
+        "slug": "silver-letter-b",
+        "title": "Silver Letter B T-Shirt",
+        "seo_title": "Silver Letter B T-Shirt | Alphabet Typography Tee",
+        "description": "Shop the Silver Letter B T-Shirt. Featuring a metallic chrome typography design of the English alphabet letter. Perfect everyday alphabet shirt.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8979570_0/1586433502/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Silver Letter B T-Shirt featuring a shiny chrome typography design",
+        "niche": "Teacher",
+        "secondary_niche": "",
+        "primary_keyword": "Silver Letter B T-Shirt",
+        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
+        "pubDate": "Wed, 23 Sep 2026 08:36:09 GMT"
+      },
       {
         "design_id": "8954355",
         "slug": "golden-letter-n",
@@ -2153,6 +2290,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "9304802",
+        "slug": "jupiter-2",
+        "title": "Jupiter 2 T-Shirt",
+        "seo_title": "Jupiter 2 T-Shirt | Galaxy Space Planet Tee",
+        "description": "Explore the cosmos with our stunning Jupiter 2 T-Shirt. Featuring a beautiful galaxy, stars, and planets design. Made from comfortable cotton for space lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9304802_0/1587407433/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Jupiter 2 T-Shirt featuring a stunning galaxy and planet design",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "Jupiter T-Shirt",
+        "tags": "jupiter, 3d, cotton, dust, galaxy, gas, glass, new, odyssey, online, planet, planets, space, stars, unique",
+        "pubDate": "Wed, 23 Sep 2026 08:37:09 GMT"
+      },
+      {
         "design_id": "9304801",
         "slug": "jupiter-1",
         "title": "Jupiter 1 T-Shirt",
@@ -2350,6 +2501,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "8407505",
+        "slug": "chess-slogan-mate-the-king-1",
+        "title": "Chess Slogan - Mate the King 1 T-Shirt",
+        "seo_title": "Chess Slogan Mate the King T-Shirt",
+        "description": "Shop the Chess Slogan Mate the King T-Shirt. Perfect for chess lovers and strategy game fans. High-quality print-on-demand apparel for players.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8407505_0/1583843681/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Chess Slogan Mate the King T-Shirt Design",
+        "niche": "Gaming",
+        "secondary_niche": "",
+        "primary_keyword": "Chess T-Shirt",
+        "tags": "black, board, champion, chess, game, people, slogan, strategy, white, world",
+        "pubDate": "Wed, 23 Sep 2026 08:38:09 GMT"
+      },
       {
         "design_id": "66335515",
         "slug": "a-silver-angel-7",
