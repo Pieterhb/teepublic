@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-26T08:38:49.032Z",
-  "lastAdvanceDate": "2026-09-26",
-  "dayCounter": 37,
-  "totalPinned": 407,
+  "lastUpdated": "2026-09-27T09:19:03.059Z",
+  "lastAdvanceDate": "2026-09-27",
+  "dayCounter": 38,
+  "totalPinned": 418,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -410,10 +410,35 @@
     "66298759",
     "8954178",
     "9682968",
-    "66204641"
+    "66204641",
+    "8610949",
+    "65143356",
+    "64966804",
+    "61505137",
+    "66209040",
+    "8974301",
+    "12852422",
+    "66204394",
+    "8954364",
+    "9683730",
+    "66298593"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8610949",
+        "slug": "yellow-solar-eclipse",
+        "title": "Yellow Solar Eclipse T-Shirt",
+        "seo_title": "Yellow Solar Eclipse T-Shirt | Space & Astronomy Tee",
+        "description": "Explore the cosmos with our stunning Yellow Solar Eclipse T-Shirt. Perfect astronomy apparel featuring a beautiful galaxy and star design. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8610949_0/1584877455/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_-3_-110_x845,s_630,q_90.jpg",
+        "image_alt": "Yellow Solar Eclipse T-Shirt featuring galaxy and star design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Yellow Solar Eclipse T-Shirt",
+        "tags": "eclipse, black, child, cool, galaxy, new, planet, solar, space, star, sun, white, woman, yellow",
+        "pubDate": "Sun, 27 Sep 2026 09:09:03 GMT"
+      },
       {
         "design_id": "8611630",
         "slug": "exploding-sun-light-blue",
@@ -669,6 +694,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "65143356",
+        "slug": "bikers-and-rebels-digital-art-9",
+        "title": "Bikers and Rebels - Digital Art #9 T-Shirt",
+        "seo_title": "Biker Skull T-Shirt | Motorcycle Rebel Tee",
+        "description": "Rev up your style with this bold biker skull t-shirt. Featuring a human skull and motorcycle design for those who live for the thrill of the open road.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143356_0/1724846416/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bikers and Rebels Human Skull and Motorcycle Design T-Shirt",
+        "niche": "hobbies",
+        "secondary_niche": "",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Sun, 27 Sep 2026 09:10:03 GMT"
+      },
+      {
         "design_id": "64966787",
         "slug": "bikers-and-rebels-art-41",
         "title": "Bikers and Rebels Art #41 T-Shirt",
@@ -922,6 +961,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64966804",
+        "slug": "bikers-and-rebels-art-45",
+        "title": "Bikers and Rebels Art #45 T-Shirt",
+        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Road Apparel",
+        "description": "Rev up your style with this striking wolf and motorcycle t-shirt. Perfect for bikers and rebels who live for the thrill of the open road. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64966804_0/1724593084/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker wolf and motorcycle design printed on a t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker wolf t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Sun, 27 Sep 2026 09:11:03 GMT"
+      },
       {
         "design_id": "64964517",
         "slug": "bikers-and-rebels-art-32",
@@ -1177,6 +1230,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "61505137",
+        "slug": "futuristic-toy-robot-15",
+        "title": "Futuristic Toy Robot #15 T-Shirt",
+        "seo_title": "Futuristic Toy Robot #15 T-Shirt | Sci-Fi Robot Tee",
+        "description": "Shop the Futuristic Toy Robot #15 T-Shirt. Discover high-tech robotic art blending playfulness with innovation. Perfect for sci-fi fans. Order now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61505137_0/1718280212/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Futuristic Toy Robot #15 T-Shirt with high-tech robotic character design",
+        "niche": "Engineer",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Futuristic Toy Robot T-Shirt",
+        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
+        "pubDate": "Sun, 27 Sep 2026 09:12:03 GMT"
+      },
+      {
         "design_id": "61532730",
         "slug": "futuristic-toy-robot-34",
         "title": "Futuristic Toy Robot #34 T-Shirt",
@@ -1430,6 +1497,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "66209040",
+        "slug": "yellow-and-white-angel",
+        "title": "Yellow and White Angel T-Shirt",
+        "seo_title": "Yellow and White Angel T-Shirt | Spiritual Faith Apparel",
+        "description": "Embrace divine grace with this captivating yellow and white angel t-shirt. A symbol of hope, protection, and faith for your everyday wardrobe.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66209040_0/1726741110/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Yellow and White Angel T-Shirt with wings design",
+        "niche": "Religion",
+        "secondary_niche": "Christianity",
+        "primary_keyword": "Yellow and White Angel T-Shirt",
+        "tags": "angel, angels, bible, bible quote, bible scripture, bible verse, biblical, christ, christianity, faith, jesus, religion, white, wings, yellow",
+        "pubDate": "Sun, 27 Sep 2026 09:13:03 GMT"
+      },
       {
         "design_id": "66207667",
         "slug": "red-and-white-angel",
@@ -1685,6 +1766,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8974301",
+        "slug": "golden-letter-y",
+        "title": "Golden Letter Y T-Shirt",
+        "seo_title": "Golden Letter Y T-Shirt | Typography Alphabet Tee",
+        "description": "Shop the Golden Letter Y T-Shirt featuring a stunning gold typography design. Perfect for teachers, alphabet lovers, and everyday wear. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8974301_0/1586417300/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg",
+        "image_alt": "Golden Letter Y T-Shirt displayed on a clean background",
+        "niche": "Teacher",
+        "secondary_niche": "Math",
+        "primary_keyword": "Golden Letter Y T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Sun, 27 Sep 2026 09:14:03 GMT"
+      },
+      {
         "design_id": "8979577",
         "slug": "silver-letter-c",
         "title": "Silver Letter C T-Shirt",
@@ -1938,6 +2033,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "12852422",
+        "slug": "small-tesla-tower-with-lightning-arcs",
+        "title": "Small Tesla Tower with Lightning Arcs T-Shirt",
+        "seo_title": "Tesla Tower Lightning Arcs Physics T-Shirt",
+        "description": "Celebrate inventor Nikola Tesla with this unique Tesla tower and lightning arcs physics t-shirt. Perfect gift for science lovers and engineers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12852422_0/1596721604/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Small Tesla Tower with Lightning Arcs T-Shirt Design",
+        "niche": "Physics",
+        "secondary_niche": "Engineer",
+        "primary_keyword": "Tesla tower t-shirt",
+        "tags": "arc, electricity, elon musk, nikola tesla, science, space, spacex, tesla, x ray",
+        "pubDate": "Sun, 27 Sep 2026 09:15:03 GMT"
+      },
       {
         "design_id": "61505139",
         "slug": "futuristic-toy-robot-16",
@@ -2193,6 +2302,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "66204394",
+        "slug": "orange-and-white-cross",
+        "title": "Orange and White Cross T-Shirt",
+        "seo_title": "Orange and White Cross T-Shirt | Minimalist Faith Tee",
+        "description": "Shop the bold Orange and White Cross T-Shirt. A minimalist faith design available on tees, hoodies, and home decor for a touch of classic elegance.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66204394_0/1726735823/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_25_0_x626,s_630,q_90.jpg",
+        "image_alt": "Minimalist orange and white cross design on a t-shirt",
+        "niche": "Religion",
+        "secondary_niche": "Faith",
+        "primary_keyword": "orange and white cross t-shirt",
+        "tags": "cross, bible, christ, christian, christianity, colors, crosses, faith, god, jesus, jesus christ, orange, religion, religious, white",
+        "pubDate": "Sun, 27 Sep 2026 09:16:03 GMT"
+      },
+      {
         "design_id": "66298759",
         "slug": "white-cross-2",
         "title": "White Cross #2 T-Shirt",
@@ -2446,6 +2569,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8954364",
+        "slug": "golden-letter-o",
+        "title": "Golden Letter O T-Shirt",
+        "seo_title": "Golden Letter O T-Shirt | Typography Alphabet Tee",
+        "description": "Shop the Golden Letter O T-Shirt featuring a stunning gold typography design. Perfect for teachers, alphabet lovers, and everyday casual wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8954364_0/1586346593/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Golden Letter O T-Shirt displayed on a clean background",
+        "niche": "Teacher",
+        "secondary_niche": "Reading",
+        "primary_keyword": "Golden Letter O T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Sun, 27 Sep 2026 09:17:03 GMT"
+      },
       {
         "design_id": "8954178",
         "slug": "golden-letter-l",
@@ -2701,6 +2838,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "9683730",
+        "slug": "stormy-seas-in-sagittarius",
+        "title": "Stormy Seas in Sagittarius T-Shirt",
+        "seo_title": "Stormy Seas in Sagittarius NASA Galaxy T-Shirt",
+        "description": "Explore the cosmos with our Stormy Seas in Sagittarius NASA galaxy t-shirt. Featuring breathtaking public space imagery printed on demand.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9683730_0/1588338758/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg",
+        "image_alt": "Stormy Seas in Sagittarius NASA Galaxy T-Shirt flat lay",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "Sagittarius galaxy t-shirt",
+        "tags": "free, galaxy, moon, nasa, online, planet, solar, space, star, sun, unique",
+        "pubDate": "Sun, 27 Sep 2026 09:18:03 GMT"
+      },
+      {
         "design_id": "9682968",
         "slug": "pipsqueak-star-unleashes-monster-flare",
         "title": "Pipsqueak Star Unleashes Monster Flare T-Shirt",
@@ -2954,6 +3105,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "66298593",
+        "slug": "white-cross-4",
+        "title": "White Cross #4 T-Shirt",
+        "seo_title": "White Cross T-Shirt | Minimalist Christian Apparel",
+        "description": "Shop the minimalist White Cross #4 T-Shirt. A subtle, elegant expression of faith and Christian symbolism for everyday wear. Discover yours today.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66298593_0/1726907878/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_26_0_x626,s_630,q_90.jpg",
+        "image_alt": "Minimalist white cross design on a comfortable t-shirt for Christian faith",
+        "niche": "Religion",
+        "secondary_niche": "Faith",
+        "primary_keyword": "white cross t-shirt",
+        "tags": "cross, artistic, bible, christ, christian, christianity, faith, god, jesus, jesus christ, religion, religious, religious symbol",
+        "pubDate": "Sun, 27 Sep 2026 09:19:03 GMT"
+      },
       {
         "design_id": "66204641",
         "slug": "turquoise-and-white-cross",
