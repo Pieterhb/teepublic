@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-29T01:02:48.899Z",
-  "lastAdvanceDate": "2026-09-29",
-  "dayCounter": 40,
-  "totalPinned": 440,
+  "lastUpdated": "2026-09-30T00:30:10.151Z",
+  "lastAdvanceDate": "2026-09-30",
+  "dayCounter": 41,
+  "totalPinned": 451,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -443,10 +443,35 @@
     "66298471",
     "8954014",
     "9683723",
-    "66201732"
+    "66201732",
+    "8611421",
+    "65143360",
+    "64966808",
+    "66208256",
+    "66208906",
+    "8979526",
+    "15376124",
+    "66204665",
+    "8974315",
+    "9681625",
+    "66208573"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8611421",
+        "slug": "space-design-purple",
+        "title": "Space Design - Purple T-Shirt",
+        "seo_title": "Purple Galaxy Space T-Shirt | Astronomy Apparel",
+        "description": "Explore the cosmos with our purple galaxy space T-shirt. Featuring stunning stars, planets, and interstellar art. Shop this unique astronomy design today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8611421_0/1584879928/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Purple T-shirt with a stunning galaxy, stars, and planet space design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Galaxy T-Shirt",
+        "tags": "space, black, child, cool, galaxy, moon, new, planet, solar, star, sun, white, woman",
+        "pubDate": "Wed, 30 Sep 2026 00:20:10 GMT"
+      },
       {
         "design_id": "8634551",
         "slug": "exploding-sun-close-up-red",
@@ -744,6 +769,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "65143360",
+        "slug": "bikers-and-rebels-digital-art-11",
+        "title": "Bikers and Rebels - Digital Art #11 T-Shirt",
+        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Apparel",
+        "description": "Rev up your style with this bold human skull and motorcycle biker t-shirt. Crafted for those who live for the thrill of the open road.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143360_0/1724846429/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker t-shirt featuring human skull and motorcycle design",
+        "niche": "hobbies",
+        "secondary_niche": "",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Wed, 30 Sep 2026 00:21:10 GMT"
+      },
+      {
         "design_id": "65143789",
         "slug": "bikers-and-rebels-digital-art-12",
         "title": "Bikers and Rebels - Digital Art #12 T-Shirt",
@@ -1039,6 +1078,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64966808",
+        "slug": "bikers-and-rebels-art-46",
+        "title": "Bikers and Rebels Art #46 T-Shirt",
+        "seo_title": "Wolf Motorcycle Biker T-Shirt | Rebel Road Art #46",
+        "description": "Rev up your style with the Bikers and Rebels Wolf Motorcycle T-Shirt. Featuring a fierce wolf and chopper design for true open road enthusiasts.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64966808_0/1724593083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bikers and Rebels Wolf Motorcycle graphic t-shirt design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Wed, 30 Sep 2026 00:22:10 GMT"
+      },
       {
         "design_id": "64964532",
         "slug": "bikers-and-rebels-art-37",
@@ -1336,6 +1389,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "66208256",
+        "slug": "purple-pink-blue-and-white-angel",
+        "title": "Purple, Pink, Blue and White Angel T-Shirt",
+        "seo_title": "Purple Pink Blue White Angel T-Shirt",
+        "description": "Embrace divine grace with this colorful purple, pink, blue, and white angel t-shirt. Symbolizes hope, protection, and peace. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66208256_1/1726740103/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Purple Pink Blue and White Angel T-Shirt with divine wings design",
+        "niche": "Religion",
+        "secondary_niche": "Spirituality",
+        "primary_keyword": "Angel T-Shirt",
+        "tags": "angel, angels, bible, bible quote, bible scripture, bible verse, biblical, blue, christ, christianity, faith, jesus, religion, white, wings",
+        "pubDate": "Wed, 30 Sep 2026 00:23:10 GMT"
+      },
+      {
         "design_id": "66204621",
         "slug": "green-and-white-cross",
         "title": "Green and White Cross T-Shirt",
@@ -1631,6 +1698,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "66208906",
+        "slug": "pink-and-white-angel",
+        "title": "Pink and White Angel T-Shirt",
+        "seo_title": "Pink and White Angel T-Shirt | Spiritual Apparel",
+        "description": "Embrace divine grace with this Pink and White Angel T-Shirt. A bold, elegant design symbolizing hope, protection, and faith. Shop spiritual apparel today.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66208906_0/1726740898/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Pink and White Angel T-Shirt featuring a spiritual design with wings",
+        "niche": "Religion",
+        "secondary_niche": "Christianity",
+        "primary_keyword": "Pink and White Angel T-Shirt",
+        "tags": "angel, angels, bible, bible quote, bible scripture, bible verse, biblical, christ, christianity, faith, jesus, pink, religion, white, wings",
+        "pubDate": "Wed, 30 Sep 2026 00:24:10 GMT"
+      },
       {
         "design_id": "66297726",
         "slug": "white-cross-1",
@@ -1928,6 +2009,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8979526",
+        "slug": "silver-letter-a",
+        "title": "Silver Letter A T-Shirt",
+        "seo_title": "Silver Letter A T-Shirt | Minimalist Alphabet Tee",
+        "description": "Shop the Silver Letter A T-Shirt featuring a sleek chrome alphabet design. Perfect minimalist typography tee for everyday wear. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8979526_0/1586433495/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Silver Letter A T-Shirt minimalist chrome alphabet typography design",
+        "niche": "Teacher",
+        "secondary_niche": "Math",
+        "primary_keyword": "Silver Letter A T-Shirt",
+        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
+        "pubDate": "Wed, 30 Sep 2026 00:25:10 GMT"
+      },
+      {
         "design_id": "8954140",
         "slug": "golden-letter-i",
         "title": "Golden Letter I T-Shirt",
@@ -2223,6 +2318,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15376124",
+        "slug": "aerospace-engineer-in-pink-color-text",
+        "title": "Aerospace Engineer in Pink Color Text T-Shirt",
+        "seo_title": "Aerospace Engineer Pink Text T-Shirt",
+        "description": "Shop the Aerospace Engineer in Pink Color Text T-Shirt. Perfect gift for aerospace engineers. Premium quality, comfortable fit. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15376124_0/1603545672/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Aerospace Engineer in Pink Color Text T-Shirt Product View",
+        "niche": "Engineer",
+        "secondary_niche": "",
+        "primary_keyword": "Aerospace Engineer T-Shirt",
+        "tags": "aerospace engineer, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Wed, 30 Sep 2026 00:26:10 GMT"
+      },
       {
         "design_id": "15382864",
         "slug": "chemical-engineer-in-black-color-text",
@@ -2520,6 +2629,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "66204665",
+        "slug": "purple-and-white-cross",
+        "title": "Purple and White Cross T-Shirt",
+        "seo_title": "Purple and White Cross T-Shirt | Minimalist Faith Apparel",
+        "description": "Shop the bold Purple and White Cross T-Shirt. A striking minimalist design symbolizing faith and elegance, available on shirts, hoodies, and home decor.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66204665_0/1726736087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg",
+        "image_alt": "Purple and White Cross T-Shirt featuring a minimalist religious design",
+        "niche": "Religion",
+        "secondary_niche": "Faith",
+        "primary_keyword": "purple and white cross t-shirt",
+        "tags": "cross, bible, christ, christian, christianity, colors, crosses, faith, god, jesus, jesus christ, purple, religion, religious, white",
+        "pubDate": "Wed, 30 Sep 2026 00:27:10 GMT"
+      },
+      {
         "design_id": "66298471",
         "slug": "white-cross-3",
         "title": "White Cross #3 T-Shirt",
@@ -2815,6 +2938,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8974315",
+        "slug": "golden-letter-z",
+        "title": "Golden Letter Z T-Shirt",
+        "seo_title": "Golden Letter Z T-Shirt | Typography Alphabet Tee",
+        "description": "Shop the Golden Letter Z T-Shirt featuring a stunning golden typography design. Perfect for everyday wear, teachers, and alphabet lovers. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8974315_0/1586417306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Golden Letter Z T-Shirt Typography Design",
+        "niche": "Teacher",
+        "secondary_niche": "",
+        "primary_keyword": "Letter Z T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Wed, 30 Sep 2026 00:28:10 GMT"
+      },
       {
         "design_id": "8954014",
         "slug": "golden-letter-h",
@@ -3112,6 +3249,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "9681625",
+        "slug": "hubble-unveils-colorful-and-turbulent-star-birth-r",
+        "title": "Hubble Unveils Colorful and Turbulent Star-Birth Region on 100 000th Orbit Milestone T-Shirt",
+        "seo_title": "Hubble Space Telescope NASA Galaxy T-Shirt",
+        "description": "Explore the cosmos with this stunning NASA Hubble space telescope galaxy t-shirt. Featuring a colorful star-birth region on a 100,000th orbit milestone.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9681625_0/1588334003/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Hubble Space Telescope Star-Birth Region NASA Galaxy T-Shirt",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "Hubble Space T-Shirt",
+        "tags": "free, galaxy, moon, nasa, online, planet, solar, space, star, sun, unique",
+        "pubDate": "Wed, 30 Sep 2026 00:29:10 GMT"
+      },
+      {
         "design_id": "9683723",
         "slug": "stars-adorn-orion-sword",
         "title": "Stars Adorn Orion Sword T-Shirt",
@@ -3407,6 +3558,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "66208573",
+        "slug": "turquoise-and-white-angel",
+        "title": "Turquoise and White Angel T-Shirt",
+        "seo_title": "Turquoise and White Angel T-Shirt | Spiritual Faith Tee",
+        "description": "Embrace divine grace with our Turquoise and White Angel T-Shirt. A bold, elegant design symbolizing hope, peace, and faith. Shop spiritual apparel today.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/66208573_2/1726740542/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Turquoise and white angel wings design on a comfortable t-shirt",
+        "niche": "Religion",
+        "secondary_niche": "Faith",
+        "primary_keyword": "turquoise and white angel t-shirt",
+        "tags": "angel, angels, bible, bible quote, bible scripture, bible verse, biblical, christ, christianity, faith, jesus, religion, white, wings",
+        "pubDate": "Wed, 30 Sep 2026 00:30:10 GMT"
+      },
       {
         "design_id": "66201732",
         "slug": "red-and-white-cross",
