@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-09-30T00:30:10.151Z",
-  "lastAdvanceDate": "2026-09-30",
-  "dayCounter": 41,
-  "totalPinned": 451,
+  "lastUpdated": "2026-10-01T00:34:46.803Z",
+  "lastAdvanceDate": "2026-10-01",
+  "dayCounter": 42,
+  "totalPinned": 462,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -454,10 +454,35 @@
     "66204665",
     "8974315",
     "9681625",
-    "66208573"
+    "66208573",
+    "8634702",
+    "64964510",
+    "65143345",
+    "8634085",
+    "8634486",
+    "8954347",
+    "15377560",
+    "8634407",
+    "8954490",
+    "9680905",
+    "8611532"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8634702",
+        "slug": "the-suns-surface-purple",
+        "title": "The Sun's Surface - Purple T-Shirt",
+        "seo_title": "The Sun's Surface Purple T-Shirt | Space Galaxy Tee",
+        "description": "Explore the cosmos with The Sun's Surface purple t-shirt. A stunning galaxy and space-themed design created for astronomy lovers. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634702_0/1584985961/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Sun's Surface Purple T-Shirt featuring a stunning galaxy and star design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "purple sun t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Thu, 01 Oct 2026 00:24:46 GMT"
+      },
       {
         "design_id": "8611421",
         "slug": "space-design-purple",
@@ -769,6 +794,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "64964510",
+        "slug": "bikers-and-rebels-art-31",
+        "title": "Bikers and Rebels Art #31 T-Shirt",
+        "seo_title": "Wolf Motorcycle Biker T-Shirt | Rebel Art Apparel",
+        "description": "Rev up your style with this fierce wolf and motorcycle t-shirt. Perfect for rebellious bikers who live for the thrill of the open road. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64964510_0/1724590775/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Striking wolf and motorcycle graphic design on a biker t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "wolf motorcycle t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Thu, 01 Oct 2026 00:25:46 GMT"
+      },
+      {
         "design_id": "65143360",
         "slug": "bikers-and-rebels-digital-art-11",
         "title": "Bikers and Rebels - Digital Art #11 T-Shirt",
@@ -1078,6 +1117,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "65143345",
+        "slug": "bikers-and-rebels-digital-art-5",
+        "title": "Bikers and Rebels - Digital Art #5 T-Shirt",
+        "seo_title": "Biker Skull T-Shirt | Motorcycle Rebel Tee",
+        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Designed for freedom-loving bikers and modern rebels. Shop comfortable riding apparel today.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143345_0/1724846395/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Unisex biker t-shirt featuring a striking human skull and motorcycle design for rebels and riders",
+        "niche": "hobbies",
+        "secondary_niche": "animals",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Thu, 01 Oct 2026 00:26:46 GMT"
+      },
       {
         "design_id": "64966808",
         "slug": "bikers-and-rebels-art-46",
@@ -1389,6 +1442,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "8634085",
+        "slug": "exploding-sun-red",
+        "title": "Exploding Sun - Red T-Shirt",
+        "seo_title": "Exploding Sun Red T-Shirt | Galaxy Graphic Tee",
+        "description": "Explore the cosmos with our stunning Exploding Sun Red T-Shirt. Featuring a vibrant galaxy design, stars, and planets. Perfect for space and astronomy fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634085_0/1584983663/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Exploding Sun Red T-Shirt with galaxy and star graphics",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "exploding sun t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Thu, 01 Oct 2026 00:27:46 GMT"
+      },
+      {
         "design_id": "66208256",
         "slug": "purple-pink-blue-and-white-angel",
         "title": "Purple, Pink, Blue and White Angel T-Shirt",
@@ -1698,6 +1765,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "8634486",
+        "slug": "exploding-sun-close-up-pink",
+        "title": "Exploding Sun Close-Up - Pink T-Shirt",
+        "seo_title": "Exploding Sun Pink T-Shirt | Galaxy Space Tee",
+        "description": "Explore the cosmos with our Exploding Sun Close-Up Pink T-Shirt. Featuring a stunning galaxy design, stars, and planets for space enthusiasts.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634486_0/1584985155/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Exploding Sun Close-Up Pink T-Shirt with Galaxy Design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Exploding Sun T-Shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Thu, 01 Oct 2026 00:28:46 GMT"
+      },
       {
         "design_id": "66208906",
         "slug": "pink-and-white-angel",
@@ -2009,6 +2090,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8954347",
+        "slug": "golden-letter-m",
+        "title": "Golden Letter M T-Shirt",
+        "seo_title": "Golden Letter M T-Shirt | Typography Apparel",
+        "description": "Shop the stunning Golden Letter M T-Shirt featuring a sleek typography design. Perfect for everyday wear or as a personalized gift. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8954347_0/1586346534/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Golden Letter M T-Shirt featuring a shiny gold typography design on black fabric",
+        "niche": "Teacher",
+        "secondary_niche": "Math",
+        "primary_keyword": "Golden Letter M T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Thu, 01 Oct 2026 00:29:46 GMT"
+      },
+      {
         "design_id": "8979526",
         "slug": "silver-letter-a",
         "title": "Silver Letter A T-Shirt",
@@ -2318,6 +2413,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15377560",
+        "slug": "biomedical-engineer-in-turquoise-color-text",
+        "title": "Biomedical Engineer in Turquoise Color Text T-Shirt",
+        "seo_title": "Biomedical Engineer T-Shirt | Medical Engineering Apparel",
+        "description": "Shop the Biomedical Engineer T-Shirt featuring a stylish turquoise text design. Perfect for medical engineering professionals and bioengineering fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15377560_0/1603548613/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg",
+        "image_alt": "Biomedical Engineer T-Shirt with Turquoise Color Text",
+        "niche": "Engineer",
+        "secondary_niche": "",
+        "primary_keyword": "Biomedical Engineer T-Shirt",
+        "tags": "biomedical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Thu, 01 Oct 2026 00:30:46 GMT"
+      },
       {
         "design_id": "15376124",
         "slug": "aerospace-engineer-in-pink-color-text",
@@ -2629,6 +2738,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "8634407",
+        "slug": "exploding-sun-close-up-light-blue",
+        "title": "Exploding Sun Close-Up - Light Blue T-Shirt",
+        "seo_title": "Exploding Sun Light Blue T-Shirt | Space Galaxy Tee",
+        "description": "Explore the cosmos with this stunning exploding sun close-up light blue t-shirt. Perfect space and astronomy gift for galaxy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634407_0/1584984909/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Exploding Sun Close-Up Light Blue T-Shirt featuring galaxy design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "exploding sun t-shirt",
+        "tags": "sun, black, blue, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Thu, 01 Oct 2026 00:31:46 GMT"
+      },
+      {
         "design_id": "66204665",
         "slug": "purple-and-white-cross",
         "title": "Purple and White Cross T-Shirt",
@@ -2938,6 +3061,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8954490",
+        "slug": "golden-letter-q",
+        "title": "Golden Letter Q T-Shirt",
+        "seo_title": "Golden Letter Q T-Shirt | Minimalist Alphabet Tee",
+        "description": "Shop the Golden Letter Q T-Shirt featuring a stunning gold typography design. Perfect for everyday wear, teachers, and alphabet enthusiasts. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8954490_0/1586347133/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Golden Letter Q T-Shirt minimal gold typography design",
+        "niche": "Teacher",
+        "secondary_niche": "",
+        "primary_keyword": "Letter Q T-Shirt",
+        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
+        "pubDate": "Thu, 01 Oct 2026 00:32:46 GMT"
+      },
       {
         "design_id": "8974315",
         "slug": "golden-letter-z",
@@ -3249,6 +3386,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "9680905",
+        "slug": "an-extended-stellar-family",
+        "title": "An Extended Stellar Family T-Shirt",
+        "seo_title": "An Extended Stellar Family Galaxy T-Shirt",
+        "description": "Explore the cosmos with our Extended Stellar Family Galaxy T-Shirt featuring a stunning public NASA space image. Perfect astronomy apparel for space lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9680905_0/1588332052/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "An Extended Stellar Family Galaxy T-Shirt featuring NASA space imagery",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "galaxy t-shirt",
+        "tags": "free, galaxy, moon, nasa, online, planet, solar, space, star, sun, unique",
+        "pubDate": "Thu, 01 Oct 2026 00:33:46 GMT"
+      },
+      {
         "design_id": "9681625",
         "slug": "hubble-unveils-colorful-and-turbulent-star-birth-r",
         "title": "Hubble Unveils Colorful and Turbulent Star-Birth Region on 100 000th Orbit Milestone T-Shirt",
@@ -3558,6 +3709,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "8611532",
+        "slug": "exploding-sun-blue",
+        "title": "Exploding Sun - Blue T-Shirt",
+        "seo_title": "Exploding Sun Blue T-Shirt | Space & Galaxy Tee",
+        "description": "Explore the cosmos with our Exploding Sun Blue T-Shirt. Featuring a stunning digital art galaxy design, stars, and planets. Order your space tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8611532_0/1584880581/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Exploding Sun Blue T-Shirt with Galaxy and Star Design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "exploding sun t-shirt",
+        "tags": "sun, black, blue, child, cool, galaxy, new, planet, solar, space, star, white, woman",
+        "pubDate": "Thu, 01 Oct 2026 00:34:46 GMT"
+      },
       {
         "design_id": "66208573",
         "slug": "turquoise-and-white-angel",
