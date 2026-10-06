@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-05T10:32:01.646Z",
-  "lastAdvanceDate": "2026-10-05",
-  "dayCounter": 46,
-  "totalPinned": 506,
+  "lastUpdated": "2026-10-06T10:23:02.501Z",
+  "lastAdvanceDate": "2026-10-06",
+  "dayCounter": 47,
+  "totalPinned": 517,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -509,10 +509,35 @@
     "65309884",
     "8981045",
     "11660751",
-    "65310658"
+    "65310658",
+    "8786223",
+    "65143346",
+    "64890078",
+    "65309869",
+    "65310544",
+    "8981643",
+    "15376133",
+    "65311898",
+    "8981327",
+    "61284738",
+    "65311700"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8786223",
+        "slug": "yin-yang-blue",
+        "title": "Yin Yang - Blue T-Shirt",
+        "seo_title": "Yin Yang Blue T-Shirt | Chinese Zodiac Design",
+        "description": "Discover our Yin Yang Blue T-Shirt featuring ancient Chinese philosophy and the 12 zodiac signs. Perfect minimalist graphic tee for daily wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8786223_0/1585674294/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Blue t-shirt featuring a Yin Yang symbol surrounded by 12 Chinese zodiac signs in a dodecagon",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Yin Yang T-Shirt",
+        "tags": "yin yang, ancient, bad, chinese, cosmology, dark, energy, good, light, positive, yin",
+        "pubDate": "Tue, 06 Oct 2026 10:13:02 GMT"
+      },
       {
         "design_id": "8786953",
         "slug": "yin-yang-purple",
@@ -894,6 +919,20 @@
     ],
     "hobbies-shirts": [
       {
+        "design_id": "65143346",
+        "slug": "bikers-and-rebels-digital-art-6",
+        "title": "Bikers and Rebels - Digital Art #6 T-Shirt",
+        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Riding Tee",
+        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders who live for freedom and the open road. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143346_0/1724846400/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker t-shirt featuring a bold human skull and motorcycle design",
+        "niche": "hobbies",
+        "secondary_niche": "outdoor",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Tue, 06 Oct 2026 10:14:02 GMT"
+      },
+      {
         "design_id": "65143354",
         "slug": "bikers-and-rebels-digital-art-8",
         "title": "Bikers and Rebels - Digital Art #8 T-Shirt",
@@ -1273,6 +1312,20 @@
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64890078",
+        "slug": "bikers-and-rebels-art-1",
+        "title": "Bikers and Rebels Art #1 T-Shirt",
+        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Art",
+        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Perfect for those who live for the thrill of the open road and freedom.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64890078_0/1724441901/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Tue, 06 Oct 2026 10:15:02 GMT"
+      },
       {
         "design_id": "64961610",
         "slug": "bikers-and-rebels-art-4",
@@ -1654,6 +1707,20 @@
     ],
     "minimalist-engineer-shirts": [
       {
+        "design_id": "65309869",
+        "slug": "musical-instrument-guitar-14",
+        "title": "Musical Instrument - Guitar #14 T-Shirt",
+        "seo_title": "Guitar T-Shirt for Music Lovers | Musical Instrument",
+        "description": "Experience the soul of music with our stunning Guitar T-Shirt. Crafted for guitarists and music lovers. High-quality apparel for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65309869_0/1725112043/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Musical Instrument Guitar #14 T-Shirt in vibrant digital art design",
+        "niche": "Music",
+        "secondary_niche": "Guitar",
+        "primary_keyword": "Guitar T-Shirt",
+        "tags": "guitar, digital, guitar player, guitarist, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
+        "pubDate": "Tue, 06 Oct 2026 10:16:02 GMT"
+      },
+      {
         "design_id": "65310562",
         "slug": "musical-instrument-piano-24",
         "title": "Musical Instrument - Piano #24 T-Shirt",
@@ -2033,6 +2100,20 @@
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "65310544",
+        "slug": "musical-instrument-piano-22",
+        "title": "Musical Instrument - Piano #22 T-Shirt",
+        "seo_title": "Piano T-Shirt | Musical Instrument Apparel",
+        "description": "Celebrate your love for music with our stunning piano t-shirt. Featuring digital art of a grand piano, it's the perfect gift for pianists and music lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65310544_0/1725113127/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Musical Instrument Piano T-Shirt featuring elegant digital piano art",
+        "niche": "Music",
+        "secondary_niche": "Piano",
+        "primary_keyword": "piano t-shirt",
+        "tags": "piano, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, pianist, piano player, rock, rock and roll",
+        "pubDate": "Tue, 06 Oct 2026 10:17:02 GMT"
+      },
       {
         "design_id": "65309629",
         "slug": "musical-instrument-flute-12",
@@ -2414,6 +2495,20 @@
     ],
     "math-shirts": [
       {
+        "design_id": "8981643",
+        "slug": "silver-letter-z",
+        "title": "Silver Letter Z T-Shirt",
+        "seo_title": "Silver Letter Z T-Shirt | Alphabet Typography Tee",
+        "description": "Shop the Silver Letter Z T-Shirt featuring a sleek metallic alphabet design. Perfect typography gift for teachers, students, and letter Z enthusiasts.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8981643_0/1586439509/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Silver Letter Z T-Shirt with metallic typography design",
+        "niche": "Teacher",
+        "secondary_niche": "Math",
+        "primary_keyword": "Silver Letter Z T-Shirt",
+        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
+        "pubDate": "Tue, 06 Oct 2026 10:18:02 GMT"
+      },
+      {
         "design_id": "8981363",
         "slug": "silver-letter-v",
         "title": "Silver Letter V T-Shirt",
@@ -2793,6 +2888,20 @@
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15376133",
+        "slug": "aerospace-engineer-in-white-color-text",
+        "title": "Aerospace Engineer in White Color Text T-Shirt",
+        "seo_title": "Aerospace Engineer T-Shirt | Typography Design",
+        "description": "Shop the Aerospace Engineer in White Color Text T-Shirt. Perfect typography apparel for aerospace engineers and space science enthusiasts. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15376133_0/1603545682/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_13_451x,s_630,q_90.jpg",
+        "image_alt": "Aerospace Engineer in White Color Text T-Shirt mockup",
+        "niche": "Engineer",
+        "secondary_niche": "Astronomy",
+        "primary_keyword": "Aerospace Engineer T-Shirt",
+        "tags": "aerospace engineer, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 06 Oct 2026 10:19:02 GMT"
+      },
       {
         "design_id": "15377215",
         "slug": "biomedical-engineer-in-orange-color-text",
@@ -3174,6 +3283,20 @@
     ],
     "everyday-shirts": [
       {
+        "design_id": "65311898",
+        "slug": "musical-instrument-trumpet-40",
+        "title": "Musical Instrument - Trumpet #40 T-Shirt",
+        "seo_title": "Trumpet T-Shirt | Musical Instrument Apparel",
+        "description": "Experience the brilliance of music with our stunning trumpet T-shirt. A vibrant digital art design perfect for musicians and music lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65311898_0/1725115688/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Musical Instrument - Trumpet #40 T-Shirt featuring vibrant digital trumpet art",
+        "niche": "Music",
+        "secondary_niche": "Instruments",
+        "primary_keyword": "Trumpet T-Shirt",
+        "tags": "trumpet, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll, trumpet player",
+        "pubDate": "Tue, 06 Oct 2026 10:20:02 GMT"
+      },
+      {
         "design_id": "65309884",
         "slug": "musical-instrument-guitar-16",
         "title": "Musical Instrument - Guitar #16 T-Shirt",
@@ -3553,6 +3676,20 @@
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "8981327",
+        "slug": "silver-letter-t",
+        "title": "Silver Letter T T-Shirt",
+        "seo_title": "Silver Letter T T-Shirt | Alphabet Typography Tee",
+        "description": "Shop the Silver Letter T T-Shirt. Featuring a unique metallic silver typography design of the alphabet letter T. Perfect for everyday wear. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8981327_0/1586438573/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Silver Letter T T-Shirt featuring metallic typography design",
+        "niche": "Teacher",
+        "secondary_niche": "",
+        "primary_keyword": "Silver Letter T T-Shirt",
+        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
+        "pubDate": "Tue, 06 Oct 2026 10:21:02 GMT"
+      },
       {
         "design_id": "8981045",
         "slug": "silver-letter-r",
@@ -3934,6 +4071,20 @@
     ],
     "science-shirts": [
       {
+        "design_id": "61284738",
+        "slug": "precious-jewelry-stones-tanzanite-21",
+        "title": "Precious Jewelry Stones - Tanzanite #21 T-Shirt",
+        "seo_title": "Tanzanite Precious Jewelry Stone T-Shirt",
+        "description": "Discover our luxury Tanzanite gemstone t-shirt. Featuring stunning digital art of precious jewelry stones for an elegant and sophisticated look.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61284738_0/1717766884/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Tanzanite Precious Jewelry Stone T-Shirt Design",
+        "niche": "Science",
+        "secondary_niche": "",
+        "primary_keyword": "Tanzanite t-shirt",
+        "tags": "ai art, digital art, digital artwork, gemstones, jewelry, ruby, sapphire",
+        "pubDate": "Tue, 06 Oct 2026 10:22:02 GMT"
+      },
+      {
         "design_id": "11660751",
         "slug": "western-era-colt-revolver-2",
         "title": "Western Era - Colt Revolver 2 T-Shirt",
@@ -4313,6 +4464,20 @@
       }
     ],
     "social": [
+      {
+        "design_id": "65311700",
+        "slug": "musical-instrument-trumpet-37",
+        "title": "Musical Instrument - Trumpet #37 T-Shirt",
+        "seo_title": "Trumpet T-Shirt | Musical Instrument Shirt",
+        "description": "Celebrate your passion for music with our vibrant Trumpet T-Shirt. Crafted for trumpet players and music lovers. Shop unique musical apparel today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65311700_0/1725115396/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Musical Instrument Trumpet T-Shirt featuring vibrant digital brass art",
+        "niche": "Music",
+        "secondary_niche": "Musician",
+        "primary_keyword": "Trumpet T-Shirt",
+        "tags": "trumpet, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll, trumpet player",
+        "pubDate": "Tue, 06 Oct 2026 10:23:02 GMT"
+      },
       {
         "design_id": "65310658",
         "slug": "musical-instrument-saxophone-25",
