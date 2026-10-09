@@ -1,9 +1,8 @@
-# Host canonicalization (force https and apex domain blackpantherstore.co.za)
+# Canonical host & protocol canonicalization handled here or in functions/_middleware.ts
 http://www.blackpantherstore.co.za/*  https://blackpantherstore.co.za/:splat  301!
 https://www.blackpantherstore.co.za/* https://blackpantherstore.co.za/:splat  301!
 http://blackpantherstore.co.za/*      https://blackpantherstore.co.za/:splat  301!
 
-# Canonical slug path: plural /designs/:slug -> singular /design/:slug (permanent)
-/designs/:slug  /design/:slug  301!
 # Bare /design (no slug) -> /designs listing page
 /design         /designs       301!
+/design/        /designs       301!
