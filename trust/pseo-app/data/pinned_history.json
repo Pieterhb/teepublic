@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-12T00:35:18.162Z",
-  "lastAdvanceDate": "2026-10-12",
-  "dayCounter": 53,
-  "totalPinned": 583,
+  "lastUpdated": "2026-10-13T10:40:34.224Z",
+  "lastAdvanceDate": "2026-10-13",
+  "dayCounter": 54,
+  "totalPinned": 594,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -586,10 +586,35 @@
     "8687839",
     "61832349",
     "11924960",
-    "8690660"
+    "8690660",
+    "8634885",
+    "63938965",
+    "64963044",
+    "8634954",
+    "8634997",
+    "9303177",
+    "15376122",
+    "8636332",
+    "61833575",
+    "11924210",
+    "8636381"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8634885",
+        "slug": "the-suns-surface-close-up-orange",
+        "title": "The Sun's Surface Close-Up - Orange T-Shirt",
+        "seo_title": "Sun Surface Close-Up Orange T-Shirt | Space Apparel",
+        "description": "Explore the cosmos with our stunning Sun surface close-up orange t-shirt. Perfect for astronomy lovers and space enthusiasts. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634885_0/1584986665/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Orange t-shirt featuring a close-up image of the sun's surface and solar system design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Sun surface close-up t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, orange, planet, solar, space, star, white, woman",
+        "pubDate": "Tue, 13 Oct 2026 10:30:34 GMT"
+      },
       {
         "design_id": "8637223",
         "slug": "the-suns-surface-close-up-blue",
@@ -995,23 +1020,23 @@
         "primary_keyword": "Space Odyssey T-Shirt",
         "tags": "space, 3d, child, fan, new, odyssey, planet, stars, unique, women",
         "pubDate": "Mon, 14 Sep 2026 08:15:22 GMT"
-      },
-      {
-        "design_id": "8608794",
-        "slug": "deep-space-red",
-        "title": "Deep Space - Red T-Shirt",
-        "seo_title": "Deep Space Galaxy Red T-Shirt | Astronomy Apparel",
-        "description": "Explore the cosmos with our stunning Deep Space Red T-Shirt. Featuring a vibrant galaxy design with stars and planets. Order your astronomy shirt today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8608794_0/1584868202/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Deep Space Galaxy Red T-Shirt with stars and planets design",
-        "niche": "Astronomy",
-        "secondary_niche": "",
-        "primary_keyword": "galaxy t-shirt",
-        "tags": "space, black, child, cool, galaxy, new, planet, star, sun, white, woman",
-        "pubDate": "Sun, 13 Sep 2026 08:15:22 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "63938965",
+        "slug": "ride-with-the-bald-eagle-on-a-motorcyle-22",
+        "title": "Ride with the Bald Eagle on a Motorcyle #22 T-Shirt",
+        "seo_title": "Bald Eagle Motorcycle T-Shirt | Freedom Biker Tee",
+        "description": "Experience freedom with our bald eagle and motorcycle t-shirt. Perfect for bikers and patriots who love the open road. Shop unique adventure apparel today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63938965_0/1722696699/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bald eagle soaring next to a motorcycle graphic t-shirt design",
+        "niche": "Bird",
+        "secondary_niche": "hobbies",
+        "primary_keyword": "bald eagle t-shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
+        "pubDate": "Tue, 13 Oct 2026 10:31:34 GMT"
+      },
       {
         "design_id": "63939011",
         "slug": "ride-with-the-bald-eagle-on-a-motorcyle-26",
@@ -1417,23 +1442,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Mon, 14 Sep 2026 08:16:22 GMT"
-      },
-      {
-        "design_id": "65144658",
-        "slug": "bikers-and-rebels-digital-art-24",
-        "title": "Bikers and Rebels - Digital Art #24 T-Shirt",
-        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Road Tee",
-        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders who live for freedom and the open road. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65144658_0/1724848639/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Unisex biker t-shirt featuring a bold human skull and motorcycle design",
-        "niche": "hobbies",
-        "secondary_niche": "outdoor",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Sun, 13 Sep 2026 08:16:22 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64963044",
+        "slug": "bikers-and-rebels-art-13",
+        "title": "Bikers and Rebels Art #13 T-Shirt",
+        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Road Apparel",
+        "description": "Rev up your style with this striking wolf and motorcycle t-shirt. Perfect for freedom-loving bikers and rebels of the open road. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64963044_0/1724585478/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker wolf t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Tue, 13 Oct 2026 10:32:34 GMT"
+      },
       {
         "design_id": "64961624",
         "slug": "bikers-and-rebels-art-8",
@@ -1839,23 +1864,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Mon, 14 Sep 2026 08:17:22 GMT"
-      },
-      {
-        "design_id": "65145310",
-        "slug": "bikers-and-rebels-digital-art-40",
-        "title": "Bikers and Rebels - Digital Art #40 T-Shirt",
-        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Apparel",
-        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Capture the spirit of freedom and rebellion on the open road. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65145310_0/1724849553/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Striking wolf and motorcycle design on a biker t-shirt for rebels",
-        "niche": "Animals",
-        "secondary_niche": "Hobbies",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Sun, 13 Sep 2026 08:17:22 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "8634954",
+        "slug": "the-suns-surface-close-up-pink",
+        "title": "The Sun's Surface Close-Up - Pink T-Shirt",
+        "seo_title": "Sun Surface Close-Up Pink T-Shirt | Space Apparel",
+        "description": "Explore the cosmos with our stunning Sun's Surface Close-Up Pink T-Shirt. Featuring a unique galaxy and solar design. Shop space apparel today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634954_0/1584986918/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Sun's Surface Close-Up Pink T-Shirt with Galaxy Design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Sun surface t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, pink, planet, solar, space, star, white, woman",
+        "pubDate": "Tue, 13 Oct 2026 10:33:34 GMT"
+      },
       {
         "design_id": "8787011",
         "slug": "yin-yang-red",
@@ -2261,23 +2286,23 @@
         "primary_keyword": "futuristic toy robot t-shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Mon, 14 Sep 2026 08:18:22 GMT"
-      },
-      {
-        "design_id": "61532713",
-        "slug": "futuristic-toy-robot-28",
-        "title": "Futuristic Toy Robot #28 T-Shirt",
-        "seo_title": "Futuristic Toy Robot #28 T-Shirt | Sci-Fi Tee",
-        "description": "Explore our futuristic toy robot t-shirt collection. High-tech robotic art blending playfulness and sci-fi innovation for everyday wear.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61532713_0/1718348575/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #28 T-Shirt featuring high-tech sci-fi robot art",
-        "niche": "Engineer",
-        "secondary_niche": "science",
-        "primary_keyword": "toy robot t-shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Sun, 13 Sep 2026 08:18:22 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "8634997",
+        "slug": "the-suns-surface-close-up-purple",
+        "title": "The Sun's Surface Close-Up - Purple T-Shirt",
+        "seo_title": "The Sun's Surface Close-Up Purple T-Shirt",
+        "description": "Explore the cosmos with The Sun's Surface Close-Up Purple T-Shirt. Stunning galaxy and space design for astronomy lovers. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8634997_0/1584987087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Sun's Surface Close-Up Purple T-Shirt featuring a stunning space and galaxy design",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Sun surface t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Tue, 13 Oct 2026 10:34:34 GMT"
+      },
       {
         "design_id": "8826435",
         "slug": "twister-bowl",
@@ -2683,23 +2708,23 @@
         "primary_keyword": "silver cross t-shirt",
         "tags": "cross, bible, christ, christian, christianity, clothing, crosses, faith, god, jesus, jesus christ, religion, religious, silver",
         "pubDate": "Mon, 14 Sep 2026 08:19:22 GMT"
-      },
-      {
-        "design_id": "66333900",
-        "slug": "a-silver-cross-1",
-        "title": "A Silver Cross #1 T-Shirt",
-        "seo_title": "Silver Cross T-Shirt | Christian Faith Apparel",
-        "description": "Express your faith with our Silver Cross T-Shirt. High-quality Christian apparel featuring a bold silver cross design for daily inspiration.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66333900_0/1726999349/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "A Silver Cross #1 T-Shirt featuring a striking silver cross print on comfortable fabric",
-        "niche": "Religion",
-        "secondary_niche": "Faith",
-        "primary_keyword": "silver cross t-shirt",
-        "tags": "cross, bible, christ, christian, christianity, clothing, crosses, faith, god, jesus, jesus christ, religion, religious, silver",
-        "pubDate": "Sun, 13 Sep 2026 08:19:22 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "9303177",
+        "slug": "yin-yang-triangle-pink-red-and-orange",
+        "title": "Yin Yang Triangle - Pink, Red and Orange T-Shirt",
+        "seo_title": "Yin Yang Triangle Pink Red Orange T-Shirt",
+        "description": "Discover the unique Yin Yang Triangle T-shirt featuring Chinese zodiac symbols in a pink, red, and orange design. Shop comfortable print-on-demand style.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Yin Yang Triangle Pink Red and Orange T-Shirt",
+        "niche": "Astronomy",
+        "secondary_niche": "Math",
+        "primary_keyword": "Yin Yang T-Shirt",
+        "tags": "yin yang, child, chinese, circle, dark, light, negative, positive, universe, woman, yin",
+        "pubDate": "Tue, 13 Oct 2026 10:35:34 GMT"
+      },
       {
         "design_id": "9303174",
         "slug": "yin-yang-triangle-green-blue-and-purple",
@@ -3105,23 +3130,23 @@
         "primary_keyword": "Triangle glass balls t-shirt",
         "tags": "balls, child, cool, glass, new, old, three, triangle, woman, young",
         "pubDate": "Mon, 14 Sep 2026 08:20:22 GMT"
-      },
-      {
-        "design_id": "8911529",
-        "slug": "triangle-with-orange-yellow-and-purple-glass-balls",
-        "title": "Triangle with Orange, Yellow and Purple Glass Balls T-Shirt",
-        "seo_title": "Triangle with Glass Balls Math T-Shirt",
-        "description": "Discover the unique Triangle with Orange, Yellow and Purple Glass Balls T-Shirt. A geometric design blending trigonometry and art. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8911529_1/1586184668/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Triangle with Orange, Yellow and Purple Glass Balls T-Shirt Design",
-        "niche": "Math",
-        "secondary_niche": "Physics",
-        "primary_keyword": "triangle t-shirt",
-        "tags": "balls, child, cool, glass, new, old, three, triangle, woman, young",
-        "pubDate": "Sun, 13 Sep 2026 08:20:22 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15376122",
+        "slug": "aerospace-engineer-in-orange-color-text",
+        "title": "Aerospace Engineer in Orange Color Text T-Shirt",
+        "seo_title": "Aerospace Engineer Orange Text T-Shirt",
+        "description": "Showcase your passion for flight and space with this Aerospace Engineer Orange Text T-Shirt. Perfect gift for aerospace engineers and aviation lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15376122_0/1603545663/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Aerospace Engineer in Orange Color Text T-Shirt",
+        "niche": "Engineer",
+        "secondary_niche": "Astronomy",
+        "primary_keyword": "Aerospace Engineer T-Shirt",
+        "tags": "aerospace engineer, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 13 Oct 2026 10:36:34 GMT"
+      },
       {
         "design_id": "15382871",
         "slug": "chemical-engineer-in-orange-color-text",
@@ -3527,23 +3552,23 @@
         "primary_keyword": "Futuristic Toy Robot T-Shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Mon, 14 Sep 2026 08:21:22 GMT"
-      },
-      {
-        "design_id": "61532715",
-        "slug": "futuristic-toy-robot-30",
-        "title": "Futuristic Toy Robot #30 T-Shirt",
-        "seo_title": "Futuristic Toy Robot #30 T-Shirt | Sci-Fi Tee",
-        "description": "Shop the Futuristic Toy Robot #30 T-Shirt. High-tech robotic design blending playful sci-fi innovation for everyday wear and home decor. Order today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61532715_0/1718348595/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #30 T-Shirt featuring high-tech robotic art",
-        "niche": "Engineer",
-        "secondary_niche": "Gaming",
-        "primary_keyword": "Futuristic Toy Robot T-Shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Sun, 13 Sep 2026 08:21:22 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "8636332",
+        "slug": "the-suns-surface-close-up-red",
+        "title": "The Sun's Surface Close-Up - Red T-Shirt",
+        "seo_title": "Sun Surface Close-Up Red T-Shirt | Space Apparel",
+        "description": "Explore the cosmos with this stunning Sun surface close-up red t-shirt. Perfect astronomy gift for space lovers and stargazers. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8636332_0/1584993121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "The Sun's Surface Close-Up Red T-Shirt with solar graphics",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Sun surface t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman",
+        "pubDate": "Tue, 13 Oct 2026 10:37:34 GMT"
+      },
       {
         "design_id": "8687839",
         "slug": "sahara-desert-witch-of-the-sahara-unique-art",
@@ -3949,23 +3974,23 @@
         "primary_keyword": "Black Panther book cover t-shirt",
         "tags": "action, black, books, online, panther, series, story, unique",
         "pubDate": "Mon, 14 Sep 2026 08:22:22 GMT"
-      },
-      {
-        "design_id": "8329548",
-        "slug": "the-black-panther-the-hunters-of-blood-island-uniq",
-        "title": "The Black Panther - The Hunters of Blood Island (Unique Art) T-Shirt",
-        "seo_title": "Black Panther Book Cover Vintage T-Shirt",
-        "description": "Wear a piece of history with this unique Black Panther retro book cover t-shirt featuring the classic 1980s Afrikaans series art.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8329548_1/1587396860/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Black Panther The Hunters of Blood Island Unique Art T-Shirt front view",
-        "niche": "Reading",
-        "secondary_niche": "",
-        "primary_keyword": "Black Panther book t-shirt",
-        "tags": "action, black, books, online, panther, series, story, unique",
-        "pubDate": "Sun, 13 Sep 2026 08:22:22 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "61833575",
+        "slug": "netherlands-monster-truck-87",
+        "title": "Netherlands Monster Truck #87 T-Shirt",
+        "seo_title": "Netherlands Monster Truck #87 T-Shirt",
+        "description": "Unleash the beast with our Netherlands Monster Truck #87 T-Shirt. High-octane design perfect for monster truck fans and truck enthusiasts.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61833575_0/1719054614/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Netherlands Monster Truck #87 T-Shirt Design",
+        "niche": "Gaming",
+        "secondary_niche": "Engineering",
+        "primary_keyword": "Netherlands Monster Truck T-Shirt",
+        "tags": "monster truck, ai art, ai generated, artificial intelligence, digital art, digital artwork, monster trucks, monsters, netherlands, truck",
+        "pubDate": "Tue, 13 Oct 2026 10:38:34 GMT"
+      },
       {
         "design_id": "61832349",
         "slug": "brazil-monster-truck-63",
@@ -4371,23 +4396,23 @@
         "primary_keyword": "Golden Letter W T-Shirt",
         "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
         "pubDate": "Mon, 14 Sep 2026 08:23:22 GMT"
-      },
-      {
-        "design_id": "8979761",
-        "slug": "silver-letter-e",
-        "title": "Silver Letter E T-Shirt",
-        "seo_title": "Silver Letter E T-Shirt | Minimalist Alphabet Tee",
-        "description": "Shop the Silver Letter E T-Shirt featuring a sleek metallic typography design. Perfect for everyday wear, alphabet lovers, and teachers. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8979761_0/1586434032/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Silver Letter E T-Shirt with metallic typography design",
-        "niche": "Teacher",
-        "secondary_niche": "",
-        "primary_keyword": "Silver Letter E T-Shirt",
-        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
-        "pubDate": "Sun, 13 Sep 2026 08:23:22 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "11924210",
+        "slug": "western-era-slogan-once-a-nice-looking-black-moust",
+        "title": "Western Era Slogan - Once a Nice Looking Black Moustache T-Shirt",
+        "seo_title": "Western Era Mustache T-Shirt | Vintage Old West Tee",
+        "description": "Celebrate the Old West with our Western Era Moustache T-Shirt. Perfect for history buffs and cowboy fans. Shop vintage style tees today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/11924210_0/1593858556/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Western Era Once a Nice Looking Black Moustache T-Shirt product image showing vintage cowboy design",
+        "niche": "hobbies",
+        "secondary_niche": "science",
+        "primary_keyword": "Western Era T-Shirt",
+        "tags": "moustache, barons, boots, bounty hunters, cowboy, era, indians, usa, western",
+        "pubDate": "Tue, 13 Oct 2026 10:39:34 GMT"
+      },
       {
         "design_id": "11924960",
         "slug": "western-era-slogan-pick-axe-and-shovel",
@@ -4793,23 +4818,23 @@
         "primary_keyword": "Galaxy T-Shirt",
         "tags": "space, 3d, fan, galaxy, new, odyssey, online, planet, stars, sun, trend, unique",
         "pubDate": "Mon, 14 Sep 2026 08:24:22 GMT"
-      },
-      {
-        "design_id": "8635293",
-        "slug": "the-suns-surface-pink",
-        "title": "The Sun's Surface - Pink T-Shirt",
-        "seo_title": "The Sun's Surface Pink T-Shirt | Space Astronomy Tee",
-        "description": "Explore the cosmos with our stunning The Sun's Surface pink t-shirt. Featuring a unique galaxy and solar system design, perfect for astronomy lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8635293_0/1584988384/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Sun's Surface Pink T-Shirt featuring galaxy and solar system design",
-        "niche": "Astronomy",
-        "secondary_niche": "science",
-        "primary_keyword": "pink space t-shirt",
-        "tags": "sun, black, child, cool, galaxy, moon, new, pink, planet, solar, space, star, white, woman",
-        "pubDate": "Sun, 13 Sep 2026 08:24:22 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "8636381",
+        "slug": "the-suns-surface-close-up-yellow",
+        "title": "The Sun's Surface Close-Up - Yellow T-Shirt",
+        "seo_title": "Sun Surface Close-Up Yellow T-Shirt | Space Apparel",
+        "description": "Explore the cosmos with our Sun's Surface Close-Up Yellow T-Shirt. A stunning digital creation for astronomy lovers and space enthusiasts. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8636381_1/1584996121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Close-up of the sun's surface design on a yellow t-shirt",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Sun surface t-shirt",
+        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman, yellow",
+        "pubDate": "Tue, 13 Oct 2026 10:40:34 GMT"
+      },
       {
         "design_id": "8690660",
         "slug": "sahara-desert-footsteps-to-death-unique-art",
@@ -5215,20 +5240,6 @@
         "primary_keyword": "Black Panther book cover t-shirt",
         "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
         "pubDate": "Mon, 14 Sep 2026 08:25:22 GMT"
-      },
-      {
-        "design_id": "8330098",
-        "slug": "the-black-panther-murder-in-the-forest-unique-art",
-        "title": "The Black Panther - Murder in the Forest (Unique Art) T-Shirt",
-        "seo_title": "The Black Panther Vintage Book Cover T-Shirt",
-        "description": "Discover the unique Die Swart Luiperd book cover art t-shirt featuring vintage 1980s South African pulp fiction illustration. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8330098_1/1587396846/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Black Panther Murder in the Forest Vintage Book Cover T-Shirt",
-        "niche": "Reading",
-        "secondary_niche": "",
-        "primary_keyword": "Die Swart Luiperd T-Shirt",
-        "tags": "action, black, books, online, panther, series, story, unique",
-        "pubDate": "Sun, 13 Sep 2026 08:25:22 GMT"
       }
     ]
   }
