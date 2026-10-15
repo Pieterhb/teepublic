@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-14T00:20:09.659Z",
-  "lastAdvanceDate": "2026-10-14",
-  "dayCounter": 55,
-  "totalPinned": 605,
+  "lastUpdated": "2026-10-15T08:21:51.512Z",
+  "lastAdvanceDate": "2026-10-15",
+  "dayCounter": 56,
+  "totalPinned": 616,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -608,10 +608,35 @@
     "8687944",
     "61834128",
     "12010763",
-    "8690435"
+    "8690435",
+    "8929699",
+    "63938979",
+    "64961622",
+    "65309354",
+    "65309053",
+    "9128466",
+    "15375658",
+    "65143823",
+    "61831563",
+    "12042136",
+    "65143831"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8929699",
+        "slug": "pink-glass-orb",
+        "title": "Pink Glass Orb T-Shirt",
+        "seo_title": "Pink Glass Orb Galaxy T-Shirt | Space Astronomy Tee",
+        "description": "Explore the cosmos with our stunning Pink Glass Orb Galaxy T-Shirt. Featuring a unique space design with stars, planets, and nebulae. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8929699_0/1586253187/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Pink Glass Orb Galaxy T-Shirt featuring stars and planets design",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "Galaxy T-Shirt",
+        "tags": "3d, cotton, dust, galaxy, gas, glass, new, odyssey, online, orb, planet, planets, space, stars, unique",
+        "pubDate": "Thu, 15 Oct 2026 08:11:51 GMT"
+      },
       {
         "design_id": "8930123",
         "slug": "blue-glass-orb",
@@ -1017,23 +1042,23 @@
         "primary_keyword": "galaxy t-shirt",
         "tags": "space, black, child, cool, galaxy, green, new, orange, planet, solar, star, sun, white, woman",
         "pubDate": "Wed, 16 Sep 2026 07:20:16 GMT"
-      },
-      {
-        "design_id": "8634340",
-        "slug": "exploding-sun-close-up-green",
-        "title": "Exploding Sun Close-Up - Green T-Shirt",
-        "seo_title": "Exploding Sun Green T-Shirt | Galaxy Graphic Tee",
-        "description": "Explore the cosmos with this stunning exploding sun green t-shirt. Featuring a detailed galaxy design, stars, and planets for space enthusiasts.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8634340_0/1584984643/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Exploding Sun Close-Up Green T-Shirt with Galaxy Design",
-        "niche": "Astronomy",
-        "secondary_niche": "",
-        "primary_keyword": "exploding sun t-shirt",
-        "tags": "sun, black, child, cool, galaxy, green, moon, new, planet, solar, space, star, white, woman",
-        "pubDate": "Tue, 15 Sep 2026 08:15:22 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "63938979",
+        "slug": "ride-with-the-bald-eagle-on-a-motorcyle-23",
+        "title": "Ride with the Bald Eagle on a Motorcyle #23 T-Shirt",
+        "seo_title": "Bald Eagle Motorcycle T-Shirt | American Freedom Tee",
+        "description": "Experience freedom with our bald eagle motorcycle t-shirt. Perfect for bikers and patriots who love the open road. Order your unique eagle shirt today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63938979_0/1722696710/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bald eagle soaring next to a motorcycle graphic t-shirt design",
+        "niche": "Bird",
+        "secondary_niche": "hobbies",
+        "primary_keyword": "bald eagle motorcycle t-shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
+        "pubDate": "Thu, 15 Oct 2026 08:12:51 GMT"
+      },
       {
         "design_id": "64963641",
         "slug": "bikers-and-rebels-art-29",
@@ -1439,23 +1464,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Wed, 16 Sep 2026 07:21:16 GMT"
-      },
-      {
-        "design_id": "65144651",
-        "slug": "bikers-and-rebels-digital-art-22",
-        "title": "Bikers and Rebels - Digital Art #22 T-Shirt",
-        "seo_title": "Biker Skull T-Shirt | Motorcycle & Rebel Apparel",
-        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders, rebels, and motorcycle enthusiasts. Shop comfortable biker apparel today.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65144651_0/1724848630/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Unisex biker t-shirt featuring a bold human skull and motorcycle design",
-        "niche": "hobbies",
-        "secondary_niche": "",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Tue, 15 Sep 2026 08:16:22 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64961622",
+        "slug": "bikers-and-rebels-art-7",
+        "title": "Bikers and Rebels Art #7 T-Shirt",
+        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Road Apparel",
+        "description": "Rev up your style with this wolf motorcycle biker t-shirt. Perfect for open road rebels and wolf lovers. Shop durable biker apparel today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64961622_0/1724582704/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Thu, 15 Oct 2026 08:13:51 GMT"
+      },
       {
         "design_id": "64963603",
         "slug": "bikers-and-rebels-art-21",
@@ -1861,23 +1886,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Wed, 16 Sep 2026 07:22:16 GMT"
-      },
-      {
-        "design_id": "65145298",
-        "slug": "bikers-and-rebels-digital-art-37",
-        "title": "Bikers and Rebels - Digital Art #37 T-Shirt",
-        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Apparel",
-        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Capture the spirit of freedom and rebellion on the open road.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65145298_0/1724849540/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Powerful wolf and motorcycle design on a biker t-shirt",
-        "niche": "hobbies",
-        "secondary_niche": "animals",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Tue, 15 Sep 2026 08:17:22 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "65309354",
+        "slug": "musical-instrument-drums-7",
+        "title": "Musical Instrument - Drums #7 T-Shirt",
+        "seo_title": "Drum T-Shirt | Musician Gift & Rhythm Apparel",
+        "description": "Experience the rhythm with our dynamic drums t-shirt. High-quality apparel featuring digital drum art, perfect for drummers and music lovers everywhere.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65309354_0/1725111037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Musical Instrument Drums T-Shirt Design",
+        "niche": "Music",
+        "secondary_niche": "Hobby",
+        "primary_keyword": "drum t-shirt",
+        "tags": "drums, digital, drum and bass, drummer, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
+        "pubDate": "Thu, 15 Oct 2026 08:14:51 GMT"
+      },
       {
         "design_id": "65309498",
         "slug": "musical-instrument-flute-9",
@@ -2283,23 +2308,23 @@
         "primary_keyword": "Futuristic Toy Robot T-Shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Wed, 16 Sep 2026 07:23:16 GMT"
-      },
-      {
-        "design_id": "61505524",
-        "slug": "futuristic-toy-robot-23",
-        "title": "Futuristic Toy Robot #23 T-Shirt",
-        "seo_title": "Futuristic Toy Robot #23 T-Shirt | Sci-Fi Tee",
-        "description": "Explore our Futuristic Toy Robot T-Shirt. High-tech robotic art blending playfulness with innovation. Perfect sci-fi gift for robot lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61505524_0/1718281203/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #23 T-Shirt design featuring a high-tech robotic character",
-        "niche": "Engineer",
-        "secondary_niche": "",
-        "primary_keyword": "Futuristic Toy Robot T-Shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Tue, 15 Sep 2026 08:18:22 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "65309053",
+        "slug": "musical-instrument-cello-art-2",
+        "title": "Musical Instrument - Cello Art #2 T-Shirt",
+        "seo_title": "Cello Art T-Shirt | Musical Instrument Apparel",
+        "description": "Celebrate your love for music with our stunning Cello Art T-Shirt. High-quality digital design featuring the elegant cello. Perfect for musicians.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65309053_0/1725110530/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Cello Art #2 T-Shirt with vibrant digital cello design",
+        "niche": "Music",
+        "secondary_niche": "Cello",
+        "primary_keyword": "Cello Art T-Shirt",
+        "tags": "cello, cellist, cello player, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
+        "pubDate": "Thu, 15 Oct 2026 08:15:51 GMT"
+      },
       {
         "design_id": "65307217",
         "slug": "musical-instrument-cello-art-1",
@@ -2705,23 +2730,23 @@
         "primary_keyword": "silver angel t-shirt",
         "tags": "angel, angel wings, angels, bible, christ, christian apparel, christian clothing, christian designs, christian streetwear, christianity, heaven, jesus, jesus christ, religious, silver",
         "pubDate": "Wed, 16 Sep 2026 07:24:16 GMT"
-      },
-      {
-        "design_id": "66298853",
-        "slug": "white-angel-1",
-        "title": "White Angel #1 T-Shirt",
-        "seo_title": "White Angel T-Shirt | Christian Faith Apparel",
-        "description": "Add a heavenly touch to your wardrobe with the White Angel T-Shirt. Graceful, serene, and meaningful Christian faith apparel for everyday wear.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66298853_0/1726908293/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "White Angel #1 T-Shirt featuring a graceful and serene heavenly design",
-        "niche": "Religion",
-        "secondary_niche": "Christianity",
-        "primary_keyword": "White Angel T-Shirt",
-        "tags": "angel, artistic, bible, christ, christian, christianity, faith, god, jesus, jesus christ, religion, religious, religious symbol",
-        "pubDate": "Tue, 15 Sep 2026 08:19:22 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "9128466",
+        "slug": "three-rubik-cubes-in-a-triangle-original-colors",
+        "title": "Three Rubik Cubes in a Triangle - Original Colors T-Shirt",
+        "seo_title": "Rubik Cube T-Shirt Three Cubes Triangle Design",
+        "description": "Shop the Three Rubik Cubes in a Triangle T-Shirt featuring original colors. A creative artistic 3D puzzle design for fans of the world's best-selling toy.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9128466_0/1586940017/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Three Rubik Cubes in a Triangle Original Colors T-Shirt Design",
+        "niche": "Gaming",
+        "secondary_niche": "Math",
+        "primary_keyword": "Rubik cube t-shirt",
+        "tags": "award, blue, colors, cube, game, kids, rubik, three, toy, triangle, yellow",
+        "pubDate": "Thu, 15 Oct 2026 08:16:51 GMT"
+      },
       {
         "design_id": "9304079",
         "slug": "yin-yang-triangle-red-orange-and-blue",
@@ -3127,23 +3152,23 @@
         "primary_keyword": "Triangle T-Shirt",
         "tags": "balls, child, cool, glass, new, old, three, triangle, woman, young",
         "pubDate": "Wed, 16 Sep 2026 07:25:16 GMT"
-      },
-      {
-        "design_id": "8824028",
-        "slug": "rubiks-cube-in-a-snow-globe-with-lens-flare",
-        "title": "Rubik's Cube in a Snow Globe with Lens Flare T-Shirt",
-        "seo_title": "Rubik's Cube Snow Globe T-Shirt",
-        "description": "Discover the unique Rubik's Cube in a Snow Globe T-Shirt. A creative 3D artistic puzzle design celebrating the world's best-selling toy.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8824028_0/1585841548/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Rubik's Cube in a Snow Globe with Lens Flare T-Shirt Design",
-        "niche": "Gaming",
-        "secondary_niche": "Math",
-        "primary_keyword": "Rubik cube t-shirt",
-        "tags": "rubik cube, blue, colors, cube, game, globe, kids, rubik, snow, toy, yellow",
-        "pubDate": "Tue, 15 Sep 2026 08:20:22 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15375658",
+        "slug": "aerospace-engineer-in-black-color-text",
+        "title": "Aerospace Engineer in Black Color Text T-Shirt",
+        "seo_title": "Aerospace Engineer T-Shirt | Typography Design",
+        "description": "Showcase your passion for aviation and space with this Aerospace Engineer T-Shirt. Perfect gift for aerospace professionals and engineering enthusiasts.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15375658_0/1603544561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Aerospace Engineer in Black Color Text T-Shirt mockup",
+        "niche": "Engineer",
+        "secondary_niche": "Astronomy",
+        "primary_keyword": "Aerospace Engineer T-Shirt",
+        "tags": "aerospace engineer, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Thu, 15 Oct 2026 08:17:51 GMT"
+      },
       {
         "design_id": "15376125",
         "slug": "aerospace-engineer-in-purple-color-text",
@@ -3549,23 +3574,23 @@
         "primary_keyword": "toy robot t-shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Wed, 16 Sep 2026 07:26:16 GMT"
-      },
-      {
-        "design_id": "61505002",
-        "slug": "futuristic-toy-robot-10",
-        "title": "Futuristic Toy Robot #10 T-Shirt",
-        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Graphic Tee",
-        "description": "Explore the future with our Futuristic Toy Robot T-Shirt. Featuring high-tech robotic art, this sci-fi graphic tee blends playfulness with innovation.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61505002_0/1718279811/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #10 T-Shirt with high-tech robotic character design",
-        "niche": "Engineer",
-        "secondary_niche": "Gaming",
-        "primary_keyword": "futuristic toy robot t-shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Tue, 15 Sep 2026 08:21:22 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "65143823",
+        "slug": "bikers-and-rebels-digital-art-18",
+        "title": "Bikers and Rebels - Digital Art #18 T-Shirt",
+        "seo_title": "Biker Skull T-Shirt | Motorcycle Rebel Tee",
+        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom-loving bikers and rebels. Shop the ultimate riding tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143823_0/1724847256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Unisex biker t-shirt featuring a bold human skull and motorcycle digital art design",
+        "niche": "Motorcycle",
+        "secondary_niche": "Rebel",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Thu, 15 Oct 2026 08:18:51 GMT"
+      },
       {
         "design_id": "8687944",
         "slug": "sahara-desert-the-scarlet-riders-unique-art",
@@ -3971,23 +3996,23 @@
         "primary_keyword": "Black Panther book cover",
         "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
         "pubDate": "Wed, 16 Sep 2026 07:27:16 GMT"
-      },
-      {
-        "design_id": "8311966",
-        "slug": "the-black-panther-the-giant-of-boendoe-unique-art",
-        "title": "The Black Panther - The Giant of Boendoe (Unique Art) T-Shirt",
-        "seo_title": "Black Panther The Giant of Boendoe Retro Book T-Shirt",
-        "description": "Shop The Black Panther retro book cover t-shirt featuring unique art from the classic 1980s Afrikaans series Die Swart Luiperd Reeks. Order online today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8311966_3/1587395488/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Black Panther The Giant of Boendoe Unique Art T-Shirt",
-        "niche": "Reading",
-        "secondary_niche": "",
-        "primary_keyword": "Black Panther T-Shirt",
-        "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
-        "pubDate": "Tue, 15 Sep 2026 08:22:22 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "61831563",
+        "slug": "austria-monster-truck-52",
+        "title": "Austria Monster Truck #52 T-Shirt",
+        "seo_title": "Austria Monster Truck #52 T-Shirt | POD Apparel",
+        "description": "Unleash the beast with our Austria Monster Truck #52 T-Shirt. High-octane print-on-demand apparel for hardcore truck fans and adrenaline junkies.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61831563_0/1719050687/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Austria Monster Truck #52 T-Shirt graphic design",
+        "niche": "Gaming",
+        "secondary_niche": "Engineering",
+        "primary_keyword": "Austria Monster Truck T-Shirt",
+        "tags": "monster truck, ai art, ai generated, artificial intelligence, austria, digital art, digital artwork, monster trucks, monsters, truck",
+        "pubDate": "Thu, 15 Oct 2026 08:19:51 GMT"
+      },
       {
         "design_id": "61834128",
         "slug": "spain-monster-truck-91",
@@ -4393,23 +4418,23 @@
         "primary_keyword": "Golden Letter E T-Shirt",
         "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
         "pubDate": "Wed, 16 Sep 2026 07:28:16 GMT"
-      },
-      {
-        "design_id": "8954718",
-        "slug": "golden-letter-v",
-        "title": "Golden Letter V T-Shirt",
-        "seo_title": "Golden Letter V T-Shirt | Typography Apparel",
-        "description": "Shop the Golden Letter V T-Shirt. Featuring a stunning gold typography design of the English alphabet. Comfortable, stylish, and perfect for everyday wear.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8954718_0/1586348116/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Golden Letter V T-Shirt displayed on a clean background",
-        "niche": "Teacher",
-        "secondary_niche": "Math",
-        "primary_keyword": "Golden Letter V T-Shirt",
-        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
-        "pubDate": "Tue, 15 Sep 2026 08:23:22 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "12042136",
+        "slug": "western-era-wild-west-money-bag",
+        "title": "Western Era - Wild West Money Bag T-Shirt",
+        "seo_title": "Wild West Money Bag T-Shirt | Retro Western Tee",
+        "description": "Celebrate the Old West with our Wild West Money Bag T-Shirt. Premium retro vintage design featuring classic cowboy and outlaw motifs. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12042136_0/1594218241/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_346_11_x188,s_630,q_90.jpg",
+        "image_alt": "Vintage Wild West Money Bag graphic on a retro Western era t-shirt",
+        "niche": "hobbies",
+        "secondary_niche": "science",
+        "primary_keyword": "Wild West T-Shirt",
+        "tags": "barons, boots, bounty hunters, cowboy, era, fort, indians, usa, western",
+        "pubDate": "Thu, 15 Oct 2026 08:20:51 GMT"
+      },
       {
         "design_id": "12010763",
         "slug": "western-era-wild-west-cowboy-boots-and-hat",
@@ -4815,23 +4840,23 @@
         "primary_keyword": "Red Glass Orb T-Shirt",
         "tags": "3d, cotton, dust, galaxy, gas, glass, new, odyssey, orb, planet, planets, space, stars, unique",
         "pubDate": "Wed, 16 Sep 2026 07:29:16 GMT"
-      },
-      {
-        "design_id": "8929094",
-        "slug": "planet-with-gas-rings",
-        "title": "Planet with Gas Rings T-Shirt",
-        "seo_title": "Planet with Gas Rings T-Shirt | Space Galaxy Tee",
-        "description": "Explore the cosmos with our stunning planet with gas rings t-shirt. Perfect space apparel for astronomy lovers and stargazers. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8929094_0/1586251043/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Planet with Gas Rings T-Shirt featuring galaxy stars and space art",
-        "niche": "Astronomy",
-        "secondary_niche": "Science",
-        "primary_keyword": "planet with gas rings t-shirt",
-        "tags": "3d, child, fan, gas, new, odyssey, planet, planets, space, stars, unique, women",
-        "pubDate": "Tue, 15 Sep 2026 08:24:22 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "65143831",
+        "slug": "bikers-and-rebels-digital-art-20",
+        "title": "Bikers and Rebels - Digital Art #20 T-Shirt",
+        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Rider Tee",
+        "description": "Rev up your style with this bold biker skull motorcycle t-shirt. Perfect for riders who live for freedom and the open road. Shop the ultimate rebel tee today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/65143831_0/1724847263/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bikers and Rebels human skull and motorcycle digital art t-shirt design",
+        "niche": "Motorcycle",
+        "secondary_niche": "Rebel",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
+        "pubDate": "Thu, 15 Oct 2026 08:21:51 GMT"
+      },
       {
         "design_id": "8690435",
         "slug": "sahara-desert-the-fort-is-quiet-unique-art",
@@ -5237,20 +5262,6 @@
         "primary_keyword": "white angel t-shirt",
         "tags": "angel, artistic, bible, christ, christian, christianity, faith, god, jesus, jesus christ, religion, religious, religious symbol",
         "pubDate": "Wed, 16 Sep 2026 07:30:16 GMT"
-      },
-      {
-        "design_id": "8311846",
-        "slug": "the-black-panther-the-water-monster-rumbles-unique",
-        "title": "The Black Panther - The Water-monster Rumbles (Unique Art) T-Shirt",
-        "seo_title": "Black Panther Book Cover Vintage Art T-Shirt",
-        "description": "Shop the unique vintage Black Panther book cover art t-shirt featuring the classic 1980s Afrikaans series Die Swart Luiperd. Order online today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8311846_2/1587395834/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "The Black Panther Water-Monster Rumbles vintage book cover art t-shirt",
-        "niche": "Reading",
-        "secondary_niche": "",
-        "primary_keyword": "Black Panther book cover t-shirt",
-        "tags": "action, black, books, buy, cover, front, modern, online, panther, story, unique",
-        "pubDate": "Tue, 15 Sep 2026 08:25:22 GMT"
       }
     ]
   }
