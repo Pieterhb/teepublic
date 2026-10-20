@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-19T08:57:25.366Z",
-  "lastAdvanceDate": "2026-10-19",
-  "dayCounter": 60,
-  "totalPinned": 660,
+  "lastUpdated": "2026-10-20T00:23:24.655Z",
+  "lastAdvanceDate": "2026-10-20",
+  "dayCounter": 61,
+  "totalPinned": 671,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -663,10 +663,35 @@
     "65143806",
     "14277785",
     "12330841",
-    "65145290"
+    "65145290",
+    "8930735",
+    "64963043",
+    "64963050",
+    "8915381",
+    "9025102",
+    "9303175",
+    "15377205",
+    "8909580",
+    "15376121",
+    "12284970",
+    "8909484"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "8930735",
+        "slug": "supernova-purple-pink",
+        "title": "Supernova - Purple-Pink T-Shirt",
+        "seo_title": "Supernova Purple-Pink Galaxy T-Shirt",
+        "description": "Explore the cosmos with our stunning Supernova Purple-Pink Galaxy T-Shirt. Featuring stars, planets, and interstellar gas in a breathtaking design.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8930735_0/1586256630/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Supernova Purple-Pink Galaxy T-Shirt featuring stars and planets",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "supernova t-shirt",
+        "tags": "3d, child, dust, galaxy, gas, glass, new, orb, planet, planets, space, stars, supernova, women",
+        "pubDate": "Tue, 20 Oct 2026 00:13:24 GMT"
+      },
       {
         "design_id": "8930571",
         "slug": "supernova-light-blue-white",
@@ -1072,23 +1097,23 @@
         "primary_keyword": "Solar Eclipse T-Shirt",
         "tags": "eclipse, black, child, cool, galaxy, new, planet, solar, space, star, sun, white, woman",
         "pubDate": "Mon, 21 Sep 2026 08:50:22 GMT"
-      },
-      {
-        "design_id": "8634189",
-        "slug": "exploding-sun-yellow",
-        "title": "Exploding Sun - Yellow T-Shirt",
-        "seo_title": "Exploding Sun Yellow T-Shirt | Space & Galaxy Tee",
-        "description": "Explore the cosmos with our Exploding Sun Yellow T-Shirt. Featuring a stunning galaxy, stars, and planets design. Perfect for space and astronomy lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8634189_0/1584984123/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Exploding Sun design on a vibrant yellow t-shirt featuring stars and galaxy elements",
-        "niche": "Astronomy",
-        "secondary_niche": "Physics",
-        "primary_keyword": "Exploding Sun T-Shirt",
-        "tags": "sun, black, child, cool, galaxy, moon, new, planet, solar, space, star, white, woman, yellow",
-        "pubDate": "Sun, 20 Sep 2026 08:28:52 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "64963043",
+        "slug": "bikers-and-rebels-art-12",
+        "title": "Bikers and Rebels Art #12 T-Shirt",
+        "seo_title": "Biker Wolf T-Shirt | Motorcycle Apparel",
+        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Capture the spirit of freedom and rebellion on the open road.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64963043_0/1724585475/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker wolf t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Tue, 20 Oct 2026 00:14:24 GMT"
+      },
       {
         "design_id": "64963040",
         "slug": "bikers-and-rebels-art-11",
@@ -1494,23 +1519,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Mon, 21 Sep 2026 08:51:22 GMT"
-      },
-      {
-        "design_id": "65143821",
-        "slug": "bikers-and-rebels-digital-art-17",
-        "title": "Bikers and Rebels - Digital Art #17 T-Shirt",
-        "seo_title": "Biker Skull T-Shirt for Motorcycle Lovers",
-        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom-loving bikers and rebels. Shop comfortable riding gear today.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65143821_0/1724847247/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bikers and Rebels Digital Art #17 Skull and Motorcycle T-Shirt",
-        "niche": "hobbies",
-        "secondary_niche": "",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Sun, 20 Sep 2026 08:29:52 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "64963050",
+        "slug": "bikers-and-rebels-art-16",
+        "title": "Bikers and Rebels Art #16 T-Shirt",
+        "seo_title": "Wolf Motorcycle Biker T-Shirt",
+        "description": "Rev up your style with this fierce wolf and motorcycle biker t-shirt. Capture the spirit of freedom and rebellion on the open road. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/64963050_0/1724585518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Fierce wolf and motorcycle graphic biker t-shirt",
+        "niche": "Animals",
+        "secondary_niche": "Hobbies",
+        "primary_keyword": "biker t-shirt",
+        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
+        "pubDate": "Tue, 20 Oct 2026 00:15:24 GMT"
+      },
       {
         "design_id": "64963063",
         "slug": "bikers-and-rebels-art-20",
@@ -1916,23 +1941,23 @@
         "primary_keyword": "biker wolf t-shirt",
         "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
         "pubDate": "Mon, 21 Sep 2026 08:52:22 GMT"
-      },
-      {
-        "design_id": "64966810",
-        "slug": "bikers-and-rebels-art-48",
-        "title": "Bikers and Rebels Art #48 T-Shirt",
-        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Road Art",
-        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Perfect for those who live for the thrill of the open road and freedom.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/64966810_0/1724593098/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
-        "niche": "hobbies",
-        "secondary_niche": "animals",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
-        "pubDate": "Sun, 20 Sep 2026 08:30:52 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "8915381",
+        "slug": "supernova-blue-purple",
+        "title": "Supernova - Blue-Purple T-Shirt",
+        "seo_title": "Supernova Blue-Purple T-Shirt | Galaxy Space Tee",
+        "description": "Explore the cosmos with our stunning Supernova Blue-Purple T-Shirt. Featuring a breathtaking galaxy design with stars and planets. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8915381_0/1586195764/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Supernova Blue-Purple T-Shirt featuring a stunning galaxy design with stars and planets",
+        "niche": "Astronomy",
+        "secondary_niche": "",
+        "primary_keyword": "supernova t-shirt",
+        "tags": "space, 3d, child, fan, new, odyssey, planet, stars, supernova, unique, women",
+        "pubDate": "Tue, 20 Oct 2026 00:16:24 GMT"
+      },
       {
         "design_id": "8929632",
         "slug": "purple-glass-orb",
@@ -2338,23 +2363,23 @@
         "primary_keyword": "Futuristic Toy Robot T-Shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Mon, 21 Sep 2026 08:53:22 GMT"
-      },
-      {
-        "design_id": "61504659",
-        "slug": "futuristic-toy-robot-7",
-        "title": "Futuristic Toy Robot #7 T-Shirt",
-        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Robotic Tee",
-        "description": "Discover the Futuristic Toy Robot T-Shirt. High-tech robotic art blending playfulness and sci-fi innovation for everyday wear. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61504659_0/1718279030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #7 graphic design on a premium t-shirt",
-        "niche": "Engineer",
-        "secondary_niche": "science",
-        "primary_keyword": "Futuristic Toy Robot",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Sun, 20 Sep 2026 08:31:52 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "9025102",
+        "slug": "calm-yellow",
+        "title": "Calm Yellow T-Shirt",
+        "seo_title": "Calm Yellow T-Shirt | Minimalist Slogan Tee",
+        "description": "Shop the Calm Yellow T-Shirt featuring a powerful single word slogan. Minimalist, uplifting, and stylish. Perfect for everyday wear. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9025102_0/1586594894/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Calm Yellow T-Shirt with Minimalist Slogan Typography",
+        "niche": "Everyday",
+        "secondary_niche": "Everyday",
+        "primary_keyword": "Calm Yellow T-Shirt",
+        "tags": "blue, calm, cool, green, new, orange, pink, slogan, yellow",
+        "pubDate": "Tue, 20 Oct 2026 00:17:24 GMT"
+      },
       {
         "design_id": "8929328",
         "slug": "yellow-glass-orb",
@@ -2760,23 +2785,23 @@
         "primary_keyword": "silver angel t-shirt",
         "tags": "angel, angel wings, angels, bible, christ, christian apparel, christian clothing, christian designs, christian streetwear, christianity, heaven, jesus, jesus christ, religious, silver",
         "pubDate": "Mon, 21 Sep 2026 08:54:22 GMT"
-      },
-      {
-        "design_id": "66335039",
-        "slug": "a-silver-cross-2",
-        "title": "A Silver Cross #2 T-Shirt",
-        "seo_title": "Silver Cross T-Shirt | Christian Faith Apparel",
-        "description": "Express your faith with our Silver Cross T-Shirt. Premium quality Christian apparel featuring a striking silver cross design. Shop now for style and comfort.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66335039_0/1727002306/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "A Silver Cross #2 T-Shirt featuring a bold silver cross print for Christian faith",
-        "niche": "Religion",
-        "secondary_niche": "Faith",
-        "primary_keyword": "silver cross t-shirt",
-        "tags": "cross, bible, christ, christian, christianity, clothing, crosses, faith, god, jesus, jesus christ, religion, religious, silver",
-        "pubDate": "Sun, 20 Sep 2026 08:32:52 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "9303175",
+        "slug": "yin-yang-triangle-orange-yellow-and-green",
+        "title": "Yin Yang Triangle - Orange, Yellow and Green T-Shirt",
+        "seo_title": "Yin Yang Triangle Orange Yellow Green T-Shirt",
+        "description": "Discover the Yin Yang Triangle Orange, Yellow and Green T-Shirt featuring ancient Chinese philosophy and 12 zodiac signs. Shop this unique design today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9303175_0/1587403635/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Yin Yang Triangle Orange Yellow and Green T-Shirt Design",
+        "niche": "Astronomy",
+        "secondary_niche": "Math",
+        "primary_keyword": "Yin Yang T-Shirt",
+        "tags": "yin yang, child, chinese, circle, dark, light, negative, positive, universe, woman, yin",
+        "pubDate": "Tue, 20 Oct 2026 00:18:24 GMT"
+      },
       {
         "design_id": "9128798",
         "slug": "three-rubik-cubes-in-a-triangle-pink-red-and-light",
@@ -3182,23 +3207,23 @@
         "primary_keyword": "Silver Letter M T-Shirt",
         "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
         "pubDate": "Mon, 21 Sep 2026 08:55:22 GMT"
-      },
-      {
-        "design_id": "8909931",
-        "slug": "rubiks-cube-red-blue-yellow-colours",
-        "title": "Rubik's Cube - Red, Blue, Yellow Colours T-Shirt",
-        "seo_title": "Rubik's Cube Retro T-Shirt | Puzzle Game Tee",
-        "description": "Discover the ultimate Rubik's Cube t-shirt featuring a unique snow globe 3D design. Perfect gift for puzzle game fans and toy enthusiasts.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8909931_1/1586179510/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_2_2_465x,s_630,q_90.jpg",
-        "image_alt": "Rubik's Cube Red Blue Yellow Colours Snow Globe T-Shirt",
-        "niche": "Gaming",
-        "secondary_niche": "Math",
-        "primary_keyword": "Rubiks Cube T-Shirt",
-        "tags": "rubik cube, award, blue, colors, cube, game, globe, kids, rubik, snow, toy, yellow",
-        "pubDate": "Sun, 20 Sep 2026 08:33:52 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15377205",
+        "slug": "biomedical-engineer-in-blue-color-text",
+        "title": "Biomedical Engineer in Blue Color Text T-Shirt",
+        "seo_title": "Biomedical Engineer T-Shirt | Medical Engineering Tee",
+        "description": "Showcase your profession with this Biomedical Engineer T-Shirt. Perfect medical engineering tee featuring blue text for science professionals.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15377205_0/1603548489/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Biomedical Engineer in Blue Color Text T-Shirt front view",
+        "niche": "Engineer",
+        "secondary_niche": "science",
+        "primary_keyword": "Biomedical Engineer T-Shirt",
+        "tags": "biomedical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 20 Oct 2026 00:19:24 GMT"
+      },
       {
         "design_id": "15382880",
         "slug": "chemical-engineer-in-purple-color-text",
@@ -3604,23 +3629,23 @@
         "primary_keyword": "futuristic toy robot t-shirt",
         "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
         "pubDate": "Mon, 21 Sep 2026 08:56:22 GMT"
-      },
-      {
-        "design_id": "61505129",
-        "slug": "futuristic-toy-robot-12",
-        "title": "Futuristic Toy Robot #12 T-Shirt",
-        "seo_title": "Futuristic Toy Robot T-Shirt | Sci-Fi Graphic Tee",
-        "description": "Discover the Futuristic Toy Robot #12 T-Shirt. High-tech robotic art blending playfulness and innovation. Perfect sci-fi gift for tech lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61505129_0/1718280206/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Futuristic Toy Robot #12 T-Shirt with high-tech robotic character design",
-        "niche": "Engineer",
-        "secondary_niche": "Physics",
-        "primary_keyword": "futuristic toy robot t-shirt",
-        "tags": "toy robot, ai art, digital art, digital artwork, futuristic, robot, robotech, robotics, robots, robots design, toy",
-        "pubDate": "Sun, 20 Sep 2026 08:34:52 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "8909580",
+        "slug": "funny-and-colourful-slogan-this-is-my-boobs-now-ch",
+        "title": "Funny and Colourful Slogan - This Is My Boobs, Now Check My Bum T-Shirt",
+        "seo_title": "Funny Slogan T-Shirt | Colourful Humorous Text Tee",
+        "description": "Lighten up your day with this funny and colourful slogan t-shirt. A vibrant, humorous text design perfect for anyone who loves a good laugh.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8909580_0/1586177861/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_5_152_461x,s_630,q_90.jpg",
+        "image_alt": "Funny and colourful slogan t-shirt with playful text design",
+        "niche": "Funny Text",
+        "secondary_niche": "Slogan",
+        "primary_keyword": "funny slogan t-shirt",
+        "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
+        "pubDate": "Tue, 20 Oct 2026 00:20:24 GMT"
+      },
       {
         "design_id": "65143806",
         "slug": "bikers-and-rebels-digital-art-16",
@@ -4026,23 +4051,23 @@
         "primary_keyword": "silver angel t-shirt",
         "tags": "angel, angel wings, angels, bible, christ, christian apparel, christian clothing, christian designs, christian streetwear, christianity, heaven, jesus, jesus christ, religious, silver",
         "pubDate": "Mon, 21 Sep 2026 08:57:22 GMT"
-      },
-      {
-        "design_id": "66335447",
-        "slug": "a-silver-cross-6",
-        "title": "A Silver Cross #6 T-Shirt",
-        "seo_title": "Silver Cross T-Shirt | Christian Faith Apparel",
-        "description": "Express your faith with our Silver Cross t-shirt. High-quality Christian apparel combining style and spiritual meaning. Shop now on TeePublic!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66335447_0/1727003323/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "A Silver Cross #6 T-Shirt featuring a striking silver cross design for Christian faith",
-        "niche": "Religion",
-        "secondary_niche": "Christianity",
-        "primary_keyword": "silver cross t-shirt",
-        "tags": "cross, bible, christ, christian, christianity, clothing, crosses, faith, god, jesus, jesus christ, religion, religious, silver",
-        "pubDate": "Sun, 20 Sep 2026 08:35:52 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "15376121",
+        "slug": "aerospace-engineer-in-green-color-text",
+        "title": "Aerospace Engineer in Green Color Text T-Shirt",
+        "seo_title": "Aerospace Engineer Green Text T-Shirt",
+        "description": "Shop the Aerospace Engineer in Green Color Text T-Shirt. Perfect gift for aerospace engineers, aviation fans, and space science enthusiasts. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15376121_0/1603545658/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Aerospace Engineer in Green Color Text T-Shirt",
+        "niche": "Engineer",
+        "secondary_niche": "Astronomy",
+        "primary_keyword": "Aerospace Engineer T-Shirt",
+        "tags": "aerospace engineer, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 20 Oct 2026 00:21:24 GMT"
+      },
       {
         "design_id": "14277785",
         "slug": "silver-alphabet-in-a-diamond-shape",
@@ -4448,23 +4473,23 @@
         "primary_keyword": "Silver Letter N T-Shirt",
         "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
         "pubDate": "Mon, 21 Sep 2026 08:58:22 GMT"
-      },
-      {
-        "design_id": "8954175",
-        "slug": "golden-letter-k",
-        "title": "Golden Letter K T-Shirt",
-        "seo_title": "Golden Letter K T-Shirt | Typography Apparel",
-        "description": "Shop the Golden Letter K T-Shirt featuring a stunning gold typography design. Perfect for teachers, alphabet lovers, and everyday wear. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8954175_0/1586345800/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Golden Letter K T-Shirt with typography design",
-        "niche": "Teacher",
-        "secondary_niche": "Math",
-        "primary_keyword": "Golden Letter K T-Shirt",
-        "tags": "26, alpha, alphabet, century, english, golden, greek, latin, letter, wikipedia",
-        "pubDate": "Sun, 20 Sep 2026 08:36:52 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "12284970",
+        "slug": "corona-slogan-the-corona-virus",
+        "title": "Corona Slogan - The Corona Virus T-Shirt",
+        "seo_title": "Funny Corona Virus T-Shirt | Pandemic Humor Tee",
+        "description": "Lighten up tough times with our funny Corona virus t-shirt. Featuring humorous corona slogans, this cute pandemic tee brings a touch of relief.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Funny Corona Virus T-Shirt with Pandemic Slogan Design",
+        "niche": "science",
+        "secondary_niche": "",
+        "primary_keyword": "Corona Virus T-Shirt",
+        "tags": "alcohol, blue, corona, coronavirus, covid, cute, face, funny, mens clothing, pandemic, summer, virus",
+        "pubDate": "Tue, 20 Oct 2026 00:22:24 GMT"
+      },
       {
         "design_id": "12330841",
         "slug": "octacore-green-gemstone",
@@ -4870,23 +4895,23 @@
         "primary_keyword": "Silver Letter W T-Shirt",
         "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
         "pubDate": "Mon, 21 Sep 2026 08:59:22 GMT"
-      },
-      {
-        "design_id": "8979764",
-        "slug": "silver-letter-f",
-        "title": "Silver Letter F T-Shirt",
-        "seo_title": "Silver Letter F T-Shirt | Alphabet Typography Tee",
-        "description": "Shop the Silver Letter F T-Shirt featuring a sleek metallic chrome typography design. Perfect for alphabet lovers and everyday wear. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8979764_0/1586434052/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Silver Letter F T-Shirt with metallic chrome alphabet typography design",
-        "niche": "Teacher",
-        "secondary_niche": "science",
-        "primary_keyword": "Silver Letter F T-Shirt",
-        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
-        "pubDate": "Sun, 20 Sep 2026 08:37:52 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "8909484",
+        "slug": "funny-and-colourful-slogan-this-is-boobs-territory",
+        "title": "Funny and Colourful Slogan - This Is Boobs Territory T-Shirt",
+        "seo_title": "Funny and Colourful Slogan T-Shirt",
+        "description": "Brighten your day with this funny and colourful slogan t-shirt. A playful, vibrant design bringing a lighter side to your wardrobe. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/8909484_0/1586177598/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_5_71_461x,s_630,q_90.jpg",
+        "image_alt": "Funny and colourful slogan t-shirt design with vibrant text",
+        "niche": "Funny Text",
+        "secondary_niche": "Typography",
+        "primary_keyword": "funny slogan t-shirt",
+        "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
+        "pubDate": "Tue, 20 Oct 2026 00:23:24 GMT"
+      },
       {
         "design_id": "65145290",
         "slug": "bikers-and-rebels-digital-art-35",
@@ -5292,20 +5317,6 @@
         "primary_keyword": "Silver Cross T-Shirt",
         "tags": "cross, bible, christ, christian, christianity, clothing, crosses, faith, god, jesus, jesus christ, religion, religious, silver",
         "pubDate": "Mon, 21 Sep 2026 09:00:22 GMT"
-      },
-      {
-        "design_id": "66335283",
-        "slug": "a-silver-angel-4",
-        "title": "A Silver Angel #4 T-Shirt",
-        "seo_title": "Silver Angel #4 T-Shirt | Christian Apparel",
-        "description": "Shop the Silver Angel #4 T-Shirt featuring a stunning silver angel design. High-quality Christian apparel and spiritual clothing for everyday style.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/66335283_0/1727002881/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "A Silver Angel #4 T-Shirt with striking silver angel wings design",
-        "niche": "Religion",
-        "secondary_niche": "Christianity",
-        "primary_keyword": "silver angel t-shirt",
-        "tags": "angel, angel wings, angels, bible, christ, christian apparel, christian clothing, christian designs, christian streetwear, christianity, heaven, jesus, jesus christ, religious, silver",
-        "pubDate": "Sun, 20 Sep 2026 08:38:52 GMT"
       }
     ]
   }
