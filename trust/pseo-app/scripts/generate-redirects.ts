@@ -7,6 +7,7 @@ const PRODUCTS_FILE = path.join(DATA_DIR, 'products.json');
 const CSV_FILE = path.join(__dirname, '../../Master Database.csv');
 const NORM_CSV_FILE = path.join(__dirname, '../../Normalized Master Database.csv');
 const OUT_FILE = path.join(DATA_DIR, 'legacyRedirects.json');
+const VALID_SLUGS_FILE = path.join(DATA_DIR, 'validProductSlugs.json');
 
 function main() {
   console.log('Generating legacy redirects mapping...');
@@ -19,6 +20,8 @@ function main() {
     const s = source.trim().toLowerCase().replace(/^\/+|\/+$/g, '');
     const t = target.trim().replace(/^\/+|\/+$/g, '');
     if (!s || !t || s === t) return;
+    // CRITICAL SEO FIX: If source slug is already an active, valid product, NEVER redirect it!
+    if (validProductSlugs.has(s)) return;
     if (validProductSlugs.has(t)) {
       if (!mapping[s]) {
         mapping[s] = t;
@@ -88,7 +91,9 @@ function main() {
   });
 
   fs.writeFileSync(OUT_FILE, JSON.stringify(mapping, null, 2), 'utf-8');
+  fs.writeFileSync(VALID_SLUGS_FILE, JSON.stringify(Array.from(validProductSlugs), null, 2), 'utf-8');
   console.log(`Generated ${Object.keys(mapping).length} legacy redirects to ${OUT_FILE}`);
+  console.log(`Saved ${validProductSlugs.size} valid product slugs to ${VALID_SLUGS_FILE}`);
 }
 
 main();
