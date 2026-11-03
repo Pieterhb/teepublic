@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-02T00:47:25.495Z",
-  "lastAdvanceDate": "2026-11-02",
-  "dayCounter": 74,
-  "totalPinned": 814,
+  "lastUpdated": "2026-11-03T10:57:10.857Z",
+  "lastAdvanceDate": "2026-11-03",
+  "dayCounter": 75,
+  "totalPinned": 825,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -817,10 +817,35 @@
     "63418459",
     "15383877",
     "12355702",
-    "63938505"
+    "63938505",
+    "9683704",
+    "63938501",
+    "61832357",
+    "9028356",
+    "9076218",
+    "61467039",
+    "15384373",
+    "63418978",
+    "15433044",
+    "12471525",
+    "63418403"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "9683704",
+        "slug": "shrapnel-from-an-exploded-star",
+        "title": "Shrapnel from an Exploded Star T-Shirt",
+        "seo_title": "Exploded Star Galaxy T-Shirt | NASA Space Apparel",
+        "description": "Explore the universe with our NASA-inspired exploded star galaxy t-shirt. Featuring stunning public domain space imagery, perfect for astronomy lovers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9683704_0/1588338699/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Shrapnel from an Exploded Star Galaxy T-Shirt featuring NASA space image",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "galaxy t-shirt",
+        "tags": "free, galaxy, moon, nasa, online, planet, solar, space, star, sun, unique",
+        "pubDate": "Tue, 03 Nov 2026 10:47:10 GMT"
+      },
       {
         "design_id": "9682962",
         "slug": "orion-rainbow-of-infrared-light",
@@ -1226,23 +1251,23 @@
         "primary_keyword": "Yin Yang T-Shirt",
         "tags": "yin yang, ancient, bad, chinese, cosmology, dark, energy, good, light, positive, yin",
         "pubDate": "Mon, 05 Oct 2026 10:22:01 GMT"
-      },
-      {
-        "design_id": "8927765",
-        "slug": "gas-planet",
-        "title": "Gas Planet T-Shirt",
-        "seo_title": "Gas Planet T-Shirt | Space & Galaxy Tee",
-        "description": "Explore the cosmos with our stunning Gas Planet T-Shirt. Featuring a beautiful digital galaxy design with stars and interstellar dust. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8927765_0/1586246882/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Gas Planet T-Shirt featuring a stunning digital galaxy and stars design",
-        "niche": "Astronomy",
-        "secondary_niche": "Physics",
-        "primary_keyword": "Gas Planet T-Shirt",
-        "tags": "3d, child, fan, new, odyssey, planet, space, stars, unique, women",
-        "pubDate": "Sun, 04 Oct 2026 09:41:40 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "63938501",
+        "slug": "ride-with-the-bald-eagle-on-a-motorcyle-5",
+        "title": "Ride with the Bald Eagle on a Motorcyle #5 T-Shirt",
+        "seo_title": "Bald Eagle Motorcycle T-Shirt | Patriotic Biker Tee",
+        "description": "Embrace freedom with our Bald Eagle Motorcycle T-Shirt. Featuring a majestic eagle and powerful bike graphic, perfect for patriotic bikers.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63938501_0/1722695807/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Bald eagle soaring next to a motorcycle graphic t-shirt design",
+        "niche": "Bird",
+        "secondary_niche": "hobbies",
+        "primary_keyword": "bald eagle t-shirt",
+        "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
+        "pubDate": "Tue, 03 Nov 2026 10:48:10 GMT"
+      },
       {
         "design_id": "63938857",
         "slug": "ride-with-the-bald-eagle-on-a-motorcyle-17",
@@ -1648,23 +1673,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
         "pubDate": "Mon, 05 Oct 2026 10:23:01 GMT"
-      },
-      {
-        "design_id": "64964526",
-        "slug": "bikers-and-rebels-art-34",
-        "title": "Bikers and Rebels Art #34 T-Shirt",
-        "seo_title": "Biker Wolf T-Shirt | Rebel Motorcycle Apparel",
-        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Capture the spirit of freedom and rebellion on the open road. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/64964526_0/1724590803/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Biker t-shirt featuring powerful wolf and motorcycle design",
-        "niche": "hobbies",
-        "secondary_niche": "animals",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
-        "pubDate": "Sun, 04 Oct 2026 09:42:40 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "61832357",
+        "slug": "canada-monster-truck-66",
+        "title": "Canada Monster Truck #66 T-Shirt",
+        "seo_title": "Canada Monster Truck #66 T-Shirt",
+        "description": "Unleash the beast with our Canada Monster Truck #66 T-Shirt. High-octane print-on-demand apparel for ultimate truck fans. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61832357_0/1719052041/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Canada Monster Truck #66 T-Shirt design featuring high-octane truck artwork",
+        "niche": "hobbies",
+        "secondary_niche": "animals",
+        "primary_keyword": "Canada Monster Truck",
+        "tags": "monster truck, ai art, ai generated, artificial intelligence, canada, digital art, digital artwork, monster trucks, monsters, truck",
+        "pubDate": "Tue, 03 Nov 2026 10:49:10 GMT"
+      },
       {
         "design_id": "61833586",
         "slug": "italy-monster-truck-60",
@@ -2070,23 +2095,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
         "pubDate": "Mon, 05 Oct 2026 10:24:01 GMT"
-      },
-      {
-        "design_id": "64966790",
-        "slug": "bikers-and-rebels-art-42",
-        "title": "Bikers and Rebels Art #42 T-Shirt",
-        "seo_title": "Biker Wolf Motorcycle T-Shirt",
-        "description": "Rev up your style with this striking wolf and motorcycle t-shirt. Perfect for bikers and rebels who crave freedom on the open road. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/64966790_0/1724593063/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Striking wolf and motorcycle graphic t-shirt for bikers and rebels",
-        "niche": "Animals",
-        "secondary_niche": "Hobbies",
-        "primary_keyword": "biker wolf t-shirt",
-        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
-        "pubDate": "Sun, 04 Oct 2026 09:43:40 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "9028356",
+        "slug": "life-red",
+        "title": "Life Red T-Shirt",
+        "seo_title": "Life Red T-Shirt | Minimalist Word Tee",
+        "description": "Make a statement with our Life Red T-Shirt. Featuring a powerful single-word minimalist design, this comfortable tee sparks curiosity and conversation.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9028356_0/1586604310/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Life Red T-Shirt with minimalist single word typography",
+        "niche": "Everyday",
+        "secondary_niche": "",
+        "primary_keyword": "Life T-Shirt",
+        "tags": "blue, cool, green, life, new, orange, pink, slogan, yellow",
+        "pubDate": "Tue, 03 Nov 2026 10:50:10 GMT"
+      },
       {
         "design_id": "9077025",
         "slug": "lover-yellow",
@@ -2492,23 +2517,23 @@
         "primary_keyword": "Piano T-Shirt",
         "tags": "piano, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, pianist, piano player, rock, rock and roll",
         "pubDate": "Mon, 05 Oct 2026 10:25:01 GMT"
-      },
-      {
-        "design_id": "65311464",
-        "slug": "musical-instrument-clarinet-34",
-        "title": "Musical Instrument - Clarinet #34 T-Shirt",
-        "seo_title": "Clarinet T-Shirt | Music Lover Apparel",
-        "description": "Experience the elegance of music with our stunning clarinet digital art t-shirt. Perfect gift for musicians, orchestra members, and clarinet players.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65311464_0/1725114980/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Musical Instrument Clarinet Digital Art T-Shirt",
-        "niche": "Music",
-        "secondary_niche": "Instrument",
-        "primary_keyword": "Clarinet T-Shirt",
-        "tags": "clarinet, clarinet player, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
-        "pubDate": "Sun, 04 Oct 2026 09:44:40 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "9076218",
+        "slug": "lover-light-blue",
+        "title": "Lover Light Blue T-Shirt",
+        "seo_title": "Lover Light Blue T-Shirt | Minimalist Word Tee",
+        "description": "Shop the Lover Light Blue T-Shirt featuring a powerful single word slogan. Minimalist, cool, and comfortable everyday typography apparel.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9076218_0/1586771619/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Lover Light Blue T-Shirt with minimalist typography",
+        "niche": "Everyday",
+        "secondary_niche": "Typography",
+        "primary_keyword": "Lover Light Blue T-Shirt",
+        "tags": "lover word, blue, cool, green, lover, new, orange, pink, slogan, yellow",
+        "pubDate": "Tue, 03 Nov 2026 10:51:10 GMT"
+      },
       {
         "design_id": "9075545",
         "slug": "live-light-blue",
@@ -2914,23 +2939,23 @@
         "primary_keyword": "flute t-shirt",
         "tags": "flute, digital, flute player, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
         "pubDate": "Mon, 05 Oct 2026 10:26:01 GMT"
-      },
-      {
-        "design_id": "65311888",
-        "slug": "musical-instrument-trumpet-38",
-        "title": "Musical Instrument - Trumpet #38 T-Shirt",
-        "seo_title": "Trumpet T-Shirt - Musical Instrument Art",
-        "description": "Discover our stunning Trumpet #38 T-Shirt. High-quality apparel featuring vibrant brass instrument digital art. Perfect gift for musicians and music lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65311888_0/1725115676/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Musical Instrument Trumpet #38 T-Shirt Design",
-        "niche": "Music",
-        "secondary_niche": "Instrument",
-        "primary_keyword": "Trumpet T-Shirt",
-        "tags": "trumpet, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll, trumpet player",
-        "pubDate": "Sun, 04 Oct 2026 09:45:40 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "61467039",
+        "slug": "sacred-geometry-art-18",
+        "title": "Sacred Geometry Art #18 T-Shirt",
+        "seo_title": "Sacred Geometry Art T-Shirt | Mystic Universe Tee",
+        "description": "Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61467039_0/1718197953/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Sacred Geometry Art #18 T-Shirt with mystic patterns",
+        "niche": "Math",
+        "secondary_niche": "Physics",
+        "primary_keyword": "sacred geometry art",
+        "tags": "geometry, ai art, digital art, digital artwork, geometry shapes, meditation, sacred geometry",
+        "pubDate": "Tue, 03 Nov 2026 10:52:10 GMT"
+      },
       {
         "design_id": "61465344",
         "slug": "sacred-geometry-art-1",
@@ -3336,23 +3361,23 @@
         "primary_keyword": "Silver Letter V T-Shirt",
         "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
         "pubDate": "Mon, 05 Oct 2026 10:27:01 GMT"
-      },
-      {
-        "design_id": "8981154",
-        "slug": "silver-letter-s",
-        "title": "Silver Letter S T-Shirt",
-        "seo_title": "Silver Letter S T-Shirt | Alphabet Typography Tee",
-        "description": "Shop the Silver Letter S T-Shirt featuring a sleek chrome alphabet design. Perfect for everyday wear, teachers, and alphabet lovers. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8981154_0/1586438018/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Silver Letter S T-Shirt featuring metallic chrome alphabet typography",
-        "niche": "Teacher",
-        "secondary_niche": "Math",
-        "primary_keyword": "Silver Letter S T-Shirt",
-        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
-        "pubDate": "Sun, 04 Oct 2026 09:46:40 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15384373",
+        "slug": "computer-engineer-in-black-color-text",
+        "title": "Computer Engineer in Black Color Text T-Shirt",
+        "seo_title": "Computer Engineer T-Shirt | Typography Apparel",
+        "description": "Shop the Computer Engineer in Black Color Text T-Shirt. Perfect for hardware and software professionals. Comfortable fit for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15384373_0/1603564891/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Computer Engineer in Black Color Text T-Shirt mockup",
+        "niche": "Engineer",
+        "secondary_niche": "Developer",
+        "primary_keyword": "Computer Engineer T-Shirt",
+        "tags": "computer engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 03 Nov 2026 10:53:10 GMT"
+      },
       {
         "design_id": "15407004",
         "slug": "electrical-engineer-in-purple-color-text",
@@ -3758,23 +3783,23 @@
         "primary_keyword": "Biomedical Engineer T-Shirt",
         "tags": "biomedical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
         "pubDate": "Mon, 05 Oct 2026 10:28:01 GMT"
-      },
-      {
-        "design_id": "15382875",
-        "slug": "chemical-engineer-in-pink-color-text",
-        "title": "Chemical Engineer in Pink Color Text T-Shirt",
-        "seo_title": "Chemical Engineer T-Shirt | Pink Text Tee",
-        "description": "Showcase your profession with this Chemical Engineer in Pink Color Text T-Shirt. Perfect for chemical engineers and STEM professionals.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/15382875_0/1603560608/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
-        "image_alt": "Chemical Engineer in Pink Color Text T-Shirt flat lay",
-        "niche": "Engineer",
-        "secondary_niche": "science",
-        "primary_keyword": "Chemical Engineer T-Shirt",
-        "tags": "chemical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
-        "pubDate": "Sun, 04 Oct 2026 09:47:40 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "63418978",
+        "slug": "green-and-gold-rugby-player-64",
+        "title": "Green and Gold Rugby Player #64 T-Shirt",
+        "seo_title": "Green and Gold Rugby Player #64 T-Shirt",
+        "description": "Embrace South African rugby spirit with our Green and Gold Rugby Player #64 T-Shirt. Perfect comfort and durability for true fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63418978_0/1721814882/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #64 T-Shirt for South African Rugby Fans",
+        "niche": "Rugby",
+        "secondary_niche": "Sports",
+        "primary_keyword": "Green and Gold Rugby T-Shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Tue, 03 Nov 2026 10:54:10 GMT"
+      },
       {
         "design_id": "63418459",
         "slug": "green-and-gold-rugby-player-55",
@@ -4180,23 +4205,23 @@
         "primary_keyword": "guitar t-shirt",
         "tags": "guitar, digital, guitar player, guitarist, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
         "pubDate": "Mon, 05 Oct 2026 10:29:01 GMT"
-      },
-      {
-        "design_id": "65311043",
-        "slug": "musical-instrument-violin-29",
-        "title": "Musical Instrument - Violin #29 T-Shirt",
-        "seo_title": "Violin T-Shirt Musical Instrument Art",
-        "description": "Experience the grace of music with our stunning violin digital art T-shirt. A perfect gift for music lovers, violinists, and orchestra enthusiasts.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65311043_0/1725114136/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Musical Instrument Violin #29 T-Shirt Display",
-        "niche": "Music",
-        "secondary_niche": "Instrument",
-        "primary_keyword": "Violin T-Shirt",
-        "tags": "violin, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll, violin player, violinist",
-        "pubDate": "Sun, 04 Oct 2026 09:48:40 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "15433044",
+        "slug": "environmental-engineer-in-pink-color-text",
+        "title": "Environmental Engineer in Pink Color Text T-Shirt",
+        "seo_title": "Environmental Engineer Pink Text T-Shirt",
+        "description": "Showcase your profession with this Environmental Engineer in Pink Color Text T-Shirt. Perfect gift for environmental engineers. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15433044_0/1603708763/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Environmental Engineer in Pink Color Text T-Shirt displayed on a model",
+        "niche": "Engineer",
+        "secondary_niche": "science",
+        "primary_keyword": "Environmental Engineer T-Shirt",
+        "tags": "environmental engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Tue, 03 Nov 2026 10:55:10 GMT"
+      },
       {
         "design_id": "15383877",
         "slug": "civil-engineer-in-pink-color-text",
@@ -4602,23 +4627,23 @@
         "primary_keyword": "Silver Letter R T-Shirt",
         "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
         "pubDate": "Mon, 05 Oct 2026 10:30:01 GMT"
-      },
-      {
-        "design_id": "8979758",
-        "slug": "silver-letter-d",
-        "title": "Silver Letter D T-Shirt",
-        "seo_title": "Silver Letter D T-Shirt | Alphabet Typography Tee",
-        "description": "Shop the Silver Letter D T-Shirt featuring a sleek chrome alphabet design. Perfect typography gift for teachers and alphabet enthusiasts. Order yours today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8979758_0/1586434017/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Silver Letter D T-Shirt with metallic typography design",
-        "niche": "Teacher",
-        "secondary_niche": "",
-        "primary_keyword": "Silver Letter D T-Shirt",
-        "tags": "26, alphabet, century, chrome, english, greek, latin, letter, silver, wikipedia",
-        "pubDate": "Sun, 04 Oct 2026 09:49:40 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "12471525",
+        "slug": "birthday-vintage-year-five-years-old",
+        "title": "Birthday Vintage Year - Five Years Old T-Shirt",
+        "seo_title": "Vintage 5 Years Old T-Shirt | Birthday Gift",
+        "description": "Celebrate turning 5 with this vintage birthday year t-shirt. Perfect gift for five-year-olds available on multiple products.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12471525_0/1595584013/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage Five Years Old T-Shirt Birthday Design",
+        "niche": "Science",
+        "secondary_niche": "",
+        "primary_keyword": "Five Years Old T-Shirt",
+        "tags": "birthday, christmas, cool, cute, fun, funny, music, party, science",
+        "pubDate": "Tue, 03 Nov 2026 10:56:10 GMT"
+      },
       {
         "design_id": "12355702",
         "slug": "blue-square-shape-gemstone",
@@ -5024,23 +5049,23 @@
         "primary_keyword": "Colt Revolver T-Shirt",
         "tags": "colt revolver, cowboy, era, gunslinger, old west, revolver, rifle, spurs, usa, western",
         "pubDate": "Mon, 05 Oct 2026 10:31:01 GMT"
-      },
-      {
-        "design_id": "11547076",
-        "slug": "western-era-ox-head-skeleton",
-        "title": "Western Era - Ox Head Skeleton T-Shirt",
-        "seo_title": "Western Era Ox Head Skeleton T-Shirt",
-        "description": "Shop the Western Era Ox Head Skeleton T-Shirt. Celebrate the Old West with this vintage-style cowboy and outlaw themed graphic tee.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/11547076_0/1592761125/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Western Era Ox Head Skeleton T-Shirt graphic design",
-        "niche": "Animals",
-        "secondary_niche": "Science",
-        "primary_keyword": "Western T-Shirt",
-        "tags": "cowboy, era, gunslinger, old west, revolver, rifle, usa, western",
-        "pubDate": "Sun, 04 Oct 2026 09:50:40 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "63418403",
+        "slug": "green-and-gold-rugby-player-51",
+        "title": "Green and Gold Rugby Player #51 T-Shirt",
+        "seo_title": "Green and Gold South Africa Rugby T-Shirt",
+        "description": "Embrace the spirit of South African rugby with our green and gold rugby player t-shirt. Perfect for die-hard fans cheering from the stands.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63418403_0/1721814166/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold South Africa Rugby Player #51 T-Shirt",
+        "niche": "Sports",
+        "secondary_niche": "Rugby",
+        "primary_keyword": "South Africa rugby t-shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Tue, 03 Nov 2026 10:57:10 GMT"
+      },
       {
         "design_id": "63938505",
         "slug": "ride-with-the-bald-eagle-on-a-motorcyle-6",
@@ -5446,20 +5471,6 @@
         "primary_keyword": "Saxophone T-Shirt",
         "tags": "saxophone, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll, saxophone player, saxophonist",
         "pubDate": "Mon, 05 Oct 2026 10:32:01 GMT"
-      },
-      {
-        "design_id": "65311468",
-        "slug": "musical-instrument-clarinet-36",
-        "title": "Musical Instrument - Clarinet #36 T-Shirt",
-        "seo_title": "Clarinet T-Shirt Musical Instrument Art",
-        "description": "Celebrate your passion for music with our stunning Clarinet T-Shirt. High-quality digital art apparel designed for clarinet players and music lovers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65311468_0/1725114995/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Clarinet Musical Instrument Digital Art T-Shirt",
-        "niche": "Music",
-        "secondary_niche": "Instrument",
-        "primary_keyword": "Clarinet T-Shirt",
-        "tags": "clarinet, clarinet player, digital, instrument, music, music is life, musical, musical instrument, musician, musician gift, orchestra, rock, rock and roll",
-        "pubDate": "Sun, 04 Oct 2026 09:51:40 GMT"
       }
     ]
   }
