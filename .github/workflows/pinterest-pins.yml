@@ -1,11 +1,14 @@
 name: Pinterest Daily 11-Board RSS Generation & Deploy
 
-# Runs idempotently 4 times daily at off-peak minutes (03:17, 09:17, 15:17, 21:17 UTC).
-# Generates exactly 1 fresh pin per board per calendar day (zero missed days, zero duplicates).
-# RSS feed buffer = 7 items per board, covering Pinterest's 24–72h scraper window.
+# Runs idempotently across off-peak daytime UTC slots (01:43, 05:43, 09:43, 13:43, 17:43 UTC).
+# Eliminates 7-hour runner delays and guarantees feed is populated early in the morning for Pinterest.
+# No evening runs (after 18:00 UTC) to prevent delayed runs from spilling across midnight.
 #
-# Self-Healing: If the workflow was missed for N days (e.g. due to GitHub outage or billing),
-# it auto-detects the gap and runs --advance --force for each missed day to fully catch up.
+# Generates exactly 1 fresh pin per board per calendar day (zero missed days, zero duplicates).
+# RSS feed buffer = 30 items per board, giving Pinterest a full 30-day window.
+#
+# Self-Healing: If missed for N days, generate-rss.mjs auto-detects the gap and
+# sequentially advances each missed day with proper non-future, non-crossing pubDates.
 #
 # 100% Free & Zero API Keys:
 #   1. Generates exactly 1 fresh, unpinned product pin for ALL 11 Pinterest boards every single day.
@@ -19,8 +22,9 @@ name: Pinterest Daily 11-Board RSS Generation & Deploy
 
 on:
   schedule:
-    # 4x daily off-peak schedule (03:17, 09:17, 15:17, 21:17 UTC)
-    - cron: '17 3,9,15,21 * * *'
+    # Off-peak daytime schedule: 01:43, 05:43, 09:43, 13:43, 17:43 UTC
+    # Guaranteed to advance early every day and never cross midnight unexpectedly
+    - cron: '43 1,5,9,13,17 * * *'
 
   # Trigger on pushes to master or main — ensures the workflow catches up
   # after any manual commit that might have interrupted the cron schedule.
@@ -49,8 +53,6 @@ env:
   NODE_VERSION: '22'
 
 # Only allow one run at a time to prevent race-condition duplicate pins.
-# A new trigger (e.g. manual dispatch) will QUEUE and wait for the running job to finish
-# rather than launching a concurrent instance that reads stale pinned_history.json.
 concurrency:
   group: pinterest-pins-deploy
   cancel-in-progress: false
@@ -86,53 +88,10 @@ jobs:
         run: npm ci --include=optional
 
       - name: Install Linux native bindings
-        run: npm install --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
+        run: npm install --no-save --os=linux --cpu=x64 @tailwindcss/oxide-linux-x64-gnu lightningcss-linux-x64-gnu
 
-      - name: Catch-up missed days + Daily Advance
+      - name: Daily 11-Board Advance & Self-Healing Catch-up
         run: |
-          # ── Self-Healing Catch-Up ──────────────────────────────────────────────
-          # Read the lastAdvanceDate from pinned_history.json.
-          # If it is more than 1 day behind today (UTC), run --advance --force
-          # for each missed day to bring the feeds fully up to date.
-          HISTORY_FILE="data/pinned_history.json"
-          LAST_ADVANCE=$(node -e "
-            const h = JSON.parse(require('fs').readFileSync('$HISTORY_FILE','utf8'));
-            console.log(h.lastAdvanceDate || '');
-          ")
-
-          TODAY=$(date -u +%Y-%m-%d)
-
-          if [ -z "$LAST_ADVANCE" ]; then
-            echo "ℹ️  No lastAdvanceDate found — treating as first run."
-            MISSED_DAYS=0
-          else
-            # Compute days since last advance
-            LAST_TS=$(date -d "$LAST_ADVANCE" +%s 2>/dev/null || date -jf "%Y-%m-%d" "$LAST_ADVANCE" +%s 2>/dev/null || echo 0)
-            TODAY_TS=$(date -d "$TODAY" +%s 2>/dev/null || date -jf "%Y-%m-%d" "$TODAY" +%s 2>/dev/null || echo 0)
-            if [ "$LAST_TS" -eq 0 ] || [ "$TODAY_TS" -eq 0 ]; then
-              echo "⚠️  Could not compute date gap — skipping catch-up."
-              MISSED_DAYS=0
-            else
-              DIFF_SECS=$((TODAY_TS - LAST_TS))
-              DIFF_DAYS=$((DIFF_SECS / 86400))
-              # Missed days = total gap minus today's own advance (1 day)
-              MISSED_DAYS=$(( DIFF_DAYS > 1 ? DIFF_DAYS - 1 : 0 ))
-            fi
-          fi
-
-          if [ "$MISSED_DAYS" -gt 0 ]; then
-            echo "⚠️  Detected $MISSED_DAYS missed day(s) since $LAST_ADVANCE. Catching up with back-dated pubDates..."
-            for i in $(seq 1 $MISSED_DAYS); do
-              CATCHUP_TS=$((LAST_TS + i * 86400))
-              MISSED_DATE=$(date -u -d "@$CATCHUP_TS" +%Y-%m-%d 2>/dev/null || date -u -r "$CATCHUP_TS" +%Y-%m-%d 2>/dev/null)
-              echo "--- Catch-up advance $i / $MISSED_DAYS for $MISSED_DATE ---"
-              node scripts/generate-rss.mjs --advance --force --date "$MISSED_DATE"
-            done
-          else
-            echo "✅ No missed days detected. Proceeding with normal daily advance."
-          fi
-
-          # ── Normal Daily Advance ───────────────────────────────────────────────
           if [ "${{ github.event.inputs.force }}" = "true" ]; then
             node scripts/generate-rss.mjs --advance --force
           else
@@ -155,7 +114,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add data/pinned_history.json public/rss/ public/sitemap*.xml
           if ! git diff --staged --quiet; then
             # Pull latest before committing to avoid stale overwrites
             git pull --rebase --autostash origin master
@@ -166,4 +125,3 @@ jobs:
           else
             echo "ℹ️ No feed changes to commit (already up to date today)."
           fi
-

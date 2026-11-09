@@ -279,6 +279,46 @@ function getCategoryTitle(slug) {
  * Tier 3: Global unpinned catalog fallback.
  * Strictly guarantees that once a product ID is pinned, it is NEVER emitted again.
  */
+/**
+ * Calculates a strictly bounded pubDate for a board.
+ * Guarantees:
+ * 1. Calendar date (UTC) strictly equals dayDateStr (never crosses into yesterday or tomorrow).
+ * 2. Timestamp is never in the future relative to execution time.
+ * 3. Timestamps are staggered across boards for organic distribution.
+ */
+function calculateBoardPubDate(dayDateStr, boardIndex) {
+  const dayMidnightMs = new Date(dayDateStr + 'T00:00:00.000Z').getTime();
+  const dayEndMs      = dayMidnightMs + 24 * 60 * 60 * 1000 - 1000;
+  const nowMs         = Date.now();
+
+  const isPastDay = dayDateStr < new Date().toISOString().slice(0, 10);
+  let baseMs;
+  if (isPastDay || TARGET_DATE) {
+    baseMs = new Date(dayDateStr + 'T12:00:00.000Z').getTime();
+  } else {
+    baseMs = nowMs;
+  }
+
+  // Stagger: board 0 earliest, board 10 latest
+  const staggerOffsetMs = (BOARDS.length - 1 - boardIndex) * BOARD_STAGGER_MINUTES * 60 * 1000;
+  let targetMs = baseMs - staggerOffsetMs;
+
+  // STRICT RULE 1: Never cross midnight into yesterday or tomorrow
+  if (targetMs < dayMidnightMs) {
+    targetMs = dayMidnightMs + (boardIndex + 1) * 15 * 1000; // 15s intervals after midnight
+  }
+  if (targetMs > dayEndMs) {
+    targetMs = dayEndMs - (BOARDS.length - boardIndex) * 1000;
+  }
+
+  // STRICT RULE 2: Never be in the future
+  if (targetMs > nowMs) {
+    targetMs = Math.max(dayMidnightMs, nowMs - (BOARDS.length - boardIndex) * 2000);
+  }
+
+  return new Date(targetMs).toUTCString();
+}
+
 function getNextCandidateForBoard(boardDef) {
   const { slug, keywords } = boardDef;
 
@@ -338,8 +378,43 @@ function createFeedItem(product, pubDateStr = new Date().toUTCString()) {
 
 // ── Processing: 1 New Pin for ALL 11 Boards Daily ─────────────────────────────
 
+function advanceOneDay(dayDateStr, isForceAdvance = false) {
+  const isAlreadyAdvanced = history.lastAdvanceDate === dayDateStr;
+  if (isAlreadyAdvanced && !isForceAdvance) {
+    console.log(`ℹ️ All 11 feeds have already been advanced for ${dayDateStr} (Day ${history.dayCounter}).`);
+    return false;
+  }
+
+  historyChanged = true;
+  console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${isForceAdvance ? 'FORCE ADVANCE' : 'Daily Advance'} for ${dayDateStr}):`);
+
+  BOARDS.forEach((board, boardIndex) => {
+    const selected = getNextCandidateForBoard(board);
+
+    if (selected) {
+      pinnedSet.add(String(selected.design_id));
+      if (selected.image_url) pinnedImageUrls.add(selected.image_url); // prevent same-image cross-board picks
+
+      const pubDateStr = calculateBoardPubDate(dayDateStr, boardIndex);
+      const newItem = createFeedItem(selected, pubDateStr);
+
+      // Prepend newest item to the top of the board's feed buffer
+      const currentFeed = history.boardFeeds[board.slug] || [];
+      history.boardFeeds[board.slug] = [newItem, ...currentFeed].slice(0, MAX_FEED_BUFFER);
+
+      console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id}) @ ${newItem.pubDate}`);
+    } else {
+      console.warn(`   ⚠️ [${board.slug}] Entire product catalog exhausted. No new product available.`);
+    }
+  });
+
+  // Advance day counter and record date
+  history.dayCounter += 1;
+  history.lastAdvanceDate = dayDateStr;
+  return true;
+}
+
 const todayUtcDate = TARGET_DATE || new Date().toISOString().slice(0, 10);
-const alreadyAdvancedToday = history.lastAdvanceDate === todayUtcDate;
 let historyChanged = false;
 
 console.log(`\n📅 Daily Pinterest RSS Engine — Day ${history.dayCounter} (Date: ${todayUtcDate})`);
@@ -354,61 +429,43 @@ if (isFirstRun && !IS_REBUILD_ONLY) {
   history.lastAdvanceDate = todayUtcDate;
   history.boardFeeds = {};
 
-  // Base timestamp for seeding: stagger backwards so NO board is in the future
-  const seedBaseTime = TARGET_DATE ? new Date(`${TARGET_DATE}T12:00:00Z`) : new Date();
-
   BOARDS.forEach((board, boardIndex) => {
     history.boardFeeds[board.slug] = [];
     const selected = getNextCandidateForBoard(board);
     if (selected) {
       pinnedSet.add(String(selected.design_id));
       if (selected.image_url) pinnedImageUrls.add(selected.image_url);
-      const staggerOffsetMs = (BOARDS.length - 1 - boardIndex) * BOARD_STAGGER_MINUTES * 60 * 1000;
-      const staggeredDate = new Date(seedBaseTime.getTime() - staggerOffsetMs);
-      history.boardFeeds[board.slug] = [createFeedItem(selected, staggeredDate.toUTCString())];
+      const staggeredDateStr = calculateBoardPubDate(todayUtcDate, boardIndex);
+      history.boardFeeds[board.slug] = [createFeedItem(selected, staggeredDateStr)];
       console.log(`   ✅ Seeded [${board.slug}]: "${selected.title}" (ID: ${selected.design_id})`);
     } else {
       console.warn(`   ⚠️ [${board.slug}] No candidate product available.`);
     }
   });
 } else if (IS_ADVANCE && !IS_REBUILD_ONLY) {
-  if (alreadyAdvancedToday && !IS_FORCE) {
-    console.log(`ℹ️ All 11 feeds have already been advanced for ${todayUtcDate} (Day ${history.dayCounter}).`);
+  // Built-in Self-Healing Catch-Up:
+  // If lastAdvanceDate is more than 1 day behind todayUtcDate, advance missed days sequentially
+  if (!TARGET_DATE && history.lastAdvanceDate && history.lastAdvanceDate < todayUtcDate) {
+    const lastMs = new Date(history.lastAdvanceDate + 'T00:00:00.000Z').getTime();
+    const todayMs = new Date(todayUtcDate + 'T00:00:00.000Z').getTime();
+    const gapDays = Math.round((todayMs - lastMs) / (24 * 60 * 60 * 1000));
+
+    if (gapDays > 1) {
+      const missedCount = gapDays - 1;
+      console.log(`⚠️ Detected ${missedCount} missed day(s) since ${history.lastAdvanceDate}. Running automatic catch-up...`);
+      for (let i = 1; i <= missedCount; i++) {
+        const missedDateStr = new Date(lastMs + i * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+        console.log(`\n--- Self-Healing Catch-up advance ${i} / ${missedCount} for ${missedDateStr} ---`);
+        advanceOneDay(missedDateStr, true);
+      }
+    }
+  }
+
+  // Normal advance for todayUtcDate
+  const advanced = advanceOneDay(todayUtcDate, IS_FORCE);
+  if (!advanced && !IS_FORCE) {
     console.log(`   Re-rendering XML feeds without adding duplicate pins.`);
     console.log(`   (Tip: Pass --force to add another pin batch manually).`);
-  } else {
-    historyChanged = true;
-    console.log(`⚡ Adding 1 fresh unpinned product to ALL 11 board feeds (${IS_FORCE ? 'FORCE ADVANCE' : 'Daily Advance'} for ${todayUtcDate}):`);
-
-    // Stagger backwards so board 0 is earliest and board 10 is at advanceBaseTime.
-    // This strictly guarantees that NO board's pubDate is in the future!
-    const advanceBaseTime = TARGET_DATE ? new Date(`${TARGET_DATE}T12:00:00Z`) : new Date();
-
-    BOARDS.forEach((board, boardIndex) => {
-      const selected = getNextCandidateForBoard(board);
-
-      if (selected) {
-        pinnedSet.add(String(selected.design_id));
-        if (selected.image_url) pinnedImageUrls.add(selected.image_url); // prevent same-image cross-board picks
-
-        // Stagger backwards: board 0 is offset earliest, board 10 is at advanceBaseTime
-        const staggerOffsetMs = (BOARDS.length - 1 - boardIndex) * BOARD_STAGGER_MINUTES * 60 * 1000;
-        const staggeredDate = new Date(advanceBaseTime.getTime() - staggerOffsetMs);
-        const newItem = createFeedItem(selected, staggeredDate.toUTCString());
-
-        // Prepend newest item to the top of the board's feed buffer
-        const currentFeed = history.boardFeeds[board.slug] || [];
-        history.boardFeeds[board.slug] = [newItem, ...currentFeed].slice(0, MAX_FEED_BUFFER);
-
-        console.log(`   ➕ [${board.slug}] Added: "${selected.title}" (ID: ${selected.design_id}) @ ${newItem.pubDate}`);
-      } else {
-        console.warn(`   ⚠️ [${board.slug}] Entire product catalog exhausted. No new product available.`);
-      }
-    });
-
-    // Advance day counter and record date
-    history.dayCounter += 1;
-    history.lastAdvanceDate = todayUtcDate;
   }
 }
 
@@ -452,10 +509,10 @@ function buildRssXml(boardSlug, title, items) {
       <guid isPermaLink="false">${escapeXml(uniqueGuid)}</guid>
       <title><![CDATA[${itemTitle}]]></title>
       <link>${escapeXml(productLink)}</link>
-      <description><![CDATA[${descriptionHtml}]]></description>
+      <description><![CDATA[${fullDesc}]]></description>
       <content:encoded><![CDATA[${descriptionHtml}]]></content:encoded>
       <pubDate>${item.pubDate || newestPubDate}</pubDate>
-      <media:content url="${escapeXml(imageUrl)}" medium="image" type="image/jpeg" />
+      <media:content url="${escapeXml(imageUrl)}" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="${escapeXml(imageUrl)}" />
       <enclosure url="${escapeXml(imageUrl)}" type="image/jpeg" length="0" />
     </item>`;
@@ -511,6 +568,15 @@ function performSelfAudit() {
     if (items.length > MAX_FEED_BUFFER) {
       console.error(`  ❌ [${board.slug}] Feed buffer exceeds MAX_FEED_BUFFER (${items.length} > ${MAX_FEED_BUFFER})`);
       errors++;
+    }
+
+    // Verify top item pubDate strictly matches lastAdvanceDate
+    if (items.length > 0 && history.lastAdvanceDate) {
+      const topDateStr = new Date(items[0].pubDate).toISOString().slice(0, 10);
+      if (topDateStr !== history.lastAdvanceDate) {
+        console.error(`  ❌ [${board.slug}] Top item pubDate (${topDateStr}) does not match lastAdvanceDate (${history.lastAdvanceDate})!`);
+        errors++;
+      }
     }
 
     const boardSeen = new Set();
