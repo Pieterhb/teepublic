@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:55:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:48:54 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-12353875</guid>
+      <title><![CDATA[Turquoise Oval Shape Gemstone T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/turquoise-and-blue-oval-shape-gemstone</link>
+      <description><![CDATA[Shop the Turquoise and Blue Oval Shape Gemstone T-Shirt featuring a computer-generated crystal design. Perfect for gem and crystal lovers everywhere. #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12353875_0/1595237359/i_m:bi_production_blanks_qe3008lhp5hquxmwp4a0_1462829017,c_1_0_x626,s_630,q_90.jpg" alt="Turquoise and blue oval shape gemstone graphic t-shirt design" /><p>Shop the Turquoise and Blue Oval Shape Gemstone T-Shirt featuring a computer-generated crystal design. Perfect for gem and crystal lovers everywhere. #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Tue, 10 Nov 2026 08:48:54 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12353875_0/1595237359/i_m:bi_production_blanks_qe3008lhp5hquxmwp4a0_1462829017,c_1_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12353875_0/1595237359/i_m:bi_production_blanks_qe3008lhp5hquxmwp4a0_1462829017,c_1_0_x626,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12353875_0/1595237359/i_m:bi_production_blanks_qe3008lhp5hquxmwp4a0_1462829017,c_1_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-12471709</guid>
       <title><![CDATA[Thirteen Years Old Vintage Birthday T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-11776891</guid>
-      <title><![CDATA[Iron Horse Western T-Shirt | Old West Cowboy Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/western-slogan-iron-horse</link>
-      <description><![CDATA[Celebrate the Old West with this Iron Horse Western T-Shirt. Featuring a classic cowboy and steam train design for history and Western fans. #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11776891_0/1593442195/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" alt="Western Slogan Iron Horse T-Shirt with Old West cowboy and steam train design" /><p>Celebrate the Old West with this Iron Horse Western T-Shirt. Featuring a classic cowboy and steam train design for history and Western fans. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Sun, 11 Oct 2026 00:14:34 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/11776891_0/1593442195/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11776891_0/1593442195/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/11776891_0/1593442195/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

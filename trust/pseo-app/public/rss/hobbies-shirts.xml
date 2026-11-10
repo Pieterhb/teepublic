@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Hobbies Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Nov 2026 00:47:48 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 08:40:54 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/hobbies-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Hobbies Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-hobbies-shirts-63315558</guid>
+      <title><![CDATA[Green and Gold Rugby Player T-Shirt | South Africa Fan Gear]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-37</link>
+      <description><![CDATA[Embrace South African rugby spirit with our Green and Gold Rugby Player T-Shirt. Perfect comfort and durability for die-hard fans. Shop now! #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63315558_0/1721660795/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold Rugby Player #37 T-Shirt for South Africa fans" /><p>Embrace South African rugby spirit with our Green and Gold Rugby Player T-Shirt. Perfect comfort and durability for die-hard fans. Shop now! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Tue, 10 Nov 2026 08:40:54 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63315558_0/1721660795/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63315558_0/1721660795/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63315558_0/1721660795/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-hobbies-shirts-63314085</guid>
       <title><![CDATA[Green and Gold Rugby Player #19 T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/63939011_0/1722696744/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63939011_0/1722696744/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/63939011_0/1722696744/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-hobbies-shirts-64963625</guid>
-      <title><![CDATA[Biker Wolf Motorcycle T-Shirt | Rebel Road Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-art-24</link>
-      <description><![CDATA[Rev up your style with this striking wolf and motorcycle biker t-shirt. Perfect for riders who live for the open road and rebel freedom. #teepublic #apparel #merch #animals]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/64963625_0/1724587237/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Biker wolf and motorcycle graphic t-shirt design" /><p>Rev up your style with this striking wolf and motorcycle biker t-shirt. Perfect for riders who live for the open road and rebel freedom. #teepublic #apparel #merch #animals</p>]]></content:encoded>
-      <pubDate>Sun, 11 Oct 2026 00:06:34 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/64963625_0/1724587237/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64963625_0/1724587237/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/64963625_0/1724587237/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
