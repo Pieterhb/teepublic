@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 08:44:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:18:37 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-61467027</guid>
+      <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Universe Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/sacred-geometry-art-14</link>
+      <description><![CDATA[Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop today! #teepublic #apparel #merch #math]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61467027_0/1718197912/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sacred Geometry Art #14 T-Shirt featuring intricate digital geometry shapes for meditation" /><p>Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop today! #teepublic #apparel #merch #math</p>]]></content:encoded>
+      <pubDate>Wed, 11 Nov 2026 08:18:37 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61467027_0/1718197912/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61467027_0/1718197912/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61467027_0/1718197912/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-61467040</guid>
       <title><![CDATA[Sacred Geometry Art T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-9303174</guid>
-      <title><![CDATA[Yin Yang Triangle Green Blue Purple T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/yin-yang-triangle-green-blue-and-purple</link>
-      <description><![CDATA[Discover the Yin Yang Triangle Green, Blue and Purple T-Shirt featuring Chinese philosophy and zodiac symbols. Perfect minimalist shirt for everyday wear. #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9303174_0/1587403632/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green Blue and Purple Yin Yang Triangle T-Shirt Design with Chinese Zodiac Dodecagon" /><p>Discover the Yin Yang Triangle Green, Blue and Purple T-Shirt featuring Chinese philosophy and zodiac symbols. Perfect minimalist shirt for everyday wear. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Mon, 12 Oct 2026 00:30:18 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9303174_0/1587403632/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9303174_0/1587403632/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9303174_0/1587403632/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

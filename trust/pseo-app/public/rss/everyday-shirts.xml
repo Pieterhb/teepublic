@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Everyday Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 08:46:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:20:37 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/everyday-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Everyday Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-everyday-shirts-9077206</guid>
+      <title><![CDATA[Sexy Green T-Shirt | Funny Slogan Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/sexy-green</link>
+      <description><![CDATA[Grab attention with this Sexy Green T-Shirt featuring a powerful single word slogan. Funny, uplifting, and stylish text tee for everyday wear. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9077206_0/1586774056/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sexy Green T-Shirt with funny word slogan design" /><p>Grab attention with this Sexy Green T-Shirt featuring a powerful single word slogan. Funny, uplifting, and stylish text tee for everyday wear. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Wed, 11 Nov 2026 08:20:37 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9077206_0/1586774056/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9077206_0/1586774056/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9077206_0/1586774056/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-everyday-shirts-9077234</guid>
       <title><![CDATA[Sexy Orange T-Shirt | Typography Slogan Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/8636332_0/1584993121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8636332_0/1584993121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8636332_0/1584993121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-everyday-shirts-8687839</guid>
-      <title><![CDATA[Sahara Desert Witch T-Shirt | Retro Book Cover Art]]></title>
-      <link>https://blackpantherstore.co.za/design/sahara-desert-witch-of-the-sahara-unique-art</link>
-      <description><![CDATA[Discover the vintage Sahara Desert Witch book cover art t-shirt. Featuring unique 1980s Afrikaans adventure series illustration. Shop retro style now! #teepublic #apparel #merch #reading]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8687839_1/1587382440/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sahara Desert Witch of the Sahara retro book cover art t-shirt front design" /><p>Discover the vintage Sahara Desert Witch book cover art t-shirt. Featuring unique 1980s Afrikaans adventure series illustration. Shop retro style now! #teepublic #apparel #merch #reading</p>]]></content:encoded>
-      <pubDate>Mon, 12 Oct 2026 00:32:18 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8687839_1/1587382440/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8687839_1/1587382440/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8687839_1/1587382440/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

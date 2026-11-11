@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Professions Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 08:47:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:21:37 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Professions Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-professions-shirts-15433869</guid>
+      <title><![CDATA[Marine Engineer T-Shirt | Blue Text Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/marine-engineer-in-blue-color-text</link>
+      <description><![CDATA[Showcase your profession with this Marine Engineer T-Shirt featuring blue text. Perfect gift for marine engineers, naval architects, and maritime pros. #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15433869_0/1603710696/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Marine Engineer in Blue Color Text T-Shirt displayed on a mockup" /><p>Showcase your profession with this Marine Engineer T-Shirt featuring blue text. Perfect gift for marine engineers, naval architects, and maritime pros. #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Wed, 11 Nov 2026 08:21:37 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15433869_0/1603710696/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15433869_0/1603710696/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15433869_0/1603710696/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-professions-shirts-15467425</guid>
       <title><![CDATA[Petroleum Engineer T-Shirt | Black Text Design]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61833575_0/1719054614/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61833575_0/1719054614/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61833575_0/1719054614/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-professions-shirts-61832349</guid>
-      <title><![CDATA[Brazil Monster Truck #63 T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/brazil-monster-truck-63</link>
-      <description><![CDATA[Unleash the beast with our Brazil Monster Truck #63 T-Shirt. High-octane digital art for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #gaming]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61832349_0/1719052030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Brazil Monster Truck #63 T-Shirt graphic design" /><p>Unleash the beast with our Brazil Monster Truck #63 T-Shirt. High-octane digital art for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #gaming</p>]]></content:encoded>
-      <pubDate>Mon, 12 Oct 2026 00:33:18 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61832349_0/1719052030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61832349_0/1719052030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61832349_0/1719052030/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

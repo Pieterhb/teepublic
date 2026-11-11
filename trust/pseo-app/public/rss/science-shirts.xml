@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Nov 2026 08:48:54 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 08:22:37 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-12353864</guid>
+      <title><![CDATA[Turquoise Oval Gemstone T-Shirt | Mineral Crystal Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/turquoise-oval-shape-gemstone</link>
+      <description><![CDATA[Discover our Turquoise Oval Shape Gemstone T-Shirt. Featuring a unique computer-generated mineral crystal design. Shop soft, high-quality gemstone apparel. #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12353864_0/1595237256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_1_0_x626,s_630,q_90.jpg" alt="Turquoise Oval Shape Gemstone T-Shirt featuring computer-generated mineral crystal graphic" /><p>Discover our Turquoise Oval Shape Gemstone T-Shirt. Featuring a unique computer-generated mineral crystal design. Shop soft, high-quality gemstone apparel. #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Wed, 11 Nov 2026 08:22:37 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12353864_0/1595237256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_1_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12353864_0/1595237256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_1_0_x626,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12353864_0/1595237256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_1_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-12353875</guid>
       <title><![CDATA[Turquoise Oval Shape Gemstone T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/11924210_0/1593858556/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11924210_0/1593858556/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/11924210_0/1593858556/i_m:bi_production_blanks_ekerz3afkzxin2pgqj8h_1462829018,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-11924960</guid>
-      <title><![CDATA[Western Era Pick Axe and Shovel T-Shirt | Old West Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/western-era-slogan-pick-axe-and-shovel</link>
-      <description><![CDATA[Celebrate the Old West with our Western Era Pick Axe and Shovel T-Shirt. Perfect gift for history and cowboy fans. Shop vintage western apparel today! #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Slogan Pick Axe and Shovel T-Shirt Design featuring Old West theme" /><p>Celebrate the Old West with our Western Era Pick Axe and Shovel T-Shirt. Perfect gift for history and cowboy fans. Shop vintage western apparel today! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Mon, 12 Oct 2026 00:34:18 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/11924960_0/1593860449/i_m:bi_production_blanks_z4jtymp7j16d6pgpvkl4_1462829016,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
