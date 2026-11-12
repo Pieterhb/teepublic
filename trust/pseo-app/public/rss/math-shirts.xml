@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:18:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:45:18 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-61466824</guid>
+      <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Universe Design]]></title>
+      <link>https://blackpantherstore.co.za/design/sacred-geometry-art-7</link>
+      <description><![CDATA[Unveil the mystic patterns of the universe with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop now! #teepublic #apparel #merch #math]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61466824_0/1718197507/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sacred Geometry Art #7 T-Shirt featuring mystic patterns and geometric shapes" /><p>Unveil the mystic patterns of the universe with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop now! #teepublic #apparel #merch #math</p>]]></content:encoded>
+      <pubDate>Thu, 12 Nov 2026 08:45:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61466824_0/1718197507/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61466824_0/1718197507/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61466824_0/1718197507/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-61467027</guid>
       <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Universe Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-9303177</guid>
-      <title><![CDATA[Yin Yang Triangle Pink Red Orange T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/yin-yang-triangle-pink-red-and-orange</link>
-      <description><![CDATA[Discover the unique Yin Yang Triangle T-shirt featuring Chinese zodiac symbols in a pink, red, and orange design. Shop comfortable print-on-demand style. #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Yin Yang Triangle Pink Red and Orange T-Shirt" /><p>Discover the unique Yin Yang Triangle T-shirt featuring Chinese zodiac symbols in a pink, red, and orange design. Shop comfortable print-on-demand style. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Tue, 13 Oct 2026 10:35:34 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9303177_0/1587403648/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

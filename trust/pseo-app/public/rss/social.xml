@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for All Collections</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:23:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:50:18 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - All Collections</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-social-9075560</guid>
+      <title><![CDATA[Live Purple T-Shirt | Typography Slogan Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/live-purple</link>
+      <description><![CDATA[Discover the Live Purple T-Shirt featuring a powerful single word slogan. Uplifting and stylish everyday typography tee for maximum attention. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9075560_0/1586769627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Live Purple T-Shirt with typography slogan design" /><p>Discover the Live Purple T-Shirt featuring a powerful single word slogan. Uplifting and stylish everyday typography tee for maximum attention. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Thu, 12 Nov 2026 08:50:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9075560_0/1586769627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9075560_0/1586769627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9075560_0/1586769627/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-social-9077230</guid>
       <title><![CDATA[Sexy Light Blue T-Shirt | Typography Slogan Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-social-8636381</guid>
-      <title><![CDATA[Sun Surface Close-Up Yellow T-Shirt | Space Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/the-suns-surface-close-up-yellow</link>
-      <description><![CDATA[Explore the cosmos with our Sun's Surface Close-Up Yellow T-Shirt. A stunning digital creation for astronomy lovers and space enthusiasts. Shop now! #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8636381_1/1584996121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Close-up of the sun's surface design on a yellow t-shirt" /><p>Explore the cosmos with our Sun's Surface Close-Up Yellow T-Shirt. A stunning digital creation for astronomy lovers and space enthusiasts. Shop now! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Tue, 13 Oct 2026 10:40:34 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8636381_1/1584996121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8636381_1/1584996121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8636381_1/1584996121/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

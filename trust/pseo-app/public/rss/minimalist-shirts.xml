@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 11 Nov 2026 08:17:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 08:44:18 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-shirts-63316167</guid>
+      <title><![CDATA[Green and Gold South Africa Rugby T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-48</link>
+      <description><![CDATA[Embrace the spirit of South African rugby with our exclusive green and gold fan t-shirt. Perfect for match days, braais, and true rugby supporters. #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63316167_0/1721661595/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold South Africa Rugby Player #48 T-Shirt for fans" /><p>Embrace the spirit of South African rugby with our exclusive green and gold fan t-shirt. Perfect for match days, braais, and true rugby supporters. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Thu, 12 Nov 2026 08:44:18 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63316167_0/1721661595/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63316167_0/1721661595/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63316167_0/1721661595/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-shirts-63314070</guid>
       <title><![CDATA[Green and Gold Rugby Player #18 T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/65307217_1/1725108340/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65307217_1/1725108340/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/65307217_1/1725108340/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-shirts-8634997</guid>
-      <title><![CDATA[The Sun's Surface Close-Up Purple T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/the-suns-surface-close-up-purple</link>
-      <description><![CDATA[Explore the cosmos with The Sun's Surface Close-Up Purple T-Shirt. Stunning galaxy and space design for astronomy lovers. Order yours today! #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8634997_0/1584987087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="The Sun's Surface Close-Up Purple T-Shirt featuring a stunning space and galaxy design" /><p>Explore the cosmos with The Sun's Surface Close-Up Purple T-Shirt. Stunning galaxy and space design for astronomy lovers. Order yours today! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Tue, 13 Oct 2026 10:34:34 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8634997_0/1584987087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8634997_0/1584987087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8634997_0/1584987087/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
