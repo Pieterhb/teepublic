@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:42:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:37:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-61630425</guid>
+      <title><![CDATA[Turquoise Monster Truck #13 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/turquoise-monster-truck-13</link>
+      <description><![CDATA[Unleash the beast with our Turquoise Monster Truck #13 T-Shirt. High-octane print-on-demand design perfect for truck fans and adrenaline junkies. #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61630425_0/1718615122/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Turquoise Monster Truck #13 T-Shirt Graphic" /><p>Unleash the beast with our Turquoise Monster Truck #13 T-Shirt. High-octane print-on-demand design perfect for truck fans and adrenaline junkies. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:37:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61630425_0/1718615122/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61630425_0/1718615122/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61630425_0/1718615122/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-61630146</guid>
       <title><![CDATA[Pink Monster Truck T-Shirt | Awesome Monster Truck Gear]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/64961622_0/1724582704/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64961622_0/1724582704/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/64961622_0/1724582704/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-64963603</guid>
-      <title><![CDATA[Wolf Motorcycle Biker T-Shirt | Rebel Art Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-art-21</link>
-      <description><![CDATA[Rev up your style with our wolf and motorcycle t-shirt. Featuring a fierce wolf design, this rebel biker shirt captures the spirit of the open road. #teepublic #apparel #merch #animals]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/64963603_0/1724587223/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Wolf and motorcycle graphic printed on a biker t-shirt" /><p>Rev up your style with our wolf and motorcycle t-shirt. Featuring a fierce wolf design, this rebel biker shirt captures the spirit of the open road. #teepublic #apparel #merch #animals</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:12:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/64963603_0/1724587223/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64963603_0/1724587223/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/64963603_0/1724587223/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

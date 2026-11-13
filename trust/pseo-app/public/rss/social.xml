@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for All Collections</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:50:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:45:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - All Collections</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-social-63316138</guid>
+      <title><![CDATA[Green and Gold Rugby Player #44 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-44</link>
+      <description><![CDATA[Embrace South African rugby pride with our green and gold rugby player #44 t-shirt. Comfortable, durable apparel for die-hard fans. Shop now! #teepublic #apparel #merch #rugby]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63316138_0/1721661538/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold Rugby Player #44 T-Shirt for South Africa fans" /><p>Embrace South African rugby pride with our green and gold rugby player #44 t-shirt. Comfortable, durable apparel for die-hard fans. Shop now! #teepublic #apparel #merch #rugby</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:45:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63316138_0/1721661538/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63316138_0/1721661538/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63316138_0/1721661538/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-social-9075560</guid>
       <title><![CDATA[Live Purple T-Shirt | Typography Slogan Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/65143831_0/1724847263/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65143831_0/1724847263/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/65143831_0/1724847263/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-social-8690435</guid>
-      <title><![CDATA[Sahara Desert Vintage Book Cover T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/sahara-desert-the-fort-is-quiet-unique-art</link>
-      <description><![CDATA[Discover the Sahara Desert The Fort is Quiet t-shirt featuring authentic 1980s Afrikaans book series cover art. Perfect for retro literature fans. #teepublic #apparel #merch #reading]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" alt="Sahara Desert The Fort is Quiet vintage book cover art t-shirt" /><p>Discover the Sahara Desert The Fort is Quiet t-shirt featuring authentic 1980s Afrikaans book series cover art. Perfect for retro literature fans. #teepublic #apparel #merch #reading</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:20:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8690435_0/1585241840/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Engineer Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:46:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:41:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/engineer-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Engineer Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-engineer-shirts-15433051</guid>
+      <title><![CDATA[Environmental Engineer T-Shirt | Turquoise Text Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/environmental-engineer-in-turquoise-color-text</link>
+      <description><![CDATA[Showcase your profession with this Environmental Engineer T-Shirt featuring turquoise text. Perfect gift for environmental engineers. Shop now! #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15433051_0/1603708779/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg" alt="Environmental Engineer in Turquoise Color Text T-Shirt displayed on a mockup" /><p>Showcase your profession with this Environmental Engineer T-Shirt featuring turquoise text. Perfect gift for environmental engineers. Shop now! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:41:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15433051_0/1603708779/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15433051_0/1603708779/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15433051_0/1603708779/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-engineer-shirts-15433860</guid>
       <title><![CDATA[Marine Engineer Turquoise Text T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/15375658_0/1603544561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15375658_0/1603544561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/15375658_0/1603544561/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-engineer-shirts-15376125</guid>
-      <title><![CDATA[Aerospace Engineer T-Shirt | Purple Text Design]]></title>
-      <link>https://blackpantherstore.co.za/design/aerospace-engineer-in-purple-color-text</link>
-      <description><![CDATA[Showcase your passion with our Aerospace Engineer T-Shirt featuring bold purple text. Perfect gift for aerospace engineers and science lovers. Shop now! #teepublic #apparel #merch #engineer]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15376125_0/1603545673/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Aerospace Engineer in Purple Color Text T-Shirt displayed on model" /><p>Showcase your passion with our Aerospace Engineer T-Shirt featuring bold purple text. Perfect gift for aerospace engineers and science lovers. Shop now! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:16:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/15376125_0/1603545673/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15376125_0/1603545673/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/15376125_0/1603545673/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

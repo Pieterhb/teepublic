@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:45:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:40:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-12471522</guid>
+      <title><![CDATA[Four Years Old Vintage Birthday T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-four-years-old</link>
+      <description><![CDATA[Celebrate turning four with our Birthday Vintage Year Four Years Old T-Shirt. Perfect retro gift for a fun 4th birthday party. Shop now! #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12471522_0/1595584009/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" alt="Vintage Four Years Old Birthday T-Shirt Design" /><p>Celebrate turning four with our Birthday Vintage Year Four Years Old T-Shirt. Perfect retro gift for a fun 4th birthday party. Shop now! #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:40:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12471522_0/1595584009/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12471522_0/1595584009/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12471522_0/1595584009/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-61466824</guid>
       <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Universe Design]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9128466_0/1586940017/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9128466_0/1586940017/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9128466_0/1586940017/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-9304079</guid>
-      <title><![CDATA[Yin Yang Triangle T-Shirt | Chinese Zodiac Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/yin-yang-triangle-red-orange-and-blue</link>
-      <description><![CDATA[Discover our Yin Yang Triangle T-Shirt featuring a Chinese zodiac dodecagon design. Red, orange, and blue colors symbolize balance and the universe. #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Red Orange and Blue Yin Yang Triangle Chinese Zodiac T-Shirt" /><p>Discover our Yin Yang Triangle T-Shirt featuring a Chinese zodiac dodecagon design. Red, orange, and blue colors symbolize balance and the universe. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:15:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9304079_0/1587405408/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

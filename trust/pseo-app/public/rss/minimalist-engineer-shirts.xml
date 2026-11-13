@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Engineer Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:43:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:38:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Engineer Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-engineer-shirts-63314607</guid>
+      <title><![CDATA[Green and Gold Rugby Player #24 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-24</link>
+      <description><![CDATA[Embrace the spirit of South African rugby with our exclusive green and gold player #24 t-shirt. Perfect for die-hard fans cheering from the stands. #teepublic #apparel #merch #rugby]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63314607_0/1721659510/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" alt="Green and Gold Rugby Player #24 T-Shirt for South African Fans" /><p>Embrace the spirit of South African rugby with our exclusive green and gold player #24 t-shirt. Perfect for die-hard fans cheering from the stands. #teepublic #apparel #merch #rugby</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:38:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63314607_0/1721659510/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63314607_0/1721659510/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63314607_0/1721659510/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-engineer-shirts-63315523</guid>
       <title><![CDATA[Green and Gold Rugby Player #33 T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/65309354_0/1725111037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65309354_0/1725111037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/65309354_0/1725111037/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-engineer-shirts-65309498</guid>
-      <title><![CDATA[Flute T-Shirt Musical Instrument Art]]></title>
-      <link>https://blackpantherstore.co.za/design/musical-instrument-flute-9</link>
-      <description><![CDATA[Discover the charm of music with our stunning flute t-shirt. Crafted for flute players and music lovers, this stylish digital art apparel is a must-have. #teepublic #apparel #merch #music]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/65309498_0/1725111312/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Flute digital art musical instrument design on a t-shirt" /><p>Discover the charm of music with our stunning flute t-shirt. Crafted for flute players and music lovers, this stylish digital art apparel is a must-have. #teepublic #apparel #merch #music</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:13:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/65309498_0/1725111312/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65309498_0/1725111312/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/65309498_0/1725111312/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

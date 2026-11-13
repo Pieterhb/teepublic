@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:49:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:44:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-12351657</guid>
+      <title><![CDATA[Green Heart Gemstone T-Shirt | Crystal Jewelry Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/green-heart-gemstone</link>
+      <description><![CDATA[Shop the Green Heart Gemstone T-Shirt featuring a computer-generated crystal heart design. Perfect gift for crystal and jewelry lovers. #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12351657_0/1595231604/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" alt="Green Heart Gemstone T-Shirt with crystal heart pattern" /><p>Shop the Green Heart Gemstone T-Shirt featuring a computer-generated crystal heart design. Perfect gift for crystal and jewelry lovers. #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:44:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12351657_0/1595231604/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12351657_0/1595231604/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12351657_0/1595231604/i_m:bi_production_blanks_cau9y2yr6rnvk9qkrf1h_1462829013,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-12355666</guid>
       <title><![CDATA[Orange and Red Square Gemstone T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12042136_0/1594218241/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_346_11_x188,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12042136_0/1594218241/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_346_11_x188,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12042136_0/1594218241/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_346_11_x188,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12010763</guid>
-      <title><![CDATA[Western Era Cowboy Boots & Hat T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/western-era-wild-west-cowboy-boots-and-hat</link>
-      <description><![CDATA[Celebrate the Old West with our Western Era Cowboy Boots and Hat T-Shirt. Perfect retro vintage tee for cowboy fans and history lovers. Order yours today! #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12010763_0/1594127864/i_m:bi_production_blanks_h778z1f0n6g0xugjpxxm_1462829020,c_328_14_x188,s_630,q_90.jpg" alt="Western Era Wild West Cowboy Boots and Hat T-Shirt Design" /><p>Celebrate the Old West with our Western Era Cowboy Boots and Hat T-Shirt. Perfect retro vintage tee for cowboy fans and history lovers. Order yours today! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:19:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12010763_0/1594127864/i_m:bi_production_blanks_h778z1f0n6g0xugjpxxm_1462829020,c_328_14_x188,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12010763_0/1594127864/i_m:bi_production_blanks_h778z1f0n6g0xugjpxxm_1462829020,c_328_14_x188,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12010763_0/1594127864/i_m:bi_production_blanks_h778z1f0n6g0xugjpxxm_1462829020,c_328_14_x188,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

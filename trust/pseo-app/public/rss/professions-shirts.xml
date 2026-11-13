@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Professions Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Nov 2026 08:48:18 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 08:43:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Professions Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-professions-shirts-15466993</guid>
+      <title><![CDATA[Mechanical Engineer T-Shirt | Typography Engineer Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/mechanical-engineer-in-yellow-color-text</link>
+      <description><![CDATA[Showcase your profession with our Mechanical Engineer in Yellow Color Text T-Shirt. Perfect gift for mechanical engineers and STEM enthusiasts. #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15466993_0/1603788596/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Mechanical Engineer in Yellow Color Text T-Shirt displayed on model" /><p>Showcase your profession with our Mechanical Engineer in Yellow Color Text T-Shirt. Perfect gift for mechanical engineers and STEM enthusiasts. #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Fri, 13 Nov 2026 08:43:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15466993_0/1603788596/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15466993_0/1603788596/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15466993_0/1603788596/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-professions-shirts-15433059</guid>
       <title><![CDATA[Environmental Engineer Yellow Text T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61831563_0/1719050687/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61831563_0/1719050687/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61831563_0/1719050687/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-professions-shirts-61834128</guid>
-      <title><![CDATA[Spain Monster Truck T-Shirt | High-Octane POD Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/spain-monster-truck-91</link>
-      <description><![CDATA[Unleash the beast with our Spain Monster Truck #91 T-Shirt. High-octane digital art design perfect for fans of crushing cars and V8 engines. #teepublic #apparel #merch #gaming]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61834128_0/1719055821/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Spain Monster Truck #91 Graphic T-Shirt Design" /><p>Unleash the beast with our Spain Monster Truck #91 T-Shirt. High-octane digital art design perfect for fans of crushing cars and V8 engines. #teepublic #apparel #merch #gaming</p>]]></content:encoded>
-      <pubDate>Wed, 14 Oct 2026 00:18:09 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61834128_0/1719055821/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61834128_0/1719055821/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61834128_0/1719055821/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
