@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 08:39:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 07:54:35 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-shirts-9078153</guid>
+      <title><![CDATA[Wish Blue T-Shirt | Minimalist Slogan Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/wish-blue</link>
+      <description><![CDATA[Express yourself with the Wish Blue T-Shirt. A minimalist, powerful single-word slogan design on a vibrant blue tee. Shop now for unique streetwear. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9078153_0/1586776511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Wish Blue T-Shirt with minimalist slogan typography" /><p>Express yourself with the Wish Blue T-Shirt. A minimalist, powerful single-word slogan design on a vibrant blue tee. Shop now for unique streetwear. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Sat, 14 Nov 2026 07:54:35 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9078153_0/1586776511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9078153_0/1586776511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9078153_0/1586776511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-shirts-63316150</guid>
       <title><![CDATA[Green and Gold Rugby Player T-Shirt | South Africa Fan]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/65309361_0/1725111047/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65309361_0/1725111047/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/65309361_0/1725111047/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-shirts-65309053</guid>
-      <title><![CDATA[Cello Art T-Shirt | Musical Instrument Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/musical-instrument-cello-art-2</link>
-      <description><![CDATA[Celebrate your love for music with our stunning Cello Art T-Shirt. High-quality digital design featuring the elegant cello. Perfect for musicians. #teepublic #apparel #merch #music]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/65309053_0/1725110530/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Cello Art #2 T-Shirt with vibrant digital cello design" /><p>Celebrate your love for music with our stunning Cello Art T-Shirt. High-quality digital design featuring the elegant cello. Perfect for musicians. #teepublic #apparel #merch #music</p>]]></content:encoded>
-      <pubDate>Thu, 15 Oct 2026 08:15:51 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/65309053_0/1725110530/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65309053_0/1725110530/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/65309053_0/1725110530/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

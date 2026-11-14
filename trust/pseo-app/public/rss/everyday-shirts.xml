@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Everyday Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2026 08:42:29 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 07:57:35 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/everyday-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Everyday Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-everyday-shirts-63314639</guid>
+      <title><![CDATA[Green and Gold Rugby Player T-Shirt | South Africa Fan Gear]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-28</link>
+      <description><![CDATA[Shop the ultimate Green and Gold South Africa rugby player t-shirt. Crafted for comfort and durability. Show your rugby pride today! #teepublic #apparel #merch #sports]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63314639_1/1721660522/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold South Africa rugby player t-shirt for fans" /><p>Shop the ultimate Green and Gold South Africa rugby player t-shirt. Crafted for comfort and durability. Show your rugby pride today! #teepublic #apparel #merch #sports</p>]]></content:encoded>
+      <pubDate>Sat, 14 Nov 2026 07:57:35 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63314639_1/1721660522/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63314639_1/1721660522/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63314639_1/1721660522/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-everyday-shirts-9075534</guid>
       <title><![CDATA[Live Red T-Shirt | Inspirational Typography Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/65144653_0/1724848634/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65144653_0/1724848634/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/65144653_0/1724848634/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-everyday-shirts-65143823</guid>
-      <title><![CDATA[Biker Skull T-Shirt | Motorcycle Rebel Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-digital-art-18</link>
-      <description><![CDATA[Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom-loving bikers and rebels. Shop the ultimate riding tee today! #teepublic #apparel #merch #motorcycle]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/65143823_0/1724847256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Unisex biker t-shirt featuring a bold human skull and motorcycle digital art design" /><p>Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom-loving bikers and rebels. Shop the ultimate riding tee today! #teepublic #apparel #merch #motorcycle</p>]]></content:encoded>
-      <pubDate>Thu, 15 Oct 2026 08:18:51 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/65143823_0/1724847256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65143823_0/1724847256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/65143823_0/1724847256/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
