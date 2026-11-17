@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 08:27:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:36:40 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-61630443</guid>
+      <title><![CDATA[Purple Monster Truck #15 T-Shirt | High-Octane Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/purple-monster-truck-15</link>
+      <description><![CDATA[Unleash your inner beast with our Purple Monster Truck #15 T-Shirt. Perfect for high-octane fans and truck lovers. Shop premium print-on-demand apparel today! #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61630443_0/1718615153/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Purple Monster Truck #15 T-Shirt graphic design" /><p>Unleash your inner beast with our Purple Monster Truck #15 T-Shirt. Perfect for high-octane fans and truck lovers. Shop premium print-on-demand apparel today! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Tue, 17 Nov 2026 09:36:40 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61630443_0/1718615153/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61630443_0/1718615153/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61630443_0/1718615153/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-61630736</guid>
       <title><![CDATA[Green Monster Truck #20 T-Shirt | High-Octane POD Apparel]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/64963063_0/1724585513/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64963063_0/1724585513/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/64963063_0/1724585513/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-64961615</guid>
-      <title><![CDATA[Wolf Motorcycle T-Shirt | Biker & Rebel Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-art-5</link>
-      <description><![CDATA[Rev up your style with our wolf motorcycle t-shirt. Featuring a fierce wolf and bike design, it's the ultimate apparel for freedom-loving bikers and rebels. #teepublic #apparel #merch #animals]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/64961615_0/1724582657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bikers and Rebels wolf and motorcycle graphic t-shirt design" /><p>Rev up your style with our wolf motorcycle t-shirt. Featuring a fierce wolf and bike design, it's the ultimate apparel for freedom-loving bikers and rebels. #teepublic #apparel #merch #animals</p>]]></content:encoded>
-      <pubDate>Sun, 18 Oct 2026 07:57:21 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/64961615_0/1724582657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64961615_0/1724582657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/64961615_0/1724582657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Professions Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Nov 2026 08:33:15 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 09:42:40 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Professions Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-professions-shirts-15466982</guid>
+      <title><![CDATA[Mechanical Engineer Pink Text T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/mechanical-engineer-in-pink-color-text</link>
+      <description><![CDATA[Shop the Mechanical Engineer in Pink Color Text T-Shirt. Perfect gift for mechanical engineers and science enthusiasts. Order yours today! #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15466982_0/1603788531/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Mechanical Engineer in Pink Color Text T-Shirt displayed on a mockup" /><p>Shop the Mechanical Engineer in Pink Color Text T-Shirt. Perfect gift for mechanical engineers and science enthusiasts. Order yours today! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Tue, 17 Nov 2026 09:42:40 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15466982_0/1603788531/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15466982_0/1603788531/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15466982_0/1603788531/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-professions-shirts-15433429</guid>
       <title><![CDATA[Industrial Engineer T-Shirt | Typography Design]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-professions-shirts-14278042</guid>
-      <title><![CDATA[Gold Alphabet Diamond Shape T-Shirt | Typography Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/gold-alphabet-in-a-diamond-shape</link>
-      <description><![CDATA[Shop the Gold Alphabet in a Diamond Shape T-Shirt featuring all 26 letters of the modern English alphabet in a unique geometric design. Order yours today! #teepublic #apparel #merch #teacher]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/14278042_0/1600775152/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Gold Alphabet in a Diamond Shape T-Shirt front view on white background" /><p>Shop the Gold Alphabet in a Diamond Shape T-Shirt featuring all 26 letters of the modern English alphabet in a unique geometric design. Order yours today! #teepublic #apparel #merch #teacher</p>]]></content:encoded>
-      <pubDate>Sun, 18 Oct 2026 08:03:21 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/14278042_0/1600775152/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/14278042_0/1600775152/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/14278042_0/1600775152/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
