@@ -21,12 +21,17 @@ function main() {
   const today = new Date().toISOString().split('T')[0];
 
   // 1. Generate Static Pages Sitemap
+  const totalDesignPages = Math.ceil(products.length / 60);
   const staticPages = [
-    { url: `${DOMAIN}`, changefreq: 'daily', priority: '1.0' },
+    { url: `${DOMAIN}/`, changefreq: 'daily', priority: '1.0' },
     { url: `${DOMAIN}/designs`, changefreq: 'daily', priority: '0.9' },
     { url: `${DOMAIN}/categories`, changefreq: 'weekly', priority: '0.9' },
     { url: `${DOMAIN}/privacy-policy`, changefreq: 'monthly', priority: '0.3' },
   ];
+
+  for (let i = 2; i <= totalDesignPages; i++) {
+    staticPages.push({ url: `${DOMAIN}/designs/page/${i}`, changefreq: 'weekly', priority: '0.8' });
+  }
 
   let pagesXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
   staticPages.forEach((p) => {

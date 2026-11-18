@@ -23,11 +23,21 @@ export const metadata: Metadata = {
     title: 'Browse All 501 Categories | Black Panther Store',
     description: 'From funny to professional, animals to holidays — 501 categories to explore.',
     url: 'https://blackpantherstore.co.za/categories',
+    type: 'website',
+    images: [
+      {
+        url: 'https://blackpantherstore.co.za/logo.png',
+        width: 512,
+        height: 512,
+        alt: 'Black Panther Store',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Browse All 501 Categories | Black Panther Store',
     description: 'From funny to professional, animals to holidays — 501 categories to explore.',
+    images: ['https://blackpantherstore.co.za/logo.png'],
   },
 };
 

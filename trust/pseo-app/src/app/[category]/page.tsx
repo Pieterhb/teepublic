@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!category) return {};
 
   const categoryProducts = getProductsForCategory(category.slug);
-  const featuredImage = categoryProducts[0]?.image_url;
+  const featuredImage = categoryProducts[0]?.image_url || 'https://blackpantherstore.co.za/logo.png';
 
   return {
     title: `Best ${category.title} — Unique Designs & Apparel`,
@@ -59,13 +59,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs from independent artists.`,
       url: `https://blackpantherstore.co.za/${category.slug}`,
-      images: featuredImage ? [{ url: featuredImage, alt: `${category.title} designs` }] : [],
+      type: 'website',
+      images: [
+        {
+          url: featuredImage,
+          width: 512,
+          height: 512,
+          alt: `${category.title} designs`,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title: `Best ${category.title} | Black Panther Store`,
       description: `Browse ${category.productIds.length}+ unique ${category.title.toLowerCase()} designs.`,
-      images: featuredImage ? [featuredImage] : [],
+      images: [featuredImage],
     },
   };
 }
@@ -85,6 +93,10 @@ export default async function CategoryPage({ params }: Props) {
   if (products.length === 0) {
     notFound();
   }
+
+  // To keep HTML payloads well under 500 KB and prevent bot truncation on large categories,
+  // render the top 60 curated designs in the static grid.
+  const displayProducts = products.slice(0, 60);
 
   const relatedCategories = getRelatedCategoriesForCategory(category.slug);
   const editorialDesc = getCategoryDescription(category.slug, category.title, products.length);
@@ -109,7 +121,7 @@ export default async function CategoryPage({ params }: Props) {
     }
   ];
 
-  // Collection, FAQ & Breadcrumb Schema
+  // Collection, FAQ & Breadcrumb Schema (100% Schema.org valid: ItemList is nested under mainEntity)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -123,16 +135,20 @@ export default async function CategoryPage({ params }: Props) {
       },
       {
         '@type': 'CollectionPage',
+        '@id': `https://blackpantherstore.co.za/${category.slug}#webpage`,
         name: `Best ${category.title}`,
         description: editorialDesc,
         url: `https://blackpantherstore.co.za/${category.slug}`,
-        numberOfItems: category.productIds.length,
-        itemListElement: products.slice(0, 12).map((p, idx) => ({
-          '@type': 'ListItem',
-          position: idx + 1,
-          url: `https://blackpantherstore.co.za/design/${p.slug}`,
-          name: p.title,
-        })),
+        mainEntity: {
+          '@type': 'ItemList',
+          numberOfItems: category.productIds.length,
+          itemListElement: displayProducts.slice(0, 12).map((p, idx) => ({
+            '@type': 'ListItem',
+            position: idx + 1,
+            url: `https://blackpantherstore.co.za/design/${p.slug}`,
+            name: p.title,
+          })),
+        },
       },
       {
         '@type': 'FAQPage',
@@ -184,7 +200,22 @@ export default async function CategoryPage({ params }: Props) {
 
       <main className="container mx-auto px-4 py-16">
         {/* Main Grid */}
-        <ProductGrid products={products} />
+        <ProductGrid products={displayProducts} />
+
+        {/* Curation indicator for large categories */}
+        {products.length > 60 && (
+          <div className="my-8 p-6 bg-slate-50 rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
+            <p className="text-slate-700 font-medium mb-3">
+              Showing <strong>60</strong> of <strong>{products.length.toLocaleString()}</strong> designs in this curated collection.
+            </p>
+            <Link
+              href="/designs"
+              className="inline-flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-xl transition-all shadow-sm"
+            >
+              Explore Complete Catalog in All Designs →
+            </Link>
+          </div>
+        )}
 
         {/* Buying Guide / SEO Content block */}
         <section className="my-20 bg-slate-50 rounded-3xl p-8 md:p-12 border border-slate-100">

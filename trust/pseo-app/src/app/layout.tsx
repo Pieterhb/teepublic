@@ -19,16 +19,19 @@ export const metadata: Metadata = {
     "Discover 4,000+ unique designs on T-shirts, hoodies, and more. Shop the Black Panther Store — exclusive apparel by independent artists, shipped worldwide via TeePublic.",
   metadataBase: new URL("https://blackpantherstore.co.za"),
   alternates: {
-    canonical: "https://blackpantherstore.co.za",
+    canonical: "https://blackpantherstore.co.za/",
   },
   openGraph: {
     type: "website",
     siteName: "Black Panther Store",
+    title: "Black Panther Store — Unique Designs on T-Shirts & Apparel",
+    description:
+      "Discover 4,000+ unique designs on T-shirts, hoodies, and more. Shop exclusive apparel by independent artists via TeePublic.",
     locale: "en_ZA",
-    url: "https://blackpantherstore.co.za",
+    url: "https://blackpantherstore.co.za/",
     images: [
       {
-        url: "/logo.png",
+        url: "https://blackpantherstore.co.za/logo.png",
         width: 512,
         height: 512,
         alt: "Black Panther Store",
@@ -37,8 +40,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    title: "Black Panther Store — Unique Designs on T-Shirts & Apparel",
+    description:
+      "Discover 4,000+ unique designs on T-shirts, hoodies, and more.",
     site: "@BlackPantherSA",
-    images: ["/logo.png"],
+    images: ["https://blackpantherstore.co.za/logo.png"],
   },
   robots: {
     index: true,
@@ -73,7 +79,7 @@ const rootJsonLd = {
     {
       "@type": "WebSite",
       "@id": "https://blackpantherstore.co.za/#website",
-      "url": "https://blackpantherstore.co.za",
+      "url": "https://blackpantherstore.co.za/",
       "name": "Black Panther Store",
       "description": "Discover 4,000+ unique designs on T-shirts, hoodies, and apparel by independent artists.",
       "potentialAction": {
@@ -89,7 +95,7 @@ const rootJsonLd = {
       "@type": "Organization",
       "@id": "https://blackpantherstore.co.za/#organization",
       "name": "Black Panther Store",
-      "url": "https://blackpantherstore.co.za",
+      "url": "https://blackpantherstore.co.za/",
       "logo": "https://blackpantherstore.co.za/logo.png",
       "sameAs": [
         "https://www.teepublic.com/user/theblackpanther",

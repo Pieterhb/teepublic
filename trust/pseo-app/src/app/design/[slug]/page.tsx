@@ -27,9 +27,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   if (!product) return {};
 
+  const imageUrl = product.image_url || 'https://blackpantherstore.co.za/logo.png';
+  const title = product.seo_title || product.title;
+  const description = product.meta_description || product.description || `Shop ${product.title} design by ${product.artist || 'independent artists'} on TeePublic.`;
+
   return {
-    title: product.seo_title || product.title,
-    description: product.meta_description || product.description,
+    title,
+    description,
     alternates: {
       canonical: `https://blackpantherstore.co.za/design/${product.slug}`,
     },
@@ -44,16 +48,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: product.seo_title || product.title,
-      description: product.meta_description || product.description,
-      images: [product.image_url],
+      title,
+      description,
+      url: `https://blackpantherstore.co.za/design/${product.slug}`,
       type: 'website',
+      images: [
+        {
+          url: imageUrl,
+          alt: product.image_alt || product.title,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
-      title: product.seo_title || product.title,
-      description: product.meta_description || product.description,
-      images: [product.image_url],
+      title,
+      description,
+      images: [imageUrl],
     },
   };
 }
@@ -69,7 +79,10 @@ export default async function ProductPage({ params }: Props) {
   const relatedProducts = getRelatedProducts(product.design_id);
   const relatedCategories = getRelatedCategoriesForProduct(product.design_id);
 
-  // JSON-LD: Product + BreadcrumbList
+  const imageUrl = product.image_url || 'https://blackpantherstore.co.za/logo.png';
+  const description = product.meta_description || product.description || `Shop ${product.title} design by ${product.artist || 'independent artists'} on TeePublic.`;
+
+  // JSON-LD: Product + BreadcrumbList (Compliant with Google Product Snippets for affiliate showcase sites)
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -84,59 +97,23 @@ export default async function ProductPage({ params }: Props) {
       {
         '@type': 'Product',
         name: product.title,
-        image: product.image_url,
-        description: product.description,
+        image: imageUrl,
+        description: description,
         sku: String(product.design_id),
         brand: {
           '@type': 'Brand',
-          name: 'TeePublic - The Black Panther'
+          name: 'The Black Panther'
         },
         offers: {
           '@type': 'Offer',
-          url: product.teepublic_url,
+          url: product.teepublic_url || `https://blackpantherstore.co.za/design/${product.slug}`,
           price: '22.00',
           priceCurrency: 'USD',
-          priceValidUntil: new Date(new Date().getFullYear() + 1, 0, 1).toISOString().split('T')[0],
           itemCondition: 'https://schema.org/NewCondition',
           availability: 'https://schema.org/InStock',
           seller: {
             '@type': 'Organization',
             name: 'TeePublic'
-          },
-          shippingDetails: {
-            '@type': 'OfferShippingDetails',
-            shippingRate: {
-              '@type': 'MonetaryAmount',
-              value: '0',
-              currency: 'USD'
-            },
-            shippingDestination: {
-              '@type': 'DefinedRegion',
-              addressCountry: 'US'
-            },
-            deliveryTime: {
-              '@type': 'ShippingDeliveryTime',
-              handlingTime: {
-                '@type': 'QuantitativeValue',
-                minValue: 1,
-                maxValue: 3,
-                unitCode: 'DAY'
-              },
-              transitTime: {
-                '@type': 'QuantitativeValue',
-                minValue: 3,
-                maxValue: 7,
-                unitCode: 'DAY'
-              }
-            }
-          },
-          hasMerchantReturnPolicy: {
-            '@type': 'MerchantReturnPolicy',
-            applicableCountry: 'US',
-            returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
-            merchantReturnDays: 30,
-            returnMethod: 'https://schema.org/ReturnByMail',
-            returnFees: 'https://schema.org/FreeReturn'
           }
         }
       }
@@ -193,7 +170,7 @@ export default async function ProductPage({ params }: Props) {
               
               <div className="text-lg text-slate-600 mb-8 leading-relaxed space-y-4">
                 <p>{product.description}</p>
-                <p>Designed with passion by <span className="font-semibold text-slate-900">{product.artist}</span>.</p>
+                <p>Designed with passion by <span className="font-semibold text-slate-900">{product.artist || 'Independent Artist'}</span>.</p>
               </div>
 
               {/* Tags */}
@@ -215,7 +192,7 @@ export default async function ProductPage({ params }: Props) {
                 <a 
                   href={product.teepublic_url} 
                   target="_blank" 
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
                   className="inline-flex items-center justify-center w-full lg:w-auto px-8 py-4 text-lg font-bold text-white bg-indigo-600 rounded-xl hover:bg-indigo-700 hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
                 >
                   Buy on TeePublic

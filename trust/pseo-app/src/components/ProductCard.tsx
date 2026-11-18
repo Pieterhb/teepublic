@@ -1,13 +1,8 @@
-'use client';
-
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import { Product } from '@/lib/data';
 
 export default function ProductCard({ product }: { product: Product }) {
-  const [imageError, setImageError] = useState(false);
-
   return (
     <Link 
       href={`/design/${product.slug}`}
@@ -15,12 +10,13 @@ export default function ProductCard({ product }: { product: Product }) {
     >
       <div className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-100 flex flex-col h-full hover:-translate-y-1">
         <div className="relative aspect-square bg-slate-50 overflow-hidden">
-          {product.image_url && !imageError ? (
+          {product.image_url ? (
             <Image
               src={product.image_url}
               alt={product.image_alt || product.title}
               fill
-              onError={() => setImageError(true)}
+              loading="lazy"
+              decoding="async"
               className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
@@ -39,7 +35,7 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.title}
           </h3>
           <p className="text-sm text-slate-500 mb-4 line-clamp-2 flex-grow">
-            By {product.artist}
+            By {product.artist || 'Independent Artist'}
           </p>
           
           <div className="mt-auto pt-4 border-t border-slate-50 flex items-center justify-between">

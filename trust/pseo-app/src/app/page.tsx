@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Discover 4,000+ unique designs on T-shirts, hoodies, and more. Shop the Black Panther Store — exclusive apparel by independent artists, shipped worldwide via TeePublic.",
   alternates: {
-    canonical: "https://blackpantherstore.co.za",
+    canonical: "https://blackpantherstore.co.za/",
   },
   robots: {
     index: true,
@@ -24,15 +24,23 @@ export const metadata: Metadata = {
     title: "Black Panther Store — Unique T-Shirt & Apparel Designs",
     description:
       "4,000+ unique designs from independent artists. Find the perfect tee, hoodie, or gift.",
-    url: "https://blackpantherstore.co.za",
-    images: [products[0]?.image_url ?? ""],
+    url: "https://blackpantherstore.co.za/",
+    type: "website",
+    images: [
+      {
+        url: products[0]?.image_url || "https://blackpantherstore.co.za/logo.png",
+        width: 512,
+        height: 512,
+        alt: "Black Panther Store",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Black Panther Store — Unique T-Shirt & Apparel Designs",
     description:
       "4,000+ unique designs from independent artists. Find the perfect tee, hoodie, or gift.",
-    images: [products[0]?.image_url ?? ""],
+    images: [products[0]?.image_url || "https://blackpantherstore.co.za/logo.png"],
   },
 };
 
