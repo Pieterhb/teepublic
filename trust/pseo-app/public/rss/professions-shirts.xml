@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Professions Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 09:42:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:05:20 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Professions Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-professions-shirts-15433064</guid>
+      <title><![CDATA[Environmental Engineer T-Shirt | Typography Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/environmental-engineer-in-blue-color-text</link>
+      <description><![CDATA[Showcase your profession with this Environmental Engineer T-Shirt featuring blue text. Perfect gift for environmental engineers. Shop now! #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15433064_0/1603708793/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Environmental Engineer in Blue Color Text T-Shirt displayed on a model" /><p>Showcase your profession with this Environmental Engineer T-Shirt featuring blue text. Perfect gift for environmental engineers. Shop now! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Wed, 18 Nov 2026 09:05:20 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15433064_0/1603708793/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15433064_0/1603708793/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15433064_0/1603708793/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-professions-shirts-15466982</guid>
       <title><![CDATA[Mechanical Engineer Pink Text T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/15376121_0/1603545658/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15376121_0/1603545658/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/15376121_0/1603545658/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-professions-shirts-14277785</guid>
-      <title><![CDATA[Silver Alphabet Diamond T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/silver-alphabet-in-a-diamond-shape</link>
-      <description><![CDATA[Shop the unique Silver Alphabet in a Diamond Shape T-Shirt featuring all 26 letters in a stylish geometric design. Perfect for everyday wear. #teepublic #apparel #merch #teacher]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Silver Alphabet in a Diamond Shape T-Shirt Display" /><p>Shop the unique Silver Alphabet in a Diamond Shape T-Shirt featuring all 26 letters in a stylish geometric design. Perfect for everyday wear. #teepublic #apparel #merch #teacher</p>]]></content:encoded>
-      <pubDate>Mon, 19 Oct 2026 08:55:25 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/14277785_0/1600774694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

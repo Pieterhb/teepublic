@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 09:43:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:06:20 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-60652072</guid>
+      <title><![CDATA[Western Era Oil Painting Art Woman T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-oil-painting-art-woman-43</link>
+      <description><![CDATA[Experience timeless Western allure with this oil painting art woman t-shirt. Masterfully rendered cowgirl design for frontier elegance lovers. #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/60652072_0/1716293341/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Oil Painting Art Woman #43 T-Shirt Product View" /><p>Experience timeless Western allure with this oil painting art woman t-shirt. Masterfully rendered cowgirl design for frontier elegance lovers. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Wed, 18 Nov 2026 09:06:20 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/60652072_0/1716293341/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/60652072_0/1716293341/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/60652072_0/1716293341/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-12351651</guid>
       <title><![CDATA[Yellow Heart Gemstone T-Shirt | Cute Crystal Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12330841</guid>
-      <title><![CDATA[Octacore Green Gemstone T-Shirt | Mineral Crystal Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/octacore-green-gemstone</link>
-      <description><![CDATA[Discover the unique Octacore Green Gemstone T-Shirt featuring a computer-generated mineral crystal design. Perfect for gem lovers and crystal enthusiasts. #teepublic #apparel #merch #science]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12330841_0/1595161873/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Octacore Green Gemstone T-Shirt with computer-generated mineral crystal graphic" /><p>Discover the unique Octacore Green Gemstone T-Shirt featuring a computer-generated mineral crystal design. Perfect for gem lovers and crystal enthusiasts. #teepublic #apparel #merch #science</p>]]></content:encoded>
-      <pubDate>Mon, 19 Oct 2026 08:56:25 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12330841_0/1595161873/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12330841_0/1595161873/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12330841_0/1595161873/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

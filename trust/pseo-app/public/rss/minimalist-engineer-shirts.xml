@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Engineer Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Nov 2026 09:37:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 09:00:20 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Engineer Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-engineer-shirts-9128662</guid>
+      <title><![CDATA[Three Rubik Cubes Triangle T-Shirt | Puzzle Lover Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/three-rubik-cubes-in-a-triangle-orange-green-and-p</link>
+      <description><![CDATA[Discover the artistic Three Rubik Cubes in a Triangle T-Shirt featuring orange, green, and purple puzzle designs. Perfect for puzzle game fans! #teepublic #apparel #merch #gaming]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9128662_0/1586940434/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Three Rubik Cubes in a Triangle Orange, Green and Purple T-Shirt" /><p>Discover the artistic Three Rubik Cubes in a Triangle T-Shirt featuring orange, green, and purple puzzle designs. Perfect for puzzle game fans! #teepublic #apparel #merch #gaming</p>]]></content:encoded>
+      <pubDate>Wed, 18 Nov 2026 09:00:20 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9128662_0/1586940434/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9128662_0/1586940434/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9128662_0/1586940434/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-engineer-shirts-9129578</guid>
       <title><![CDATA[Wish Light Blue T-Shirt | Minimalist Slogan Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/8915381_0/1586195764/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8915381_0/1586195764/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8915381_0/1586195764/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-engineer-shirts-8929632</guid>
-      <title><![CDATA[Purple Glass Orb Galaxy T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/purple-glass-orb</link>
-      <description><![CDATA[Discover our stunning Purple Glass Orb T-Shirt featuring a mesmerizing galaxy design. Perfect for space and astronomy lovers. Shop now! #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8929632_0/1586252875/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Purple Glass Orb Galaxy Space T-Shirt" /><p>Discover our stunning Purple Glass Orb T-Shirt featuring a mesmerizing galaxy design. Perfect for space and astronomy lovers. Shop now! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Mon, 19 Oct 2026 08:50:25 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8929632_0/1586252875/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8929632_0/1586252875/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8929632_0/1586252875/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
