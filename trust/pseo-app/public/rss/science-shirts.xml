@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 09:06:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:29:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-12472136</guid>
+      <title><![CDATA[Vintage 29th Birthday T-Shirt | Twenty Nine Years Old]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-twenty-nine-years-old</link>
+      <description><![CDATA[Celebrate turning 29 with this vintage year birthday t-shirt. Perfect gift for anyone celebrating their twenty-nine years old milestone in style. #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12472136_0/1595585391/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" alt="Vintage 29th Birthday T-Shirt Twenty Nine Years Old Design" /><p>Celebrate turning 29 with this vintage year birthday t-shirt. Perfect gift for anyone celebrating their twenty-nine years old milestone in style. #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Thu, 19 Nov 2026 09:29:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12472136_0/1595585391/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12472136_0/1595585391/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12472136_0/1595585391/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-60652072</guid>
       <title><![CDATA[Western Era Oil Painting Art Woman T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12284981_0/1594998675/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12284981_0/1594998675/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12284981_0/1594998675/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12284970</guid>
-      <title><![CDATA[Funny Corona Virus T-Shirt | Pandemic Humor Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/corona-slogan-the-corona-virus</link>
-      <description><![CDATA[Lighten up tough times with our funny Corona virus t-shirt. Featuring humorous corona slogans, this cute pandemic tee brings a touch of relief. #teepublic #apparel #merch #science]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Funny Corona Virus T-Shirt with Pandemic Slogan Design" /><p>Lighten up tough times with our funny Corona virus t-shirt. Featuring humorous corona slogans, this cute pandemic tee brings a touch of relief. #teepublic #apparel #merch #science</p>]]></content:encoded>
-      <pubDate>Tue, 20 Oct 2026 00:22:24 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12284970_0/1594998660/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

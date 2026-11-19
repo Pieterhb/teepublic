@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Nov 2026 09:02:20 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 09:25:29 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-12472119</guid>
+      <title><![CDATA[Vintage 23rd Birthday T-Shirt Twenty Three Years Old]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-twenty-three-years-old</link>
+      <description><![CDATA[Celebrate your special day with our Birthday Vintage Year Twenty Three Years Old T-Shirt. Perfect gift for turning 23. Order yours today! #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12472119_0/1595585363/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" alt="Vintage Twenty Three Years Old Birthday T-Shirt Design" /><p>Celebrate your special day with our Birthday Vintage Year Twenty Three Years Old T-Shirt. Perfect gift for turning 23. Order yours today! #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Thu, 19 Nov 2026 09:25:29 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12472119_0/1595585363/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12472119_0/1595585363/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12472119_0/1595585363/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-12472439</guid>
       <title><![CDATA[Thirty Eight Years Old Vintage 1982 Birthday T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/11419189_0/1592407541/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11419189_0/1592407541/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/11419189_0/1592407541/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-9303175</guid>
-      <title><![CDATA[Yin Yang Triangle Orange Yellow Green T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/yin-yang-triangle-orange-yellow-and-green</link>
-      <description><![CDATA[Discover the Yin Yang Triangle Orange, Yellow and Green T-Shirt featuring ancient Chinese philosophy and 12 zodiac signs. Shop this unique design today! #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9303175_0/1587403635/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Yin Yang Triangle Orange Yellow and Green T-Shirt Design" /><p>Discover the Yin Yang Triangle Orange, Yellow and Green T-Shirt featuring ancient Chinese philosophy and 12 zodiac signs. Shop this unique design today! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Tue, 20 Oct 2026 00:18:24 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9303175_0/1587403635/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9303175_0/1587403635/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9303175_0/1587403635/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
