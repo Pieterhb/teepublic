@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Astronomy Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Nov 2026 09:20:29 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 09:01:27 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/astronomy-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Astronomy Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-astronomy-shirts-61577446</guid>
+      <title><![CDATA[Hologram Man and Volcano T-Shirt | Sci-Fi Art Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/hologram-man-and-a-volcano-25</link>
+      <description><![CDATA[Explore the fusion of futuristic tech and raw nature with our Hologram Man and Volcano T-Shirt. Unique AI art apparel for sci-fi fans. Shop now! #teepublic #apparel #merch #astronomy]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61577446_0/1718455389/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Hologram Man and a Volcano graphic art printed on a premium t-shirt" /><p>Explore the fusion of futuristic tech and raw nature with our Hologram Man and Volcano T-Shirt. Unique AI art apparel for sci-fi fans. Shop now! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
+      <pubDate>Fri, 20 Nov 2026 09:01:27 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61577446_0/1718455389/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61577446_0/1718455389/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61577446_0/1718455389/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-astronomy-shirts-61577335</guid>
       <title><![CDATA[Hologram Woman & Volcano T-Shirt | Futuristic POD Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9304086_0/1587405419/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9304086_0/1587405419/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9304086_0/1587405419/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-astronomy-shirts-8439863</guid>
-      <title><![CDATA[Captain Scarlet & Lieutenant Green T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/captain-scarlet-and-lieutenant-green</link>
-      <description><![CDATA[Shop the ultimate Captain Scarlet & Lieutenant Green T-Shirt. Celebrate Gerry Anderson's classic CGI animation with this exclusive retro sci-fi apparel design. #teepublic #apparel #merch #gaming]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8439863_0/1584007422/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Captain Scarlet and Lieutenant Green retro animated sci-fi t-shirt design" /><p>Shop the ultimate Captain Scarlet & Lieutenant Green T-Shirt. Celebrate Gerry Anderson's classic CGI animation with this exclusive retro sci-fi apparel design. #teepublic #apparel #merch #gaming</p>]]></content:encoded>
-      <pubDate>Wed, 21 Oct 2026 08:27:53 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8439863_0/1584007422/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8439863_0/1584007422/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8439863_0/1584007422/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

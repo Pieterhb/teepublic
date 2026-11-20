@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-19T09:30:29.580Z",
-  "lastAdvanceDate": "2026-11-19",
-  "dayCounter": 91,
-  "totalPinned": 1001,
+  "lastUpdated": "2026-11-20T09:11:27.365Z",
+  "lastAdvanceDate": "2026-11-20",
+  "dayCounter": 92,
+  "totalPinned": 1012,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -1004,10 +1004,35 @@
     "63314622",
     "15466978",
     "12472136",
-    "63314012"
+    "63314012",
+    "61577446",
+    "63315574",
+    "11546253",
+    "63313196",
+    "63313256",
+    "12472882",
+    "15433430",
+    "63314588",
+    "15433426",
+    "12472303",
+    "63314654"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "61577446",
+        "slug": "hologram-man-and-a-volcano-25",
+        "title": "Hologram Man and a Volcano #25 T-Shirt",
+        "seo_title": "Hologram Man and Volcano T-Shirt | Sci-Fi Art Apparel",
+        "description": "Explore the fusion of futuristic tech and raw nature with our Hologram Man and Volcano T-Shirt. Unique AI art apparel for sci-fi fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61577446_0/1718455389/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Hologram Man and a Volcano graphic art printed on a premium t-shirt",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Hologram Man T-Shirt",
+        "tags": "ai art, ai generated, artificial intelligence, digital art, digital artwork",
+        "pubDate": "Fri, 20 Nov 2026 09:01:27 GMT"
+      },
       {
         "design_id": "61577335",
         "slug": "hologram-woman-and-a-volcano-22",
@@ -1413,23 +1438,23 @@
         "primary_keyword": "Yin Yang T-Shirt",
         "tags": "yin yang, child, chinese, circle, dark, light, negative, positive, universe, woman, yin",
         "pubDate": "Thu, 22 Oct 2026 23:51:33 GMT"
-      },
-      {
-        "design_id": "8439863",
-        "slug": "captain-scarlet-and-lieutenant-green",
-        "title": "Captain Scarlet & Lieutenant Green T-Shirt",
-        "seo_title": "Captain Scarlet & Lieutenant Green T-Shirt",
-        "description": "Shop the ultimate Captain Scarlet & Lieutenant Green T-Shirt. Celebrate Gerry Anderson's classic CGI animation with this exclusive retro sci-fi apparel design.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8439863_0/1584007422/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Captain Scarlet and Lieutenant Green retro animated sci-fi t-shirt design",
-        "niche": "Gaming",
-        "secondary_niche": "Astronomy",
-        "primary_keyword": "Captain Scarlet T-Shirt",
-        "tags": "captain scarlet, anderson, black, captain, film, green, new, scarlet, sylvia, toys, white",
-        "pubDate": "Wed, 21 Oct 2026 08:27:53 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "63315574",
+        "slug": "green-and-gold-rugby-player-38",
+        "title": "Green and Gold Rugby Player #38 T-Shirt",
+        "seo_title": "Green and Gold Rugby Player T-Shirt | SA Fan Gear",
+        "description": "Embrace South African rugby spirit with our Green and Gold Rugby Player T-Shirt. Perfect for matches, braais, and die-hard fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63315574_0/1721660809/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #38 T-Shirt for South African rugby fans",
+        "niche": "hobbies",
+        "secondary_niche": "sports",
+        "primary_keyword": "South Africa rugby t-shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Fri, 20 Nov 2026 09:02:27 GMT"
+      },
       {
         "design_id": "63314717",
         "slug": "green-and-gold-rugby-player-31",
@@ -1835,23 +1860,23 @@
         "primary_keyword": "biker t-shirt",
         "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
         "pubDate": "Thu, 22 Oct 2026 23:52:33 GMT"
-      },
-      {
-        "design_id": "64963628",
-        "slug": "bikers-and-rebels-art-25",
-        "title": "Bikers and Rebels Art #25 T-Shirt",
-        "seo_title": "Biker Wolf Motorcycle T-Shirt | Rebel Road Apparel",
-        "description": "Rev up your style with this striking wolf and motorcycle biker t-shirt. Perfect for those who live for the thrill of the open road and rebel freedom.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/64963628_0/1724587259/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Biker wolf and motorcycle graphic t-shirt design",
-        "niche": "Animals",
-        "secondary_niche": "Hobbies",
-        "primary_keyword": "biker wolf t-shirt",
-        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
-        "pubDate": "Wed, 21 Oct 2026 08:28:53 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "11546253",
+        "slug": "western-era-whiskey-bottle-and-glass",
+        "title": "Western Era - Whiskey Bottle and Glass T-Shirt",
+        "seo_title": "Western Era Whiskey Bottle & Glass T-Shirt",
+        "description": "Celebrate the Old West with our Western Era Whiskey Bottle and Glass T-Shirt. Perfect vintage design for fans of cowboys and the American frontier.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/11546253_0/1592758641/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Western Era Whiskey Bottle and Glass T-Shirt Design",
+        "niche": "hobbies",
+        "secondary_niche": "animals",
+        "primary_keyword": "Western Era T-Shirt",
+        "tags": "cowboy, era, gunslinger, old west, revolver, rifle, spurs, usa, western",
+        "pubDate": "Fri, 20 Nov 2026 09:03:27 GMT"
+      },
       {
         "design_id": "11563208",
         "slug": "western-era-horse-head",
@@ -2257,23 +2282,23 @@
         "primary_keyword": "wolf motorcycle t-shirt",
         "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
         "pubDate": "Thu, 22 Oct 2026 23:53:33 GMT"
-      },
-      {
-        "design_id": "64960834",
-        "slug": "bikers-and-rebels-art-2",
-        "title": "Bikers and Rebels Art #2 T-Shirt",
-        "seo_title": "Wolf Motorcycle Biker T-Shirt | Rebel Art Tee",
-        "description": "Rev up your style with this fierce wolf and motorcycle biker t-shirt. Perfect for rebels of the open road. Shop the ultimate freedom apparel today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/64960834_0/1724581250/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bikers and Rebels Wolf Motorcycle Art T-Shirt Design",
-        "niche": "Animals",
-        "secondary_niche": "Hobbies",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, club, culture, freedom, gang, motorbike, motorcycles, rebel, road, travel, wolf, wolves",
-        "pubDate": "Wed, 21 Oct 2026 08:29:53 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "63313196",
+        "slug": "green-and-gold-rugby-player-3",
+        "title": "Green and Gold Rugby Player #3 T-Shirt",
+        "seo_title": "Green and Gold Rugby Player T-Shirt | SA Rugby Fan Gear",
+        "description": "Show your South African rugby pride with our green and gold rugby player t-shirt. Perfect for match day, braais, and die-hard fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63313196_0/1721657187/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #3 T-Shirt for South African rugby fans",
+        "niche": "hobbies",
+        "secondary_niche": "sports",
+        "primary_keyword": "South Africa rugby t-shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Fri, 20 Nov 2026 09:04:27 GMT"
+      },
       {
         "design_id": "63313203",
         "slug": "green-and-gold-rugby-player-4",
@@ -2679,23 +2704,23 @@
         "primary_keyword": "calm pink t-shirt",
         "tags": "blue, calm, cool, green, new, orange, pink, slogan, yellow",
         "pubDate": "Thu, 22 Oct 2026 23:54:33 GMT"
-      },
-      {
-        "design_id": "9024842",
-        "slug": "calm-orange",
-        "title": "Calm Orange T-Shirt",
-        "seo_title": "Calm Orange T-Shirt | Minimalist Slogan Tee",
-        "description": "Shop the Calm Orange T-Shirt featuring a powerful single-word slogan. Minimalist, comfortable, and eye-catching everyday wear for men and women.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/9024842_0/1586594345/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Calm Orange T-Shirt with minimalist single word typography design",
-        "niche": "Everyday",
-        "secondary_niche": "Typography",
-        "primary_keyword": "calm orange t-shirt",
-        "tags": "blue, calm, cool, green, horror, new, orange, pink, slogan, yellow",
-        "pubDate": "Wed, 21 Oct 2026 08:30:53 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "63313256",
+        "slug": "green-and-gold-rugby-player-10",
+        "title": "Green and Gold Rugby Player #10 T-Shirt",
+        "seo_title": "Green & Gold Rugby #10 T-Shirt | South Africa Fan Gear",
+        "description": "Embrace South African rugby pride with our Green and Gold Rugby #10 T-Shirt. Crafted for ultimate comfort. Shop the ultimate fan apparel today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63313256_0/1721657271/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #10 T-Shirt for South Africa Fans",
+        "niche": "Rugby",
+        "secondary_niche": "South Africa Sport",
+        "primary_keyword": "Green and Gold Rugby T-Shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Fri, 20 Nov 2026 09:05:27 GMT"
+      },
       {
         "design_id": "63312715",
         "slug": "green-and-gold-rugby-player-1",
@@ -3101,23 +3126,23 @@
         "primary_keyword": "Calm purple t-shirt",
         "tags": "blue, calm, cool, green, new, orange, pink, slogan, yellow",
         "pubDate": "Thu, 22 Oct 2026 23:55:33 GMT"
-      },
-      {
-        "design_id": "9027892",
-        "slug": "hero-yellow",
-        "title": "Hero Yellow T-Shirt",
-        "seo_title": "Hero Yellow Slogan T-Shirt",
-        "description": "Grab attention with our Hero Yellow T-Shirt. Featuring a powerful single-word slogan design, this minimalist typography tee is uplifting and bold.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/9027892_0/1586602948/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Hero Yellow Slogan Typography T-Shirt",
-        "niche": "Everyday",
-        "secondary_niche": "Typography",
-        "primary_keyword": "Hero yellow t-shirt",
-        "tags": "blue, cool, green, hero, new, orange, pink, slogan, yellow",
-        "pubDate": "Wed, 21 Oct 2026 08:31:53 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "12472882",
+        "slug": "birthday-vintage-year-forty-six-years-old",
+        "title": "Birthday Vintage Year - Forty Six Years Old T-Shirt",
+        "seo_title": "Vintage 46th Birthday T-Shirt - Forty Six Years Old",
+        "description": "Celebrate turning 46 with this retro vintage 46th birthday t-shirt. The perfect gift for anyone born forty six years ago. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12472882_0/1595587177/i_m:bi_production_blanks_ao7fb4tfadj8v4fkmc1o_1468361755,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage 46th birthday t-shirt with retro typography design",
+        "niche": "Everyday",
+        "secondary_niche": "Math",
+        "primary_keyword": "46th birthday t-shirt",
+        "tags": "birthday, christmas, cool, cute, fun, funny, music, party, science",
+        "pubDate": "Fri, 20 Nov 2026 09:06:27 GMT"
+      },
       {
         "design_id": "12472119",
         "slug": "birthday-vintage-year-twenty-three-years-old",
@@ -3523,23 +3548,23 @@
         "primary_keyword": "I Love Soccer Green T-Shirt",
         "tags": "soccer, clothing, football, i love, pitch, soccer ball",
         "pubDate": "Thu, 22 Oct 2026 23:56:33 GMT"
-      },
-      {
-        "design_id": "11419189",
-        "slug": "i-love-american-football-purple",
-        "title": "I Love American Football - Purple T-Shirt",
-        "seo_title": "I Love American Football Purple T-Shirt",
-        "description": "Show your passion for the gridiron with this I Love American Football purple t-shirt. Comfortable and stylish apparel for football fans everywhere.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/11419189_0/1592407541/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "I Love American Football Purple T-Shirt front view",
-        "niche": "Gaming",
-        "secondary_niche": "Math",
-        "primary_keyword": "American football t-shirt",
-        "tags": "american football, defense, football, gridiron, i love, mens clothing, teen, womens clothing",
-        "pubDate": "Wed, 21 Oct 2026 08:32:53 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15433430",
+        "slug": "industrial-engineer-in-purple-color-text",
+        "title": "Industrial Engineer in Purple Color Text T-Shirt",
+        "seo_title": "Industrial Engineer T-Shirt | Purple Text Design",
+        "description": "Shop the Industrial Engineer in Purple Color Text T-Shirt. Perfect gift for industrial engineers. Comfortable, stylish, and great for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15433430_0/1603709616/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Industrial Engineer in Purple Color Text T-Shirt displayed on a mockup",
+        "niche": "Engineer",
+        "secondary_niche": "",
+        "primary_keyword": "Industrial Engineer T-Shirt",
+        "tags": "aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Fri, 20 Nov 2026 09:07:27 GMT"
+      },
       {
         "design_id": "15466986",
         "slug": "mechanical-engineer-in-purple-color-text",
@@ -3945,23 +3970,23 @@
         "primary_keyword": "Chemical Engineer T-Shirt",
         "tags": "chemical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
         "pubDate": "Thu, 22 Oct 2026 23:57:33 GMT"
-      },
-      {
-        "design_id": "15382887",
-        "slug": "chemical-engineer-in-red-color-text",
-        "title": "Chemical Engineer in Red Color Text T-Shirt",
-        "seo_title": "Chemical Engineer T-Shirt | Red Text Typography Tee",
-        "description": "Showcase your profession with this Chemical Engineer red text T-shirt. Perfect for chemical engineers, science lovers, and everyday wear. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/15382887_0/1603560632/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_12_5_451x,s_630,q_90.jpg",
-        "image_alt": "Chemical Engineer in Red Color Text T-Shirt displayed on mannequin",
-        "niche": "Engineer",
-        "secondary_niche": "science",
-        "primary_keyword": "Chemical Engineer T-Shirt",
-        "tags": "chemical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
-        "pubDate": "Wed, 21 Oct 2026 08:33:53 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "63314588",
+        "slug": "green-and-gold-rugby-player-22",
+        "title": "Green and Gold Rugby Player #22 T-Shirt",
+        "seo_title": "Green and Gold Rugby Player #22 T-Shirt",
+        "description": "Embrace South African rugby spirit with our Green and Gold Rugby Player #22 T-Shirt. Perfect for matches, braais, and true fans. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63314588_0/1721659492/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #22 T-Shirt for South African rugby fans",
+        "niche": "Sports",
+        "secondary_niche": "Rugby",
+        "primary_keyword": "Green and Gold Rugby T-Shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Fri, 20 Nov 2026 09:08:27 GMT"
+      },
       {
         "design_id": "63314622",
         "slug": "green-and-gold-rugby-player-26",
@@ -4367,23 +4392,23 @@
         "primary_keyword": "funny slogan t-shirt",
         "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
         "pubDate": "Thu, 22 Oct 2026 23:58:33 GMT"
-      },
-      {
-        "design_id": "8887490",
-        "slug": "funny-and-colourful-slogan-yes-they-are-beautiful",
-        "title": "Funny and Colourful Slogan - Yes They Are Beautiful T-Shirt",
-        "seo_title": "Funny and Colourful Slogan T-Shirt",
-        "description": "Brighten your day with this funny and colourful slogan t-shirt. Playful, vibrant design for anyone who loves a lighter take on life. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8887490_0/1586092487/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_128_451x,s_630,q_90.jpg",
-        "image_alt": "Funny and Colourful Slogan T-Shirt Design",
-        "niche": "Everyday",
-        "secondary_niche": "Funny Text",
-        "primary_keyword": "funny slogan t-shirt",
-        "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
-        "pubDate": "Wed, 21 Oct 2026 08:34:53 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "15433426",
+        "slug": "industrial-engineer-in-pink-color-text",
+        "title": "Industrial Engineer in Pink Color Text T-Shirt",
+        "seo_title": "Industrial Engineer T-Shirt | Pink Text Design",
+        "description": "Showcase your profession with this Industrial Engineer T-Shirt featuring pink text. Perfect gift for industrial engineers and STEM professionals.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15433426_0/1603709607/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Industrial Engineer in Pink Color Text T-Shirt mockup",
+        "niche": "Engineer",
+        "secondary_niche": "Industrial",
+        "primary_keyword": "Industrial Engineer T-Shirt",
+        "tags": "aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Fri, 20 Nov 2026 09:09:27 GMT"
+      },
       {
         "design_id": "15466978",
         "slug": "mechanical-engineer-in-orange-color-text",
@@ -4789,23 +4814,23 @@
         "primary_keyword": "Chemical Engineer T-Shirt",
         "tags": "chemical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
         "pubDate": "Thu, 22 Oct 2026 23:59:33 GMT"
-      },
-      {
-        "design_id": "15382916",
-        "slug": "chemical-engineer-in-white-color-text",
-        "title": "Chemical Engineer in White Color Text T-Shirt",
-        "seo_title": "Chemical Engineer T-Shirt | Typography Science Tee",
-        "description": "Showcase your profession with this Chemical Engineer T-Shirt. Features clean white typography detailing chemical engineering. Shop comfortable apparel today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/15382916_0/1603560613/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
-        "image_alt": "Chemical Engineer in White Color Text T-Shirt on a model",
-        "niche": "Engineer",
-        "secondary_niche": "science",
-        "primary_keyword": "Chemical Engineer T-Shirt",
-        "tags": "chemical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
-        "pubDate": "Wed, 21 Oct 2026 08:35:53 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "12472303",
+        "slug": "birthday-vintage-year-thirty-seven-years-old",
+        "title": "Birthday Vintage Year - Thirty Seven Years Old T-Shirt",
+        "seo_title": "Vintage 37th Birthday T-Shirt | 1983 Retro Tee",
+        "description": "Celebrate turning 37 with our vintage 1983 birthday t-shirt. Perfect gift for anyone turning thirty-seven years old in retro style. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12472303_0/1595585836/i_m:bi_production_blanks_ypmyd1fntg5klzifbc7n_1462829021,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage 1983 Thirty Seven Years Old Birthday T-Shirt Product View",
+        "niche": "Science",
+        "secondary_niche": "",
+        "primary_keyword": "37th birthday t-shirt",
+        "tags": "birthday, christmas, cool, cute, fun, funny, music, party, science",
+        "pubDate": "Fri, 20 Nov 2026 09:10:27 GMT"
+      },
       {
         "design_id": "12472136",
         "slug": "birthday-vintage-year-twenty-nine-years-old",
@@ -5211,23 +5236,23 @@
         "primary_keyword": "Turquoise Gemstone T-Shirt",
         "tags": "crystal, gem, gems, gemstone, gemstones, mens clothing, stone, teen, womens clothing",
         "pubDate": "Thu, 22 Oct 2026 00:00:33 GMT"
-      },
-      {
-        "design_id": "12284981",
-        "slug": "corona-slogan-im-corona-free",
-        "title": "Corona Slogan - I'm Corona Free T-Shirt",
-        "seo_title": "Corona Free T-Shirt | Funny Pandemic Humor",
-        "description": "Lighten up your day with our funny Corona Free T-Shirt. Humorous pandemic slogan apparel designed to bring relief during tough times. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/12284981_0/1594998675/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "I'm Corona Free T-Shirt with funny pandemic humor slogan",
-        "niche": "science",
-        "secondary_niche": "",
-        "primary_keyword": "Corona Free T-Shirt",
-        "tags": "alcohol, blue, corona, coronavirus, covid, cute, face, funny, mens clothing, pandemic, summer, virus",
-        "pubDate": "Wed, 21 Oct 2026 08:36:53 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "63314654",
+        "slug": "green-and-gold-rugby-player-29",
+        "title": "Green and Gold Rugby Player #29 T-Shirt",
+        "seo_title": "Green & Gold Rugby Player T-Shirt | South Africa Fan Gear",
+        "description": "Embrace South African rugby spirit with our Green and Gold Rugby Player T-Shirt. Perfect comfort and durability for die-hard fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63314654_0/1721659574/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Green and Gold Rugby Player #29 T-Shirt for South Africa fans",
+        "niche": "Rugby",
+        "secondary_niche": "Sports",
+        "primary_keyword": "Green and Gold Rugby T-Shirt",
+        "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
+        "pubDate": "Fri, 20 Nov 2026 09:11:27 GMT"
+      },
       {
         "design_id": "63314012",
         "slug": "green-and-gold-rugby-player-13",
@@ -5633,20 +5658,6 @@
         "primary_keyword": "blue eyes t-shirt",
         "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
         "pubDate": "Thu, 22 Oct 2026 00:01:33 GMT"
-      },
-      {
-        "design_id": "8909032",
-        "slug": "funny-and-colourful-slogan-they-are-paid-for-and-w",
-        "title": "Funny and Colourful Slogan - They are Paid for and Works T-Shirt",
-        "seo_title": "Funny and Colourful Slogan T-Shirt",
-        "description": "Brighten your day with this funny and colourful slogan t-shirt. Featuring vibrant shades, cool design, and a lighthearted vibe for everyone.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8909032_0/1586176377/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_5_121_461x,s_630,q_90.jpg",
-        "image_alt": "Funny and colourful slogan t-shirt design with vibrant text",
-        "niche": "Everyday",
-        "secondary_niche": "Funny Text",
-        "primary_keyword": "funny slogan t-shirt",
-        "tags": "blue, child, cool, funny, new, old, slogan, woman, yellow, young",
-        "pubDate": "Wed, 21 Oct 2026 08:37:53 GMT"
       }
     ]
   }
