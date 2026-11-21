@@ -107,7 +107,7 @@ export default function DesignsPage() {
         <Pagination currentPage={1} totalPages={totalPages} basePath="/designs" />
 
         {/* Bottom CTA */}
-        <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-5 sm:p-8 text-center">
           <p className="text-slate-700 text-lg font-semibold mb-2">Looking for something specific?</p>
           <p className="text-slate-500 text-sm mb-6">
             Browse our 501 curated categories to find the exact theme, recipient, or niche you love.
@@ -115,7 +115,7 @@ export default function DesignsPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/categories"
-              className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5"
+              className="px-4 sm:px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm sm:text-base font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5 max-w-full text-center break-words"
             >
               Browse All 501 Categories
             </Link>
@@ -123,7 +123,7 @@ export default function DesignsPage() {
               href="https://www.teepublic.com/user/theblackpanther"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 font-bold rounded-xl transition-all duration-300"
+              className="px-4 sm:px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 text-sm sm:text-base font-bold rounded-xl transition-all duration-300 max-w-full text-center break-words"
             >
               View Full Store on TeePublic →
             </a>

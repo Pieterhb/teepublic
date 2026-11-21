@@ -186,10 +186,10 @@ export default async function CategoryPage({ params }: Props) {
       <div className="bg-slate-900 text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] mix-blend-overlay"></div>
         <div className="container mx-auto px-4 relative z-10 text-center">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-500/20 border border-indigo-400/30 rounded-full text-indigo-300 font-semibold tracking-wider uppercase mb-4 text-xs">
+          <div className="inline-flex items-center justify-center flex-wrap gap-1.5 sm:gap-2 px-3 py-1 bg-indigo-500/20 border border-indigo-400/30 rounded-full text-indigo-300 font-semibold tracking-normal sm:tracking-wider uppercase mb-4 text-[11px] sm:text-xs max-w-full text-center">
             <span>&#10024;</span> Curated Collection &mdash; {products.length} Designs
           </div>
-          <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold tracking-tight mb-6 capitalize break-words hyphens-auto">
             {category.title}
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
@@ -204,13 +204,13 @@ export default async function CategoryPage({ params }: Props) {
 
         {/* Curation indicator for large categories */}
         {products.length > 60 && (
-          <div className="my-8 p-6 bg-slate-50 rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
-            <p className="text-slate-700 font-medium mb-3">
+          <div className="my-8 p-4 sm:p-6 bg-slate-50 rounded-2xl border border-slate-200 text-center max-w-2xl mx-auto">
+            <p className="text-slate-700 font-medium mb-3 text-sm sm:text-base">
               Showing <strong>60</strong> of <strong>{products.length.toLocaleString()}</strong> designs in this curated collection.
             </p>
             <Link
               href="/designs"
-              className="inline-flex items-center gap-2 px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold rounded-xl transition-all shadow-sm"
+              className="inline-flex items-center justify-center flex-wrap gap-1 sm:gap-2 max-w-full px-4 sm:px-6 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white text-xs sm:text-sm font-semibold rounded-xl transition-all shadow-sm text-center break-words"
             >
               Explore Complete Catalog in All Designs →
             </Link>
@@ -266,7 +266,7 @@ export default async function CategoryPage({ params }: Props) {
                 <Link 
                   key={cat.slug} 
                   href={`/${cat.slug}`}
-                  className="px-6 py-3 bg-white border-2 border-slate-100 hover:border-indigo-600 text-slate-700 hover:text-indigo-700 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-300"
+                  className="max-w-full text-center px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-base bg-white border-2 border-slate-100 hover:border-indigo-600 text-slate-700 hover:text-indigo-700 rounded-xl font-semibold shadow-sm hover:shadow-md transition-all duration-300 break-words hyphens-auto"
                 >
                   {cat.title}
                 </Link>

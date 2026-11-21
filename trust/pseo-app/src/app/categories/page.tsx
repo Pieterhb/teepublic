@@ -104,7 +104,7 @@ export default function CategoriesPage() {
                 <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center mx-auto mb-2 group-hover:bg-indigo-100 transition-colors">
                   <span className="text-base">🐾</span>
                 </div>
-                <span className="block font-semibold text-slate-800 text-xs leading-tight capitalize line-clamp-2">
+                <span className="block font-semibold text-slate-800 text-xs leading-tight capitalize line-clamp-2 break-words hyphens-auto">
                   {cat.title}
                 </span>
                 <p className="text-xs text-slate-400 mt-1">{cat.productIds.length} designs</p>
@@ -113,7 +113,7 @@ export default function CategoriesPage() {
         </div>
 
         {/* Bottom CTA */}
-        <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
+        <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-5 sm:p-8 text-center">
           <p className="text-slate-700 text-lg font-semibold mb-2">Can&apos;t find what you&apos;re looking for?</p>
           <p className="text-slate-500 text-sm mb-6">
             Visit our full TeePublic store for even more designs, colors, and styles.
@@ -122,7 +122,7 @@ export default function CategoriesPage() {
             href="https://www.teepublic.com/user/theblackpanther"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5"
+            className="inline-block max-w-full px-4 sm:px-8 py-3 text-sm sm:text-base bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5 break-words text-center"
           >
             Visit Full TeePublic Store →
           </a>

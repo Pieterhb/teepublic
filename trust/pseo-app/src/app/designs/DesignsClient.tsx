@@ -88,7 +88,7 @@ export default function DesignsClient() {
 
       <main className="container mx-auto px-4 py-12">
         {/* Stats bar */}
-        <div className="flex items-center justify-between mb-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mb-8 text-center sm:text-left">
           <p className="text-slate-600 text-sm">
             {query
               ? <>Showing <strong>{displayProducts.length}</strong> of <strong>{filtered.length.toLocaleString()}</strong> results for &quot;{q}&quot;</>
@@ -115,7 +115,7 @@ export default function DesignsClient() {
 
         {/* Note about full catalog */}
         {!hasMore && (
-          <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-8 text-center">
+          <div className="mt-16 bg-indigo-50 border border-indigo-100 rounded-2xl p-5 sm:p-8 text-center">
             <p className="text-slate-700 text-lg font-semibold mb-2">
               Looking for something specific?
             </p>
@@ -125,7 +125,7 @@ export default function DesignsClient() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/categories"
-                className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5"
+                className="px-4 sm:px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white text-sm sm:text-base font-bold rounded-xl transition-all duration-300 hover:-translate-y-0.5 max-w-full text-center break-words"
               >
                 Browse All 501 Categories
               </Link>
@@ -133,7 +133,7 @@ export default function DesignsClient() {
                 href="https://www.teepublic.com/user/theblackpanther"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 font-bold rounded-xl transition-all duration-300"
+                className="px-4 sm:px-6 py-3 bg-white border-2 border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 text-sm sm:text-base font-bold rounded-xl transition-all duration-300 max-w-full text-center break-words"
               >
                 View Full Store on TeePublic →
               </a>

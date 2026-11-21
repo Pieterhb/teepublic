@@ -42,9 +42,9 @@ export const metadata: Metadata = {
 export default function PrivacyPolicyPage() {
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
-      <div className="bg-white dark:bg-slate-900 rounded-2xl p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800">
-        <h1 className="text-3xl md:text-4xl font-bold mb-4 flex items-center gap-3 text-slate-900 dark:text-white">
-          <span>📄</span> Privacy Policy for Black Panther Store
+      <div className="bg-white dark:bg-slate-900 rounded-2xl p-5 sm:p-8 md:p-12 shadow-sm border border-slate-200 dark:border-slate-800">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 flex flex-wrap items-center gap-2 sm:gap-3 text-slate-900 dark:text-white break-words">
+          <span>📄</span> <span>Privacy Policy for Black Panther Store</span>
         </h1>
         
         <p className="text-slate-500 dark:text-slate-400 mb-10 font-medium">
@@ -161,7 +161,7 @@ export default function PrivacyPolicyPage() {
                 <strong className="text-slate-900 dark:text-white">Website:</strong> <a href="https://blackpantherstore.co.za/" className="text-indigo-600 dark:text-indigo-400 hover:underline break-all">https://blackpantherstore.co.za/</a>
               </li>
               <li>
-                <strong className="text-slate-900 dark:text-white">Email:</strong> <a href="mailto:haasbroek.pieter@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline">haasbroek.pieter@gmail.com</a>
+                <strong className="text-slate-900 dark:text-white">Email:</strong> <a href="mailto:haasbroek.pieter@gmail.com" className="text-indigo-600 dark:text-indigo-400 hover:underline break-all">haasbroek.pieter@gmail.com</a>
               </li>
               <li>
                 <strong className="text-slate-900 dark:text-white">Location:</strong> South Africa

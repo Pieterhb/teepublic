@@ -135,7 +135,7 @@ export default async function ProductPage({ params }: Props) {
           <span>/</span>
           <Link href="/designs" className="hover:text-indigo-600 transition-colors">All Designs</Link>
           <span>/</span>
-          <span className="text-slate-900 font-medium truncate max-w-xs">{product.title}</span>
+          <span className="text-slate-900 font-medium truncate max-w-[200px] sm:max-w-xs">{product.title}</span>
         </div>
       </div>
 
@@ -160,11 +160,11 @@ export default async function ProductPage({ params }: Props) {
             </div>
             
             {/* Details Column */}
-            <div className="p-8 lg:p-16 flex flex-col justify-center">
-              <div className="inline-block px-3 py-1 bg-indigo-50 text-indigo-700 font-semibold text-xs rounded-full uppercase tracking-widest mb-6 w-fit">
+            <div className="p-4 sm:p-8 lg:p-16 flex flex-col justify-center">
+              <div className="inline-block max-w-full px-3 py-1 bg-indigo-50 text-indigo-700 font-semibold text-xs rounded-full uppercase tracking-wider sm:tracking-widest mb-6 w-fit break-words">
                 {product.primary_keyword || 'Apparel'}
               </div>
-              <h1 className="text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight">
+              <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-tight mb-6 tracking-tight break-words hyphens-auto">
                 {product.title}
               </h1>
               
@@ -217,7 +217,7 @@ export default async function ProductPage({ params }: Props) {
                 <Link 
                   key={cat.slug} 
                   href={`/${cat.slug}`}
-                  className="px-5 py-2.5 bg-white border border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 rounded-full font-medium shadow-sm hover:shadow-md transition-all duration-300"
+                  className="max-w-full text-center px-4 sm:px-5 py-2 sm:py-2.5 text-xs sm:text-base bg-white border border-slate-200 hover:border-indigo-300 text-slate-700 hover:text-indigo-700 rounded-full font-medium shadow-sm hover:shadow-md transition-all duration-300 break-words hyphens-auto"
                 >
                   {cat.title}
                 </Link>
