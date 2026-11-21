@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 09:03:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:25:58 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-11547074</guid>
+      <title><![CDATA[Western Era Cactus Cowboy T-Shirt | Vintage Old West Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-cactus-2</link>
+      <description><![CDATA[Embrace the Old West with our Western Era Cactus Cowboy T-Shirt. Perfect vintage design featuring a classic desert cactus and cowboy style. Shop now! #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11547074_0/1592761126/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_45_0_x626,s_630,q_90.jpg" alt="Western Era Cactus Cowboy T-Shirt with vintage Old West design" /><p>Embrace the Old West with our Western Era Cactus Cowboy T-Shirt. Perfect vintage design featuring a classic desert cactus and cowboy style. Shop now! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Sat, 21 Nov 2026 06:25:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11547074_0/1592761126/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_45_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11547074_0/1592761126/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_45_0_x626,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11547074_0/1592761126/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_45_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-11546253</guid>
       <title><![CDATA[Western Era Whiskey Bottle & Glass T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/63938523_0/1722695858/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63938523_0/1722695858/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/63938523_0/1722695858/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-64961646</guid>
-      <title><![CDATA[Wolf Motorcycle T-Shirt | Biker Rebel Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-art-9</link>
-      <description><![CDATA[Rev up your style with this striking wolf and motorcycle t-shirt. Perfect for freedom-loving bikers and rebels of the open road. Shop now! #teepublic #apparel #merch #animals]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/64961646_0/1724582676/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Striking wolf and motorcycle design t-shirt for bikers and rebels" /><p>Rev up your style with this striking wolf and motorcycle t-shirt. Perfect for freedom-loving bikers and rebels of the open road. Shop now! #teepublic #apparel #merch #animals</p>]]></content:encoded>
-      <pubDate>Thu, 22 Oct 2026 23:53:33 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/64961646_0/1724582676/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64961646_0/1724582676/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/64961646_0/1724582676/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

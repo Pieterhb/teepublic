@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for All Collections</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 09:11:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:33:58 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - All Collections</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-social-9077389</guid>
+      <title><![CDATA[Sexy Purple T-Shirt | Typography Slogan Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/sexy-purple</link>
+      <description><![CDATA[Grab attention with this sexy purple t-shirt featuring a powerful single word slogan. Funny, uplifting, and stylish typography tee for everyday wear. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9077389_0/1586776082/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sexy Purple T-Shirt with funny slogan typography" /><p>Grab attention with this sexy purple t-shirt featuring a powerful single word slogan. Funny, uplifting, and stylish typography tee for everyday wear. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Sat, 21 Nov 2026 06:33:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9077389_0/1586776082/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9077389_0/1586776082/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9077389_0/1586776082/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-social-63314654</guid>
       <title><![CDATA[Green & Gold Rugby Player T-Shirt | South Africa Fan Gear]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/64964544_0/1724590824/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/64964544_0/1724590824/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/64964544_0/1724590824/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-social-8909173</guid>
-      <title><![CDATA[Funny Blue Eyes Slogan T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/funny-and-colourful-slogan-in-case-you-dont-see-it</link>
-      <description><![CDATA[Brighten up your day with this funny and colourful slogan t-shirt featuring blue eyes design. Perfect casual wear for a lighthearted and cool look. #teepublic #apparel #merch #everyday]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/8909173_0/1586176774/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_19_102_432x,s_630,q_90.jpg" alt="Funny and Colourful Slogan In Case You Don't See It I Have Blue Eyes T-Shirt" /><p>Brighten up your day with this funny and colourful slogan t-shirt featuring blue eyes design. Perfect casual wear for a lighthearted and cool look. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
-      <pubDate>Thu, 22 Oct 2026 00:01:33 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/8909173_0/1586176774/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_19_102_432x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8909173_0/1586176774/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_19_102_432x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/8909173_0/1586176774/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_19_102_432x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

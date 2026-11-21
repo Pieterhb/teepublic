@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Professions Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 09:09:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:31:58 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/professions-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Professions Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-professions-shirts-15466973</guid>
+      <title><![CDATA[Mechanical Engineer T-Shirt | Green Text Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/mechanical-engineer-in-green-color-text</link>
+      <description><![CDATA[Showcase your profession with this Mechanical Engineer Green Text T-Shirt. Perfect for mechanical engineers, physics and math lovers. Shop now! #teepublic #apparel #merch #engineer]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15466973_1/1603788571/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" alt="Mechanical Engineer in Green Color Text T-Shirt displayed on a mockup" /><p>Showcase your profession with this Mechanical Engineer Green Text T-Shirt. Perfect for mechanical engineers, physics and math lovers. Shop now! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
+      <pubDate>Sat, 21 Nov 2026 06:31:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/15466973_1/1603788571/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15466973_1/1603788571/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/15466973_1/1603788571/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-professions-shirts-15433426</guid>
       <title><![CDATA[Industrial Engineer T-Shirt | Pink Text Design]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/15383887_0/1603563201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15383887_0/1603563201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/15383887_0/1603563201/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-professions-shirts-15382924</guid>
-      <title><![CDATA[Chemical Engineer T-Shirt | Typography Science Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/chemical-engineer-in-yellow-color-text</link>
-      <description><![CDATA[Showcase your profession with our Chemical Engineer in Yellow Color Text T-Shirt. Perfect gift for chemical engineers and science lovers. Shop now! #teepublic #apparel #merch #engineer]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/15382924_0/1603560637/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Chemical Engineer in Yellow Color Text T-Shirt mockup" /><p>Showcase your profession with our Chemical Engineer in Yellow Color Text T-Shirt. Perfect gift for chemical engineers and science lovers. Shop now! #teepublic #apparel #merch #engineer</p>]]></content:encoded>
-      <pubDate>Thu, 22 Oct 2026 23:59:33 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/15382924_0/1603560637/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/15382924_0/1603560637/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/15382924_0/1603560637/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

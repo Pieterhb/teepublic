@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Nov 2026 09:06:27 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 06:28:58 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-12472889</guid>
+      <title><![CDATA[Vintage 49th Birthday T-Shirt | Forty Nine Years Old]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-forty-nine-years-old</link>
+      <description><![CDATA[Celebrate turning 49 with this vintage birthday t-shirt. Perfect gift for anyone celebrating their 49th year. Available in various styles and products. #teepublic #apparel #merch #math]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12472889_0/1595587216/i_m:bi_production_blanks_ao7fb4tfadj8v4fkmc1o_1468361755,c_0_0_470x,s_630,q_90.jpg" alt="Vintage 49th Birthday T-Shirt Design" /><p>Celebrate turning 49 with this vintage birthday t-shirt. Perfect gift for anyone celebrating their 49th year. Available in various styles and products. #teepublic #apparel #merch #math</p>]]></content:encoded>
+      <pubDate>Sat, 21 Nov 2026 06:28:58 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12472889_0/1595587216/i_m:bi_production_blanks_ao7fb4tfadj8v4fkmc1o_1468361755,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12472889_0/1595587216/i_m:bi_production_blanks_ao7fb4tfadj8v4fkmc1o_1468361755,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12472889_0/1595587216/i_m:bi_production_blanks_ao7fb4tfadj8v4fkmc1o_1468361755,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-12472882</guid>
       <title><![CDATA[Vintage 46th Birthday T-Shirt - Forty Six Years Old]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/11443961_0/1592474480/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11443961_0/1592474480/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/11443961_0/1592474480/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-11477890</guid>
-      <title><![CDATA[I Love Soccer Green T-Shirt | Soccer Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/i-love-soccer-green</link>
-      <description><![CDATA[Show your passion for the world's most popular sport with this I Love Soccer Green T-Shirt. Perfect for fans and players. Order yours today! #teepublic #apparel #merch #gaming]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11477890_0/1592566694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="I Love Soccer Green T-Shirt front view" /><p>Show your passion for the world's most popular sport with this I Love Soccer Green T-Shirt. Perfect for fans and players. Order yours today! #teepublic #apparel #merch #gaming</p>]]></content:encoded>
-      <pubDate>Thu, 22 Oct 2026 23:56:33 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/11477890_0/1592566694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11477890_0/1592566694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/11477890_0/1592566694/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
