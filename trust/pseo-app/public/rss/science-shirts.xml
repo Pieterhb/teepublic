@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 06:32:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:48:47 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-12473631</guid>
+      <title><![CDATA[Vintage 1947 73rd Birthday T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-seventy-three-years-old</link>
+      <description><![CDATA[Celebrate turning 73 with this vintage 1947 birthday t-shirt. Perfect gift for anyone turning seventy three years old in style. #teepublic #apparel #merch #science]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12473631_0/1595589128/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" alt="Vintage 1947 seventy three years old birthday t-shirt design" /><p>Celebrate turning 73 with this vintage 1947 birthday t-shirt. Perfect gift for anyone turning seventy three years old in style. #teepublic #apparel #merch #science</p>]]></content:encoded>
+      <pubDate>Sun, 22 Nov 2026 08:48:47 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12473631_0/1595589128/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12473631_0/1595589128/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12473631_0/1595589128/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-12473801</guid>
       <title><![CDATA[Eighty Years Old T-Shirt Vintage Birthday]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12043807_0/1594222126/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_320_10_141x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12043807_0/1594222126/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_320_10_141x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12043807_0/1594222126/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_320_10_141x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12284972</guid>
-      <title><![CDATA[Funny Corona Slogan T-Shirt | Covid Humor Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/corona-slogan-no-way-corona</link>
-      <description><![CDATA[Lighten up tough times with our funny corona slogan t-shirt. Humorous Covid-19 novelty tee designed to bring a smile during the pandemic. #teepublic #apparel #merch #science]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12284972_0/1594998657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Funny Corona Slogan No Way Corona T-Shirt Design" /><p>Lighten up tough times with our funny corona slogan t-shirt. Humorous Covid-19 novelty tee designed to bring a smile during the pandemic. #teepublic #apparel #merch #science</p>]]></content:encoded>
-      <pubDate>Fri, 23 Oct 2026 08:35:03 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12284972_0/1594998657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12284972_0/1594998657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12284972_0/1594998657/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

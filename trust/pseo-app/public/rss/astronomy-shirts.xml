@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Astronomy Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Nov 2026 06:23:58 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 08:39:47 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/astronomy-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Astronomy Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-astronomy-shirts-61577284</guid>
+      <title><![CDATA[Hologram Man & Volcano T-Shirt | Futuristic Sci-Fi Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/hologram-man-and-a-volcano-11</link>
+      <description><![CDATA[Discover the Hologram Man and a Volcano T-Shirt. A striking blend of futuristic holograms and primal volcanic power. Shop unique sci-fi apparel today! #teepublic #apparel #merch #astronomy]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61577284_0/1718454762/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Hologram Man and a Volcano #11 T-Shirt futuristic digital art design" /><p>Discover the Hologram Man and a Volcano T-Shirt. A striking blend of futuristic holograms and primal volcanic power. Shop unique sci-fi apparel today! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
+      <pubDate>Sun, 22 Nov 2026 08:39:47 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61577284_0/1718454762/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61577284_0/1718454762/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61577284_0/1718454762/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-astronomy-shirts-61577463</guid>
       <title><![CDATA[Hologram Man and Volcano T-Shirt | Sci-Fi Art Apparel]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/8441567_0/1584017282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/8441567_0/1584017282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/8441567_0/1584017282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-astronomy-shirts-9304074</guid>
-      <title><![CDATA[Yin Yang Triangle T-Shirt | Chinese Zodiac Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/yin-yang-triangle-red-blue-and-yellow</link>
-      <description><![CDATA[Discover the balance of the universe with our Yin Yang Triangle T-Shirt featuring Chinese zodiac symbolism. Shop this unique design today! #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9304074_0/1587405404/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Yin Yang Triangle Red Blue and Yellow T-Shirt product view" /><p>Discover the balance of the universe with our Yin Yang Triangle T-Shirt featuring Chinese zodiac symbolism. Shop this unique design today! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Fri, 23 Oct 2026 08:26:03 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9304074_0/1587405404/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9304074_0/1587405404/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9304074_0/1587405404/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
