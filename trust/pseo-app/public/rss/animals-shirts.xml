@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 08:41:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 09:38:08 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-11547758</guid>
+      <title><![CDATA[Western Era Cowboy on Horseback T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-cowboy-on-horseback-2</link>
+      <description><![CDATA[Celebrate the Old West with our Western Era Cowboy on Horseback T-Shirt. Perfect for history and cowboy fans. Shop this classic retro design today! #teepublic #apparel #merch #animals]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11547758_0/1592763045/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Cowboy on Horseback T-Shirt Graphic Design" /><p>Celebrate the Old West with our Western Era Cowboy on Horseback T-Shirt. Perfect for history and cowboy fans. Shop this classic retro design today! #teepublic #apparel #merch #animals</p>]]></content:encoded>
+      <pubDate>Mon, 23 Nov 2026 09:38:08 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11547758_0/1592763045/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11547758_0/1592763045/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11547758_0/1592763045/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-11546260</guid>
       <title><![CDATA[Western Era Cactus T-Shirt | Old West Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-63938517</guid>
-      <title><![CDATA[Bald Eagle Motorcycle T-Shirt | Freedom Biker Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/ride-with-the-bald-eagle-on-a-motorcyle-8</link>
-      <description><![CDATA[Embrace freedom and adventure with our Bald Eagle motorcycle T-shirt. Perfect patriotic gift for bikers and bird lovers. Shop this unique design today! #teepublic #apparel #merch #bird]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63938517_0/1722695841/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bald Eagle riding a motorcycle graphic tee design" /><p>Embrace freedom and adventure with our Bald Eagle motorcycle T-shirt. Perfect patriotic gift for bikers and bird lovers. Shop this unique design today! #teepublic #apparel #merch #bird</p>]]></content:encoded>
-      <pubDate>Sat, 24 Oct 2026 08:02:46 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/63938517_0/1722695841/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63938517_0/1722695841/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/63938517_0/1722695841/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

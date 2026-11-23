@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for All Collections</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 08:49:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 09:46:08 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - All Collections</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-social-63247397</guid>
+      <title><![CDATA[World Rugby Champions #15 T-Shirt | South Africa Fan Gear]]></title>
+      <link>https://blackpantherstore.co.za/design/world-rugby-champions-15</link>
+      <description><![CDATA[Celebrate South African rugby with our World Rugby Champions #15 T-Shirt. Durable, comfortable, and perfect for die-hard fans. Shop now! #teepublic #apparel #merch #sports]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63247397_0/1721558302/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg" alt="World Rugby Champions #15 T-Shirt for South African rugby fans" /><p>Celebrate South African rugby with our World Rugby Champions #15 T-Shirt. Durable, comfortable, and perfect for die-hard fans. Shop now! #teepublic #apparel #merch #sports</p>]]></content:encoded>
+      <pubDate>Mon, 23 Nov 2026 09:46:08 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63247397_0/1721558302/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63247397_0/1721558302/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63247397_0/1721558302/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-social-9077393</guid>
       <title><![CDATA[Sexy Yellow T-Shirt | Funny Word Slogan Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9027695_0/1586602328/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9027695_0/1586602328/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9027695_0/1586602328/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-social-65143343</guid>
-      <title><![CDATA[Bikers and Rebels Motorcycle Skull T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/bikers-and-rebels-digital-art-4</link>
-      <description><![CDATA[Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders who embrace the spirit of freedom and rebellion on the open road. #teepublic #apparel #merch #motorcycle]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/65143343_0/1724846390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bikers and Rebels Digital Art Skull and Motorcycle T-Shirt" /><p>Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders who embrace the spirit of freedom and rebellion on the open road. #teepublic #apparel #merch #motorcycle</p>]]></content:encoded>
-      <pubDate>Sat, 24 Oct 2026 08:10:46 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/65143343_0/1724846390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/65143343_0/1724846390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/65143343_0/1724846390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

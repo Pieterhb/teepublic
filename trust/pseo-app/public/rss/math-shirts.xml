@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Nov 2026 08:44:47 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 09:41:08 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-12473795</guid>
+      <title><![CDATA[78th Birthday Vintage 1942 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-seventy-eight-years-old</link>
+      <description><![CDATA[Celebrate turning 78 with this vintage 1942 birthday t-shirt. Perfect gift for anyone celebrating their seventy eighth year. Order yours today! #teepublic #apparel #merch #math]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12473795_0/1595589617/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" alt="Vintage 78th Birthday T-Shirt Seventy Eight Years Old Design" /><p>Celebrate turning 78 with this vintage 1942 birthday t-shirt. Perfect gift for anyone celebrating their seventy eighth year. Order yours today! #teepublic #apparel #merch #math</p>]]></content:encoded>
+      <pubDate>Mon, 23 Nov 2026 09:41:08 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12473795_0/1595589617/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12473795_0/1595589617/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12473795_0/1595589617/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-12472293</guid>
       <title><![CDATA[Thirty Five Years Old Vintage Birthday T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61466821_0/1718197493/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61466821_0/1718197493/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61466821_0/1718197493/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-61467042</guid>
-      <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Universe Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/sacred-geometry-art-20</link>
-      <description><![CDATA[Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Embrace harmony, balance, and spiritual enlightenment with this unique design. #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61467042_0/1718197972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sacred Geometry Art #20 T-Shirt with mystic patterns" /><p>Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Embrace harmony, balance, and spiritual enlightenment with this unique design. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Sat, 24 Oct 2026 08:05:46 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61467042_0/1718197972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61467042_0/1718197972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61467042_0/1718197972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

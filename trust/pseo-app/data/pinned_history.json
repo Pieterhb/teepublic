@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-11-22T08:49:47.852Z",
-  "lastAdvanceDate": "2026-11-22",
-  "dayCounter": 94,
-  "totalPinned": 1034,
+  "lastUpdated": "2026-11-23T09:46:08.734Z",
+  "lastAdvanceDate": "2026-11-23",
+  "dayCounter": 95,
+  "totalPinned": 1045,
   "pinnedIds": [
     "93523632",
     "8330152",
@@ -1037,10 +1037,35 @@
     "9077392",
     "15433437",
     "12473631",
-    "9077393"
+    "9077393",
+    "61576645",
+    "63247687",
+    "11547758",
+    "9724747",
+    "9724340",
+    "12473795",
+    "15433855",
+    "63247438",
+    "15433414",
+    "60491485",
+    "63247397"
   ],
   "boardFeeds": {
     "astronomy-shirts": [
+      {
+        "design_id": "61576645",
+        "slug": "hologram-man-and-a-volcano-1",
+        "title": "Hologram Man and a Volcano #1 T-Shirt",
+        "seo_title": "Hologram Man and Volcano T-Shirt | Sci-Fi Art Tee",
+        "description": "Discover the Hologram Man and Volcano T-Shirt. A striking blend of futuristic tech and primal nature aesthetics. Shop this unique AI art design today.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/61576645_0/1718452647/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Hologram Man and a Volcano graphic print on a stylish T-shirt",
+        "niche": "Astronomy",
+        "secondary_niche": "Physics",
+        "primary_keyword": "Hologram Man T-Shirt",
+        "tags": "ai art, ai generated, artificial intelligence, digital art, digital artwork",
+        "pubDate": "Mon, 23 Nov 2026 09:36:08 GMT"
+      },
       {
         "design_id": "61577284",
         "slug": "hologram-man-and-a-volcano-11",
@@ -1446,23 +1471,23 @@
         "primary_keyword": "Captain Scarlet T-Shirt",
         "tags": "captain scarlet, anderson, black, captain, film, green, new, scarlet, sylvia, toys, white",
         "pubDate": "Sun, 25 Oct 2026 08:18:43 GMT"
-      },
-      {
-        "design_id": "8441567",
-        "slug": "captain-scarlet-and-captain-black",
-        "title": "Captain Scarlet & Captain Black T-Shirt",
-        "seo_title": "Captain Scarlet & Captain Black T-Shirt",
-        "description": "Shop the ultimate Captain Scarlet & Captain Black t-shirt celebrating Gerry Anderson's classic sci-fi animation. Premium print-on-demand style.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/8441567_0/1584017282/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Captain Scarlet and Captain Black Retro Sci-Fi T-Shirt Design",
-        "niche": "Gaming",
-        "secondary_niche": "Astronomy",
-        "primary_keyword": "Captain Scarlet T-Shirt",
-        "tags": "captain scarlet, anderson, black, captain, film, green, new, scarlet, sylvia, toys, white",
-        "pubDate": "Sat, 24 Oct 2026 08:00:46 GMT"
       }
     ],
     "hobbies-shirts": [
+      {
+        "design_id": "63247687",
+        "slug": "world-rugby-champions-21",
+        "title": "World Rugby Champions #21 T-Shirt",
+        "seo_title": "World Rugby Champions T-Shirt | South Africa Fan Gear",
+        "description": "Embrace the spirit of South African rugby with our exclusive World Rugby Champions T-Shirt. Crafted for comfort and durability. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63247687_0/1721558644/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "World Rugby Champions #21 T-Shirt for South Africa fans",
+        "niche": "hobbies",
+        "secondary_niche": "sports",
+        "primary_keyword": "World Rugby Champions T-Shirt",
+        "tags": "rugby, champions, champs, rugby player, rugby world cup, south africa, sport, sports, springboks",
+        "pubDate": "Mon, 23 Nov 2026 09:37:08 GMT"
+      },
       {
         "design_id": "63248137",
         "slug": "world-rugby-champions-33",
@@ -1868,23 +1893,23 @@
         "primary_keyword": "bald eagle t-shirt",
         "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
         "pubDate": "Sun, 25 Oct 2026 08:19:43 GMT"
-      },
-      {
-        "design_id": "63938838",
-        "slug": "ride-with-the-bald-eagle-on-a-motorcyle-13",
-        "title": "Ride with the Bald Eagle on a Motorcyle #13 T-Shirt",
-        "seo_title": "Bald Eagle Motorcycle T-Shirt | American Freedom Tee",
-        "description": "Embrace freedom with our bald eagle motorcycle t-shirt. Featuring a majestic eagle and powerful bike, this patriotic shirt is perfect for bikers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/63938838_0/1722696385/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bald Eagle on a Motorcycle T-Shirt Design with American Freedom Theme",
-        "niche": "Bird",
-        "secondary_niche": "hobbies",
-        "primary_keyword": "bald eagle motorcycle t-shirt",
-        "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
-        "pubDate": "Sat, 24 Oct 2026 08:01:46 GMT"
       }
     ],
     "animals-shirts": [
+      {
+        "design_id": "11547758",
+        "slug": "western-era-cowboy-on-horseback-2",
+        "title": "Western Era - Cowboy on Horseback 2 T-Shirt",
+        "seo_title": "Western Era Cowboy on Horseback T-Shirt",
+        "description": "Celebrate the Old West with our Western Era Cowboy on Horseback T-Shirt. Perfect for history and cowboy fans. Shop this classic retro design today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/11547758_0/1592763045/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Western Era Cowboy on Horseback T-Shirt Graphic Design",
+        "niche": "Animals",
+        "secondary_niche": "History",
+        "primary_keyword": "Cowboy on Horseback T-Shirt",
+        "tags": "cowboy on horseback, cowboy, era, gunslinger, old west, revolver, rifle, usa, western",
+        "pubDate": "Mon, 23 Nov 2026 09:38:08 GMT"
+      },
       {
         "design_id": "11546260",
         "slug": "western-era-cactus-1",
@@ -2290,23 +2315,23 @@
         "primary_keyword": "Portugal Monster Truck T-Shirt",
         "tags": "monster truck, ai art, ai generated, artificial intelligence, digital art, digital artwork, monster trucks, monsters, portugal, truck",
         "pubDate": "Sun, 25 Oct 2026 08:20:43 GMT"
-      },
-      {
-        "design_id": "63938517",
-        "slug": "ride-with-the-bald-eagle-on-a-motorcyle-8",
-        "title": "Ride with the Bald Eagle on a Motorcyle #8 T-Shirt",
-        "seo_title": "Bald Eagle Motorcycle T-Shirt | Freedom Biker Tee",
-        "description": "Embrace freedom and adventure with our Bald Eagle motorcycle T-shirt. Perfect patriotic gift for bikers and bird lovers. Shop this unique design today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/63938517_0/1722695841/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bald Eagle riding a motorcycle graphic tee design",
-        "niche": "Bird",
-        "secondary_niche": "Animals",
-        "primary_keyword": "Bald Eagle T-Shirt",
-        "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
-        "pubDate": "Sat, 24 Oct 2026 08:02:46 GMT"
       }
     ],
     "minimalist-engineer-shirts": [
+      {
+        "design_id": "9724747",
+        "slug": "rainbow-cross-in-glass-ball",
+        "title": "Rainbow Cross in Glass Ball T-Shirt",
+        "seo_title": "Rainbow Cross in Glass Ball T-Shirt | Faith Tee",
+        "description": "Shop the unique Rainbow Cross in Glass Ball T-Shirt. A beautiful Christian symbol featuring a glass orb design. Perfect everyday faith apparel.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9724747_0/1588438158/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Rainbow Cross in Glass Ball T-Shirt mockup showing religious glass orb design",
+        "niche": "Christianity",
+        "secondary_niche": "Faith",
+        "primary_keyword": "Rainbow Cross T-Shirt",
+        "tags": "cross, ball, christianity, colors, glass, online, unique, yellow",
+        "pubDate": "Mon, 23 Nov 2026 09:39:08 GMT"
+      },
       {
         "design_id": "9724356",
         "slug": "black-and-white-cross-in-glass-ball",
@@ -2712,23 +2737,23 @@
         "primary_keyword": "South Africa rugby t-shirt",
         "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
         "pubDate": "Sun, 25 Oct 2026 08:21:43 GMT"
-      },
-      {
-        "design_id": "9024875",
-        "slug": "calm-blue",
-        "title": "Calm Blue T-Shirt",
-        "seo_title": "Calm Blue T-Shirt | Minimalist Typography Tee",
-        "description": "Discover the Calm Blue T-Shirt featuring powerful minimalist typography. A cool, serene blue shirt designed to grab attention with a single word.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/9024875_0/1586594326/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Calm Blue T-Shirt with minimalist typography and slogan design",
-        "niche": "Everyday",
-        "secondary_niche": "Minimalist",
-        "primary_keyword": "Calm Blue T-Shirt",
-        "tags": "blue, calm, cool, green, new, orange, pink, slogan, yellow",
-        "pubDate": "Sat, 24 Oct 2026 08:03:46 GMT"
       }
     ],
     "minimalist-shirts": [
+      {
+        "design_id": "9724340",
+        "slug": "blue-and-white-cross-in-glass-ball",
+        "title": "Blue and White Cross in Glass Ball T-Shirt",
+        "seo_title": "Blue and White Glass Cross T-Shirt",
+        "description": "Shop the unique Blue and White Cross in Glass Ball T-Shirt. A beautiful Christian symbol design featuring a glass orb. Perfect for everyday wear.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/9724340_0/1588437341/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Blue and White Cross in Glass Ball T-Shirt design preview",
+        "niche": "Everyday",
+        "secondary_niche": "Christianity",
+        "primary_keyword": "Christian cross t-shirt",
+        "tags": "cross, ball, christianity, colors, glass, online, unique, yellow",
+        "pubDate": "Mon, 23 Nov 2026 09:40:08 GMT"
+      },
       {
         "design_id": "9723960",
         "slug": "yellow-cross-in-glass-ball",
@@ -3134,23 +3159,23 @@
         "primary_keyword": "Rugby Player T-Shirt",
         "tags": "rugby player, africa, rugby, rugby world cup, south africa, sport, sports, springbok, springboks",
         "pubDate": "Sun, 25 Oct 2026 08:22:43 GMT"
-      },
-      {
-        "design_id": "9024840",
-        "slug": "calm-green",
-        "title": "Calm Green T-Shirt",
-        "seo_title": "Calm Green T-Shirt | Minimalist Slogan Tee",
-        "description": "Discover the power of single words with our Calm Green T-Shirt. Minimalist typography and uplifting slogans make this tee a standout everyday wardrobe staple.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/9024840_0/1586594335/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Calm Green T-Shirt with minimalist typography and slogan",
-        "niche": "Everyday",
-        "secondary_niche": "Minimalist",
-        "primary_keyword": "Calm Green T-Shirt",
-        "tags": "blue, calm, cool, green, new, orange, pink, slogan, yellow",
-        "pubDate": "Sat, 24 Oct 2026 08:04:46 GMT"
       }
     ],
     "math-shirts": [
+      {
+        "design_id": "12473795",
+        "slug": "birthday-vintage-year-seventy-eight-years-old",
+        "title": "Birthday Vintage Year - Seventy Eight Years Old T-Shirt",
+        "seo_title": "78th Birthday Vintage 1942 T-Shirt",
+        "description": "Celebrate turning 78 with this vintage 1942 birthday t-shirt. Perfect gift for anyone celebrating their seventy eighth year. Order yours today!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/12473795_0/1595589617/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Vintage 78th Birthday T-Shirt Seventy Eight Years Old Design",
+        "niche": "Math",
+        "secondary_niche": "",
+        "primary_keyword": "78th birthday t-shirt",
+        "tags": "birthday, christmas, cool, cute, fun, funny, music, party, science",
+        "pubDate": "Mon, 23 Nov 2026 09:41:08 GMT"
+      },
       {
         "design_id": "12472293",
         "slug": "birthday-vintage-year-thirty-five-years-old",
@@ -3556,23 +3581,23 @@
         "primary_keyword": "sacred geometry t-shirt",
         "tags": "geometry, ai art, digital art, digital artwork, geometry shapes, meditation, sacred geometry",
         "pubDate": "Sun, 25 Oct 2026 08:23:43 GMT"
-      },
-      {
-        "design_id": "61467042",
-        "slug": "sacred-geometry-art-20",
-        "title": "Sacred Geometry Art #20 T-Shirt",
-        "seo_title": "Sacred Geometry Art T-Shirt | Mystic Universe Tee",
-        "description": "Unveil mystic universe patterns with our Sacred Geometry Art T-Shirt. Embrace harmony, balance, and spiritual enlightenment with this unique design.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/61467042_0/1718197972/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Sacred Geometry Art #20 T-Shirt with mystic patterns",
-        "niche": "Astronomy",
-        "secondary_niche": "Math",
-        "primary_keyword": "Sacred Geometry T-Shirt",
-        "tags": "geometry, ai art, digital art, digital artwork, geometry shapes, meditation, sacred geometry",
-        "pubDate": "Sat, 24 Oct 2026 08:05:46 GMT"
       }
     ],
     "engineer-shirts": [
+      {
+        "design_id": "15433855",
+        "slug": "marine-engineer-in-pink-color-text",
+        "title": "Marine Engineer in Pink Color Text T-Shirt",
+        "seo_title": "Marine Engineer T-Shirt | Pink Text Tee",
+        "description": "Showcase your profession with this Marine Engineer T-Shirt featuring stylish pink text. Perfect gift for marine engineers and maritime professionals.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15433855_0/1603710664/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Marine Engineer in Pink Color Text T-Shirt displayed on a model",
+        "niche": "Engineer",
+        "secondary_niche": "science",
+        "primary_keyword": "Marine Engineer T-Shirt",
+        "tags": "aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Mon, 23 Nov 2026 09:42:08 GMT"
+      },
       {
         "design_id": "15466987",
         "slug": "mechanical-engineer-in-turquoise-color-text",
@@ -3978,23 +4003,23 @@
         "primary_keyword": "Electrical Engineer T-Shirt",
         "tags": "electrical engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
         "pubDate": "Sun, 25 Oct 2026 08:24:43 GMT"
-      },
-      {
-        "design_id": "15383868",
-        "slug": "civil-engineer-in-black-color-text",
-        "title": "Civil Engineer in Black Color Text T-Shirt",
-        "seo_title": "Civil Engineer T-Shirt | Typography Profession Apparel",
-        "description": "Showcase your profession with this Civil Engineer T-Shirt featuring bold black text. Perfect gift for civil engineers, builders, and construction pros.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/15383868_0/1603563177/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
-        "image_alt": "Civil Engineer in Black Color Text T-Shirt displayed flat",
-        "niche": "Engineer",
-        "secondary_niche": "Construction",
-        "primary_keyword": "Civil Engineer T-Shirt",
-        "tags": "civil engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
-        "pubDate": "Sat, 24 Oct 2026 08:06:46 GMT"
       }
     ],
     "everyday-shirts": [
+      {
+        "design_id": "63247438",
+        "slug": "world-rugby-champions-18",
+        "title": "World Rugby Champions #18 T-Shirt",
+        "seo_title": "World Rugby Champions #18 T-Shirt | South Africa Fan Gear",
+        "description": "Embrace South African rugby pride with our World Rugby Champions #18 T-Shirt. Durable, comfortable apparel crafted for die-hard fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63247438_0/1721558337/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "World Rugby Champions #18 T-Shirt for South Africa rugby fans",
+        "niche": "Sports",
+        "secondary_niche": "Rugby",
+        "primary_keyword": "World Rugby Champions T-Shirt",
+        "tags": "rugby, champions, champs, rugby player, rugby world cup, south africa, sport, sports, springboks",
+        "pubDate": "Mon, 23 Nov 2026 09:43:08 GMT"
+      },
       {
         "design_id": "9077392",
         "slug": "sexy-red",
@@ -4400,23 +4425,23 @@
         "primary_keyword": "Bald Eagle T-Shirt",
         "tags": "motorcycle, adventure, bike, biker, camping, eagle, freedom, highway, journey, nature, patriot, ride, road, travel",
         "pubDate": "Sun, 25 Oct 2026 08:25:43 GMT"
-      },
-      {
-        "design_id": "65143793",
-        "slug": "bikers-and-rebels-digital-art-13",
-        "title": "Bikers and Rebels - Digital Art #13 T-Shirt",
-        "seo_title": "Biker Skull Motorcycle T-Shirt | Rebel Apparel",
-        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Crafted for freedom-loving bikers and rebels. Shop comfortable riding apparel today!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65143793_0/1724847229/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Unisex biker t-shirt featuring a striking human skull and motorcycle digital art design",
-        "niche": "Motorcycle",
-        "secondary_niche": "Rebel",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Sat, 24 Oct 2026 08:07:46 GMT"
       }
     ],
     "professions-shirts": [
+      {
+        "design_id": "15433414",
+        "slug": "industrial-engineer-in-black-color-text",
+        "title": "Industrial Engineer in Black Color Text T-Shirt",
+        "seo_title": "Industrial Engineer T-Shirt | Typography Profession Tee",
+        "description": "Shop the Industrial Engineer in Black Color Text T-Shirt. Perfect typography gift for industrial engineers, systems optimizers, and professionals.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/15433414_0/1603709590/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
+        "image_alt": "Industrial Engineer in Black Color Text T-Shirt mockup",
+        "niche": "Engineer",
+        "secondary_niche": "science",
+        "primary_keyword": "Industrial Engineer T-Shirt",
+        "tags": "aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
+        "pubDate": "Mon, 23 Nov 2026 09:44:08 GMT"
+      },
       {
         "design_id": "15433437",
         "slug": "industrial-engineer-in-yellow-color-text",
@@ -4822,23 +4847,23 @@
         "primary_keyword": "Civil Engineer T-Shirt",
         "tags": "civil engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
         "pubDate": "Sun, 25 Oct 2026 08:26:43 GMT"
-      },
-      {
-        "design_id": "15406445",
-        "slug": "computer-engineer-in-blue-color-text",
-        "title": "Computer Engineer in Blue Color Text T-Shirt",
-        "seo_title": "Computer Engineer Blue Text T-Shirt",
-        "description": "Celebrate your profession with our Computer Engineer in Blue Color Text T-Shirt. Perfect gift for computer engineers and hardware-software developers.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/15406445_0/1603636699/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_9_5_451x,s_630,q_90.jpg",
-        "image_alt": "Computer Engineer in Blue Color Text T-Shirt displayed on a model",
-        "niche": "Engineer",
-        "secondary_niche": "Developer",
-        "primary_keyword": "Computer Engineer T-Shirt",
-        "tags": "computer engineering, aerospace, chemical, computer, construction, electrical, engineer, environmental, industrial, marine, mechanical, petroleum",
-        "pubDate": "Sat, 24 Oct 2026 08:08:46 GMT"
       }
     ],
     "science-shirts": [
+      {
+        "design_id": "60491485",
+        "slug": "little-green-men-alien-19",
+        "title": "Little Green Men - Alien #19 T-Shirt",
+        "seo_title": "Little Green Men Alien T-Shirt | Cute UFO Tee",
+        "description": "Get ready to orbit in style with our cute green alien t-shirt. Featuring a fun little green men design, perfect for UFO and astronomy fans.",
+        "image_url": "https://images.teepublic.com/derived/production/designs/60491485_0/1715928538/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "Little Green Men Alien #19 T-Shirt featuring cute green alien design",
+        "niche": "Astronomy",
+        "secondary_niche": "Science",
+        "primary_keyword": "green alien t-shirt",
+        "tags": "green alien, alien, aliens, close encounters, extraterrestrial, roswell, ufo, ufo alien, ufology",
+        "pubDate": "Mon, 23 Nov 2026 09:45:08 GMT"
+      },
       {
         "design_id": "12473631",
         "slug": "birthday-vintage-year-seventy-three-years-old",
@@ -5244,23 +5269,23 @@
         "primary_keyword": "pink gemstone t-shirt",
         "tags": "crystal, gem, gems, gemstone, gemstones, mens clothing, stone, teen, womens clothing",
         "pubDate": "Sun, 25 Oct 2026 08:27:43 GMT"
-      },
-      {
-        "design_id": "12043807",
-        "slug": "western-era-wild-west-wine-barrel",
-        "title": "Western Era - Wild West Wine Barrel T-Shirt",
-        "seo_title": "Western Era Wild West Wine Barrel T-Shirt",
-        "description": "Celebrate the Old West with our Western Era Wild West Wine Barrel T-Shirt. Perfect vintage style tee for cowboy and history fans. Shop now!",
-        "image_url": "https://images.teepublic.com/derived/production/designs/12043807_0/1594222126/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_320_10_141x,s_630,q_90.jpg",
-        "image_alt": "Western Era Wild West Wine Barrel T-Shirt featuring vintage cowboy design",
-        "niche": "hobbies",
-        "secondary_niche": "science",
-        "primary_keyword": "Wild West T-Shirt",
-        "tags": "barons, boots, bounty hunters, cowboy, era, usa, western",
-        "pubDate": "Sat, 24 Oct 2026 08:09:46 GMT"
       }
     ],
     "social": [
+      {
+        "design_id": "63247397",
+        "slug": "world-rugby-champions-15",
+        "title": "World Rugby Champions #15 T-Shirt",
+        "seo_title": "World Rugby Champions #15 T-Shirt | South Africa Fan Gear",
+        "description": "Celebrate South African rugby with our World Rugby Champions #15 T-Shirt. Durable, comfortable, and perfect for die-hard fans. Shop now!",
+        "image_url": "https://images.teepublic.com/derived/production/designs/63247397_0/1721558302/i_m:bi_production_blanks_a59x1cgomgu5lprfjlmi_1462829024,c_0_0_470x,s_630,q_90.jpg",
+        "image_alt": "World Rugby Champions #15 T-Shirt for South African rugby fans",
+        "niche": "Sports",
+        "secondary_niche": "Rugby",
+        "primary_keyword": "World Rugby Champions T-Shirt",
+        "tags": "rugby, champions, champs, rugby player, rugby world cup, south africa, sport, sports, springboks",
+        "pubDate": "Mon, 23 Nov 2026 09:46:08 GMT"
+      },
       {
         "design_id": "9077393",
         "slug": "sexy-yellow",
@@ -5666,20 +5691,6 @@
         "primary_keyword": "Hero Green T-Shirt",
         "tags": "blue, cool, green, hero, new, orange, pink, slogan, yellow",
         "pubDate": "Sun, 25 Oct 2026 08:28:43 GMT"
-      },
-      {
-        "design_id": "65143343",
-        "slug": "bikers-and-rebels-digital-art-4",
-        "title": "Bikers and Rebels - Digital Art #4 T-Shirt",
-        "seo_title": "Bikers and Rebels Motorcycle Skull T-Shirt",
-        "description": "Rev up your style with this bold human skull and motorcycle t-shirt. Perfect for riders who embrace the spirit of freedom and rebellion on the open road.",
-        "image_url": "https://images.teepublic.com/derived/production/designs/65143343_0/1724846390/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg",
-        "image_alt": "Bikers and Rebels Digital Art Skull and Motorcycle T-Shirt",
-        "niche": "Motorcycle",
-        "secondary_niche": "Rebel",
-        "primary_keyword": "biker t-shirt",
-        "tags": "bike, biker, camping, club, freedom, gang, motorcycle, outdoor, rebel, road, skeleton, skull, skulls, travel",
-        "pubDate": "Sat, 24 Oct 2026 08:10:46 GMT"
       }
     ]
   }
