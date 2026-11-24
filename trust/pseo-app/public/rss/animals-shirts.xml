@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 09:38:08 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:05:07 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-11562573</guid>
+      <title><![CDATA[Western Era Cowboy on Horseback T-Shirt | Old West Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-cowboy-on-horseback-11</link>
+      <description><![CDATA[Celebrate the Old West with our Western Era Cowboy on Horseback T-Shirt. High-quality print featuring a classic cowboy, horse, and frontier style. #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11562573_0/1592810611/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_39_0_x626,s_630,q_90.jpg" alt="Western Era Cowboy on Horseback T-Shirt graphic design" /><p>Celebrate the Old West with our Western Era Cowboy on Horseback T-Shirt. High-quality print featuring a classic cowboy, horse, and frontier style. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Tue, 24 Nov 2026 01:05:07 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11562573_0/1592810611/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_39_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11562573_0/1592810611/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_39_0_x626,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11562573_0/1592810611/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_39_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-11547758</guid>
       <title><![CDATA[Western Era Cowboy on Horseback T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61869813_0/1719146053/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61869813_0/1719146053/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61869813_0/1719146053/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-61834224</guid>
-      <title><![CDATA[Portugal Monster Truck #62 T-Shirt | High-Octane Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/portugal-monster-truck-62</link>
-      <description><![CDATA[Unleash the beast with our Portugal Monster Truck #62 T-Shirt. Perfect high-octane apparel for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Portugal Monster Truck #62 T-Shirt featuring high-octane graphic design" /><p>Unleash the beast with our Portugal Monster Truck #62 T-Shirt. Perfect high-octane apparel for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Sun, 25 Oct 2026 08:20:43 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61834224_0/1719056083/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

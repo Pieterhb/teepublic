@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Nov 2026 09:45:08 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 01:12:07 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-60490856</guid>
+      <title><![CDATA[Little Green Men Alien T-Shirt | Cute UFO Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/little-green-men-alien-4</link>
+      <description><![CDATA[Explore the cosmos with our Little Green Men Alien T-Shirt. Featuring cute green aliens, perfect for UFO fans and space enthusiasts. Shop now! #teepublic #apparel #merch #astronomy]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/60490856_0/1715927511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Little Green Men Alien #4 T-Shirt with cute extraterrestrial design" /><p>Explore the cosmos with our Little Green Men Alien T-Shirt. Featuring cute green aliens, perfect for UFO fans and space enthusiasts. Shop now! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
+      <pubDate>Tue, 24 Nov 2026 01:12:07 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/60490856_0/1715927511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/60490856_0/1715927511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/60490856_0/1715927511/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-60491485</guid>
       <title><![CDATA[Little Green Men Alien T-Shirt | Cute UFO Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12351661_0/1595231630/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12351661_0/1595231630/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12351661_0/1595231630/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12330836</guid>
-      <title><![CDATA[Octacore Pink Gemstone T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/octacore-pink-gemstone</link>
-      <description><![CDATA[Discover the unique Octacore Pink Gemstone T-Shirt featuring a stunning computer-generated crystal design. Perfect for mineral and jewelry lovers. #teepublic #apparel #merch #science]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12330836_0/1595161837/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Octacore Pink Gemstone T-Shirt featuring computer-generated crystal graphic" /><p>Discover the unique Octacore Pink Gemstone T-Shirt featuring a stunning computer-generated crystal design. Perfect for mineral and jewelry lovers. #teepublic #apparel #merch #science</p>]]></content:encoded>
-      <pubDate>Sun, 25 Oct 2026 08:27:43 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12330836_0/1595161837/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12330836_0/1595161837/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12330836_0/1595161837/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
