@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:07:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 10:23:38 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-shirts-9724679</guid>
+      <title><![CDATA[Blue Cross in Glass Ball T-Shirt | Christian Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/blue-cross-in-glass-ball</link>
+      <description><![CDATA[Celebrate your faith with this unique blue cross in a glass ball t-shirt. Featuring a stunning Christian design made of glass orbs. Shop now! #teepublic #apparel #merch #christianity]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9724679_0/1588438034/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Blue Cross in Glass Ball T-Shirt displaying a Christian cross made of glass orbs inside a large transparent sphere" /><p>Celebrate your faith with this unique blue cross in a glass ball t-shirt. Featuring a stunning Christian design made of glass orbs. Shop now! #teepublic #apparel #merch #christianity</p>]]></content:encoded>
+      <pubDate>Wed, 25 Nov 2026 10:23:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9724679_0/1588438034/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9724679_0/1588438034/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9724679_0/1588438034/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-shirts-9724345</guid>
       <title><![CDATA[Orange Cross in Glass Ball T-Shirt | Christian Faith Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9028141_0/1586603640/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9028141_0/1586603640/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9028141_0/1586603640/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-shirts-63316180</guid>
-      <title><![CDATA[Green and Gold Rugby Player T-Shirt | Fan Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-50</link>
-      <description><![CDATA[Embrace the spirit of South African rugby with our green and gold rugby player t-shirt. Perfect for fans cheering from the stands or at a braai. #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63316180_0/1721661618/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold Rugby Player #50 T-Shirt for South African rugby fans" /><p>Embrace the spirit of South African rugby with our green and gold rugby player t-shirt. Perfect for fans cheering from the stands or at a braai. #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Mon, 26 Oct 2026 08:54:04 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/63316180_0/1721661618/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63316180_0/1721661618/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/63316180_0/1721661618/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

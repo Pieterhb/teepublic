@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Engineer Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Nov 2026 01:06:07 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 10:22:38 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Engineer Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-engineer-shirts-9723968</guid>
+      <title><![CDATA[Light Blue Glass Cross T-Shirt | Christian Faith Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/light-blue-cross-in-glass-ball</link>
+      <description><![CDATA[Celebrate your faith with this unique Light Blue Cross in Glass Ball T-Shirt. Featuring a stunning glass orb cross design. Shop Christian apparel today! #teepublic #apparel #merch #christianity]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9723968_0/1588436589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Light Blue Cross in Glass Ball T-Shirt displayed on a clean background" /><p>Celebrate your faith with this unique Light Blue Cross in Glass Ball T-Shirt. Featuring a stunning glass orb cross design. Shop Christian apparel today! #teepublic #apparel #merch #christianity</p>]]></content:encoded>
+      <pubDate>Wed, 25 Nov 2026 10:22:38 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9723968_0/1588436589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9723968_0/1588436589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9723968_0/1588436589/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-engineer-shirts-9724691</guid>
       <title><![CDATA[Red Cross in Glass Ball Christian T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-engineer-shirts-63418487</guid>
-      <title><![CDATA[Green and Gold Rugby Player T-Shirt | SA Fan Apparel]]></title>
-      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-58</link>
-      <description><![CDATA[Embrace South African rugby pride with our green and gold player #58 t-shirt. Crafted for comfort and durability. Shop ultimate fan apparel today! #teepublic #apparel #merch #hobbies]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63418487_0/1721814252/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold Rugby Player #58 T-Shirt for South African Fans" /><p>Embrace South African rugby pride with our green and gold player #58 t-shirt. Crafted for comfort and durability. Shop ultimate fan apparel today! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
-      <pubDate>Mon, 26 Oct 2026 08:53:04 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/63418487_0/1721814252/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63418487_0/1721814252/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/63418487_0/1721814252/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
