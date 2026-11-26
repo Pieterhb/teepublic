@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Minimalist Engineer Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 10:22:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:55:44 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/minimalist-engineer-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Minimalist Engineer Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-minimalist-engineer-shirts-9724709</guid>
+      <title><![CDATA[Christian Cross Glass Ball T-Shirt | Unique POD Apparel]]></title>
+      <link>https://blackpantherstore.co.za/design/red-blue-and-yellow-cross-in-glass-ball</link>
+      <description><![CDATA[Shop the unique Christian cross glass ball t-shirt featuring vibrant red, blue, and yellow colors. Perfect everyday faith-based apparel. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9724709_0/1588438068/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Red, Blue and Yellow Cross in Glass Ball T-Shirt displayed on a white background" /><p>Shop the unique Christian cross glass ball t-shirt featuring vibrant red, blue, and yellow colors. Perfect everyday faith-based apparel. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Thu, 26 Nov 2026 09:55:44 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/9724709_0/1588438068/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9724709_0/1588438068/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/9724709_0/1588438068/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-minimalist-engineer-shirts-9723968</guid>
       <title><![CDATA[Light Blue Glass Cross T-Shirt | Christian Faith Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9075213_0/1586768808/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9075213_0/1586768808/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9075213_0/1586768808/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-minimalist-engineer-shirts-9076190</guid>
-      <title><![CDATA[Lover Blue T-Shirt | Typography Word Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/lover-blue</link>
-      <description><![CDATA[Make a bold statement with the Lover Blue T-Shirt. Featuring a powerful single word design in a sleek typographic style. Shop your new favorite tee today. #teepublic #apparel #merch #everyday]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Blue t-shirt featuring the word lover in a clean typography style" /><p>Make a bold statement with the Lover Blue T-Shirt. Featuring a powerful single word design in a sleek typographic style. Shop your new favorite tee today. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
-      <pubDate>Tue, 27 Oct 2026 00:21:36 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9076190_0/1586771518/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

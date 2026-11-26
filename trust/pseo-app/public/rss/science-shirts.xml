@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Science Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 10:28:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:01:44 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/science-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Science Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-science-shirts-60491467</guid>
+      <title><![CDATA[Little Green Men Alien T-Shirt | Cute UFO Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/little-green-men-alien-14</link>
+      <description><![CDATA[Get ready to orbit in style with our cute little green alien t-shirt. Perfect for UFO fans and extraterrestrial lovers. Shop now! #teepublic #apparel #merch #astronomy]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/60491467_0/1715928492/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Little Green Men Alien #14 T-Shirt featuring a cute green alien design" /><p>Get ready to orbit in style with our cute little green alien t-shirt. Perfect for UFO fans and extraterrestrial lovers. Shop now! #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
+      <pubDate>Thu, 26 Nov 2026 10:01:44 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/60491467_0/1715928492/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/60491467_0/1715928492/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/60491467_0/1715928492/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-science-shirts-60490839</guid>
       <title><![CDATA[Little Green Men Alien T-Shirt | Cute UFO Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/12355672_0/1595242418/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12355672_0/1595242418/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/12355672_0/1595242418/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-science-shirts-12353867</guid>
-      <title><![CDATA[Red & Pink Oval Gemstone T-Shirt | Mineral Crystal Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/red-and-pink-oval-shape-gemstone</link>
-      <description><![CDATA[Shop the Red and Pink Oval Shape Gemstone T-Shirt. Featuring a computer-generated crystal design, perfect for gem and mineral lovers. Order yours today! #teepublic #apparel #merch #science]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12353867_0/1595237264/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_1_0_x626,s_630,q_90.jpg" alt="Red and Pink Oval Shape Gemstone T-Shirt flat lay" /><p>Shop the Red and Pink Oval Shape Gemstone T-Shirt. Featuring a computer-generated crystal design, perfect for gem and mineral lovers. Order yours today! #teepublic #apparel #merch #science</p>]]></content:encoded>
-      <pubDate>Tue, 27 Oct 2026 00:27:36 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/12353867_0/1595237264/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_1_0_x626,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12353867_0/1595237264/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_1_0_x626,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/12353867_0/1595237264/i_m:bi_production_blanks_ipv78ghaupktk9ogkdxg_1462829019,c_1_0_x626,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

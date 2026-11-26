@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Astronomy Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 10:19:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:52:44 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/astronomy-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Astronomy Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-astronomy-shirts-61577297</guid>
+      <title><![CDATA[Hologram Woman and Volcano T-Shirt | Futuristic Tee]]></title>
+      <link>https://blackpantherstore.co.za/design/hologram-woman-and-a-volcano-14</link>
+      <description><![CDATA[Discover the striking Hologram Woman and Volcano T-Shirt. Blending cutting-edge aesthetics with primal nature. Perfect futuristic apparel for everyday. #teepublic #apparel #merch #astronomy]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61577297_0/1718454787/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Hologram Woman and Volcano #14 futuristic design on a t-shirt" /><p>Discover the striking Hologram Woman and Volcano T-Shirt. Blending cutting-edge aesthetics with primal nature. Perfect futuristic apparel for everyday. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
+      <pubDate>Thu, 26 Nov 2026 09:52:44 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61577297_0/1718454787/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61577297_0/1718454787/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61577297_0/1718454787/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-astronomy-shirts-61577055</guid>
       <title><![CDATA[Hologram Man and Volcano T-Shirt | Futuristic Sci-Fi Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9681480_0/1588333861/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9681480_0/1588333861/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9681480_0/1588333861/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-astronomy-shirts-9680899</guid>
-      <title><![CDATA[Tarantula Nebula NASA Space T-Shirt]]></title>
-      <link>https://blackpantherstore.co.za/design/a-new-view-of-the-tarantula-nebula</link>
-      <description><![CDATA[Explore the cosmos with our Tarantula Nebula T-Shirt featuring stunning NASA space imagery. Perfect astronomy gift for space and galaxy lovers. #teepublic #apparel #merch #astronomy]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9680899_0/1588332029/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Tarantula Nebula NASA Space Image T-Shirt Design" /><p>Explore the cosmos with our Tarantula Nebula T-Shirt featuring stunning NASA space imagery. Perfect astronomy gift for space and galaxy lovers. #teepublic #apparel #merch #astronomy</p>]]></content:encoded>
-      <pubDate>Tue, 27 Oct 2026 00:18:36 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9680899_0/1588332029/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9680899_0/1588332029/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9680899_0/1588332029/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

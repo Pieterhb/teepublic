@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Math Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Nov 2026 10:24:38 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:57:44 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/math-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Math Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-math-shirts-12473573</guid>
+      <title><![CDATA[Vintage 1951 69th Birthday T-Shirt | Sixty Nine Years Old]]></title>
+      <link>https://blackpantherstore.co.za/design/birthday-vintage-year-sixty-nine-years-old</link>
+      <description><![CDATA[Celebrate turning sixty nine with our vintage 1951 69th birthday t-shirt. The perfect retro gift for anyone celebrating a milestone birthday this year. #teepublic #apparel #merch #everyday]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/12473573_0/1595588963/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" alt="Vintage 1951 sixty nine years old birthday t-shirt design preview" /><p>Celebrate turning sixty nine with our vintage 1951 69th birthday t-shirt. The perfect retro gift for anyone celebrating a milestone birthday this year. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
+      <pubDate>Thu, 26 Nov 2026 09:57:44 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/12473573_0/1595588963/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/12473573_0/1595588963/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/12473573_0/1595588963/i_m:bi_production_blanks_beqtwr2j6utublaobvi0_1462829022,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-math-shirts-12473684</guid>
       <title><![CDATA[Vintage 1943 77th Birthday T-Shirt | Retro Age Tee]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61466822_0/1718197500/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61466822_0/1718197500/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61466822_0/1718197500/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-math-shirts-61467036</guid>
-      <title><![CDATA[Sacred Geometry Art T-Shirt | Mystic Patterns]]></title>
-      <link>https://blackpantherstore.co.za/design/sacred-geometry-art-17</link>
-      <description><![CDATA[Unveil the mystic patterns of the universe with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop now! #teepublic #apparel #merch #math]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61467036_0/1718197943/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Sacred Geometry Art #17 T-Shirt featuring intricate digital geometry shapes" /><p>Unveil the mystic patterns of the universe with our Sacred Geometry Art T-Shirt. Perfect for meditation and spiritual enlightenment. Shop now! #teepublic #apparel #merch #math</p>]]></content:encoded>
-      <pubDate>Tue, 27 Oct 2026 00:23:36 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61467036_0/1718197943/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61467036_0/1718197943/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61467036_0/1718197943/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
