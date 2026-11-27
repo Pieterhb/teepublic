@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Hobbies Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:53:44 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:59:39 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/hobbies-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Hobbies Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-hobbies-shirts-61869838</guid>
+      <title><![CDATA[Poland Monster Truck #114 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/poland-monster-truck-114</link>
+      <description><![CDATA[Unleash the beast with our Poland Monster Truck #114 T-Shirt. High-octane design perfect for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #hobbies]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61869838_0/1719146095/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Poland Monster Truck #114 T-Shirt graphic design" /><p>Unleash the beast with our Poland Monster Truck #114 T-Shirt. High-octane design perfect for fans of crushing cars and V8 engines. Shop now! #teepublic #apparel #merch #hobbies</p>]]></content:encoded>
+      <pubDate>Fri, 27 Nov 2026 09:59:39 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/61869838_0/1719146095/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61869838_0/1719146095/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/61869838_0/1719146095/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-hobbies-shirts-63313243</guid>
       <title><![CDATA[Green & Gold South Africa Rugby Player #8 T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/63938869_0/1722696464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63938869_0/1722696464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/63938869_0/1722696464/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-hobbies-shirts-63938535</guid>
-      <title><![CDATA[Bald Eagle Motorcycle T-Shirt | Freedom Biker Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/ride-with-the-bald-eagle-on-a-motorcyle-10</link>
-      <description><![CDATA[Embrace freedom and adventure with our bald eagle and motorcycle t-shirt. The ultimate patriotic biker apparel for open road enthusiasts. Shop now! #teepublic #apparel #merch #bird]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63938535_0/1722695871/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Bald eagle soaring next to a powerful motorcycle on a patriotic t-shirt design" /><p>Embrace freedom and adventure with our bald eagle and motorcycle t-shirt. The ultimate patriotic biker apparel for open road enthusiasts. Shop now! #teepublic #apparel #merch #bird</p>]]></content:encoded>
-      <pubDate>Wed, 28 Oct 2026 00:23:30 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/63938535_0/1722695871/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63938535_0/1722695871/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/63938535_0/1722695871/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
