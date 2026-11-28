@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for All Collections</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 10:08:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:27:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/social.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - All Collections</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-social-63314005</guid>
+      <title><![CDATA[Green & Gold South Africa Rugby Player #12 T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/green-and-gold-rugby-player-12</link>
+      <description><![CDATA[Embrace South African rugby pride with our Green and Gold Rugby Player #12 T-Shirt. Perfect for match days, braais, and die-hard fans. Shop now! #teepublic #apparel #merch #rugby]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/63314005_0/1721658454/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Green and Gold Rugby Player #12 T-Shirt for South Africa Fans" /><p>Embrace South African rugby pride with our Green and Gold Rugby Player #12 T-Shirt. Perfect for match days, braais, and die-hard fans. Shop now! #teepublic #apparel #merch #rugby</p>]]></content:encoded>
+      <pubDate>Sat, 28 Nov 2026 09:27:22 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/63314005_0/1721658454/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/63314005_0/1721658454/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/63314005_0/1721658454/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-social-63247820</guid>
       <title><![CDATA[World Rugby Champions #30 T-Shirt | South Africa Fan Gear]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/9027714_0/1586602386/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9027714_0/1586602386/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/9027714_0/1586602386/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-social-9027235</guid>
-      <title><![CDATA[Cool Green T-Shirt | Slogan Typography Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/cool-green</link>
-      <description><![CDATA[Grab attention with this cool green t-shirt featuring powerful typography and a unique slogan. Perfect everyday funny text apparel for word lovers. #teepublic #apparel #merch #everyday]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/9027235_0/1586600902/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Cool green t-shirt with powerful slogan typography" /><p>Grab attention with this cool green t-shirt featuring powerful typography and a unique slogan. Perfect everyday funny text apparel for word lovers. #teepublic #apparel #merch #everyday</p>]]></content:encoded>
-      <pubDate>Thu, 29 Oct 2026 01:00:21 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/9027235_0/1586600902/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/9027235_0/1586600902/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/9027235_0/1586600902/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>

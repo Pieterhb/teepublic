@@ -8,13 +8,25 @@
     <link>https://blackpantherstore.co.za/</link>
     <description>TeePublic products for Animals Shirts</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 27 Nov 2026 10:00:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:19:22 GMT</lastBuildDate>
     <atom:link href="https://blackpantherstore.co.za/rss/animals-shirts.xml" rel="self" type="application/rss+xml" />
     <image>
       <url>https://blackpantherstore.co.za/logo.png</url>
       <title>Black Panther Store - Animals Shirts</title>
       <link>https://blackpantherstore.co.za/</link>
     </image>
+    <item>
+      <guid isPermaLink="false">pin-animals-shirts-11562530</guid>
+      <title><![CDATA[Western Era Cowboy on Horseback T-Shirt]]></title>
+      <link>https://blackpantherstore.co.za/design/western-era-cowboy-on-horseback-9</link>
+      <description><![CDATA[Celebrate the Old West with this Western Era Cowboy on Horseback T-Shirt. Featuring a classic nomadic cowboy design. Perfect gift for dad and history fans. #teepublic #apparel #merch #animals]]></description>
+      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/11562530_0/1592810527/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Western Era Cowboy on Horseback T-Shirt Design" /><p>Celebrate the Old West with this Western Era Cowboy on Horseback T-Shirt. Featuring a classic nomadic cowboy design. Perfect gift for dad and history fans. #teepublic #apparel #merch #animals</p>]]></content:encoded>
+      <pubDate>Sat, 28 Nov 2026 09:19:22 GMT</pubDate>
+      <media:content url="https://images.teepublic.com/derived/production/designs/11562530_0/1592810527/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
+      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/11562530_0/1592810527/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
+      <enclosure url="https://images.teepublic.com/derived/production/designs/11562530_0/1592810527/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
+    </item>
+
     <item>
       <guid isPermaLink="false">pin-animals-shirts-11547852</guid>
       <title><![CDATA[Western Era Cowboy on Horseback T-Shirt]]></title>
@@ -361,18 +373,6 @@
       <media:content url="https://images.teepublic.com/derived/production/designs/61869360_0/1719145287/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
       <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61869360_0/1719145287/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
       <enclosure url="https://images.teepublic.com/derived/production/designs/61869360_0/1719145287/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
-    </item>
-
-    <item>
-      <guid isPermaLink="false">pin-animals-shirts-61869817</guid>
-      <title><![CDATA[Turkey Monster Truck T-Shirt | Thanksgiving Tee]]></title>
-      <link>https://blackpantherstore.co.za/design/turkey-monster-truck-111</link>
-      <description><![CDATA[Unleash the beast this Thanksgiving with our Turkey Monster Truck #111 T-Shirt. Perfect high-octane apparel for monster truck fans and holiday lovers. #teepublic #apparel #merch #animals]]></description>
-      <content:encoded><![CDATA[<img src="https://images.teepublic.com/derived/production/designs/61869817_0/1719146060/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" alt="Turkey Monster Truck #111 T-Shirt graphic featuring an aggressive turkey driving a monster truck" /><p>Unleash the beast this Thanksgiving with our Turkey Monster Truck #111 T-Shirt. Perfect high-octane apparel for monster truck fans and holiday lovers. #teepublic #apparel #merch #animals</p>]]></content:encoded>
-      <pubDate>Thu, 29 Oct 2026 00:52:21 GMT</pubDate>
-      <media:content url="https://images.teepublic.com/derived/production/designs/61869817_0/1719146060/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" medium="image" type="image/jpeg" width="630" height="630" />
-      <media:thumbnail url="https://images.teepublic.com/derived/production/designs/61869817_0/1719146060/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" />
-      <enclosure url="https://images.teepublic.com/derived/production/designs/61869817_0/1719146060/i_m:bi_production_blanks_mtl53ofohwq5goqjo9ke_1462829015,c_0_0_470x,s_630,q_90.jpg" type="image/jpeg" length="0" />
     </item>
   </channel>
 </rss>
